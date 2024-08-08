@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Bildad";
+    src: url("./assets/fonts/Bildad.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

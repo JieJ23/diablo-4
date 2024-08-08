@@ -1,3 +1,6 @@
+import DataLoadingLoader from "../Hook/Loader";
+import PitLadder from "./PitLadder";
+
 export default function Homepage() {
   return (
     <section className="h-lvh overflow-x-hidden">
@@ -7,6 +10,8 @@ export default function Homepage() {
         alt="cover-bg"
         className="fixed h-lvh w-full object-cover -z-10 object-center"
       />
+
+      <PitLadder />
     </section>
   );
 }
