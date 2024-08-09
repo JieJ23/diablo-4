@@ -4,18 +4,11 @@ import {
   AccordionHeader,
   AccordionBody,
   Typography,
+  Tooltip,
 } from "@material-tailwind/react";
 
 import { useState } from "react";
-
-const testingSkills = [
-  `fire_bolt`,
-  `fireball`,
-  `firewall`,
-  `flame_shield`,
-  `frost_bolt`,
-  `teleport`,
-];
+import { ReturnSkillIcon, writeTimeInMS } from "../DataLogic/ProcessFunction";
 
 function Icon({ id }) {
   return (
@@ -27,7 +20,7 @@ function Icon({ id }) {
       stroke="currentColor"
       className={`${
         id === true ? "rotate-180" : ""
-      } h-4 w-4 transition-transform me-2`}
+      } h-3 w-3 transition-transform me-2`}
     >
       <path
         strokeLinecap="round"
@@ -49,20 +42,30 @@ export default function AccordionMain({ obj }) {
         onClick={() => handleOpen(open)}
         className="flex justify-between"
       >
-        <div className="ms-2 text-[12px] text-center font-customSource">
-          {obj.Rank}.
-        </div>
-
-        <div className="flex-1 text-center font-customDiablo text-[12px] md:text-[14px]">
+        <div className="flex-1 text-center font-customNoto text-[12px] md:text-[14px]">
           {obj.Player}
         </div>
 
         <div className="flex-1 flex justify-center">
-          <Avatar src={`/Classes/${obj.Class}.png`} />
+          <Tooltip
+            content={
+              <div className="text-center px-4">
+                <Typography
+                  className="font-customDiablo font-bold text-[14px]"
+                  color="white"
+                >
+                  {obj.Class}
+                </Typography>
+              </div>
+            }
+            className="font-customFont bg-[#131111] select-none p-2 border-[1px] border-[orange]"
+          >
+            <Avatar src={`/Classes/${obj.Class}.png`} draggable={false} />
+          </Tooltip>
         </div>
 
         <div className="flex-1 text-center font-customNoto text-[12px] md:text-[14px]">
-          {obj.Time}
+          {writeTimeInMS(obj.Time)}
         </div>
 
         <div className="flex-1 text-center font-customNoto text-[12px] md:text-[14px]">
@@ -70,10 +73,35 @@ export default function AccordionMain({ obj }) {
         </div>
       </AccordionHeader>
 
+      <div className="flex justify-between px-2">
+        <Typography className="text-white text-[12px] font-customSource">
+          {obj.Rank}.
+        </Typography>
+        <Typography className="text-[12px] text-white font-customSource">
+          {obj.Date.slice(0, 10)}
+        </Typography>
+      </div>
+
       <AccordionBody className="flex justify-evenly">
-        <div className="flex justify-center items-center gap-2">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-x-2">
           <div className="text-center font-customDiablo text-[16px]">
-            Build:
+            {obj.Planner === "" ? (
+              <Typography
+                className="font-customDiablo text-[16px]"
+                color="white"
+              >
+                Build:
+              </Typography>
+            ) : (
+              <Typography
+                className="font-customDiablo text-[16px]"
+                color="blue"
+              >
+                <a href={obj.Planner} target="_blank">
+                  Build:
+                </a>
+              </Typography>
+            )}
           </div>
           <div className="text-center">
             <Typography className="font-customDiablo text-[16px]" color="amber">
@@ -85,8 +113,28 @@ export default function AccordionMain({ obj }) {
         </div>
 
         <div className=" flex flex-wrap gap-1 justify-center">
-          {testingSkills.map((item) => (
-            <Avatar src={`/Skills/${item}.jpg`} variant="rounded" size="sm" />
+          {ReturnSkillIcon(obj.Skills).map((item) => (
+            <Tooltip
+              content={
+                <div className="text-center px-4">
+                  <Typography
+                    className="font-customDiablo font-bold text-[14px]"
+                    color="white"
+                  >
+                    {item}
+                  </Typography>
+                </div>
+              }
+              className="font-customFont bg-[#131111] select-none p-2 border-[1px] border-[orange]"
+            >
+              <Avatar
+                src={`/Skills/${item}.jpg`}
+                variant="rounded"
+                size="sm"
+                className="border-[1px] border-green-600 rounded-sm"
+                draggable={false}
+              />
+            </Tooltip>
           ))}
         </div>
       </AccordionBody>

@@ -11,7 +11,7 @@ import { useState } from "react";
 import AccordWrap from "./CustomWrap/AccordCustom";
 import AccordionMain from "./Accordion";
 import { BreakList, addRankProperty } from "../DataLogic/ProcessFunction";
-import ClassesBtn from "./Button/ClassesBtn";
+import ClassesBtn from "../Button/ClassesBtn";
 
 export default function PitLadder() {
   const { posts, loader } = useData();
@@ -46,11 +46,12 @@ export default function PitLadder() {
   posts.sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
   addRankProperty(posts);
 
-  const rawData = posts.slice();
+  const rawData = posts.slice().sort((a, b) => (a.Date > b.Date ? -1 : 1));
+  const pitData = posts.slice();
   const header = [`Player`, `Class`, `Time`, `Tier`];
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
-  const allData = [rawData];
+  const allData = [rawData, pitData];
 
   for (let i = 0; i < allClasses.length; i++) {
     let tempArr = rawData.filter((obj) => obj.Class === allClasses[i]);
@@ -70,14 +71,17 @@ export default function PitLadder() {
         <DataLoadingLoader />
       ) : (
         <AccordWrap>
-          <Card className="w-full mx-auto max-w-[1000px] my-10 px-2 bg-transparent">
-            <div className="text-[32px] text-center my-5 text-[white] font-customDiablo">
+          <Card
+            className="w-full mx-auto max-w-[1000px] mb-5 mt-2 px-1 bg-transparent"
+            shadow={false}
+          >
+            <div className="text-[32px] text-center mb-5 text-[white] font-customDiablo">
               Diablo 4: The Pit
             </div>
 
             <ClassesBtn onButtonClick={handleDataChange} classes={allClasses} />
 
-            <div className="p-2 flex">
+            <div className="p-2 flex me-5">
               {header.map((item) => (
                 <div className="text-[white] text-[16px] flex-1 text-center font-customDiablo ">
                   {item}

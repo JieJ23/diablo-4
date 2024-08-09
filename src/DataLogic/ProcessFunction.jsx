@@ -28,3 +28,16 @@ export function addRankProperty(arr) {
     arr[i].Rank = i + 1;
   }
 }
+
+// Process Skills string
+export function ReturnSkillIcon(str) {
+  let boonArr = str.split(",");
+  let finalized = boonArr.map((item) => item.trim());
+  return finalized;
+}
+
+// Rewrite to m/s
+export function writeTimeInMS(string) {
+  const [min, sec] = string.split(":");
+  return `${min}m ${sec}s`;
+}
