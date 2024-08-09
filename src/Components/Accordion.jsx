@@ -38,14 +38,18 @@ export default function AccordionMain({ obj }) {
 
   return (
     <Accordion open={open} icon={<Icon id={open} />}>
+      <div className="flex justify-between px-2">
+        <Typography className="text-white text-[10px] sm:text-[12px] font-customSource">
+          {obj.Rank}.
+        </Typography>
+        {/* <Typography className="text-[10px] sm:text-[12px] text-white font-customSource">
+          {obj.Date.slice(0, 10)}
+        </Typography> */}
+      </div>
       <AccordionHeader
         onClick={() => handleOpen(open)}
         className="flex justify-between"
       >
-        <div className="flex-1 text-center font-customNoto text-[12px] md:text-[14px]">
-          {obj.Player}
-        </div>
-
         <div className="flex-1 flex justify-center">
           <Tooltip
             content={
@@ -64,6 +68,10 @@ export default function AccordionMain({ obj }) {
           </Tooltip>
         </div>
 
+        <div className="flex-1 text-center font-customDiablo text-[12px] md:text-[16px]">
+          {obj.Player}
+        </div>
+
         <div className="flex-1 text-center font-customNoto text-[12px] md:text-[14px]">
           {writeTimeInMS(obj.Time)}
         </div>
@@ -72,15 +80,6 @@ export default function AccordionMain({ obj }) {
           {obj.Tier}
         </div>
       </AccordionHeader>
-
-      <div className="flex justify-between px-2">
-        <Typography className="text-white text-[12px] font-customSource">
-          {obj.Rank}.
-        </Typography>
-        <Typography className="text-[12px] text-white font-customSource">
-          {obj.Date.slice(0, 10)}
-        </Typography>
-      </div>
 
       <AccordionBody className="flex justify-evenly">
         <div className="flex flex-col md:flex-row justify-center items-center gap-x-2">
@@ -128,7 +127,7 @@ export default function AccordionMain({ obj }) {
               className="font-customFont bg-[#131111] select-none p-2 border-[1px] border-[orange]"
             >
               <Avatar
-                src={`/Skills/${item}.jpg`}
+                src={`/Skills/${item}.png`}
                 variant="rounded"
                 size="sm"
                 className="border-[1px] border-green-600 rounded-sm"

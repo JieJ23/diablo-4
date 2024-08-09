@@ -39,5 +39,5 @@ export function ReturnSkillIcon(str) {
 // Rewrite to m/s
 export function writeTimeInMS(string) {
   const [min, sec] = string.split(":");
-  return `${min}m ${sec}s`;
+  return `${min}:${sec}`;
 }

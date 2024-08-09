@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardFooter,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
+import { Card, CardFooter, IconButton } from "@material-tailwind/react";
 
 import { useData } from "../Hook/DataFetch";
 import DataLoadingLoader from "../Hook/Loader";
@@ -48,7 +43,7 @@ export default function PitLadder() {
 
   const rawData = posts.slice().sort((a, b) => (a.Date > b.Date ? -1 : 1));
   const pitData = posts.slice();
-  const header = [`Player`, `Class`, `Time`, `Tier`];
+  const header = [`Class`, `Player`, `Time`, `Tier`];
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
   const allData = [rawData, pitData];
@@ -81,7 +76,7 @@ export default function PitLadder() {
 
             <ClassesBtn onButtonClick={handleDataChange} classes={allClasses} />
 
-            <div className="p-2 flex me-5">
+            <div className="p-2 flex me-8">
               {header.map((item) => (
                 <div className="text-[white] text-[16px] flex-1 text-center font-customDiablo ">
                   {item}
