@@ -1,5 +1,4 @@
-import DataLoadingLoader from "../Hook/Loader";
-import PitLadder from "./PitLadder";
+import PitLadder from "../Components/PitLadder";
 
 export default function Homepage() {
   return (

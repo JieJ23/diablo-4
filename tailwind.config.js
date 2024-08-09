@@ -11,7 +11,9 @@ module.exports = withMT({
   theme: {
     extend: {
       fontFamily: {
-        customDiablo: ['Bildad', `monospace`],
+        customDiablo: ['Bildad', 'monospace'],
+        customSource: ['"Source Sans 3"', 'sans-serif'],
+        customNoto: ['"Noto Serif"', 'sans-serif']
       },
     },
   },

@@ -25,7 +25,7 @@ export default function AccordWrap({ children }) {
               justifyContent: "justify-between",
               alignItems: "items-center",
               width: "w-full",
-              py: "py-2",
+              py: "py-1",
               borderWidth: "border-none",
               color: "text-white",
               fontSmoothing: "antialiased",
