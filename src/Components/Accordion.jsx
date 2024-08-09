@@ -83,17 +83,17 @@ export default function AccordionMain({ obj }) {
 
       <AccordionBody className="flex justify-evenly">
         <div className="flex flex-col md:flex-row justify-center items-center gap-x-2">
-          <div className="text-center font-customDiablo text-[16px]">
+          <div>
             {obj.Planner === "" ? (
               <Typography
-                className="font-customDiablo text-[16px]"
+                className="font-customDiablo text-[12px] md:text-[16px]"
                 color="white"
               >
                 Build:
               </Typography>
             ) : (
               <Typography
-                className="font-customDiablo text-[16px]"
+                className="font-customDiablo text-[12px] md:text-[16px]"
                 color="blue"
               >
                 <a href={obj.Planner} target="_blank">
@@ -103,7 +103,10 @@ export default function AccordionMain({ obj }) {
             )}
           </div>
           <div className="text-center">
-            <Typography className="font-customDiablo text-[16px]" color="amber">
+            <Typography
+              className="font-customDiablo text-[12px] md:text-[16px]"
+              color="amber"
+            >
               <a href={obj.Video} target="_blank">
                 {obj.Build}
               </a>
@@ -111,7 +114,7 @@ export default function AccordionMain({ obj }) {
           </div>
         </div>
 
-        <div className=" flex flex-wrap gap-1 justify-center">
+        <div className="grid grid-cols-6 gap-1 justify-center">
           {ReturnSkillIcon(obj.Skills).map((item) => (
             <Tooltip
               content={
@@ -130,7 +133,7 @@ export default function AccordionMain({ obj }) {
                 src={`/Skills/${item}.png`}
                 variant="rounded"
                 size="sm"
-                className="border-[1px] border-green-600 rounded-sm"
+                className="border-[1px] border-orange-600 rounded-sm"
                 draggable={false}
               />
             </Tooltip>
