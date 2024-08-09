@@ -51,10 +51,10 @@ export default function PitLadder() {
                 Class
               </div>
               <div className="text-[white] text-[16px] flex-1 text-center font-customDiablo ">
-                Tier
+                Time
               </div>
               <div className="text-[white] text-[16px] flex-1 text-center font-customDiablo ">
-                Time
+                Tier
               </div>
             </div>
 
