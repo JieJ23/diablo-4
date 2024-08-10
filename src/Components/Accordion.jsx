@@ -121,7 +121,7 @@ export default function AccordionMain({ obj, watch }) {
       <AccordionBody className="flex flex-col justify-evenly">
         <div className="flex justify-center gap-4">
           <div>
-            {obj.Planner === "" ? (
+            {obj["Build Planner"] === "" ? (
               <Typography
                 className="font-customDiablo text-[16px] md:text-[18px]"
                 color="white"
@@ -133,7 +133,7 @@ export default function AccordionMain({ obj, watch }) {
                 className="font-customDiablo text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
                 color="blue"
               >
-                <a href={obj.Planner} target="_blank">
+                <a href={obj["Build Planner"]} target="_blank">
                   Build:
                 </a>
               </Typography>
@@ -144,15 +144,15 @@ export default function AccordionMain({ obj, watch }) {
               className="font-customDiablo text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
               color="amber"
             >
-              <a href={obj.Video} target="_blank">
-                {obj.Build}
+              <a href={obj["Run Video"]} target="_blank">
+                {obj["Build Name"]}
               </a>
             </Typography>
           </div>
         </div>
 
         <div className="flex gap-2 justify-center">
-          {ReturnSkillIcon(obj.Skills).map((item) => (
+          {ReturnSkillIcon(obj["Skills Used"]).map((item) => (
             <Tooltip
               content={
                 <div className="px-2">
@@ -180,7 +180,7 @@ export default function AccordionMain({ obj, watch }) {
         {obj.Comment !== "" && (
           <div>
             <Typography className="font-customNoto text-[12px] px-4 py-2">
-              {obj.Comment}
+              {obj["Run Comment"]}
             </Typography>
           </div>
         )}
@@ -192,13 +192,13 @@ export default function AccordionMain({ obj, watch }) {
             </Typography>
           </div>
           <div className="flex gap-1">
-            {obj.Video && (
-              <a href={obj.Video} target="_blank">
+            {obj["Run Video"] && (
+              <a href={obj["Run Video"]} target="_blank">
                 <Avatar
                   src={
-                    obj.Video.includes(`youtub`)
+                    obj["Run Video"].includes(`youtub`)
                       ? `/youtube.png`
-                      : obj.Video.includes(`twitch`)
+                      : obj["Run Video"].includes(`twitch`)
                       ? `/mobalytic.png`
                       : `/youtube`
                   }
@@ -209,13 +209,13 @@ export default function AccordionMain({ obj, watch }) {
                 />
               </a>
             )}
-            {obj.Planner !== "" && (
-              <a href={obj.Planner} target="_blank">
+            {obj["Build Planner"] !== "" && (
+              <a href={obj["Build Planner"]} target="_blank">
                 <Avatar
                   src={
-                    obj.Planner.includes(`maxroll`)
+                    obj["Build Planner"].includes(`maxroll`)
                       ? `/maxroll.png`
-                      : obj.Planner.includes(`mobalytic`)
+                      : obj["Build Planner"].includes(`mobalytic`)
                       ? `/mobalytic.png`
                       : `d4build.png`
                   }
