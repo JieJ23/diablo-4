@@ -17,9 +17,9 @@ export const DataProvider = ({ children }) => {
         const response = await fetch(
           `https://script.google.com/macros/s/AKfycbwsMaRDQCCSBiLrm1ZOnyXtGORUjPc4uiboS0DMe_NwjFEB4AfEol1D4H8eT92gWQd-/exec`
         );
-        // const data = await response.json();
-        // const posts = await data.filter((obj) => obj.v === "y");
-        const posts = await response.json();
+        const data = await response.json();
+        const posts = await data.filter((obj) => obj.Validate === "y");
+        // const posts = await response.json();
         setPosts(posts);
         setLoader(false);
       } catch (error) {

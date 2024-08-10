@@ -97,6 +97,7 @@ export default function AccordionMain({ obj, watch }) {
               variant="rounded"
               size="sm"
               style={{ backgroundColor: classColor(obj.Class) }}
+              className="hover:scale-[110%] ease-in duration-100 transition-all"
             />
           </Tooltip>
         </div>
@@ -122,14 +123,14 @@ export default function AccordionMain({ obj, watch }) {
           <div>
             {obj.Planner === "" ? (
               <Typography
-                className="font-customDiablo text-[14px] md:text-[18px]"
+                className="font-customDiablo text-[16px] md:text-[18px]"
                 color="white"
               >
                 Build:
               </Typography>
             ) : (
               <Typography
-                className="font-customDiablo text-[14px] md:text-[18px]"
+                className="font-customDiablo text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
                 color="blue"
               >
                 <a href={obj.Planner} target="_blank">
@@ -140,7 +141,7 @@ export default function AccordionMain({ obj, watch }) {
           </div>
           <div className="text-center">
             <Typography
-              className="font-customDiablo text-[14px] md:text-[18px]"
+              className="font-customDiablo text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
               color="amber"
             >
               <a href={obj.Video} target="_blank">
@@ -170,6 +171,7 @@ export default function AccordionMain({ obj, watch }) {
                 variant="rounded"
                 size="sm"
                 draggable={false}
+                className="hover:scale-[110%] ease-in duration-100 transition-all"
               />
             </Tooltip>
           ))}
@@ -181,6 +183,35 @@ export default function AccordionMain({ obj, watch }) {
             </Typography>
           </div>
         )}
+
+        <div className="flex gap-2 justify-between px-4">
+          <div>
+            <Typography className="font-customSource text-[12px] opacity-80">
+              {obj.Date.slice(0, 10)}
+            </Typography>
+          </div>
+          <div className="flex gap-1">
+            {obj.TwitchChannel !== "" && (
+              <a
+                href={obj.TwitchChannel}
+                target="_blank"
+                className="hover:scale-125 ease-in duration-200 transition-all"
+              >
+                <Avatar src={`/twitch.png`} variant="rouneded" size="xs" />
+              </a>
+            )}
+            {obj.YTChannel !== "" && (
+              <a href={obj.YTChannel} target="_blank">
+                <Avatar
+                  src={`/youtube.png`}
+                  variant="rouneded"
+                  size="xs"
+                  className="hover:scale-125 ease-in duration-200 transition-all"
+                />
+              </a>
+            )}
+          </div>
+        </div>
       </AccordionBody>
     </Accordion>
   );
