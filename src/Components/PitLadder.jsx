@@ -43,10 +43,9 @@ export default function PitLadder() {
 
   const rawData = posts.slice().sort((a, b) => (a.Date > b.Date ? -1 : 1));
   const pitData = posts.slice();
-  const header = [`Class`, `Player`, `Time`, `Tier`];
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
-  const allData = [rawData, pitData];
+  const allData = [pitData];
 
   for (let i = 0; i < allClasses.length; i++) {
     let tempArr = rawData.filter((obj) => obj.Class === allClasses[i]);
@@ -67,22 +66,14 @@ export default function PitLadder() {
       ) : (
         <AccordWrap>
           <Card
-            className="w-full mx-auto max-w-[1000px] mb-5 mt-2 px-1 bg-transparent"
+            className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
             shadow={false}
           >
-            <div className="text-[32px] text-center mb-5 text-[white] font-customDiablo">
+            <div className="text-[32px] text-center my-3 text-[white] font-customDiablo">
               Diablo 4: The Pit
             </div>
 
             <ClassesBtn onButtonClick={handleDataChange} classes={allClasses} />
-
-            <div className="p-2 flex me-8">
-              {header.map((item) => (
-                <div className="text-[white] text-[16px] flex-1 text-center font-customDiablo ">
-                  {item}
-                </div>
-              ))}
-            </div>
 
             {sortDisplay.map((obj, index) => (
               <div
@@ -93,15 +84,13 @@ export default function PitLadder() {
                 <AccordionMain obj={obj} watch={category} />
               </div>
             ))}
-            <CardFooter>
-              <div>
-                <div className="flex gap-2">
-                  {totalPages.map((page, index) => (
-                    <IconButton {...getList(page)} key={index}>
-                      {page}
-                    </IconButton>
-                  ))}
-                </div>
+            <CardFooter className="p-3">
+              <div className="flex gap-2">
+                {totalPages.map((page, index) => (
+                  <IconButton {...getList(page)} key={index}>
+                    {page}
+                  </IconButton>
+                ))}
               </div>
             </CardFooter>
           </Card>

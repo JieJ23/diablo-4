@@ -1,47 +1,24 @@
 import { Button, Avatar } from "@material-tailwind/react";
+import { classColor } from "../Components/Accordion";
 
 export default function ClassesBtn({ onButtonClick, classes }) {
-  const allClasses = ["Latest", "Pit", ...classes];
+  const allClasses = ["Pit", ...classes];
 
   return (
     <>
-      <div className="flex justify-center gap-2 p-4 py-2 flex-wrap">
-        {allClasses.slice(0, 2).map((num, index) => (
+      <div className="flex justify-center gap-2 my-3 flex-wrap">
+        {allClasses.map((num, index) => (
           <Button
             key={index}
             variant={onButtonClick(index).variant}
             onClick={onButtonClick(index).onClick}
             color={"white"}
-            className="p-5 font-customDiablo text-[12px] md:text-[16px] shadow-[0_0_10px_black]"
+            className="p-2 min-w-[80px] font-customDiablo text-[14px] shadow-[0_0_20px_black]"
           >
             <div className="flex flex-col justify-center items-center">
               <Avatar
                 src={`/Classes/${num}.png`}
-                size="md"
-                variant="rounded"
-                draggable={false}
-                className={`${
-                  num === `Pit` && `shadow-[0_0_30px_red] rounded-full`
-                }`}
-              />
-              {num}
-            </div>
-          </Button>
-        ))}
-      </div>
-      <div className="flex justify-center gap-2 p-4 py-2 flex-wrap">
-        {allClasses.slice(2).map((num, index) => (
-          <Button
-            key={index}
-            variant={onButtonClick(index + 2).variant}
-            onClick={onButtonClick(index + 2).onClick}
-            color={"white"}
-            className="p-3 font-customDiablo text-[12px] md:text-[16px] shadow-[0_0_10px_black]"
-          >
-            <div className="flex flex-col justify-center items-center">
-              <Avatar
-                src={`/Classes/${num}.png`}
-                size="md"
+                size="sm"
                 variant="rounded"
                 draggable={false}
               />

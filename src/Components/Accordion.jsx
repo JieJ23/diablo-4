@@ -11,6 +11,21 @@ import { useState } from "react";
 import { ReturnSkillIcon, writeTimeInMS } from "../DataLogic/ProcessFunction";
 import { useEffect } from "react";
 
+export const classColor = (type) => {
+  switch (type) {
+    case "Barbarian":
+      return `#990000`;
+    case "Druid":
+      return `#5C4033`;
+    case "Rogue":
+      return `#301934`;
+    case "Necromancer":
+      return `#013220`;
+    case "Sorcerer":
+      return "#003366";
+  }
+};
+
 function Icon({ id }) {
   return (
     <svg
@@ -44,62 +59,77 @@ export default function AccordionMain({ obj, watch }) {
 
   return (
     <Accordion open={open} icon={<Icon id={open} />}>
-      <div className="flex justify-between px-2">
+      {/* <div className="flex justify-between px-2">
         <Typography className="text-white text-[10px] sm:text-[12px] font-customSource">
           {obj.Rank}.
         </Typography>
-        {/* <Typography className="text-[10px] sm:text-[12px] text-white font-customSource">
+        <Typography className="text-[10px] sm:text-[12px] text-white font-customSource">
           {obj.Date.slice(0, 10)}
-        </Typography> */}
-      </div>
+        </Typography>
+      </div> */}
       <AccordionHeader
         onClick={() => handleOpen(open)}
         className="flex justify-between"
       >
+        <div className=" ms-2">
+          <Typography className="text-[12px] italic font-bold font-customSource">
+            {obj.Rank}.
+          </Typography>
+        </div>
+
         <div className="flex-1 flex justify-center">
           <Tooltip
             content={
-              <div className="text-center px-4">
+              <div className="px-2">
                 <Typography
-                  className="font-customDiablo font-bold text-[14px]"
+                  className="font-customDiablo text-[14px]"
                   color="white"
                 >
                   {obj.Class}
                 </Typography>
               </div>
             }
-            className="font-customFont bg-[#131111] select-none p-2 border-[1px] border-[orange]"
+            className="bg-black select-none p-1 border-[1px]"
           >
-            <Avatar src={`/Classes/${obj.Class}.png`} draggable={false} />
+            <Avatar
+              src={`/ClassesIcon/${obj.Class}.png`}
+              draggable={false}
+              variant="rounded"
+              size="sm"
+              style={{ backgroundColor: classColor(obj.Class) }}
+            />
           </Tooltip>
         </div>
 
-        <div className="flex-1 text-center font-customDiablo text-[12px] md:text-[16px]">
+        <div className="flex-1 text-center font-customSource italic text-[13px] md:text-[14px]">
           {obj.Player}
         </div>
 
-        <div className="flex-1 text-center font-customNoto text-[12px] md:text-[14px]">
+        <div className="flex-1 text-center font-customSource italic text-[13px] md:text-[14px]">
           {writeTimeInMS(obj.Time)}
         </div>
 
-        <div className="flex-1 text-center font-customNoto text-[12px] md:text-[14px]">
+        <div className="flex-1 text-center font-customSource italic text-[13px] md:text-[14px]">
+          <span className="font-customDiablo font-normal text-[18px] text-[red]">
+            {`T `}
+          </span>
           {obj.Tier}
         </div>
       </AccordionHeader>
 
-      <AccordionBody className="flex justify-evenly">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-x-2">
+      <AccordionBody className="flex flex-col justify-evenly">
+        <div className="flex justify-center gap-4">
           <div>
             {obj.Planner === "" ? (
               <Typography
-                className="font-customDiablo text-[12px] md:text-[16px]"
+                className="font-customDiablo text-[14px] md:text-[18px]"
                 color="white"
               >
                 Build:
               </Typography>
             ) : (
               <Typography
-                className="font-customDiablo text-[12px] md:text-[16px]"
+                className="font-customDiablo text-[14px] md:text-[18px]"
                 color="blue"
               >
                 <a href={obj.Planner} target="_blank">
@@ -110,7 +140,7 @@ export default function AccordionMain({ obj, watch }) {
           </div>
           <div className="text-center">
             <Typography
-              className="font-customDiablo text-[12px] md:text-[16px]"
+              className="font-customDiablo text-[14px] md:text-[18px]"
               color="amber"
             >
               <a href={obj.Video} target="_blank">
@@ -120,31 +150,37 @@ export default function AccordionMain({ obj, watch }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-6 gap-0.5 justify-center">
+        <div className="flex gap-2 justify-center">
           {ReturnSkillIcon(obj.Skills).map((item) => (
             <Tooltip
               content={
-                <div className="text-center px-4">
+                <div className="px-2">
                   <Typography
-                    className="font-customDiablo font-bold text-[14px]"
+                    className="font-customDiablo text-[14px]"
                     color="white"
                   >
                     {item}
                   </Typography>
                 </div>
               }
-              className="font-customFont bg-[#131111] select-none p-2 border-[1px] border-[orange]"
+              className="bg-black select-none p-1 border-[1px]"
             >
               <Avatar
                 src={`/Skills/${item}.png`}
                 variant="rounded"
                 size="sm"
-                className="border-[1px] border-orange-600 rounded-sm"
                 draggable={false}
               />
             </Tooltip>
           ))}
         </div>
+        {obj.Comment !== "" && (
+          <div>
+            <Typography className="font-customNoto text-[12px] px-4 py-2">
+              {obj.Comment}
+            </Typography>
+          </div>
+        )}
       </AccordionBody>
     </Accordion>
   );
