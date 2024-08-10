@@ -97,7 +97,7 @@ export default function AccordionMain({ obj, watch }) {
               variant="rounded"
               size="sm"
               style={{ backgroundColor: classColor(obj.Class) }}
-              className="hover:scale-[110%] ease-in duration-100 transition-all"
+              className="hover:scale-[110%] ease-in duration-100 transition-all shadow-[0_0_20px_black]"
             />
           </Tooltip>
         </div>
@@ -172,6 +172,7 @@ export default function AccordionMain({ obj, watch }) {
                 size="sm"
                 draggable={false}
                 className="hover:scale-[110%] ease-in duration-100 transition-all"
+                loading="lazy"
               />
             </Tooltip>
           ))}
@@ -191,22 +192,37 @@ export default function AccordionMain({ obj, watch }) {
             </Typography>
           </div>
           <div className="flex gap-1">
-            {obj.TwitchChannel !== "" && (
-              <a
-                href={obj.TwitchChannel}
-                target="_blank"
-                className="hover:scale-125 ease-in duration-200 transition-all"
-              >
-                <Avatar src={`/twitch.png`} variant="rouneded" size="xs" />
-              </a>
-            )}
-            {obj.YTChannel !== "" && (
-              <a href={obj.YTChannel} target="_blank">
+            {obj.Video && (
+              <a href={obj.Video} target="_blank">
                 <Avatar
-                  src={`/youtube.png`}
+                  src={
+                    obj.Video.includes(`youtub`)
+                      ? `/youtube.png`
+                      : obj.Video.includes(`twitch`)
+                      ? `/mobalytic.png`
+                      : `/youtube`
+                  }
                   variant="rouneded"
                   size="xs"
-                  className="hover:scale-125 ease-in duration-200 transition-all"
+                  className="hover:scale-110 ease-in duration-200 transition-all"
+                  loading="lazy"
+                />
+              </a>
+            )}
+            {obj.Planner !== "" && (
+              <a href={obj.Planner} target="_blank">
+                <Avatar
+                  src={
+                    obj.Planner.includes(`maxroll`)
+                      ? `/maxroll.png`
+                      : obj.Planner.includes(`mobalytic`)
+                      ? `/mobalytic.png`
+                      : `d4build.png`
+                  }
+                  variant="rouneded"
+                  size="xs"
+                  className="hover:scale-110 ease-in duration-200 transition-all"
+                  loading="lazy"
                 />
               </a>
             )}
