@@ -9,6 +9,7 @@ import {
 
 import { useState } from "react";
 import { ReturnSkillIcon, writeTimeInMS } from "../DataLogic/ProcessFunction";
+import { useEffect } from "react";
 
 function Icon({ id }) {
   return (
@@ -31,8 +32,13 @@ function Icon({ id }) {
   );
 }
 
-export default function AccordionMain({ obj }) {
+export default function AccordionMain({ obj, watch }) {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    // Reset both states when `watch` changes
+    setOpen(false);
+  }, [watch]);
 
   const handleOpen = (value) => setOpen(!value);
 
@@ -114,7 +120,7 @@ export default function AccordionMain({ obj }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-6 gap-1 justify-center">
+        <div className="grid grid-cols-6 gap-0.5 justify-center">
           {ReturnSkillIcon(obj.Skills).map((item) => (
             <Tooltip
               content={
