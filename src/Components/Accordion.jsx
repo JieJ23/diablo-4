@@ -110,7 +110,7 @@ export default function AccordionMain({ obj, watch }) {
           <span className="font-customDiablo font-normal text-[18px] text-[teal]">
             {`C `}
           </span>
-          {writeTimeInMS(obj.Time)}
+          {writeTimeInMS(obj["Time Used"])}
         </div>
 
         <div className="flex-1 text-center font-customSource italic text-[13px] md:text-[14px]">

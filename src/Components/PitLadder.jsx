@@ -42,7 +42,10 @@ export default function PitLadder() {
   posts.sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
   addRankProperty(posts);
 
-  const rawData = posts.slice().sort((a, b) => (a.Date > b.Date ? -1 : 1));
+  const rawData = posts
+    .slice()
+    .sort((a, b) => (a.Date > b.Date ? -1 : 1))
+    .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
   const pitData = posts.slice();
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
