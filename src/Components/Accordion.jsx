@@ -191,7 +191,9 @@ export default function AccordionMain({ obj, watch }) {
         {obj.Comment !== "" && (
           <div className="flex justify-center">
             <Typography className="font-customNoto text-[12px] px-4 md:px-24 py-2">
-              {obj["Run Comment"]}
+              {obj["Run Comment"] !== ""
+                ? obj["Run Comment"]
+                : `(No Remark Available)`}
             </Typography>
           </div>
         )}
