@@ -10,7 +10,7 @@ export default function Homepage() {
         alt="cover-bg"
         className="fixed h-lvh w-full object-cover -z-10 object-center"
       />
-      <div className="flex w-full justify-center mt-5">
+      <div className="flex w-full justify-center mt-5 gap-2">
         <SubmissionCard
           title={`Submit Your Run`}
           link={`https://forms.gle/C3VhTY7HEF3Hudz86`}

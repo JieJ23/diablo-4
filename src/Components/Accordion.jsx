@@ -102,7 +102,7 @@ export default function AccordionMain({ obj, watch }) {
           </Tooltip>
         </div>
 
-        <div className="flex-1 text-center font-customSource italic text-[13px] md:text-[14px]">
+        <div className="flex-1 text-center font-customNoto text-[12px] md:text-[14px]">
           {obj.Player}
         </div>
 
@@ -198,14 +198,8 @@ export default function AccordionMain({ obj, watch }) {
             {obj["Run Video"] && (
               <a href={obj["Run Video"]} target="_blank">
                 <Avatar
-                  src={
-                    obj["Run Video"].includes(`youtub`)
-                      ? `/youtube.png`
-                      : obj["Run Video"].includes(`twitch`)
-                      ? `/mobalytic.png`
-                      : `/youtube`
-                  }
-                  variant="rouneded"
+                  src={`/youtube.png`}
+                  variant="rounded"
                   size="sm"
                   className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
                   loading="lazy"
@@ -215,14 +209,8 @@ export default function AccordionMain({ obj, watch }) {
             {obj["Build Planner"] !== "" && (
               <a href={obj["Build Planner"]} target="_blank">
                 <Avatar
-                  src={
-                    obj["Build Planner"].includes(`maxroll`)
-                      ? `/maxroll.png`
-                      : obj["Build Planner"].includes(`mobalytic`)
-                      ? `/mobalytic.png`
-                      : `d4build.png`
-                  }
-                  variant="rouneded"
+                  src={`build.png`}
+                  variant="rounded"
                   size="sm"
                   className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
                   loading="lazy"
