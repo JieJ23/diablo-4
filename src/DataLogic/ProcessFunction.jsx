@@ -41,3 +41,28 @@ export function writeTimeInMS(string) {
   const [min, sec] = string.split(":");
   return `${min}:${sec}`;
 }
+
+// Remove Duplicate Entries - Name & CLass
+export function removeDup(obj) {
+  const seen = new Set();
+  const result = obj.filter((item) => {
+    const key = `${item.Player}-${item.Class}`;
+    if (seen.has(key)) {
+      return false;
+    } else {
+      seen.add(key);
+      return true;
+    }
+  });
+  return result;
+}
+
+// Convert Time to Sec
+export function convertToSec(time) {
+  const [min, sec] = time.split(":");
+
+  let minToSec = +min * 60;
+  let totalSec = minToSec + +sec;
+
+  return totalSec;
+}

@@ -9,6 +9,8 @@ import { BreakList, addRankProperty } from "../DataLogic/ProcessFunction";
 import ClassesBtn from "../Button/ClassesBtn";
 import FAQ from "./FAQ";
 
+import { removeDup, convertToSec } from "../DataLogic/ProcessFunction";
+
 export default function PitLadder() {
   const { posts, loader } = useData();
 
@@ -40,16 +42,20 @@ export default function PitLadder() {
   //
 
   posts.sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
-  addRankProperty(posts);
 
   const rawData = posts
     .slice()
-    .sort((a, b) => (a.Date > b.Date ? -1 : 1))
+    .sort((a, b) =>
+      convertToSec(a["Time Used"]) < convertToSec(b["Time Used"]) ? -1 : 1
+    )
     .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
-  const pitData = posts.slice();
+  const pitData = posts.slice().sort((a, b) => (a.Date > b.Date ? -1 : 1));
+  const uniqueData = removeDup(rawData.slice());
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
-  const allData = [pitData];
+  addRankProperty(uniqueData);
+
+  const allData = [pitData, uniqueData];
 
   for (let i = 0; i < allClasses.length; i++) {
     let tempArr = rawData.filter((obj) => obj.Class === allClasses[i]);

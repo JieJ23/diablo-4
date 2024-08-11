@@ -71,11 +71,19 @@ export default function AccordionMain({ obj, watch }) {
         onClick={() => handleOpen(open)}
         className="flex justify-between"
       >
-        <div className=" ms-2">
-          <Typography className="text-[12px] italic font-bold font-customSource">
-            {obj.Rank}.
-          </Typography>
-        </div>
+        {obj.Rank !== undefined ? (
+          <div className=" ms-2">
+            <Typography className="text-[12px] italic font-bold font-customSource">
+              {`${obj.Rank}.`}
+            </Typography>
+          </div>
+        ) : (
+          <div className=" ms-2">
+            <Typography className="text-[12px] italic font-bold font-customSource">
+              {`----`}
+            </Typography>
+          </div>
+        )}
 
         <div className="flex-1 flex justify-center">
           <Tooltip

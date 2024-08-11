@@ -1,8 +1,7 @@
 import { Button, Avatar } from "@material-tailwind/react";
-import { classColor } from "../Components/Accordion";
 
 export default function ClassesBtn({ onButtonClick, classes }) {
-  const allClasses = ["Pit", ...classes];
+  const allClasses = ["Base Pit", "Unique Pit", ...classes];
 
   return (
     <>
