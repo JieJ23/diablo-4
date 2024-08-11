@@ -80,8 +80,9 @@ export default function PitLadder() {
               className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
               shadow={false}
             >
-              <div className="text-[32px] text-center my-3 text-[white] font-customDiablo">
-                Diablo 4: The Pit
+              <div className="text-[30px] text-center my-2 text-[white] font-customDiablo">
+                <div>Diablo 4</div>
+                <div>Season 5 Pit</div>
               </div>
 
               <ClassesBtn
