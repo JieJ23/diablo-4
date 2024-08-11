@@ -107,6 +107,9 @@ export default function AccordionMain({ obj, watch }) {
         </div>
 
         <div className="flex-1 text-center font-customSource italic text-[13px] md:text-[14px]">
+          <span className="font-customDiablo font-normal text-[18px] text-[teal]">
+            {`C `}
+          </span>
           {writeTimeInMS(obj.Time)}
         </div>
 
@@ -178,14 +181,14 @@ export default function AccordionMain({ obj, watch }) {
           ))}
         </div>
         {obj.Comment !== "" && (
-          <div>
-            <Typography className="font-customNoto text-[12px] px-4 py-2">
+          <div className="flex justify-center">
+            <Typography className="font-customNoto text-[12px] px-4 md:px-24 py-2">
               {obj["Run Comment"]}
             </Typography>
           </div>
         )}
 
-        <div className="flex gap-2 justify-between px-4">
+        <div className="flex gap-2 justify-between px-4 items-center">
           <div>
             <Typography className="font-customSource text-[12px] opacity-80">
               {obj.Date.slice(0, 10)}
@@ -203,8 +206,8 @@ export default function AccordionMain({ obj, watch }) {
                       : `/youtube`
                   }
                   variant="rouneded"
-                  size="xs"
-                  className="hover:scale-110 ease-in duration-200 transition-all"
+                  size="sm"
+                  className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
                   loading="lazy"
                 />
               </a>
@@ -220,8 +223,8 @@ export default function AccordionMain({ obj, watch }) {
                       : `d4build.png`
                   }
                   variant="rouneded"
-                  size="xs"
-                  className="hover:scale-110 ease-in duration-200 transition-all"
+                  size="sm"
+                  className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
                   loading="lazy"
                 />
               </a>

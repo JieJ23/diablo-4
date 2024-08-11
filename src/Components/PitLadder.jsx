@@ -7,6 +7,7 @@ import AccordWrap from "./CustomWrap/AccordCustom";
 import AccordionMain from "./Accordion";
 import { BreakList, addRankProperty } from "../DataLogic/ProcessFunction";
 import ClassesBtn from "../Button/ClassesBtn";
+import FAQ from "./FAQ";
 
 export default function PitLadder() {
   const { posts, loader } = useData();
@@ -64,37 +65,43 @@ export default function PitLadder() {
       {loader ? (
         <DataLoadingLoader />
       ) : (
-        <AccordWrap>
-          <Card
-            className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
-            shadow={false}
-          >
-            <div className="text-[32px] text-center my-3 text-[white] font-customDiablo">
-              Diablo 4: The Pit
-            </div>
-
-            <ClassesBtn onButtonClick={handleDataChange} classes={allClasses} />
-
-            {sortDisplay.map((obj, index) => (
-              <div
-                className={`${
-                  index % 2 === 0 ? `bg-[#222222cc]` : `bg-[#141414cc]`
-                } mb-1 rounded-lg backdrop-blur-sm relative`}
-              >
-                <AccordionMain obj={obj} watch={category} />
+        <>
+          <AccordWrap>
+            <Card
+              className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
+              shadow={false}
+            >
+              <div className="text-[32px] text-center my-3 text-[white] font-customDiablo">
+                Diablo 4: The Pit
               </div>
-            ))}
-            <CardFooter className="p-3">
-              <div className="flex gap-2">
-                {totalPages.map((page, index) => (
-                  <IconButton {...getList(page)} key={index}>
-                    {page}
-                  </IconButton>
-                ))}
-              </div>
-            </CardFooter>
-          </Card>
-        </AccordWrap>
+
+              <ClassesBtn
+                onButtonClick={handleDataChange}
+                classes={allClasses}
+              />
+
+              {sortDisplay.map((obj, index) => (
+                <div
+                  className={`${
+                    index % 2 === 0 ? `bg-[#222222cc]` : `bg-[#141414cc]`
+                  } mb-1 rounded-lg backdrop-blur-sm relative`}
+                >
+                  <AccordionMain obj={obj} watch={category} />
+                </div>
+              ))}
+              <CardFooter className="p-3">
+                <div className="flex gap-2">
+                  {totalPages.map((page, index) => (
+                    <IconButton {...getList(page)} key={index}>
+                      {page}
+                    </IconButton>
+                  ))}
+                </div>
+              </CardFooter>
+            </Card>
+          </AccordWrap>
+          <FAQ />
+        </>
       )}
     </>
   );
