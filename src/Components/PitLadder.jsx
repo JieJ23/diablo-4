@@ -14,7 +14,7 @@ import { removeDup, convertToSec } from "../DataLogic/ProcessFunction";
 export default function PitLadder() {
   const { posts, loader } = useData();
 
-  const [category, setCategory] = useState(0);
+  const [category, setCategory] = useState(1);
   const [active, setActive] = useState(1);
   const [pageInfo, setPageInfo] = useState(0);
 
