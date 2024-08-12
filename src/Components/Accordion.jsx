@@ -11,6 +11,20 @@ import { useState } from "react";
 import { ReturnSkillIcon, writeTimeInMS } from "../DataLogic/ProcessFunction";
 import { useEffect } from "react";
 
+export const tierColor = (tier) => {
+  if (tier >= 140) {
+    return `#ff0000`;
+  } else if (tier >= 130) {
+    return `#ff7e00`;
+  } else if (tier >= 120) {
+    return `#ffbd00`;
+  } else if (tier >= 110) {
+    return `#cccc62`;
+  } else {
+    return `white`;
+  }
+};
+
 export const classColor = (type) => {
   switch (type) {
     case "Barbarian":
@@ -59,14 +73,6 @@ export default function AccordionMain({ obj, watch }) {
 
   return (
     <Accordion open={open} icon={<Icon id={open} />}>
-      {/* <div className="flex justify-between px-2">
-        <Typography className="text-white text-[10px] sm:text-[12px] font-customSource">
-          {obj.Rank}.
-        </Typography>
-        <Typography className="text-[10px] sm:text-[12px] text-white font-customSource">
-          {obj.Date.slice(0, 10)}
-        </Typography>
-      </div> */}
       <AccordionHeader
         onClick={() => handleOpen(open)}
         className="flex justify-between"
@@ -110,18 +116,27 @@ export default function AccordionMain({ obj, watch }) {
           </Tooltip>
         </div>
 
-        <div className="flex-1 text-center font-customNoto text-[12px] md:text-[14px]">
+        <div
+          className={`flex-1 text-center font-customNoto text-[12px] md:text-[15px] `}
+        >
           {obj.Player}
         </div>
 
-        <div className="flex-1 text-center font-customSource italic text-[13px] md:text-[14px]">
+        <div
+          className={`flex-1 text-center font-customSource italic text-[13px] md:text-[15px] ${
+            writeTimeInMS(obj["Time Used"]) <= 180 && `text-orange-300`
+          }`}
+        >
           <span className="font-customDiablo font-normal text-[18px] text-[teal]">
             {`C `}
           </span>
-          {writeTimeInMS(obj["Time Used"])}
+          {obj["Time Used"]}
         </div>
 
-        <div className="flex-1 text-center font-customSource italic text-[13px] md:text-[14px]">
+        <div
+          className={`flex-1 text-center font-customSource italic text-[13px] md:text-[15px]`}
+          style={{ color: tierColor(obj.Tier) }}
+        >
           <span className="font-customDiablo font-normal text-[18px] text-[red]">
             {`T `}
           </span>

@@ -39,7 +39,9 @@ export function ReturnSkillIcon(str) {
 // Rewrite to m/s
 export function writeTimeInMS(string) {
   const [min, sec] = string.split(":");
-  return `${min}:${sec}`;
+  let extraSec = +min * 60;
+  let totalSec = extraSec + +sec;
+  return totalSec;
 }
 
 // Remove Duplicate Entries - Name & CLass
