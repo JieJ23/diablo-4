@@ -15,10 +15,6 @@ export default function Homepage() {
           title={`Submit Your Run`}
           link={`https://forms.gle/C3VhTY7HEF3Hudz86`}
         />
-        <SubmissionCard
-          title={`View Entires`}
-          link={`https://docs.google.com/spreadsheets/d/e/2PACX-1vS9AHMY9FAO_JhRWEMHMqVHOltd9TxhviLxmu89VA-fP7HeaeR6O47kmmiApMPrD3RKHYdR6eENBv8Z/pubhtml?gid=1899307961&single=true`}
-        />
       </div>
       <PitLadder />
     </section>
