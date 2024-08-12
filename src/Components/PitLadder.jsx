@@ -128,7 +128,7 @@ export default function PitLadder() {
               </CardFooter>
             </Card>
           </AccordWrap>
-          <FAQ />
+          {/* <FAQ /> */}
         </>
       )}
     </>
