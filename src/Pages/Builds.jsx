@@ -12,27 +12,13 @@ export default function Builds() {
 
   const allAvailableClass = [...new Set(posts.map((obj) => obj.Class))].sort();
 
-  const targetClass = posts.filter((obj) => obj.Class === `Sorcerer`);
-
-  const allBuilds = [...new Set(targetClass.map((obj) => obj["Skills Used"]))];
-
-  const buildCount = [];
-
-  for (let i = 0; i < allBuilds.length; i++) {
-    let count = 0;
-    for (let y = 0; y < targetClass.length; y++) {
-      if (targetClass[y]["Skills Used"] === allBuilds[i]) {
-        count += 1;
-      }
-    }
-    let pairValue = { build: allBuilds[i], played: count };
-    buildCount.push(pairValue);
+  //
+  function findTotalOfClass(t) {
+    const temp = posts.filter((obj) => obj.Class === t);
+    return temp.length;
   }
 
-  const finalizedSort = buildCount
-    .slice()
-    .sort((a, b) => (a.played > b.played ? -1 : 1));
-  //
+  console.log(findTotalOfClass("Druid"));
 
   function addClassSetUp(c) {
     const tempBuildCount = [];
@@ -51,7 +37,7 @@ export default function Builds() {
       let pairValue = {
         build: tempAllBuild[i],
         played: count,
-        class: tempClass[0].Class,
+        class: tempClass[i].Class,
       };
       tempBuildCount.push(pairValue);
     }
@@ -65,8 +51,6 @@ export default function Builds() {
   for (let i = 0; i < allAvailableClass.length; i++) {
     addClassSetUp(allAvailableClass[i]);
   }
-
-  console.log(allBuildCount);
 
   return (
     <section className="h-lvh overflow-x-hidden">
@@ -90,7 +74,10 @@ export default function Builds() {
                   {compo[0].class}
                 </div>
                 <div className="text-white text-center font-customDiablo">
-                  {compo.length} run/s
+                  {compo.length} Variant
+                </div>
+                <div className="text-white text-center font-customDiablo">
+                  {findTotalOfClass(compo[0].class)} Run
                 </div>
               </div>
               {compo.map((obj) => (
@@ -121,7 +108,11 @@ export default function Builds() {
                       </Tooltip>
                     ))}
                     <div className="text-orange-100">
-                      {((obj.played / compo.length) * 100).toFixed(2)}%
+                      {(
+                        (obj.played / findTotalOfClass(compo[0].class)) *
+                        100
+                      ).toFixed(2)}
+                      %
                     </div>
                   </div>
                 </>
