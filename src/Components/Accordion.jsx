@@ -223,7 +223,11 @@ export default function AccordionMain({ obj, watch }) {
             {obj["Run Video"] && (
               <a href={obj["Run Video"]} target="_blank">
                 <Avatar
-                  src={`/youtube.png`}
+                  src={
+                    obj["Run Video"].includes(`bilibili`)
+                      ? `/bilibili.png`
+                      : `/youtube.png`
+                  }
                   variant="rounded"
                   size="sm"
                   className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
