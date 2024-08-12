@@ -14,7 +14,9 @@ export default function Homepage() {
         <SubmissionCard
           title={`Submit Your Run`}
           link={`https://forms.gle/C3VhTY7HEF3Hudz86`}
+          direction="_blank"
         />
+        <SubmissionCard title={`Build Info`} link={`/Builds`} />
       </div>
       <PitLadder />
     </section>
