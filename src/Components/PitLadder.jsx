@@ -11,12 +11,15 @@ import FAQ from "./FAQ";
 
 import { removeDup, convertToSec } from "../DataLogic/ProcessFunction";
 
+import SkillsSelection from "./MainSelect";
+
 export default function PitLadder() {
   const { posts, loader } = useData();
 
   const [category, setCategory] = useState(1);
   const [active, setActive] = useState(1);
   const [pageInfo, setPageInfo] = useState(0);
+  const [selectedSkill, setSelectedSkill] = useState(null);
 
   // Functions
   const handleDataChange = (num) => ({
@@ -63,11 +66,20 @@ export default function PitLadder() {
     allData.push(finalized);
   }
 
+  allData.push(
+    posts.filter((obj) => obj["Skills Used"].includes(`${selectedSkill}`))
+  );
+
   let dataDisplay = allData[category];
 
   const { eachPages, totalPages } = BreakList(dataDisplay, 50);
 
   let sortDisplay = eachPages[pageInfo];
+
+  const handleSkillChange = (newValue) => {
+    setSelectedSkill(newValue);
+    setCategory(allData.length - 1);
+  };
 
   return (
     <>
@@ -88,6 +100,12 @@ export default function PitLadder() {
               <ClassesBtn
                 onButtonClick={handleDataChange}
                 classes={allClasses}
+              />
+              <SkillsSelection
+                allSkills={posts}
+                onSkillChange={handleSkillChange}
+                watch={category}
+                fullcategory={allData}
               />
 
               {sortDisplay.map((obj, index) => (
