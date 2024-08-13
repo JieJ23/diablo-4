@@ -88,6 +88,9 @@ export default function PitLadder() {
         <DataLoadingLoader />
       ) : (
         <>
+          <div className="absolute top-2 left-2 text-yellow-500 font-customNoto">
+            {posts.length}
+          </div>
           <AccordWrap>
             <Card
               className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
