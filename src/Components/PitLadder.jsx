@@ -52,14 +52,13 @@ export default function PitLadder() {
       convertToSec(a["Time Used"]) < convertToSec(b["Time Used"]) ? -1 : 1
     )
     .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
-  const pitData = posts.slice().sort((a, b) => (a.Date > b.Date ? -1 : 1));
   const uniqueData = removeDup(rawData.slice());
   const speed101 = rawData.filter((obj) => obj.Tier === 101);
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
   addRankProperty(uniqueData);
 
-  const allData = [pitData, uniqueData, speed101];
+  const allData = [rawData, uniqueData, speed101];
 
   for (let i = 0; i < allClasses.length; i++) {
     let tempArr = rawData.filter((obj) => obj.Class === allClasses[i]);
