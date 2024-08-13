@@ -119,6 +119,7 @@ export default function AccordionMain({ obj, watch }) {
         <div
           className={`flex-1 text-center font-customNoto text-[12px] md:text-[15px] `}
         >
+          {obj.Rank <= 3 && <Avatar src={`/thunder.gif`} size="xs" />}
           {obj.Player}
         </div>
 
