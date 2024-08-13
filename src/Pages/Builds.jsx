@@ -66,7 +66,7 @@ export default function Builds() {
       {loader ? (
         <DataLoadingLoader />
       ) : (
-        <div className="flex flex-wrap justify-evenly gap-10 mx-auto max-w-[900px] my-10">
+        <div className="flex flex-wrap justify-evenly gap-10 mx-auto max-w-[1200px] px-4 my-10">
           {allBuildCount.map((compo) => (
             <div>
               <div>
