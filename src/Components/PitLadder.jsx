@@ -49,7 +49,7 @@ export default function PitLadder() {
   const rawData = posts
     .slice()
     .sort((a, b) =>
-      convertToSec(a["Time Used"]) < convertToSec(b["Time Used"]) ? -1 : 1
+      convertToSec(a["Time Used"]) > convertToSec(b["Time Used"]) ? 1 : -1
     )
     .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
   const uniqueData = removeDup(rawData.slice());
