@@ -121,6 +121,13 @@ export default function AccordionMain({ obj, watch }) {
         >
           {obj.Rank <= 3 && <Avatar src={`/thunder.gif`} size="xs" />}
           {obj.Player}
+          {obj.BossOnly === "yes" && (
+            <Avatar
+              src={`/boss.png`}
+              size="xs"
+              className="ms-1 bg-red-500 shadow-[0_0_10px_red]"
+            />
+          )}
         </div>
 
         <div
@@ -211,6 +218,12 @@ export default function AccordionMain({ obj, watch }) {
                 ? obj["Run Comment"]
                 : `(No Remark Available)`}
             </Typography>
+          </div>
+        )}
+
+        {obj.BossOnly && (
+          <div className="font-customDiablo text-[red] text-center">
+            Boss Fight Only
           </div>
         )}
 
