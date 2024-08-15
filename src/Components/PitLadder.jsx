@@ -13,6 +13,8 @@ import { removeDup, convertToSec } from "../DataLogic/ProcessFunction";
 
 import SkillsSelection from "./MainSelect";
 
+import TopOfEachClass from "./TopEachClass";
+
 export default function PitLadder() {
   const { posts, loader } = useData();
 
@@ -28,7 +30,6 @@ export default function PitLadder() {
       setCategory(num);
       setPageInfo(0);
       setActive(1);
-      addRankProperty(allData[setRank(num)]);
     },
   });
   function handleChangePage(arr) {
@@ -110,6 +111,8 @@ export default function PitLadder() {
                 watch={category}
                 fullcategory={allData}
               />
+
+              <TopOfEachClass objData={posts} />
 
               {sortDisplay.map((obj, index) => (
                 <div

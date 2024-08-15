@@ -10,6 +10,7 @@ import {
 import { useState } from "react";
 import { ReturnSkillIcon, writeTimeInMS } from "../DataLogic/ProcessFunction";
 import { useEffect } from "react";
+import { convertToSec } from "../DataLogic/ProcessFunction";
 
 export const tierColor = (tier) => {
   if (tier >= 140) {
@@ -139,6 +140,9 @@ export default function AccordionMain({ obj, watch }) {
             {`C `}
           </span>
           {obj["Time Used"]}
+          {convertToSec(obj["Time Used"]) >= 900 && (
+            <Avatar src="/warning.png" size="xs" className="ms-1" />
+          )}
         </div>
 
         <div
@@ -224,6 +228,11 @@ export default function AccordionMain({ obj, watch }) {
         {obj.BossOnly && (
           <div className="font-customDiablo text-[red] text-center">
             Boss Fight Only
+          </div>
+        )}
+        {convertToSec(obj["Time Used"]) >= 900 && (
+          <div className="font-customDiablo text-[red] text-center">
+            Time Over: +15 Minutes
           </div>
         )}
 
