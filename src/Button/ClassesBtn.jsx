@@ -12,7 +12,7 @@ export default function ClassesBtn({ onButtonClick, classes }) {
             variant={onButtonClick(index).variant}
             onClick={onButtonClick(index).onClick}
             color="red"
-            className="p-3 min-w-[80px] font-customDiablo text-[14px] shadow-[0_0_20px_black] hover:scale-105 duration-200 ease-in transition-all"
+            className="p-3 min-w-[80px] font-customDiablo text-[14px] shadow-[0_0_20px_black] hover:scale-105 duration-200 ease-in transition-all border-[2px] border-[#131111]"
           >
             {num}
           </Button>
