@@ -36,7 +36,7 @@ export default function TopOfEachClass({ objData }) {
               Tier {obj.Tier}
             </Typography>
 
-            <div className="flex gap-2 justify-center my-2">
+            <div className="flex flex-wrap gap-[4px] sm:gap-[2px] justify-center my-2">
               {ReturnSkillIcon(obj["Skills Used"]).map((item) => (
                 <Tooltip
                   content={
@@ -56,7 +56,7 @@ export default function TopOfEachClass({ objData }) {
                     variant="rounded"
                     size="xs"
                     draggable={false}
-                    className="shadow-[0_0_5px_red]"
+                    className="shadow-[0_0_5px_pink]"
                     loading="lazy"
                   />
                 </Tooltip>

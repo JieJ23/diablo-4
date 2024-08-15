@@ -37,7 +37,6 @@ export default function PitLadder() {
   }
   const getList = (index) => ({
     variant: active === index ? "gradient" : "text",
-    color: "white",
     onClick: () => {
       setActive(index);
       handleChangePage(index - 1);
