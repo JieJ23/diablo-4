@@ -12,17 +12,9 @@ export default function ClassesBtn({ onButtonClick, classes }) {
             variant={onButtonClick(index).variant}
             onClick={onButtonClick(index).onClick}
             color={"white"}
-            className="p-2 min-w-[80px] font-customDiablo text-[14px] shadow-[0_0_20px_black]"
+            className="p-3 min-w-[80px] font-customDiablo text-[14px] shadow-[0_0_20px_black] hover:scale-105 duration-200 ease-in transition-all"
           >
-            <div className="flex flex-col justify-center items-center">
-              <Avatar
-                src={`/Classes/${num}.png`}
-                size="sm"
-                variant="rounded"
-                draggable={false}
-              />
-              {num}
-            </div>
+            {num}
           </Button>
         ))}
       </div>
@@ -32,10 +24,15 @@ export default function ClassesBtn({ onButtonClick, classes }) {
             key={index}
             variant={onButtonClick(index + 3).variant}
             onClick={onButtonClick(index + 3).onClick}
-            color={"white"}
-            className="p-2 min-w-[80px] font-customDiablo text-[14px] shadow-[0_0_20px_black]"
+            className="p-2 min-w-[150px] font-customDiablo text-[14px] shadow-[0_0_20px_black] relative border-[1px] border-[#131111] rounded-lg bg-transparent group hover:scale-105 duration-200 ease-in transition-all"
           >
-            <div className="flex flex-col justify-center items-center">
+            <div className="absolute bg-[black] h-full w-full top-0 left-0 -z-10" />
+            <img
+              src={`/bg/class.png`}
+              alt="cover-bg"
+              className="absolute h-full w-full top-0 left-0 object-cover -z-10 opacity-50"
+            />
+            <div className="flex flex-col justify-center items-center group-hover:text-[white] ease-in duration-200 transition-colors">
               <Avatar
                 src={`/Classes/${num}.png`}
                 size="sm"
