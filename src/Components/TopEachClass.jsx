@@ -49,14 +49,14 @@ export default function TopOfEachClass({ objData }) {
                       </Typography>
                     </div>
                   }
-                  className="bg-black select-none p-1 border-[1px]"
+                  className="bg-black select-none border-[1px]"
                 >
                   <Avatar
                     src={`/Skills/${item}.png`}
                     variant="rounded"
                     size="xs"
                     draggable={false}
-                    className="shadow-[0_0_5px_pink]"
+                    className="shadow-[0_0_10px_teal] rounded-sm"
                     loading="lazy"
                   />
                 </Tooltip>
