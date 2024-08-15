@@ -88,7 +88,7 @@ export default function PitLadder() {
         <DataLoadingLoader />
       ) : (
         <>
-          <div className="absolute top-2 left-2 text-yellow-500 font-customNoto">
+          <div className="absolute top-1 left-1 text-yellow-500 font-customNoto text-[10px]">
             {posts.length}
           </div>
           <AccordWrap>
