@@ -1,9 +1,17 @@
 import { Avatar, Card, Typography, Tooltip } from "@material-tailwind/react";
 import { ReturnSkillIcon } from "../DataLogic/ProcessFunction";
+import { convertToSec } from "../DataLogic/ProcessFunction";
 
 export default function TopOfEachClass({ objData }) {
-  const allClasses = [...new Set(objData.map((obj) => obj.Class))];
-  const filterRankOnlyRuns = objData.filter((obj) => obj.Rank > 0);
+  const sortedData = objData
+    .slice()
+    .sort((a, b) =>
+      convertToSec(a["Time Used"]) > convertToSec(b["Time Used"]) ? 1 : -1
+    )
+    .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
+
+  const allClasses = [...new Set(sortedData.map((obj) => obj.Class))];
+  const filterRankOnlyRuns = sortedData.filter((obj) => obj.Rank > 0);
 
   const top1EachClass = [];
 
@@ -12,6 +20,8 @@ export default function TopOfEachClass({ objData }) {
     let temp1st = temp[0];
     top1EachClass.push(temp1st);
   }
+
+  console.log(top1EachClass);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-evenly p-2 gap-2">
