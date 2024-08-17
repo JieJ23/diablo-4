@@ -4,7 +4,7 @@ import { SubmissionCard } from "../Components/Submission";
 export default function Homepage() {
   return (
     <section className="h-lvh overflow-x-hidden">
-      <div className="fixed bg-[#131313] h-lvh w-full object-cover -z-10" />
+      <div className="fixed bg-[#131313] h-lvh w-full object-cover -z-20" />
       <img
         src="/mainBG.png"
         alt="cover-bg"

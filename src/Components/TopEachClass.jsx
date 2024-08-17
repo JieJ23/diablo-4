@@ -42,7 +42,7 @@ export default function TopOfEachClass({ objData }) {
             <Typography className="text-white font-customDiablo">
               {obj.Player}
             </Typography>
-            <Typography className="text-[yellow] font-customDiablo text-[14px]">
+            <Typography className="text-[yellow] font-customDiablo text-[16px]">
               Tier {obj.Tier}
             </Typography>
 
