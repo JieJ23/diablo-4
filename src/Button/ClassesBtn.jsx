@@ -1,12 +1,18 @@
 import { Button, Avatar } from "@material-tailwind/react";
 
 export default function ClassesBtn({ onButtonClick, classes }) {
-  const allClasses = ["Base Pit", "Unique Pit", "Speed 101", ...classes];
+  const allClasses = [
+    "Latest",
+    "Base Pit",
+    "Unique Pit",
+    "Speed 101",
+    ...classes,
+  ];
 
   return (
     <>
       <div className="flex justify-center gap-2 my-1 flex-wrap">
-        {allClasses.slice(0, 3).map((num, index) => (
+        {allClasses.slice(0, 4).map((num, index) => (
           <Button
             key={index}
             variant={onButtonClick(index).variant}
@@ -22,8 +28,8 @@ export default function ClassesBtn({ onButtonClick, classes }) {
         {allClasses.slice(3).map((num, index) => (
           <Button
             key={index}
-            variant={onButtonClick(index + 3).variant}
-            onClick={onButtonClick(index + 3).onClick}
+            variant={onButtonClick(index + 4).variant}
+            onClick={onButtonClick(index + 4).onClick}
             color="red"
             className="p-2 min-w-[120px] font-customDiablo text-[14px] shadow-[0_0_20px_black] relative border-[2px] border-[#131111] rounded-lg bg-transparent group hover:scale-105 duration-200 ease-in transition-all"
           >

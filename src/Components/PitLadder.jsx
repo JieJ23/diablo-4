@@ -45,21 +45,22 @@ export default function PitLadder() {
   });
   //
 
-  posts.sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
+  const baseData = posts.slice().sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
 
-  const rawData = posts
+  const rawData = baseData
     .slice()
     .sort((a, b) =>
       convertToSec(a["Time Used"]) > convertToSec(b["Time Used"]) ? 1 : -1
     )
     .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
   const uniqueData = removeDup(rawData.slice());
+  const latest10 = posts.slice(-25).reverse();
   const speed101 = rawData.filter((obj) => obj.Tier === 101);
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
   addRankProperty(uniqueData);
 
-  const allData = [rawData, uniqueData, speed101];
+  const allData = [latest10, rawData, uniqueData, speed101];
 
   for (let i = 0; i < allClasses.length; i++) {
     let tempArr = rawData.filter((obj) => obj.Class === allClasses[i]);
@@ -68,7 +69,7 @@ export default function PitLadder() {
   }
 
   allData.push(
-    posts.filter((obj) => obj["Skills Used"].includes(`${selectedSkill}`))
+    baseData.filter((obj) => obj["Skills Used"].includes(`${selectedSkill}`))
   );
 
   let dataDisplay = allData[category];
@@ -89,7 +90,7 @@ export default function PitLadder() {
       ) : (
         <>
           <div className="absolute top-1 left-1 text-yellow-500 font-customNoto text-[10px]">
-            {posts.length}
+            {baseData.length}
           </div>
           <AccordWrap>
             <Card
@@ -106,13 +107,13 @@ export default function PitLadder() {
                 classes={allClasses}
               />
               <SkillsSelection
-                allSkills={posts}
+                allSkills={baseData}
                 onSkillChange={handleSkillChange}
                 watch={category}
                 fullcategory={allData}
               />
 
-              <TopOfEachClass objData={posts} />
+              <TopOfEachClass objData={baseData} />
 
               {sortDisplay.map((obj, index) => (
                 <div

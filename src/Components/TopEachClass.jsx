@@ -21,8 +21,6 @@ export default function TopOfEachClass({ objData }) {
     top1EachClass.push(temp1st);
   }
 
-  console.log(top1EachClass);
-
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-evenly p-2 gap-2">
       {top1EachClass.map((obj, index) => (
