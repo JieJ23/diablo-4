@@ -18,7 +18,7 @@ import TopOfEachClass from "./TopEachClass";
 export default function PitLadder() {
   const { posts, loader } = useData();
 
-  const [category, setCategory] = useState(1);
+  const [category, setCategory] = useState(0);
   const [active, setActive] = useState(1);
   const [pageInfo, setPageInfo] = useState(0);
   const [selectedSkill, setSelectedSkill] = useState(null);
