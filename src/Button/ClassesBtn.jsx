@@ -25,7 +25,7 @@ export default function ClassesBtn({ onButtonClick, classes }) {
         ))}
       </div>
       <div className="flex justify-center px-2 gap-2 my-1 flex-wrap">
-        {allClasses.slice(3).map((num, index) => (
+        {allClasses.slice(4).map((num, index) => (
           <Button
             key={index}
             variant={onButtonClick(index + 4).variant}
