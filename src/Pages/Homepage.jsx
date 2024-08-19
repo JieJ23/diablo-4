@@ -16,7 +16,7 @@ export default function Homepage() {
           link={`https://forms.gle/C3VhTY7HEF3Hudz86`}
           direction="_blank"
         />
-        {/* <SubmissionCard title={`Build Info`} link={`/Builds`} /> */}
+        <SubmissionCard title={`Build Info`} link={`/Builds`} />
       </div>
       <PitLadder />
     </section>
