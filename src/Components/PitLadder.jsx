@@ -7,7 +7,6 @@ import AccordWrap from "./CustomWrap/AccordCustom";
 import AccordionMain from "./Accordion";
 import { BreakList, addRankProperty } from "../DataLogic/ProcessFunction";
 import ClassesBtn from "../Button/ClassesBtn";
-import FAQ from "./FAQ";
 
 import { removeDup, convertToSec } from "../DataLogic/ProcessFunction";
 
@@ -88,8 +87,8 @@ export default function PitLadder() {
       {loader ? (
         <DataLoadingLoader />
       ) : (
-        <>
-          <div className="absolute top-1 left-1 text-yellow-500 font-customNoto text-[10px]">
+        <div className="mt-5">
+          <div className="absolute top-1 left-1 text-yellow-500 font-customNoto text-[10px] -z-10">
             {baseData.length}
           </div>
           <AccordWrap>
@@ -97,10 +96,6 @@ export default function PitLadder() {
               className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
               shadow={false}
             >
-              <div className="text-[28px] text-center my-2 text-[white] font-customDiablo">
-                <div>D4 Season 5 Pit</div>
-              </div>
-
               <ClassesBtn
                 onButtonClick={handleDataChange}
                 classes={allClasses}
@@ -135,7 +130,7 @@ export default function PitLadder() {
             </Card>
           </AccordWrap>
           {/* <FAQ /> */}
-        </>
+        </div>
       )}
     </>
   );

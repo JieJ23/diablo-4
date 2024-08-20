@@ -1,7 +1,7 @@
-import Homepage from "./Pages/Homepage";
+import Home from "./Pages/Home";
 
 function App() {
-  return <Homepage />;
+  return <Home />;
 }
 
 export default App;
