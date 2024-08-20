@@ -21,7 +21,6 @@ createRoot(document.getElementById("root")).render(
           <Route path="/Ladderboard" element={<Ladderboard />} />
           <Route path="/Builds" element={<Builds />} />
           <Route path="/Puzzle" element={<Puzzle />} />
-
           <Route path="/TestAssets" element={<TestAssets />} />
         </Routes>
       </Router>

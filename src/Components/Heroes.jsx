@@ -5,7 +5,7 @@ export function CardHorizontal({ title, link, bg, direction = "", short }) {
   return (
     <Link to={link} target={direction} className="group">
       <div className="flex flex-col md:flex-row bg-[transparent] rounded-2xl p-4 gap-2 h-full">
-        <Card className="mx-auto select-none min-w-[150px] min-h-[250px] w-[400px] flex-1 bg-transparent">
+        <Card className="mx-auto select-none min-w-[150px] min-h-[250px] w-[350px] flex-1 bg-transparent">
           <div
             style={{ backgroundImage: `url(/bg/${bg}.png` }}
             className={`absolute h-full w-full top-0 right-0 bg-cover bg-center rounded-2xl shadow-[0_0_30px_#153049]
