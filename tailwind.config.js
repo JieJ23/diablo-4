@@ -13,7 +13,8 @@ module.exports = withMT({
       fontFamily: {
         customDiablo: ['Bildad', 'monospace'],
         customSource: ['"Source Sans 3"', 'sans-serif'],
-        customNoto: ['"Noto Serif"', 'sans-serif']
+        customNoto: ['"Noto Serif"', 'sans-serif'],
+        customDress: ["Caesar Dressing"]
       },
     },
   },

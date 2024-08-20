@@ -7,7 +7,7 @@ export function SubmissionCard({ title, link, direction = "" }) {
       <Link to={link} target={direction}>
         <CardBody className="h-full w-full p-3 flex items-center flex-col justify-between z-20">
           <div className="flex flex-col gap-2 items-center justify-center">
-            <Typography className="font-customDiablo text-white group-hover:text-[red] ease-in transition-colors duration-500 text-[16px]">
+            <Typography className="font-customDress text-white group-hover:text-[red] ease-in transition-colors duration-500 text-[16px]">
               {title}
             </Typography>
           </div>

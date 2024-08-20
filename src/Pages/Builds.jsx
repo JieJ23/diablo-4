@@ -73,16 +73,16 @@ export default function Builds() {
                 <div className="text-[red] text-[20px] text-center font-customDiablo">
                   {compo[0].class}
                 </div>
-                <div className="text-white text-center font-customDiablo">
+                <div className="text-white text-center font-[monospace]">
                   {compo.length} Variant
                 </div>
-                <div className="text-white text-center font-customDiablo">
+                <div className="text-white text-center font-[monospace]">
                   {findTotalOfClass(compo[0].class)} Run
                 </div>
               </div>
               {compo.map((obj) => (
                 <>
-                  <div className="flex justify-center gap-1 my-2 items-center font-customNoto text-[16px]">
+                  <div className="flex justify-center gap-1 my-2 items-center font-customSource text-[16px]">
                     {ReturnSkillIcon(obj.build).map((item) => (
                       <Tooltip
                         content={
@@ -103,11 +103,10 @@ export default function Builds() {
                           size="sm"
                           draggable={false}
                           className="hover:scale-[110%] ease-in duration-100 transition-all"
-                          loading="lazy"
                         />
                       </Tooltip>
                     ))}
-                    <div className="text-orange-100">
+                    <div className="text-amber-100">
                       {(
                         (obj.played / findTotalOfClass(compo[0].class)) *
                         100

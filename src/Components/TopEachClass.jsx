@@ -1,6 +1,7 @@
 import { Avatar, Card, Typography, Tooltip } from "@material-tailwind/react";
 import { ReturnSkillIcon } from "../DataLogic/ProcessFunction";
 import { convertToSec } from "../DataLogic/ProcessFunction";
+import { classColor } from "./Accordion";
 
 export default function TopOfEachClass({ objData }) {
   const sortedData = objData
@@ -24,10 +25,13 @@ export default function TopOfEachClass({ objData }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-evenly p-2 gap-2">
       {top1EachClass.map((obj, index) => (
-        <Card className="p-2 w-full min-h-[150px] relative bg-transparent shadow-[0_0_10px_black] border-[2px] border-[#28282b]">
-          <div className="absolute bg-[black] h-full w-full top-0 left-0 object-cover -z-10 rounded-xl" />
+        <Card
+          className="p-2 w-full min-h-[150px] relative bg-transparent shadow-[0_0_10px_black] border-[2px] border-[#28282b]"
+          style={{ backgroundColor: `${classColor(obj.Class)}80` }}
+        >
+          {/* <div className="absolute bg-[black] h-full w-full top-0 left-0 object-cover -z-10 rounded-xl" /> */}
           <img
-            src={`/bg/class${index + 1}.png`}
+            src={`/snow.gif`}
             alt="cover-bg"
             className="absolute h-full w-full top-0 left-0 object-cover -z-10 rounded-xl opacity-40"
           />
@@ -37,10 +41,10 @@ export default function TopOfEachClass({ objData }) {
               {obj.Class}
             </Typography>
             <Avatar src={`/ClassesIcon/${obj.Class}.png`} />
-            <Typography className="text-white font-customDiablo">
+            <Typography className="text-white font-customDress">
               {obj.Player}
             </Typography>
-            <Typography className="text-[yellow] font-customDiablo text-[16px]">
+            <Typography className="text-[yellow] font-customNoto text-[14px]">
               Tier {obj.Tier}
             </Typography>
 

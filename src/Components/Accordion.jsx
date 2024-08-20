@@ -118,7 +118,7 @@ export default function AccordionMain({ obj, watch }) {
         </div>
 
         <div
-          className={`flex-1 text-center font-customNoto text-[12px] md:text-[15px] `}
+          className={`flex-1 text-center font-customSource text-[12px] md:text-[15px] `}
         >
           {obj.Rank <= 3 && <Avatar src={`/thunder.gif`} size="xs" />}
           {obj.Player}
@@ -161,14 +161,14 @@ export default function AccordionMain({ obj, watch }) {
           <div>
             {obj["Build Planner"] === "" ? (
               <Typography
-                className="font-customDiablo text-[16px] md:text-[18px]"
+                className="font-customDress text-[16px] md:text-[18px]"
                 color="white"
               >
                 Build:
               </Typography>
             ) : (
               <Typography
-                className="font-customDiablo text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
+                className="font-customDress text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
                 color="blue"
               >
                 <a href={obj["Build Planner"]} target="_blank">
@@ -179,7 +179,7 @@ export default function AccordionMain({ obj, watch }) {
           </div>
           <div className="text-center">
             <Typography
-              className="font-customDiablo text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
+              className="font-customDress text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
               color="amber"
             >
               <a href={obj["Run Video"]} target="_blank">

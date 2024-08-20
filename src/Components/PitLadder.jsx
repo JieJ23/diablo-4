@@ -25,7 +25,7 @@ export default function PitLadder() {
 
   // Functions
   const handleDataChange = (num) => ({
-    variant: category === num ? "filled" : "text",
+    variant: category === num ? "text" : "filled",
     onClick: () => {
       setCategory(num);
       setPageInfo(0);
@@ -74,7 +74,7 @@ export default function PitLadder() {
 
   let dataDisplay = allData[category];
 
-  const { eachPages, totalPages } = BreakList(dataDisplay, 50);
+  const { eachPages, totalPages } = BreakList(dataDisplay, 25);
 
   let sortDisplay = eachPages[pageInfo];
 
@@ -97,9 +97,8 @@ export default function PitLadder() {
               className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
               shadow={false}
             >
-              <div className="text-[30px] text-center my-2 text-[white] font-customDiablo">
-                <div>Diablo 4</div>
-                <div>Season 5 Pit</div>
+              <div className="text-[28px] text-center my-2 text-[white] font-customDiablo">
+                <div>D4 Season 5 Pit</div>
               </div>
 
               <ClassesBtn
