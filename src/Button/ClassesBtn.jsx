@@ -36,7 +36,7 @@ export default function ClassesBtn({ onButtonClick, classes }) {
             <img
               src={`/bg/class.png`}
               alt="cover-bg"
-              className="absolute h-full w-full top-0 left-0 object-cover -z-10"
+              className="absolute h-full w-full top-0 left-0 object-cover -z-10 opacity-70"
             />
             <div className="flex flex-col justify-center items-center group-hover:text-[red] ease-in duration-200 transition-colors">
               <Avatar
