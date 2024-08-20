@@ -18,8 +18,13 @@ export default function ClassesBtn({ onButtonClick, classes }) {
             variant={onButtonClick(index).variant}
             onClick={onButtonClick(index).onClick}
             color="red"
-            className="p-3 min-w-[80px] font-customDress text-[14px] shadow-[0_0_20px_red] hover:scale-105 duration-200 ease-in transition-all border-[2px] border-[#28282b] bg-[#131111]"
+            className="p-3 min-w-[80px] font-customDress text-[14px] shadow-[0_0_20px_red] hover:scale-105 duration-200 ease-in transition-all border-[2px] border-[#28282b] bg-[transparent] relative"
           >
+            <img
+              src={`/bg/class.png`}
+              alt="cover-bg"
+              className="absolute h-full w-full top-0 left-0 object-cover -z-10 opacity-50"
+            />
             {num}
           </Button>
         ))}
@@ -36,7 +41,7 @@ export default function ClassesBtn({ onButtonClick, classes }) {
             <img
               src={`/bg/class.png`}
               alt="cover-bg"
-              className="absolute h-full w-full top-0 left-0 object-cover -z-10 opacity-70"
+              className="absolute h-full w-full top-0 left-0 object-cover -z-10 opacity-50"
             />
             <div className="flex flex-col justify-center items-center group-hover:text-[red] ease-in duration-200 transition-colors">
               <Avatar
