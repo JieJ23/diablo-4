@@ -68,15 +68,3 @@ export function convertToSec(time) {
 
   return totalSec;
 }
-
-export const pfpStore = [
-  `Arccueid`,
-  `Haki`,
-  `Mekuna`,
-  `小爸爸五花肉`,
-  `打灯龙路过`,
-  `蓝萌君`,
-  `鳳華`,
-  `King Pig`,
-  `Pxxya`,
-];

@@ -1,0 +1,93 @@
+import { Card, CardBody } from "@material-tailwind/react";
+import Chart from "react-apexcharts";
+import { useData } from "../../Hook/DataFetch";
+
+export default function ClassChart2() {
+  const { posts, loader } = useData();
+
+  const target = [...new Set(posts.map((o) => o.Class))];
+  const allValues = [];
+
+  for (let z = 0; z < target.length; z++) {
+    let temp = posts.filter((o) => o.Class === target[z]);
+    let sortedTemp = temp.sort((a, b) => b.Tier - a.Tier);
+    let highest = sortedTemp[0].Tier;
+    allValues.push(highest);
+  }
+
+  const chartConfig = {
+    type: "line",
+    height: 240,
+
+    series: [
+      {
+        name: "Class",
+        data: allValues,
+      },
+    ],
+    options: {
+      chart: {
+        toolbar: {
+          show: false,
+        },
+      },
+      colors: ["#008080"],
+      stroke: {
+        lineCap: "round",
+        curve: "smooth",
+      },
+      markers: {
+        size: 0,
+      },
+      xaxis: {
+        axisTicks: {
+          show: false,
+        },
+        axisBorder: {
+          show: true,
+        },
+        labels: {
+          style: {
+            colors: "#fff",
+            fontSize: "10px",
+            fontFamily: "monospace",
+          },
+        },
+      },
+      dataLabels: {
+        enabled: true,
+      },
+      yaxis: {
+        labels: {
+          style: {
+            colors: "#fff",
+            fontSize: "10px",
+            fontFamily: "monospace",
+          },
+        },
+      },
+      labels: ["Sorc", "Drui", "Rogu", "Necr", "Barb"],
+      grid: {
+        show: false,
+      },
+      fill: {
+        opacity: 1,
+      },
+      tooltip: {
+        theme: "dark",
+        enabled: false,
+      },
+    },
+  };
+
+  return (
+    <Card className="bg-[#131111] opacity-90" shadow={false}>
+      <div className="text-[20px] text-white text-center font-customDress mt-2 select-none">
+        Balance Trend
+      </div>
+      <CardBody className="px-2 pb-2 pt-0 select-none pointer-events-none">
+        <Chart {...chartConfig} />
+      </CardBody>
+    </Card>
+  );
+}
