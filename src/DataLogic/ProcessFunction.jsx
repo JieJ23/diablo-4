@@ -78,4 +78,5 @@ export const pfpStore = [
   `蓝萌君`,
   `鳳華`,
   `King Pig`,
+  `Pxxya`,
 ];
