@@ -42,7 +42,7 @@ export default function Builds() {
       tempBuildCount.push(pairValue);
     }
     const finalized = tempBuildCount
-      .slice()
+      .slice(0, 10)
       .sort((a, b) => (a.played > b.played ? -1 : 1));
 
     allBuildCount.push(finalized);
@@ -63,21 +63,31 @@ export default function Builds() {
 
       <Tabs title={`Build Stats`} />
 
+      <section>
+        <div className="text-[24px] font-customDiablo text-white text-center">
+          Selection Stats
+        </div>
+        <div className="text-[12px] font-customNoto text-gray-400 text-center px-8 max-w-[800px] mx-auto">
+          Showcasing the top skills for each class in higher-tier clears
+          involves focusing on those abilities that are most frequently used by
+          elite players. These skills are chosen for their effectiveness,
+          synergy with other abilities, and their contribution to fast or
+          successful clears.
+        </div>
+      </section>
+
       {loader ? (
         <DataLoadingLoader />
       ) : (
-        <div className="flex flex-wrap justify-evenly gap-10 mx-auto max-w-[1200px] px-4 my-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto max-w-[1600px] px-4 my-5">
           {allBuildCount.map((compo) => (
             <div>
               <div>
                 <div className="text-[red] text-[20px] text-center font-customDiablo">
                   {compo[0].class}
                 </div>
-                <div className="text-white text-center font-[monospace]">
-                  {compo.length} Variant
-                </div>
-                <div className="text-white text-center font-[monospace]">
-                  {findTotalOfClass(compo[0].class)} Run
+                <div className="text-white text-center font-customNoto text-[12px]">
+                  {findTotalOfClass(compo[0].class)} Count
                 </div>
               </div>
               {compo.map((obj) => (
@@ -106,7 +116,7 @@ export default function Builds() {
                         />
                       </Tooltip>
                     ))}
-                    <div className="text-amber-100">
+                    <div className="text-amber-100 text-[14px]">
                       {(
                         (obj.played / findTotalOfClass(compo[0].class)) *
                         100

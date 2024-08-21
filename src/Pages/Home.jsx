@@ -1,6 +1,7 @@
 import { Card1 } from "../Components/Heroes";
 import { SubmissionCard } from "../Components/Submission";
 import Carol from "../Components/Carousel";
+import Resources from "../Components/Resources";
 
 export default function Home() {
   return (
@@ -40,17 +41,40 @@ export default function Home() {
           />
           <Card1
             title={`Class Blocks`}
-            summary={`Block builds: comprising all entries showcasing every class used and their popularity. Additionally, it includes the classes that perform most optimally for high-tier pit.`}
+            summary={`Block builds: comprising all entries showcasing every class used and their popularity. Visualizing the pit balance environment of the class through pit clears.`}
             directs={`/Puzzle`}
             bg={`class1`}
           />
         </section>
 
-        {/* <section className="p-0 max-w-[1200px] mx-auto border-[1px] border-white h-[500px] rounded-xl">
-          <Carol />
-        </section> */}
+        <section className="text-center mt-16 mb-2 px-2">
+          <div className="text-green-400 font-customDiablo text-[20px]">
+            Coming Soon: New Spiritborn Class.
+          </div>
+          <div className="text-gray-300 font-customNoto text-[12px] px-8 max-w-[600px] mx-auto">
+            Calls upon the unique strengths of Jaguar, Gorilla, Eagle, and
+            Centipede Spirit Guardians to overcome any nightmare the Burning
+            Hells throws their way.
+          </div>
+        </section>
 
-        <div className="text-white font-customDiablo text-center text-[14px] mt-4 mb-2">
+        <section className="px-2 gap-5 p-0 max-w-[1000px] h-[500px] mx-auto rounded-xl overflow-hidden">
+          <Carol />
+        </section>
+
+        <section className="text-center mt-16 px-2">
+          <div className="text-green-400 font-customDiablo text-[20px]">
+            Resources & Tools
+          </div>
+          <div className="text-gray-300 font-customNoto text-[12px] px-8 max-w-[600px] mx-auto mb-4">
+            Various websites where players showcase their builds and setups,
+            offering valuable insights and guides to enhance your gameplay and
+            performance.
+          </div>
+          <Resources />
+        </section>
+
+        <div className="text-white font-customDiablo text-center text-[14px] mt-10 mb-2 px-2">
           This website has no affiliation with or endorsement from Activision
           Blizzard, Inc.
         </div>
