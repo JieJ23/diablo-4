@@ -36,7 +36,7 @@ const websiteObj = [
 
 export function CardLink2({ title, link, summary }) {
   return (
-    <Card className="bg-gradient-to-tl from-gray-900 to-black border-double border-[3px] border-[gray] group select-none min-w-[120px] h-[75px] p-4 group hover:scale-105 duration-200 ease-in transition-all hover:shadow-[0_0_20px_#A3EBB1]">
+    <Card className="bg-gradient-to-tl from-gray-900 to-black border-double border-[3px] border-[gray] group select-none min-w-[100px] h-[75px] p-3 group hover:scale-105 duration-200 ease-in transition-all hover:shadow-[0_0_20px_#A3EBB1]">
       <Link to={link} target="_blank" className="h-full">
         <section className="flex flex-col justify-center h-full items-center">
           <div className="text-white font-customNoto text-[16px] group-hover:text-green-500 duration-200 ease-in transition-all">
@@ -53,7 +53,7 @@ export function CardLink2({ title, link, summary }) {
 
 export default function Resources() {
   return (
-    <section className="flex flex-wrap max-w-[1000px] px-4 gap-4 justify-center mx-auto">
+    <section className="flex flex-wrap max-w-[1000px] px-2 gap-2 justify-center mx-auto">
       {websiteObj.map((obj) => (
         <CardLink2 title={obj.title} summary={obj.summary} link={obj.link} />
       ))}
