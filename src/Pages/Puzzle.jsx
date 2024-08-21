@@ -3,6 +3,7 @@ import DataLoadingLoader from "../Hook/Loader";
 import { Tabs } from "../Components/Breadcrumbs";
 import { classColor } from "../Components/Accordion";
 import { Avatar } from "@material-tailwind/react";
+import { pfpStore } from "../DataLogic/ProcessFunction";
 
 function CreateBox({ c, a, t, p }) {
   return (
@@ -12,7 +13,11 @@ function CreateBox({ c, a, t, p }) {
     >
       {t >= 150 ? (
         <Avatar
-          src={`/Profile/${p}.png`}
+          src={
+            pfpStore.includes(p)
+              ? `/Profile/${p}.png`
+              : `/Profile/placeholder.png`
+          }
           size="sm"
           className="select-none shadow-[0_0_10px_black]"
           draggable={false}
