@@ -33,7 +33,7 @@ export default function TopOfEachClass({ objData }) {
           <img
             src={`/t${index + 1}.gif`}
             alt="cover-bg"
-            className="absolute h-full w-full top-0 left-0 object-cover object-center -z-10 rounded-xl opacity-100"
+            className="absolute h-full w-full top-0 left-0 object-cover object-center -z-10 rounded-xl opacity-65"
           />
           {/* Divider */}
           <div className="h-full flex flex-col items-center justify-center">
@@ -44,7 +44,7 @@ export default function TopOfEachClass({ objData }) {
             <Typography className="text-white font-customDress">
               {obj.Player}
             </Typography>
-            <Typography className="text-[yellow] font-customNoto text-[14px]">
+            <Typography className="text-[white] font-customNoto font-bold text-[14px]">
               Tier {obj.Tier}
             </Typography>
 
