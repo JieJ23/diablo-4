@@ -2,6 +2,7 @@ import { Card1 } from "../Components/Heroes";
 import { SubmissionCard } from "../Components/Submission";
 import Carol from "../Components/Carousel";
 import Resources from "../Components/Resources";
+import { Avatar } from "@material-tailwind/react";
 
 export default function Home() {
   return (
@@ -14,11 +15,21 @@ export default function Home() {
           className="fixed h-lvh w-full object-cover -z-10 object-center"
         />
 
-        <div className="text-[28px] text-center my-2 text-[white] font-customDiablo">
+        <div className="text-[24px] text-center py-4 text-[white] font-customDiablo bg-black flex justify-center items-center gap-2">
+          <Avatar src="/diablo4_icon.png" size="sm" />
           <div>Diablo 4 S5 Pit</div>
         </div>
 
-        <div className="flex w-full justify-center mt-5 gap-2">
+        <section className="text-center mt-8 px-2">
+          <div className="text-green-400 font-customDiablo text-[24px]">
+            Divided by Class, United by Purpose
+          </div>
+          <div className="text-gray-300 font-customNoto text-[12px] px-4 max-w-[800px] mx-auto mb-2">
+            Submit and share your gameplay. Your journey deserves to be
+            remembered.
+          </div>
+        </section>
+        <div className="flex w-full justify-center gap-2">
           <SubmissionCard
             title={`Submit Your Run`}
             link={`https://forms.gle/C3VhTY7HEF3Hudz86`}
@@ -26,7 +37,19 @@ export default function Home() {
           />
         </div>
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6  px-4 max-w-[1000px] justify-center mx-auto text-center my-5">
+        <section className="text-center mt-20 px-2">
+          <div className="text-green-400 font-customDiablo text-[20px]">
+            Ladderboard & More
+          </div>
+          <div className="text-gray-300 font-customNoto text-[12px] px-4 max-w-[800px] mx-auto mb-2">
+            The main leaderboard, where your rank is determined by how deep you
+            can advance in the pit. It's sortable by all classes, as well as by
+            speed clear at Tier level 101. Additionally, it includes skill
+            selections and other detailed stats to help you quickly catch up to
+            those ahead.
+          </div>
+        </section>
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6  px-4 max-w-[1000px] justify-center mx-auto text-center mb-16">
           <Card1
             title={`Pit Ladderboard`}
             summary={`Main ladderboards for The Pit of Artificers, showcasing high-tier clears from various players across different communities.`}
@@ -47,7 +70,7 @@ export default function Home() {
           />
         </section>
 
-        <section className="text-center mt-16 mb-2 px-2">
+        <section className="text-center mt-20 mb-2 px-2">
           <div className="text-green-400 font-customDiablo text-[20px]">
             Coming Soon: New Spiritborn Class.
           </div>
@@ -62,7 +85,7 @@ export default function Home() {
           <Carol />
         </section>
 
-        <section className="text-center mt-16 px-2">
+        <section className="text-center mt-20 px-2">
           <div className="text-green-400 font-customDiablo text-[20px]">
             Resources & Tools
           </div>
@@ -74,7 +97,7 @@ export default function Home() {
           <Resources />
         </section>
 
-        <div className="text-white font-customDiablo text-center text-[14px] mt-10 mb-2 px-2">
+        <div className="text-white bg-black font-customDiablo text-center text-[14px] mt-16 py-5 px-2">
           This website has no affiliation with or endorsement from Activision
           Blizzard, Inc.
         </div>

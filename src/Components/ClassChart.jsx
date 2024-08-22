@@ -86,7 +86,7 @@ export default function ClassChart() {
   return (
     <Card className="bg-[#131111] opacity-90" shadow={false}>
       <div className="text-[20px] text-white text-center font-customDress mt-2 select-none">
-        Popularity
+        Popularity (HT Pit)
       </div>
       <CardBody className="pb-2 pt-0 select-none pointer-events-none">
         <Chart {...chartConfig} />

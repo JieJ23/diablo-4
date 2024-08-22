@@ -24,16 +24,16 @@ export default function TopOfEachClass({ objData }) {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-evenly p-2 gap-2">
-      {top1EachClass.map((obj) => (
+      {top1EachClass.map((obj, index) => (
         <Card
-          className="p-2 w-full min-h-[150px] relative bg-transparent shadow-[0_0_10px_black] border-[2px] border-[#28282b]"
-          style={{ backgroundColor: `${classColor(obj.Class)}80` }}
+          className="p-2 w-full min-h-[200px] sm:min-h-[150px] relative bg-transparent shadow-[0_0_10px_black] border-[2px] border-[#28282b]"
+          style={{ backgroundColor: `${classColor(obj.Class)}66` }}
         >
           {/* <div className="absolute bg-[black] h-full w-full top-0 left-0 object-cover -z-10 rounded-xl" /> */}
           <img
-            src={`/snow.gif`}
+            src={`/t${index + 1}.gif`}
             alt="cover-bg"
-            className="absolute h-full w-full top-0 left-0 object-cover -z-10 rounded-xl opacity-40"
+            className="absolute h-full w-full top-0 left-0 object-cover object-center -z-10 rounded-xl opacity-100"
           />
           {/* Divider */}
           <div className="h-full flex flex-col items-center justify-center">

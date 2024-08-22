@@ -4,17 +4,17 @@ import { Tabs } from "../Components/Breadcrumbs";
 import { classColor } from "../Components/Accordion";
 import { Avatar } from "@material-tailwind/react";
 import ClassChart from "../Components/ClassChart";
-import ClassChart2 from "../Components/CustomWrap/ClassChart2";
+import ClassChart2 from "../Components/ClassChart2";
 
 function CreateBox({ c, a, t, p }) {
   return (
     <div
-      className={`h-12 w-12 rounded-md shadow-[0_0_2px_white] flex justify-center items-center`}
+      className={`h-10 w-10 rounded-md shadow-[0_0_2px_white] flex justify-center items-center`}
       style={{ backgroundColor: c }}
     >
       <Avatar
         src={`/ClassesIcon/${a}.png`}
-        size="sm"
+        size="xs"
         className="select-none"
         draggable={false}
       />

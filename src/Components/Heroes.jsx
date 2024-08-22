@@ -34,18 +34,18 @@ import { Link } from "react-router-dom";
 
 export function Card1({ title, summary, directs, bg }) {
   return (
-    <Card className="bg-[black] relative group shadow-[0_0_20px_black] hover:shadow-[0_0_30px_#3c6c97] duration-300 ease-in transition-all border-[1px] border-[#28282b]">
+    <Card className="bg-[black] relative group shadow-[0_0_30px_black] hover:shadow-[0_0_30px_#3c6c97] duration-200 ease-in transition-all border-[2px] border-[#131111]">
       <div
         className="absolute top-0 left-0 h-full w-full bg-cover rounded-xl opacity-55"
         style={{ backgroundImage: `url("/bg/${bg}.png` }}
       />
       <Link to={directs} className="z-20">
         <CardBody className="flex flex-col gap-4 justify-between h-full">
-          <Typography className="font-customDiablo mb-2 text-white text-[18px] group-hover:scale-110 ease-in duration-300 transition-all group-hover:text-[#58a1e5]">
+          <Typography className="font-customDiablo mb-2 text-white text-[18px] group-hover:scale-110 ease-in duration-200 transition-all group-hover:text-[#58a1e5]">
             {title}
           </Typography>
 
-          <Typography className="font-customNoto text-[10px] text-white group-hover:scale-90 ease-in duration-300 transition-all">
+          <Typography className="font-customNoto text-[10px] text-white group-hover:scale-90 ease-in duration-200 transition-all">
             {summary}
           </Typography>
 
