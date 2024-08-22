@@ -37,7 +37,7 @@ export default function TopOfEachClass({ objData }) {
           />
           {/* Divider */}
           <div className="h-full flex flex-col items-center justify-center">
-            <Typography className="text-[white] font-customDiablo text-[12px]">
+            <Typography className="text-[#d29d9d] font-customDiablo text-[12px]">
               {obj.Class}
             </Typography>
             <Avatar src={`/ClassesIcon/${obj.Class}.png`} />
