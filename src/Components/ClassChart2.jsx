@@ -20,7 +20,7 @@ export default function ClassChart2() {
     let temp = posts.filter((o) => o.Class === target[y]);
     let uniqueV = [...new Set(temp.map((o) => o.Tier))].sort().reverse();
 
-    let targetSegment = uniqueV.slice(0, 15);
+    let targetSegment = uniqueV.slice();
 
     let totalCount = 0;
     let totalSize = targetSegment.length;
@@ -111,7 +111,7 @@ export default function ClassChart2() {
         Balance Trend
       </div>
       <div className="text-[12x] text-gray-400 text-center font-customSource mt-2 select-none">
-        Highest & Avg Unique Clears (UC=15)
+        Highest & Avg Unique Clears (UC = All)
       </div>
       <CardBody className="px-2 pb-2 pt-0 select-none pointer-events-none">
         <Chart {...chartConfig} />
