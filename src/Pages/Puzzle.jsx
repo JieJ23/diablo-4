@@ -9,13 +9,15 @@ import ClassChart2 from "../Components/ClassChart2";
 function CreateBox({ c, a, t, p }) {
   return (
     <div
-      className={`h-10 w-10 rounded-md shadow-[0_0_2px_white] flex justify-center items-center`}
+      className={`h-10 w-10 rounded-md shadow-[0_0_2px_white] flex justify-center items-center ${
+        t >= 150 && `border-[2px] border-[yellow]`
+      }`}
       style={{ backgroundColor: c }}
     >
       <Avatar
         src={`/ClassesIcon/${a}.png`}
         size="xs"
-        className="select-none"
+        className={`select-none`}
         draggable={false}
       />
     </div>
