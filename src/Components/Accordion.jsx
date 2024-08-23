@@ -247,7 +247,9 @@ export default function AccordionMain({ obj, watch }) {
               <a href={obj["Run Video"]} target="_blank">
                 <Avatar
                   src={
-                    obj["Run Video"].includes(`bilibili`)
+                    obj["Run Video"].includes(`x.com`)
+                      ? `/Skills/X.png`
+                      : obj["Run Video"].includes(`bilibili`)
                       ? `/bilibili.png`
                       : `/youtube.png`
                   }
