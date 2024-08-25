@@ -31,7 +31,7 @@ export default function TopOfEachClass({ objData }) {
         >
           {/* <div className="absolute bg-[black] h-full w-full top-0 left-0 object-cover -z-10 rounded-xl" /> */}
           <img
-            src={`/t${index + 1}.gif`}
+            src={`/t${obj.Class}.gif`}
             alt="cover-bg"
             className="absolute h-full w-full top-0 left-0 object-cover object-center -z-10 rounded-xl opacity-65"
           />
