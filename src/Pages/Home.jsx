@@ -90,7 +90,7 @@ export default function Home() {
             title={`Duo Pit`}
             summary={`The secondary leaderboard ranks you based on how far you can advance in the pit. Join forces with a friend to showcase your coordination and teamwork as you climb the tiers together. Categories are mainly divided into two types: mirror, where both players use the same classes, and mixed, where different classes are used.`}
             directs={`/DuoLadderboard`}
-            bg={`class4`}
+            bg={`class5`}
           />
         </section>
         {/*  */}
