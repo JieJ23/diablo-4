@@ -32,7 +32,7 @@ export default function Home() {
         <div className="flex w-full justify-center gap-2">
           <SubmissionCard
             title={`Submit Your Run`}
-            link={`https://docs.google.com/spreadsheets/d/10WX_1NchCrfJuLMzU7PBB2iOWI98TmmPwtd_WCglpyo/edit?gid=1154546550#gid=1154546550`}
+            link={`https://docs.google.com/spreadsheets/d/10WX_1NchCrfJuLMzU7PBB2iOWI98TmmPwtd_WCglpyo/pubhtml?gid=1154546550&single=true`}
             direction="_blank"
           />
         </div>
