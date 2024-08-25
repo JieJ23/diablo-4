@@ -25,7 +25,7 @@ export default function DuoPitLadder({ data, process }) {
                 <div
                   className={`${
                     index % 2 === 0 ? `bg-[#222831cc]` : `bg-[#141414cc]`
-                  } mb-1 rounded-lg backdrop-blur-sm relative`}
+                  } mb-1 rounded-lg backdrop-blur-sm relative border-[2px] border-[#131111]`}
                 >
                   <DuoAccordionMain obj={obj} />
                 </div>

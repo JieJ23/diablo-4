@@ -34,9 +34,9 @@ import { Link } from "react-router-dom";
 
 export function Card1({ title, summary, directs, bg }) {
   return (
-    <Card className="bg-[black] relative group shadow-[0_0_30px_black] hover:shadow-[0_0_30px_#3c6c97] duration-200 ease-in transition-all border-[2px] border-[#131111]">
+    <Card className="bg-[black] relative group shadow-[0_0_30px_black] hover:shadow-[0_0_30px_#3c6c97] duration-200 ease-in transition-all border-[2px] border-[black] rounded-lg">
       <div
-        className="absolute top-0 left-0 h-full w-full bg-cover rounded-xl opacity-55"
+        className="absolute top-0 left-0 h-full w-full bg-cover rounded-md opacity-55"
         style={{ backgroundImage: `url("/bg/${bg}.png` }}
       />
       <Link to={directs} className="z-20">

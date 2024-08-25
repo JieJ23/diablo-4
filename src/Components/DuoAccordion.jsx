@@ -128,15 +128,20 @@ export default function DuoAccordionMain({ obj }) {
 
       <AccordionBody>
         <div className="border-t-[1px] border-gray-500 max-w-[90%] mx-auto" />
-        <section className="flex flex-col sm:flex-row gap-y-4 justify-evenly text-center py-2">
-          <div className="flex flex-col">
-            <div className="text-[16px] font-customDiablo text-blue-gray-200">
+        <section className="flex flex-col sm:flex-row gap-2 justify-evenly text-center p-2 sm:px-8">
+          <div
+            className="flex flex-1 flex-col px-3 py-1 rounded-lg"
+            style={{
+              backgroundColor: `${classColor(obj["Player 1 Class"])}b3`,
+            }}
+          >
+            <div className="text-[12px] font-customDiablo text-white">
               {obj["Player 1 Class"]}
             </div>
-            <div className="text-[12px] font-customNoto font-bold">
+            <div className="text-[14px] font-customNoto font-bold">
               {obj["Player 1 Name"]}
             </div>
-            <div>
+            <div className="flex gap-1 justify-center">
               {ReturnSkillIcon(obj["Player 1 Skills Used"]).map((item) => (
                 <Tooltip
                   content={
@@ -162,19 +167,24 @@ export default function DuoAccordionMain({ obj }) {
                 </Tooltip>
               ))}
             </div>
-            <div className="text-[16px] font-customDiablo text-blue-gray-200">
+            <div className="text-[16px] font-customDiablo text-white">
               {obj["Player 1 Build Name"]}
             </div>
           </div>
 
-          <div className="flex flex-col">
-            <div className="text-[16px] font-customDiablo text-blue-gray-200">
+          <div
+            className="flex flex-1 flex-col px-3 py-1 rounded-lg"
+            style={{
+              backgroundColor: `${classColor(obj["Player 2 Class"])}b3`,
+            }}
+          >
+            <div className="text-[12px] font-customDiablo text-white">
               {obj["Player 2 Class"]}
             </div>
-            <div className="text-[12px] font-customNoto font-bold">
+            <div className="text-[14px] font-customNoto font-bold">
               {obj["Player 2 Name"]}
             </div>
-            <div>
+            <div className="flex gap-1 justify-center">
               {ReturnSkillIcon(obj["Player 2 Skills Used"]).map((item) => (
                 <Tooltip
                   content={
@@ -200,7 +210,7 @@ export default function DuoAccordionMain({ obj }) {
                 </Tooltip>
               ))}
             </div>
-            <div className="text-[16px] font-customDiablo text-blue-gray-200">
+            <div className="text-[16px] font-customDiablo text-white">
               {obj["Player 2 Build Name"]}
             </div>
           </div>

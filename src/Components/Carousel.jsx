@@ -16,7 +16,7 @@ export default function Carol() {
           ))}
         </div>
       )}
-      className="rounded-xl border-[2px] border-[#28282b]"
+      className="rounded-lg border-[2px] border-[black]"
       autoplay={false}
       loop={true}
       prevArrow={({ handlePrev }) => (
