@@ -45,7 +45,7 @@ export function Card1({ title, summary, directs, bg }) {
             {title}
           </Typography>
 
-          <Typography className="font-customNoto text-[10px] text-white group-hover:scale-90 ease-in duration-200 transition-all">
+          <Typography className="font-customNoto text-[11px] text-white group-hover:scale-90 ease-in duration-200 transition-all">
             {summary}
           </Typography>
 

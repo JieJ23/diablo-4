@@ -1,4 +1,4 @@
-import { Typography, Avatar } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
 export default function DataLoadingLoader() {
   return (
