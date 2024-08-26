@@ -216,8 +216,8 @@ export default function AccordionMain({ obj, watch }) {
           ))}
         </div>
         {obj.Comment !== "" && (
-          <div className="flex justify-center">
-            <Typography className="font-customNoto text-[12px] px-4 md:px-24 py-2">
+          <div className="flex justify-center my-1 select-none">
+            <Typography className="font-customNoto text-[12px] px-4 md:px-24 pt-2">
               {obj["Run Comment"] !== ""
                 ? obj["Run Comment"]
                 : `(No Remark Available)`}
@@ -226,13 +226,24 @@ export default function AccordionMain({ obj, watch }) {
         )}
 
         {obj.BossOnly && (
-          <div className="font-customDiablo text-[red] text-center">
+          <div className="font-customDress text-[red] text-center my-1">
             Boss Fight Only
           </div>
         )}
         {convertToSec(obj["Time Used"]) >= 900 && (
-          <div className="font-customDiablo text-[red] text-center">
+          <div className="font-customDress text-[red] text-center my-1">
             Time Over: +15 Minutes
+          </div>
+        )}
+
+        {obj.classRank && (
+          <div className="flex justify-center gap-4 select-none my-1">
+            <div className="font-customDress text-[#58a1e5] text-center text-[14px] sm:text-[16px] backdrop-blur-md shadow-[0_0_5px_#58a1e5] rounded-xl p-3">
+              Rank #{obj.classRank} {obj.Class}
+            </div>
+            <div className="font-customDress text-[yellow] text-center text-[14px] sm:text-[16px] backdrop-blur-md shadow-[0_0_5px_yellow] rounded-xl p-3">
+              Rank #{obj.Rank} Overall
+            </div>
           </div>
         )}
 

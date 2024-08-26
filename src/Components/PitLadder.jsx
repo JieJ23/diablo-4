@@ -5,10 +5,14 @@ import DataLoadingLoader from "../Hook/Loader";
 import { useState } from "react";
 import AccordWrap from "./CustomWrap/AccordCustom";
 import AccordionMain from "./Accordion";
-import { BreakList, addRankProperty } from "../DataLogic/ProcessFunction";
+import {
+  BreakList,
+  addRankProperty,
+  removeDup,
+  convertToSec,
+  addClassRank,
+} from "../DataLogic/ProcessFunction";
 import ClassesBtn from "../Button/ClassesBtn";
-
-import { removeDup, convertToSec } from "../DataLogic/ProcessFunction";
 
 import SkillsSelection from "./MainSelect";
 
@@ -58,6 +62,13 @@ export default function PitLadder() {
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
   addRankProperty(uniqueData);
+
+  // Add Class Ranks
+  for (let i = 0; i < allClasses.length; i++) {
+    let tempArr = uniqueData.filter((obj) => obj.Class === allClasses[i]);
+    addClassRank(tempArr, "classRank", 25);
+  }
+  //
 
   const allData = [latest10, rawData, uniqueData, speed101];
 

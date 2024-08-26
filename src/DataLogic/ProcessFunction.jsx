@@ -27,6 +27,22 @@ export function addRankProperty(arr) {
   for (let i = 0; i < arr.length; i++) {
     arr[i].Rank = i + 1;
   }
+
+  return arr;
+}
+
+export function addClassRank(arr, targetProp, range) {
+  if (!Array.isArray(arr)) {
+    return;
+  }
+
+  const size = Math.min(arr.length, range);
+
+  for (let i = 0; i < size; i++) {
+    arr[i][`${targetProp}`] = i + 1;
+  }
+
+  return arr;
 }
 
 // Process Skills string
