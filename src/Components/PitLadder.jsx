@@ -27,6 +27,11 @@ export default function PitLadder() {
   const [pageInfo, setPageInfo] = useState(0);
   const [selectedSkill, setSelectedSkill] = useState(null);
 
+  // const checkUser = posts.filter((obj) => obj.Compiled === "player");
+  // const checkSelf = posts.filter((obj) => obj.Compiled === "self");
+  // console.log(checkUser.length);
+  // console.log(checkSelf.length);
+
   // Functions
   const handleDataChange = (num) => ({
     variant: category === num ? "text" : "filled",
