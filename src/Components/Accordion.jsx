@@ -162,14 +162,14 @@ export default function AccordionMain({ obj, watch }) {
           <div>
             {obj["Build Planner"] === "" ? (
               <Typography
-                className="font-customDress text-[16px] md:text-[18px]"
+                className="font-customSource text-[14px] md:text-[16px]"
                 color="white"
               >
                 Build:
               </Typography>
             ) : (
               <Typography
-                className="font-customDress text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
+                className="font-customSource font-semibold text-[14px] md:text-[16px] hover:scale-[110%] ease-in duration-100 transition-all"
                 color="blue"
               >
                 <a href={obj["Build Planner"]} target="_blank">
@@ -180,7 +180,7 @@ export default function AccordionMain({ obj, watch }) {
           </div>
           <div className="text-center">
             <Typography
-              className="font-customDress text-[16px] md:text-[18px] hover:scale-[110%] ease-in duration-100 transition-all"
+              className="font-customSource font-semibold text-[14px] md:text-[16px] hover:scale-[110%] ease-in duration-100 transition-all"
               color="amber"
             >
               <a href={obj["Run Video"]} target="_blank">
@@ -244,10 +244,10 @@ export default function AccordionMain({ obj, watch }) {
 
         {obj.classRank && (
           <div className="flex justify-center gap-4 select-none my-1">
-            <div className="font-customDress text-[#58a1e5] text-center text-[14px] sm:text-[16px] backdrop-blur-md shadow-[0_0_5px_#58a1e5] rounded-xl p-3">
+            <div className="font-customSource italic text-[#58a1e5] text-center text-[14px] sm:text-[16px] backdrop-blur-md shadow-[0_0_5px_#58a1e5] rounded-xl p-3">
               Rank #{obj.classRank} {obj.Class}
             </div>
-            <div className="font-customDress text-[yellow] text-center text-[14px] sm:text-[16px] backdrop-blur-md shadow-[0_0_5px_yellow] rounded-xl p-3">
+            <div className="font-customSource italic text-[yellow] text-center text-[14px] sm:text-[16px] backdrop-blur-md shadow-[0_0_5px_yellow] rounded-xl p-3">
               Rank #{obj.Rank} Overall
             </div>
           </div>

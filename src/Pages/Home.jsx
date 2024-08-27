@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         <section className="text-center mt-4 px-2">
-          <div className="text-green-500 font-customDiablo text-[28px]">
+          <div className="text-white font-customDiablo text-[22px]">
             Divided by Class, United by Purpose
           </div>
         </section>
@@ -37,14 +37,14 @@ export default function Home() {
         </div>
 
         <section className="text-center my-10 px-2">
-          <div className="text-green-500 font-customDiablo text-[28px]">
+          <div className="text-white font-customDiablo text-[22px]">
             Ladderboard & More
           </div>
           <Content />
         </section>
 
         <section className="text-center my-16 px-2">
-          <div className="text-green-500 font-customDiablo text-[28px]">
+          <div className="text-white font-customDiablo text-[22px]">
             Resources & Tools
           </div>
           <Resources />
