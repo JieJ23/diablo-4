@@ -1,59 +1,77 @@
-import { CardBody, Card, Typography } from "@material-tailwind/react";
+import {
+  CardHeader,
+  CardBody,
+  Card,
+  Typography,
+  CardFooter,
+  Button,
+} from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
-// export function CardHorizontal({ title, link, bg, direction = "", short }) {
-//   return (
-//     <Link to={link} target={direction} className="group">
-//       <div className="flex flex-col md:flex-row bg-[transparent] rounded-2xl p-4 gap-2 h-full">
-//         <Card className="mx-auto select-none min-w-[150px] min-h-[250px] w-[350px] flex-1 bg-transparent">
-//           <div
-//             style={{ backgroundImage: `url(/bg/${bg}.png` }}
-//             className={`absolute h-full w-full top-0 right-0 bg-cover bg-center rounded-2xl shadow-[0_0_30px_#153049]
-//               group-hover:shadow-[0_0_30px_#3c6c97] transition-all ease-in duration-300 group-hover:scale-95`}
-//           />
-//         </Card>
+const contentObj = [
+  {
+    title: `Pit Ladderboard`,
+    summary: `Main ladderboards for The Pit of Artificers, showcasing high-tier clears from various players across different communities.`,
+    link: `/Ladderboard`,
+    image: `class1`,
+  },
+  {
+    title: `Build Variation`,
+    summary: `All build variations and setups used for high-tier Pit completions. This collection highlights the most ideal and/or optimal builds used high-tier Pit runs.`,
+    link: `/Builds`,
+    image: `class2`,
+  },
+  {
+    title: `Class Blocks`,
+    summary: `Block builds: comprising all entries showcasing every class used and their popularity. Visualizing the pit balance environment of the class through pit clears.`,
+    link: `/Puzzle`,
+    image: `class3`,
+  },
+];
 
-//         <div className="flex flex-1 flex-col gap-2 justify-center p-2 font-customLato text-blue-gray-400 rounded-xl">
-//           <Typography
-//             className="text-[30px] font-customDress font-bold group-hover:text-[#3c6c97] transition-all ease-in duration-300 group-hover:scale-110"
-//             color="white"
-//           >
-//             {title}
-//           </Typography>
-//           <Typography
-//             className=" text-[12px] md:text-[14px] font-customNoto text-center md:text-start group-hover:scale-95 transition-all ease-in duration-300"
-//             color="white"
-//           >
-//             {short}
-//           </Typography>
-//         </div>
-//       </div>
-//     </Link>
-//   );
-// }
-
-export function Card1({ title, summary, directs, bg }) {
+export function CardContent({ image, link, title, summary, btn = `Explore` }) {
   return (
-    <Card className="bg-[black] relative group shadow-[0_0_30px_black] hover:shadow-[0_0_30px_#3c6c97] duration-200 ease-in transition-all border-[2px] border-[black] rounded-lg">
-      <div
-        className="absolute top-0 left-0 h-full w-full bg-cover rounded-md opacity-55"
-        style={{ backgroundImage: `url("/bg/${bg}.png` }}
+    <Card className="bg-[#191a29] shadow-[0_0_30px_black] border-[#131111] border-[2px] group flex flex-col justify-between">
+      <CardHeader
+        color="black"
+        className="h-56 bg-cover shadow-[0_0_20px_#131111] group-hover:scale-105 transition-all duration-300 ease-in"
+        floated={false}
+        style={{ backgroundImage: `url("/bg/${image}.png")` }}
       />
-      <Link to={directs} className="z-20">
-        <CardBody className="flex flex-col gap-4 justify-between h-full">
-          <Typography className="font-customDiablo mb-2 text-white text-[18px] group-hover:scale-110 ease-in duration-200 transition-all group-hover:text-[#58a1e5]">
-            {title}
-          </Typography>
-
-          <Typography className="font-customNoto text-[11px] text-white group-hover:scale-90 ease-in duration-200 transition-all">
-            {summary}
-          </Typography>
-
-          <div className="font-customDiablo text-white group-hover:scale-125 ease-in duration-300 transition-all group-hover:text-[#c94f4f]">
-            Access
-          </div>
-        </CardBody>
-      </Link>
+      <CardBody>
+        <Typography className="mb-2 font-customDress font-bold text-[20px] text-white">
+          {title}
+        </Typography>
+        <Typography className="text-[12px] text-white font-customSource">
+          {summary}
+        </Typography>
+      </CardBody>
+      <CardFooter className="pt-0">
+        <Link to={link}>
+          <Button
+            color="white"
+            className="font-customDress group-hover:scale-110 group-hover:bg-[#2c3384] group-hover:text-[white] transition-all duration-300 ease-in"
+          >
+            {btn}
+          </Button>
+        </Link>
+      </CardFooter>
     </Card>
+  );
+}
+
+export default function Content() {
+  return (
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-4 md:px-10 gap-4 justify-center mx-auto">
+      {contentObj.map((obj) => (
+        <CardContent
+          title={obj.title}
+          summary={obj.summary}
+          link={obj.link}
+          image={obj.image}
+          btn={obj.btn}
+        />
+      ))}
+    </section>
   );
 }

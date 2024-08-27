@@ -4,6 +4,7 @@ import DataLoadingLoader from "../Hook/Loader";
 import { ReturnSkillIcon } from "../DataLogic/ProcessFunction";
 import { Typography, Tooltip, Avatar } from "@material-tailwind/react";
 import { Tabs } from "../Components/Breadcrumbs";
+import { Footer } from "../Pages/Home";
 
 export default function Builds() {
   const { posts, loader } = useData();
@@ -130,6 +131,7 @@ export default function Builds() {
           ))}
         </div>
       )}
+      <Footer />
     </section>
   );
 }

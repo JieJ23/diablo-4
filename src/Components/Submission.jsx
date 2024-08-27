@@ -1,23 +1,58 @@
-import { Typography, Card } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
 
-export function SubmissionCard({ title, link, direction = "" }) {
+export function SubmitCard() {
   return (
-    <Card className="bg-black min-w-[300px] h-[100px] text-center group select-none hover:shadow-[0_0_50px_white] transition-all duration-500 ease-in shadow-[0_0_40px_black] p-2 rounded-lg border-[2px] border-[black]">
-      <div
-        className="absolute top-0 left-0 h-full w-full bg-cover bg-center rounded-md opacity-60 group-hover:opacity-30 ease-in duration-500 transition-opacity"
-        style={{ backgroundImage: `url("/bg/c2.png` }}
+    <Card className="w-full max-w-[800px] flex-row bg-[#191a29] shadow-[0_0_30px_black] border-[2px] border-[#131111]">
+      <CardHeader
+        shadow={false}
+        floated={false}
+        className="m-0 w-2/5 shrink-0 bg-cover bg-center"
+        style={{ backgroundImage: `url("/bg/form.png")` }}
       />
-
-      <Link
-        to={link}
-        target={direction}
-        className="z-20 h-full flex items-center justify-center"
-      >
-        <Typography className="font-customDiablo text-black group-hover:text-white ease-in transition-all duration-500 text-[16px] group-hover:scale-[125%]">
-          {title}
+      <CardBody>
+        <Typography className="my-1 text-[20px] font-customDress text-white">
+          Entry Submission
         </Typography>
-      </Link>
+        <Typography className="mb-8 text-[12px] font-customSource text-gray-400">
+          Submit and showcase your gameplay, and become an active part of the
+          community as we strive to reach the highest pit this season. Your
+          journey is unique and deserves to be celebrated and remembered by all.
+        </Typography>
+        <Link
+          to={`https://docs.google.com/spreadsheets/d/10WX_1NchCrfJuLMzU7PBB2iOWI98TmmPwtd_WCglpyo/pubhtml?gid=1154546550&single=true`}
+          className="inline-block"
+          target="_blank"
+        >
+          <Button
+            variant="filled"
+            color="white"
+            className="flex items-center gap-2 font-customDress text-[12px] text-black"
+          >
+            Submit Now
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={3}
+              className="h-4 w-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </Button>
+        </Link>
+      </CardBody>
     </Card>
   );
 }
