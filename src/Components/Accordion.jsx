@@ -118,9 +118,10 @@ export default function AccordionMain({ obj, watch }) {
         </div>
 
         <div
-          className={`flex-1 text-center font-customSource text-[12px] md:text-[15px] `}
+          className={`flex-1 text-center font-customSource text-[12px] md:text-[15px] ${
+            obj.Mode === "HC" ? `text-[red]` : `text-white`
+          }`}
         >
-          {/* {obj.Rank <= 3 && <Avatar src={`/thunder.gif`} size="xs" />} */}
           {obj.Player}
           {obj.BossOnly === "yes" && (
             <Avatar
@@ -228,6 +229,11 @@ export default function AccordionMain({ obj, watch }) {
         {obj.BossOnly && (
           <div className="font-customDress text-[red] text-center my-1">
             Boss Fight Only
+          </div>
+        )}
+        {obj.Mode === `HC` && (
+          <div className="font-customDress text-[red] text-center my-1">
+            Mode: Hardcore
           </div>
         )}
         {convertToSec(obj["Time Used"]) >= 900 && (
