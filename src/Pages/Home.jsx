@@ -20,8 +20,8 @@ export default function Home() {
           <div>Diablo 4 S5 Pit</div>
         </div>
 
-        <section className="text-center mt-8 px-2">
-          <div className="text-green-400 font-customDiablo text-[24px]">
+        <section className="text-center mt-4 px-2">
+          <div className="text-green-400 font-customDiablo text-[28px]">
             Divided by Class, United by Purpose
           </div>
           <div className="text-gray-300 font-customNoto text-[12px] px-4 max-w-[800px] mx-auto mb-2">
@@ -37,11 +37,11 @@ export default function Home() {
           />
         </div>
 
-        <section className="text-center mt-20 px-2">
-          <div className="text-green-400 font-customDiablo text-[20px]">
+        <section className="text-center mt-10 px-2">
+          <div className="text-green-400 font-customDiablo text-[24px]">
             Ladderboard & More
           </div>
-          <div className="text-gray-300 font-customNoto text-[12px] px-4 max-w-[800px] mx-auto mb-2">
+          <div className="text-gray-300 font-customNoto text-[12px] px-4 max-w-[1000px] mx-auto mb-2">
             The main ladderboard, where your rank is determined by how far you
             can advance in the pit. It's sortable by all classes, as well as by
             speed clear at Tier level 101. Additionally, it includes skill
@@ -49,7 +49,7 @@ export default function Home() {
             those ahead.
           </div>
         </section>
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6  px-4 max-w-[1200px] justify-center mx-auto text-center mb-16">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6  px-4 max-w-[1200px] justify-center mx-auto text-center mb-10">
           <Card1
             title={`Pit Ladderboard`}
             summary={`Main ladderboards for The Pit of Artificers, showcasing high-tier clears from various players across different communities.`}
@@ -71,7 +71,7 @@ export default function Home() {
         </section>
         {/*  */}
 
-        <section className="text-center mt-20 px-2">
+        {/* <section className="text-center mt-20 px-2">
           <div className="text-yellow-500 font-customDiablo text-[24px]">
             Debuting Ladderboard
           </div>
@@ -92,9 +92,9 @@ export default function Home() {
             directs={`/DuoLadderboard`}
             bg={`class5`}
           />
-        </section>
+        </section> */}
         {/*  */}
-        <section className="text-center mt-20 mb-2 px-2">
+        {/* <section className="text-center mt-20 mb-2 px-2">
           <div className="text-green-400 font-customDiablo text-[20px]">
             Coming Soon: New Spiritborn Class.
           </div>
@@ -107,13 +107,13 @@ export default function Home() {
 
         <section className="px-2 gap-5 p-0 max-w-[1000px] h-[500px] mx-auto rounded-xl overflow-hidden">
           <Carol />
-        </section>
+        </section> */}
 
-        <section className="text-center mt-20 px-2">
-          <div className="text-green-400 font-customDiablo text-[20px]">
+        <section className="text-center mt-10 px-2">
+          <div className="text-green-400 font-customDiablo text-[24px]">
             Resources & Tools
           </div>
-          <div className="text-gray-300 font-customNoto text-[12px] px-8 max-w-[600px] mx-auto mb-4">
+          <div className="text-gray-300 font-customNoto text-[12px] px-4 max-w-[800px] mx-auto mb-4">
             Various websites where players showcase their builds and setups,
             offering valuable insights and guides to enhance your gameplay and
             performance.

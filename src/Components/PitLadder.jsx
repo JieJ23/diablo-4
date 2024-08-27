@@ -107,6 +107,7 @@ export default function PitLadder() {
               className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
               shadow={false}
             >
+              <TopOfEachClass objData={baseData} />
               <ClassesBtn
                 onButtonClick={handleDataChange}
                 classes={allClasses}
@@ -117,8 +118,6 @@ export default function PitLadder() {
                 watch={category}
                 fullcategory={allData}
               />
-
-              <TopOfEachClass objData={baseData} />
 
               {sortDisplay.map((obj, index) => (
                 <div
