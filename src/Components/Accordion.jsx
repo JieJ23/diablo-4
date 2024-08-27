@@ -11,7 +11,9 @@ import { useState } from "react";
 import { ReturnSkillIcon, writeTimeInMS } from "../DataLogic/ProcessFunction";
 import { useEffect } from "react";
 import { convertToSec } from "../DataLogic/ProcessFunction";
-
+//
+const build151 = new Date(`08/16/2024`);
+//
 export const tierColor = (tier) => {
   if (tier >= 140) {
     return `#ff0000`;
@@ -156,7 +158,11 @@ export default function AccordionMain({ obj, watch }) {
           {obj.Tier}
         </div>
       </AccordionHeader>
-
+      {new Date(obj.Date) > build151 && (
+        <div className="absolute top-1 right-1 text-[10px] text-gray-500 text-center">
+          1.5.1 Build
+        </div>
+      )}
       <AccordionBody className="flex flex-col justify-evenly">
         <div className="flex justify-center gap-4">
           <div>
