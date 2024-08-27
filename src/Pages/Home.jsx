@@ -37,27 +37,15 @@ export default function Home() {
         </div>
 
         <section className="text-center my-10 px-2">
-          <div className="text-green-500 font-customDiablo text-[24px]">
+          <div className="text-green-500 font-customDiablo text-[28px]">
             Ladderboard & More
-          </div>
-          <div className="text-gray-300 font-customNoto text-[12px] px-4 max-w-[1000px] mx-auto mb-2">
-            The main ladderboard, where your rank is determined by how far you
-            can advance in the pit. It's sortable by all classes, as well as by
-            speed clear at Tier level 101. Additionally, it includes skill
-            selections and other detailed stats to help you quickly catch up to
-            those ahead.
           </div>
           <Content />
         </section>
 
         <section className="text-center my-16 px-2">
-          <div className="text-green-500 font-customDiablo text-[24px]">
+          <div className="text-green-500 font-customDiablo text-[28px]">
             Resources & Tools
-          </div>
-          <div className="text-gray-300 font-customNoto text-[12px] px-4 max-w-[1000px] mx-auto mb-2">
-            Various websites where players showcase their builds and setups,
-            offering valuable insights and guides to enhance your gameplay and
-            performance.
           </div>
           <Resources />
         </section>

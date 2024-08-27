@@ -13,19 +13,19 @@ const contentObj = [
     title: `Pit Ladderboard`,
     summary: `Main ladderboards for The Pit of Artificers, showcasing high-tier clears from various players across different communities.`,
     link: `/Ladderboard`,
-    image: `class1`,
+    image: `leaderboard`,
   },
   {
     title: `Build Variation`,
     summary: `All build variations and setups used for high-tier Pit completions. This collection highlights the most ideal and/or optimal builds used high-tier Pit runs.`,
     link: `/Builds`,
-    image: `class2`,
+    image: `skills`,
   },
   {
     title: `Class Blocks`,
     summary: `Block builds: comprising all entries showcasing every class used and their popularity. Visualizing the pit balance environment of the class through pit clears.`,
     link: `/Puzzle`,
-    image: `class3`,
+    image: `stats`,
   },
 ];
 
@@ -34,11 +34,11 @@ export function CardContent({ image, link, title, summary, btn = `Explore` }) {
     <Card className="bg-[#191a29] shadow-[0_0_30px_black] border-[#131111] border-[2px] group flex flex-col justify-between">
       <CardHeader
         color="black"
-        className="h-56 bg-cover shadow-[0_0_20px_#131111] group-hover:scale-105 transition-all duration-300 ease-in"
+        className="h-40 bg-cover be-center shadow-[0_0_20px_#131111] group-hover:scale-105 transition-all duration-300 ease-in"
         floated={false}
         style={{ backgroundImage: `url("/bg/${image}.png")` }}
       />
-      <CardBody>
+      <CardBody className="text-start">
         <Typography className="mb-2 font-customDress font-bold text-[20px] text-white">
           {title}
         </Typography>
@@ -46,7 +46,7 @@ export function CardContent({ image, link, title, summary, btn = `Explore` }) {
           {summary}
         </Typography>
       </CardBody>
-      <CardFooter className="pt-0">
+      <CardFooter className="pt-0 flex justify-start">
         <Link to={link}>
           <Button
             color="white"

@@ -54,7 +54,7 @@ export function CardDefault({
   link,
   title,
   summary,
-  btn = `Read More`,
+  btn = `Learn More`,
 }) {
   return (
     <Card className="bg-[#191a29] shadow-[0_0_30px_black] border-[#131111] border-[2px] group flex flex-col justify-between">
@@ -64,7 +64,7 @@ export function CardDefault({
         floated={false}
         style={{ backgroundImage: `url("/bg/${image}.png")` }}
       />
-      <CardBody>
+      <CardBody className="text-start">
         <Typography className="mb-2 font-customDress font-bold text-[20px] text-white">
           {title}
         </Typography>
@@ -72,7 +72,7 @@ export function CardDefault({
           {summary}
         </Typography>
       </CardBody>
-      <CardFooter className="pt-0">
+      <CardFooter className="pt-0 flex justify-end">
         <Link to={link} target="_blank">
           <Button
             color="white"
