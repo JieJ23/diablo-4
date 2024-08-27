@@ -5,7 +5,6 @@ import { classColor } from "../Components/Accordion";
 import { Avatar } from "@material-tailwind/react";
 import ClassChart from "../Components/ClassChart";
 import ClassChart2 from "../Components/ClassChart2";
-import { Footer } from "./Home";
 
 function CreateBox({ c, a, t, p }) {
   return (
@@ -74,7 +73,6 @@ export default function Puzzle() {
           </div>
         </>
       )}
-      {!loader && <Footer />}
     </section>
   );
 }

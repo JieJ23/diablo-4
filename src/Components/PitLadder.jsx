@@ -13,7 +13,6 @@ import {
   addClassRank,
 } from "../DataLogic/ProcessFunction";
 import ClassesBtn from "../Button/ClassesBtn";
-import { Footer } from "../Pages/Home";
 
 import SkillsSelection from "./MainSelect";
 
@@ -148,7 +147,6 @@ export default function PitLadder() {
           {/* <FAQ /> */}
         </div>
       )}
-      {!loader && <Footer />}
     </>
   );
 }
