@@ -31,7 +31,7 @@ const contentObj = [
 
 export function CardContent({ image, link, title, summary, btn = `Explore` }) {
   return (
-    <Card className="bg-[#191a29] shadow-[0_0_30px_black] border-[#131111] border-[2px] group flex flex-col justify-between">
+    <Card className="bg-gradient-to-tl from-[#2b2e49] to-black shadow-[0_0_30px_black] border-[#131111] border-[2px] group flex flex-col justify-between">
       <CardHeader
         color="black"
         className="h-40 bg-cover be-center shadow-[0_0_20px_#131111] group-hover:scale-105 transition-all duration-300 ease-in"
@@ -42,7 +42,7 @@ export function CardContent({ image, link, title, summary, btn = `Explore` }) {
         <Typography className="mb-2 font-customDress font-bold text-[20px] text-white">
           {title}
         </Typography>
-        <Typography className="text-[12px] text-white font-customSource">
+        <Typography className="text-[13px] text-white font-customSource">
           {summary}
         </Typography>
       </CardBody>
@@ -62,7 +62,7 @@ export function CardContent({ image, link, title, summary, btn = `Explore` }) {
 
 export default function Content() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-4 md:px-10 gap-4 justify-center mx-auto">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-2 md:px-10 gap-4 justify-center mx-auto">
       {contentObj.map((obj) => (
         <CardContent
           title={obj.title}

@@ -1,6 +1,5 @@
 import PitLadder from "../Components/PitLadder";
 import { Tabs } from "../Components/Breadcrumbs";
-import { Footer } from "./Home";
 
 export default function Ladderboard() {
   return (
@@ -14,7 +13,6 @@ export default function Ladderboard() {
       <Tabs title={`Ladderboard`} />
 
       <PitLadder />
-      <Footer />
     </section>
   );
 }

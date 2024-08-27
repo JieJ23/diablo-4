@@ -27,8 +27,8 @@ export default function Home() {
           <div>Diablo 4 S5 Pit</div>
         </div>
 
-        <section className="text-center mt-4 px-2">
-          <div className="text-white font-customDiablo text-[22px]">
+        <section className="text-center mt-8 px-2">
+          <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
             Divided by Class, United by Purpose
           </div>
         </section>
@@ -36,15 +36,15 @@ export default function Home() {
           <SubmitCard />
         </div>
 
-        <section className="text-center my-10 px-2">
-          <div className="text-white font-customDiablo text-[22px]">
+        <section className="text-center my-16 px-2">
+          <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
             Ladderboard & More
           </div>
           <Content />
         </section>
 
         <section className="text-center my-16 px-2">
-          <div className="text-white font-customDiablo text-[22px]">
+          <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
             Resources & Tools
           </div>
           <Resources />

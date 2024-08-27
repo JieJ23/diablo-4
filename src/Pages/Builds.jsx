@@ -131,7 +131,7 @@ export default function Builds() {
           ))}
         </div>
       )}
-      <Footer />
+      {!loader && <Footer />}
     </section>
   );
 }

@@ -74,7 +74,7 @@ export default function Puzzle() {
           </div>
         </>
       )}
-      <Footer />
+      {!loader && <Footer />}
     </section>
   );
 }
