@@ -10,7 +10,7 @@ function CreateBox({ c, a, t, p }) {
   return (
     <div
       className={`h-10 w-10 rounded-md shadow-[0_0_2px_white] flex justify-center items-center ${
-        t >= 150 && `border-[2px] border-[yellow]`
+        t >= 150 && `border-[1px] border-[cyan]`
       }`}
       style={{ backgroundColor: c }}
     >
