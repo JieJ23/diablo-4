@@ -150,9 +150,6 @@ export default function AccordionMain({ obj, watch }) {
             {`C `}
           </span>
           {obj["Time Used"]}
-          {convertToSec(obj["Time Used"]) >= 900 && (
-            <Avatar src="/warning.png" size="xs" className="ms-1" />
-          )}
         </div>
 
         <div
