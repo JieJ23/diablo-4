@@ -5,6 +5,7 @@ import {
   AccordionBody,
   Typography,
   Tooltip,
+  Chip,
 } from "@material-tailwind/react";
 
 import { useState } from "react";
@@ -16,7 +17,9 @@ import { haveProfile } from "../DataLogic/Profile";
 const build151 = new Date(`08/16/2024`);
 //
 export const tierColor = (tier) => {
-  if (tier >= 140) {
+  if (tier >= 150) {
+    return `#f000ff`;
+  } else if (tier >= 140) {
     return `#ff0000`;
   } else if (tier >= 130) {
     return `#ff7e00`;
@@ -125,7 +128,7 @@ export default function AccordionMain({ obj, watch }) {
             obj.Mode === "HC" ? `text-[red]` : `text-white`
           }`}
         >
-          <div className="flex gap-1 justify-center items-center">
+          <div className="flex gap-1 justify-center items-center font-customSource font-light">
             {haveProfile.includes(obj.Player) && (
               <Avatar
                 src={`/pfp/${obj.Player}.png`}
@@ -139,11 +142,11 @@ export default function AccordionMain({ obj, watch }) {
         </div>
 
         <div
-          className={`flex-1 text-center font-customSource italic text-[13px] md:text-[15px] ${
+          className={`flex-1 text-center font-customNoto text-[12px] md:text-[14px] ${
             writeTimeInMS(obj["Time Used"]) <= 180 && `text-orange-300`
           }`}
         >
-          <span className="font-customDiablo font-normal text-[18px] text-[teal]">
+          <span className="font-customNoto font-normal text-[16px] text-[orange]">
             {`C `}
           </span>
           {obj["Time Used"]}
@@ -153,10 +156,10 @@ export default function AccordionMain({ obj, watch }) {
         </div>
 
         <div
-          className={`flex-1 text-center font-customSource italic text-[13px] md:text-[15px]`}
+          className={`flex-1 text-center font-customNoto font-normal text-[12px] md:text-[14px]`}
           style={{ color: tierColor(obj.Tier) }}
         >
-          <span className="font-customDiablo font-normal text-[18px] text-[red]">
+          <span className="font-customNoto font-normal text-[16px] text-[red]">
             {`T `}
           </span>
           {obj.Tier}
@@ -248,18 +251,27 @@ export default function AccordionMain({ obj, watch }) {
         )}
 
         {obj.classRank && (
-          <div className="flex justify-center gap-4 select-none my-1">
-            <div className="font-customNoto text-[#58a1e5] text-center text-[14px] sm:text-[16px] backdrop-blur-md shadow-[0_0_5px_#58a1e5] rounded-xl p-3">
-              #{obj.classRank} {obj.Class}
-            </div>
-            <div className="font-customNoto text-[yellow] text-center text-[14px] sm:text-[16px] backdrop-blur-md shadow-[0_0_5px_yellow] rounded-xl p-3">
-              #{obj.Rank} Overall
-            </div>
-          </div>
-        )}
-        {obj.Mode === `HC` && (
-          <div className="font-customNoto text-[red] text-center my-1">
-            Hardcore
+          <div className="flex flex-wrap justify-center gap-4 select-none my-1">
+            <Chip
+              color="indigo"
+              value={`#${obj.classRank} ${obj.Class}`}
+              className="text-white font-customNoto text-[12px]"
+              variant="filled"
+            />
+            <Chip
+              color="blue-gray"
+              value={`#${obj.Rank} Overall`}
+              variant="filled"
+              className="text-white font-customNoto text-[12px]"
+            />
+            {obj.Mode === `HC` && (
+              <Chip
+                color="red"
+                value={`Hardcore`}
+                variant="filled"
+                className="text-black font-customNoto text-[12px]"
+              />
+            )}
           </div>
         )}
 

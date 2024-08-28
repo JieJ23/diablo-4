@@ -57,10 +57,10 @@ export function CardDefault({
   btn = `Learn More`,
 }) {
   return (
-    <Card className="bg-gradient-to-br from-[#2b2e49] to-black shadow-[0_0_30px_black] border-[#131111] border-[2px] group flex flex-col justify-between">
+    <Card className="bg-gradient-to-br from-[#2b2e49] to-black shadow-[inset_0_0_30px_black] border-[black] border-[1px] group flex flex-col justify-between">
       <CardHeader
         color="black"
-        className="h-56 bg-cover shadow-[0_0_10px_black] group-hover:scale-105 transition-all duration-300 ease-in"
+        className="h-56 bg-cover shadow-[0_0_10px_black] group-hover:scale-105 transition-all duration-300 ease-in border-[1px] border-gray-700"
         floated={false}
         style={{ backgroundImage: `url("/bg/${image}.png")` }}
       />
@@ -68,7 +68,7 @@ export function CardDefault({
         <Typography className="mb-2 font-customDress font-bold text-[20px] text-white">
           {title}
         </Typography>
-        <Typography className="text-[13px] text-white font-customSource">
+        <Typography className="text-[12px] font-customSource text-gray-300">
           {summary}
         </Typography>
       </CardBody>
