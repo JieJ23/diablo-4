@@ -33,7 +33,7 @@ export function SubmitCard() {
           <Button
             variant="filled"
             color="white"
-            className="flex items-center gap-2 font-customDress text-[12px] text-black"
+            className="flex items-center gap-2 font-customSource text-[12px] text-black"
           >
             Submit Now
             <svg

@@ -76,7 +76,7 @@ export function CardDefault({
         <Link to={link} target="_blank">
           <Button
             color="white"
-            className="font-customDress group-hover:scale-110 group-hover:bg-[#141951] group-hover:text-[white] transition-all duration-300 ease-in"
+            className="font-customSource group-hover:scale-110 group-hover:bg-[#141951] group-hover:text-[white] transition-all duration-300 ease-in"
           >
             {btn}
           </Button>

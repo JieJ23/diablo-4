@@ -50,7 +50,7 @@ export function CardContent({ image, link, title, summary, btn = `Explore` }) {
         <Link to={link}>
           <Button
             color="white"
-            className="font-customDress group-hover:scale-110 group-hover:bg-[#2c3384] group-hover:text-[white] transition-all duration-300 ease-in"
+            className="font-customSource group-hover:scale-110 group-hover:bg-[#2c3384] group-hover:text-[white] transition-all duration-300 ease-in"
           >
             {btn}
           </Button>
