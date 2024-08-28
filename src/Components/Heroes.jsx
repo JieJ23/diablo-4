@@ -34,7 +34,7 @@ export function CardContent({ image, link, title, summary, btn = `Explore` }) {
     <Card className="bg-gradient-to-tl from-[#2b2e49] to-black shadow-[inset_0_0_30px_black] border-[black] border-[1px] group flex flex-col justify-between">
       <CardHeader
         color="black"
-        className="h-40 bg-cover be-center shadow-[0_0_20px_#131111] group-hover:scale-105 transition-all duration-300 ease-in border-[1px] border-gray-800"
+        className="h-56 bg-cover bg-center shadow-[0_0_20px_#131111] group-hover:scale-105 transition-all duration-300 ease-in border-[1px] border-gray-800"
         floated={false}
         style={{ backgroundImage: `url("/bg/${image}.png")` }}
       />
