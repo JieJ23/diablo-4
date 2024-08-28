@@ -11,6 +11,7 @@ import { useState } from "react";
 import { ReturnSkillIcon, writeTimeInMS } from "../DataLogic/ProcessFunction";
 import { useEffect } from "react";
 import { convertToSec } from "../DataLogic/ProcessFunction";
+import { haveProfile } from "../DataLogic/Profile";
 //
 const build151 = new Date(`08/16/2024`);
 //
@@ -124,14 +125,17 @@ export default function AccordionMain({ obj, watch }) {
             obj.Mode === "HC" ? `text-[red]` : `text-white`
           }`}
         >
-          {obj.Player}
-          {obj.BossOnly === "yes" && (
-            <Avatar
-              src={`/boss.png`}
-              size="xs"
-              className="ms-1 bg-red-500 shadow-[0_0_10px_red]"
-            />
-          )}
+          <div className="flex gap-1 justify-center items-center">
+            {haveProfile.includes(obj.Player) && (
+              <Avatar
+                src={`/pfp/${obj.Player}.png`}
+                size="xs"
+                variant="rounded"
+                className="shadow-[0_0_10px_black] hidden sm:block"
+              />
+            )}
+            {obj.Player}
+          </div>
         </div>
 
         <div
