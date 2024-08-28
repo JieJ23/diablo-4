@@ -38,4 +38,5 @@ export const haveProfile = [
   `goldfarmingGUIDE`,
   `Kinox`,
   `KroovyGG`,
+  `Faifa`,
 ];
