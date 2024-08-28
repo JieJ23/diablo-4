@@ -28,6 +28,7 @@ export default function PitLadder() {
 
   const checkUser = posts.filter((obj) => obj.Compiled === "player");
   const checkSelf = posts.filter((obj) => obj.Compiled === "self");
+  const checkUP = [...new Set(posts.map((obj) => obj.Player))];
   // console.log(checkUser.length);
   // console.log(checkSelf.length);
 
@@ -104,8 +105,8 @@ export default function PitLadder() {
         <DataLoadingLoader />
       ) : (
         <div className="mt-5">
-          <div className="absolute top-1 left-1 text-cyan-500 font-customNoto text-[10px] -z-10">
-            {checkUser.length}
+          <div className="absolute top-1 left-1 text-cyan-200 font-customNoto text-[10px] -z-10">
+            {checkUser.length} / {checkUP.length}
           </div>
           <div className="absolute bottom-1 left-1 text-yellow-500 font-customNoto text-[10px] -z-10">
             {checkSelf.length}
