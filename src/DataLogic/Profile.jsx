@@ -40,4 +40,5 @@ export const haveProfile = [
   `KroovyGG`,
   `Faifa`,
   `Kima`,
+  `PSDK`,
 ];
