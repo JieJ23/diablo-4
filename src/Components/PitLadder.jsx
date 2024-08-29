@@ -131,7 +131,7 @@ export default function PitLadder() {
               {sortDisplay.map((obj, index) => (
                 <div
                   className={`${
-                    index % 2 === 0 ? `bg-[#222831cc]` : `bg-[#141414cc]`
+                    index % 2 === 0 ? `bg-[#0d1c2ecc]` : `bg-[#151515cc]`
                   } mb-1 rounded-lg backdrop-blur-sm relative border-[2px] border-[#131111]`}
                 >
                   <AccordionMain obj={obj} watch={category} />
