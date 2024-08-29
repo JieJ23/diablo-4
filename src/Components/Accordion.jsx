@@ -20,7 +20,7 @@ export const tierColor = (tier) => {
   if (tier >= 150) {
     return `#f000ff`;
   } else if (tier >= 140) {
-    return `#ff0000`;
+    return `#ee2400`;
   } else if (tier >= 130) {
     return `#ff7e00`;
   } else if (tier >= 120) {

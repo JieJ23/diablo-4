@@ -57,10 +57,10 @@ export function CardDefault({
   btn = `Learn More`,
 }) {
   return (
-    <Card className="bg-gradient-to-br from-[#2b2e49] to-black shadow-[inset_0_0_30px_black] border-[black] border-[1px] group flex flex-col justify-between">
+    <Card className="bg-gradient-to-b from-[#393c4f] to-black  group flex flex-col justify-between shadow-[0_0_30px_black] border-[1px] border-black">
       <CardHeader
         color="black"
-        className="h-56 bg-cover bg-center shadow-[0_0_10px_black] group-hover:scale-105 transition-all duration-300 ease-in border-[1px] border-gray-700"
+        className="h-56 bg-cover bg-center shadow-[0_0_10px_black] transition-all duration-300 ease-in group-hover:scale-105"
         floated={false}
         style={{ backgroundImage: `url("/bg/${image}.png")` }}
       />
@@ -76,7 +76,7 @@ export function CardDefault({
         <Link to={link} target="_blank">
           <Button
             color="white"
-            className="font-customSource group-hover:scale-110 group-hover:bg-[#141951] group-hover:text-[white] transition-all duration-300 ease-in"
+            className="font-customSource group-hover:scale-110 group-hover:bg-[#2a4679] group-hover:text-[white] transition-all duration-300 ease-in"
           >
             {btn}
           </Button>
@@ -88,7 +88,7 @@ export function CardDefault({
 
 export default function Resources() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 max-w-[1200px] 2xl:max-w-[1600px] px-2 md:px-10 gap-4 justify-center mx-auto">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] 2xl:max-w-[1400px] px-2 md:px-6 gap-4 2xl:gap-6 justify-center mx-auto">
       {websiteObj.map((obj) => (
         <CardDefault
           title={obj.title}

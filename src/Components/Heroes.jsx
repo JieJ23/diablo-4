@@ -29,40 +29,32 @@ const contentObj = [
   },
 ];
 
-export function CardContent({ image, link, title, summary, btn = `Explore` }) {
+export function CardContent({ image, link, title, summary }) {
   return (
-    <Card className="bg-gradient-to-tl from-[#2b2e49] to-black shadow-[inset_0_0_30px_black] border-[black] border-[1px] group flex flex-col justify-between">
-      <CardHeader
-        color="black"
-        className="h-56 bg-cover bg-center shadow-[0_0_20px_#131111] group-hover:scale-105 transition-all duration-300 ease-in border-[1px] border-gray-800"
-        floated={false}
-        style={{ backgroundImage: `url("/bg/${image}.png")` }}
-      />
-      <CardBody className="text-start">
-        <Typography className="mb-2 font-customDress font-bold text-[20px] text-white">
-          {title}
-        </Typography>
-        <Typography className="text-[12px] font-customSource text-gray-300">
-          {summary}
-        </Typography>
-      </CardBody>
-      <CardFooter className="pt-0 flex justify-start">
-        <Link to={link}>
-          <Button
-            color="white"
-            className="font-customSource group-hover:scale-110 group-hover:bg-[#2c3384] group-hover:text-[white] transition-all duration-300 ease-in"
-          >
-            {btn}
-          </Button>
-        </Link>
-      </CardFooter>
+    <Card className="bg-gradient-to-t from-[#393c4f] to-black shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
+      <Link to={link}>
+        <div className="text-start p-2">
+          <Typography className="mb-2 font-customDress font-bold text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all">
+            {title}
+          </Typography>
+          <Typography className="text-[12px] font-customSource text-gray-300 group-hover:scale-[98%] ease-in duration-300 transition-all">
+            {summary}
+          </Typography>
+        </div>
+        <div
+          color="black"
+          className="h-56 bg-cover bg-center shadow-[0_0_20px_#131111] rounded-xl group-hover:scale-95 ease-in duration-300 transition-all"
+          floated={false}
+          style={{ backgroundImage: `url("/bg/${image}.png")` }}
+        />
+      </Link>
     </Card>
   );
 }
 
 export default function Content() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-2 md:px-10 gap-4 justify-center mx-auto">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-2 md:px-10 gap-6 justify-center mx-auto">
       {contentObj.map((obj) => (
         <CardContent
           title={obj.title}
