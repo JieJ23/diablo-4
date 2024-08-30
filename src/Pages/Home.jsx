@@ -6,9 +6,14 @@ import CountdownTimer from "../Components/Countdown";
 
 export function Footer() {
   return (
-    <div className="text-white bg-black font-customDiablo text-center text-[14px] mt-10 py-5 px-2">
-      This website has no affiliation with or endorsement from Activision
-      Blizzard, Inc.
+    <div className="mt-15">
+      <div className="text-white bg-black font-customDiablo text-center text-[14px] px-2 pt-2">
+        This website has no affiliation with or endorsement from Activision
+        Blizzard, Inc.
+      </div>
+      <div className="text-white bg-black font-customNoto text-center text-[14px] px-2 pb-2">
+        © 2024 CY ®
+      </div>
     </div>
   );
 }
