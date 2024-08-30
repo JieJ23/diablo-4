@@ -41,4 +41,9 @@ export const haveProfile = [
   `Faifa`,
   `Kima`,
   `PSDK`,
+  `MarsicanBear`,
+  `GorillaJuice`,
+  `videogamebutter`,
+  `swa99y`,
+  `Sukhenkiy`,
 ];
