@@ -2,10 +2,11 @@ import { SubmitCard } from "../Components/Submission";
 import Resources from "../Components/Resources";
 import { Avatar } from "@material-tailwind/react";
 import Content from "../Components/Heroes";
+import CountdownTimer from "../Components/Countdown";
 
 export function Footer() {
   return (
-    <div className="text-white bg-black font-customDiablo text-center text-[14px] mt-16 py-5 px-2">
+    <div className="text-white bg-black font-customDiablo text-center text-[14px] mt-10 py-5 px-2">
       This website has no affiliation with or endorsement from Activision
       Blizzard, Inc.
     </div>
@@ -24,10 +25,12 @@ export default function Home() {
         />
         <div className="text-[24px] text-center py-4 text-[white] font-customDiablo bg-black flex justify-center items-center gap-2">
           <Avatar src="/diablo4_icon.png" size="sm" />
-          <div>Diablo 4 S5 Pit</div>
+          <div>Diablo 4 Pit</div>
         </div>
 
-        <section className="text-center mt-8 px-2">
+        <CountdownTimer />
+
+        <section className="text-center mt-5 px-2">
           <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
             Divided by Class, United by Purpose
           </div>
@@ -36,15 +39,15 @@ export default function Home() {
           <SubmitCard />
         </div>
 
-        <section className="text-center my-16 px-2">
-          <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
+        <section className="text-center my-14 px-2">
+          <div className="text-white font-customDiablo text-[22px] md:text-[32px]">
             Ladderboard & More
           </div>
           <Content />
         </section>
 
-        <section className="text-center my-16 px-2">
-          <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
+        <section className="text-center my-14 px-2">
+          <div className="text-white font-customDiablo text-[22px] md:text-[32px]">
             Resources & Tools
           </div>
           <Resources />

@@ -31,7 +31,7 @@ const contentObj = [
 
 export function CardContent({ image, link, title, summary }) {
   return (
-    <Card className="bg-gradient-to-t from-[#393c4f] to-black shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
+    <Card className="bg-gradient-to-b from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
       <Link to={link}>
         <div className="text-start p-2">
           <Typography className="mb-2 font-customDress font-bold text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all">
@@ -54,7 +54,7 @@ export function CardContent({ image, link, title, summary }) {
 
 export default function Content() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-2 md:px-10 gap-6 justify-center mx-auto">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-2 md:px-6 gap-6 justify-center mx-auto">
       {contentObj.map((obj) => (
         <CardContent
           title={obj.title}

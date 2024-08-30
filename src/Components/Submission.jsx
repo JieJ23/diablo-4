@@ -9,7 +9,7 @@ import {
 
 export function SubmitCard() {
   return (
-    <Card className="w-full max-w-[800px] flex-row bg-gradient-to-tl from-[#393c4f] via-[black] to-black shadow-[0_0_20px_black]">
+    <Card className="w-full max-w-[800px] flex-row bg-gradient-to-bl from-[#5b6396] via-[#1f2234] to-black shadow-[0_0_20px_black]">
       <CardHeader
         shadow={false}
         floated={false}

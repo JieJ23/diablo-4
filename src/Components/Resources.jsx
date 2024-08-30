@@ -17,13 +17,13 @@ const websiteObj = [
   },
   {
     title: `Wowhead`,
-    summary: `Wowhead is a website that provides a searchable database, internet forum, guides and player character services.`,
+    summary: `Wowhead provides a searchable database, internet forum, guides and player character services.`,
     link: `https://www.wowhead.com/diablo-4`,
     image: `wowhead`,
   },
   {
     title: `Maxroll GG`,
-    summary: `Maxroll.gg is a popular website dedicated to providing useful information and resources for players of the popular video games like Diablo IV, Lost Ark, or Path of Exile.`,
+    summary: `Maxroll.gg is a popular website dedicated to providing useful information and resources for players.`,
     link: `https://maxroll.gg/d4`,
     image: `maxroll`,
   },
@@ -49,53 +49,61 @@ const websiteObj = [
   },
 ];
 
-export function CardDefault({
-  image,
-  link,
-  title,
-  summary,
-  btn = `Learn More`,
-}) {
+// export function CardDefault({ image, link, title, summary }) {
+//   return (
+//     <Card className="bg-gradient-to-tr to-[#393c4f] from-black  group flex flex-col justify-between shadow-[0_0_30px_black] border-[1px] border-black">
+//       <Link to={link} target="_blank">
+//         <CardHeader
+//           color="black"
+//           className="h-56 bg-cover bg-center shadow-[0_0_10px_black] transition-all duration-300 ease-in group-hover:scale-105"
+//           floated={false}
+//           style={{ backgroundImage: `url("/bg/${image}.png")` }}
+//         />
+//         <CardBody className="text-start">
+//           <Typography className="mb-2 font-customDress font-bold text-[20px] text-white group-hover:text-[#6e70b4] ease-in duration-300 transition-all">
+//             {title}
+//           </Typography>
+//           <Typography className="text-[12px] font-customSource text-gray-300">
+//             {summary}
+//           </Typography>
+//         </CardBody>
+//       </Link>
+//     </Card>
+//   );
+// }
+
+export function CardContent2({ image, link, title, summary }) {
   return (
-    <Card className="bg-gradient-to-b from-[#393c4f] to-black  group flex flex-col justify-between shadow-[0_0_30px_black] border-[1px] border-black">
-      <CardHeader
-        color="black"
-        className="h-56 bg-cover bg-center shadow-[0_0_10px_black] transition-all duration-300 ease-in group-hover:scale-105"
-        floated={false}
-        style={{ backgroundImage: `url("/bg/${image}.png")` }}
-      />
-      <CardBody className="text-start">
-        <Typography className="mb-2 font-customDress font-bold text-[20px] text-white">
-          {title}
-        </Typography>
-        <Typography className="text-[12px] font-customSource text-gray-300">
-          {summary}
-        </Typography>
-      </CardBody>
-      <CardFooter className="pt-0 flex justify-end">
-        <Link to={link} target="_blank">
-          <Button
-            color="white"
-            className="font-customSource group-hover:scale-110 group-hover:bg-[#2a4679] group-hover:text-[white] transition-all duration-300 ease-in"
-          >
-            {btn}
-          </Button>
-        </Link>
-      </CardFooter>
+    <Card className="bg-gradient-to-tr from-[#50567c] to-gray-900 shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
+      <Link to={link} target="_blank">
+        <div className="text-center p-2">
+          <Typography className="mb-2 font-customDress font-bold text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all">
+            {title}
+          </Typography>
+          <Typography className="text-[12px] font-customSource text-gray-300 group-hover:scale-[98%] ease-in duration-300 transition-all">
+            {summary}
+          </Typography>
+        </div>
+        <div
+          color="black"
+          className="h-56 bg-cover bg-center shadow-[0_0_20px_#131111] rounded-xl group-hover:scale-95 ease-in duration-300 transition-all"
+          floated={false}
+          style={{ backgroundImage: `url("/bg/${image}.png")` }}
+        />
+      </Link>
     </Card>
   );
 }
 
 export default function Resources() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] 2xl:max-w-[1400px] px-2 md:px-6 gap-4 2xl:gap-6 justify-center mx-auto">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-2 md:px-6 gap-4 2xl:gap-6 justify-center mx-auto">
       {websiteObj.map((obj) => (
-        <CardDefault
+        <CardContent2
           title={obj.title}
           summary={obj.summary}
           link={obj.link}
           image={obj.image}
-          btn={obj.btn}
         />
       ))}
     </section>
