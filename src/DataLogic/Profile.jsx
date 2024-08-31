@@ -47,4 +47,5 @@ export const haveProfile = [
   `swa99y`,
   `Sukhenkiy`,
   `fr0d0b0ls0n`,
+  `PetitBOT`,
 ];
