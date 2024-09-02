@@ -48,4 +48,8 @@ export const haveProfile = [
   `Sukhenkiy`,
   `fr0d0b0ls0n`,
   `PetitBOT`,
+  `zebrabit`,
+  `唯沐千秋`,
+  `Shaman`,
+  `Skeltah`,
 ];

@@ -64,6 +64,7 @@ export default function PitLadder() {
     .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
   const uniqueData = removeDup(rawData.slice());
   const latest10 = posts.slice(-25).reverse();
+  const hardcoreEntries = rawData.filter((obj) => obj.Mode === "HC");
   const speed101 = rawData.filter((obj) => obj.Tier === 101);
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
@@ -76,7 +77,7 @@ export default function PitLadder() {
   }
   //
 
-  const allData = [latest10, rawData, uniqueData, speed101];
+  const allData = [latest10, hardcoreEntries, uniqueData, speed101];
 
   for (let i = 0; i < allClasses.length; i++) {
     let tempArr = rawData.filter((obj) => obj.Class === allClasses[i]);

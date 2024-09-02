@@ -247,14 +247,16 @@ export default function AccordionMain({ obj, watch }) {
           </div>
         )}
 
-        {obj.classRank && (
+        {obj.Rank && (
           <div className="flex flex-wrap justify-center gap-4 select-none my-1">
-            <Chip
-              color="indigo"
-              value={`#${obj.classRank} ${obj.Class}`}
-              className="text-white font-customNoto text-[12px]"
-              variant="filled"
-            />
+            {obj.classRank !== undefined && (
+              <Chip
+                color="indigo"
+                value={`#${obj.classRank} ${obj.Class}`}
+                className="text-white font-customNoto text-[12px]"
+                variant="filled"
+              />
+            )}
             <Chip
               color="blue-gray"
               value={`#${obj.Rank} Overall`}

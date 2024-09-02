@@ -1,13 +1,7 @@
 import { Button, Avatar } from "@material-tailwind/react";
 
 export default function ClassesBtn({ onButtonClick, classes }) {
-  const allClasses = [
-    "Latest",
-    "Base Pit",
-    "Unique Pit",
-    "Speed 101",
-    ...classes,
-  ];
+  const allClasses = ["Latest", "Hardcore", "Global", "Speed 101", ...classes];
 
   return (
     <>
