@@ -68,7 +68,13 @@ export default function PitLadder() {
   const speed101 = rawData.filter((obj) => obj.Tier === 101);
   const allClasses = [...new Set(rawData.map((obj) => obj.Class))];
 
-  addRankProperty(uniqueData);
+  //
+  const uniqueInitialSort = rawData
+    .slice()
+    .filter((obj) => convertToSec(obj["Time Used"]) < 900);
+  const uniqueSecondSort = removeDup(uniqueInitialSort);
+  addRankProperty(uniqueSecondSort);
+  //
 
   // Add Class Ranks
   for (let i = 0; i < allClasses.length; i++) {
