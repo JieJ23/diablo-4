@@ -52,4 +52,5 @@ export const haveProfile = [
   `唯沐千秋`,
   `Shaman`,
   `Skeltah`,
+  `Sagittarian`,
 ];
