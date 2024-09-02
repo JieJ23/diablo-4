@@ -53,4 +53,5 @@ export const haveProfile = [
   `Shaman`,
   `Skeltah`,
   `Sagittarian`,
+  `Zaramos666`,
 ];
