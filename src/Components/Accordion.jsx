@@ -163,7 +163,7 @@ export default function AccordionMain({ obj, watch }) {
         </div>
       </AccordionHeader>
       {new Date(obj.Date) > build151 && (
-        <div className="absolute top-1 right-1 text-[10px] text-gray-500 text-center">
+        <div className="absolute top-1 right-1 text-[10px] text-gray-500 text-center select-none">
           1.5.1 Build
         </div>
       )}
