@@ -1,6 +1,7 @@
 import PitLadder from "../Components/PitLadder";
-import { Tabs } from "../Components/Breadcrumbs";
 
+import Navigation from "../Button/NavHead";
+import { Footer } from "./Home";
 export default function Ladderboard() {
   return (
     <section className="h-lvh overflow-x-hidden">
@@ -10,9 +11,11 @@ export default function Ladderboard() {
         alt="cover-bg"
         className="fixed h-lvh w-full object-cover -z-10 object-center"
       />
-      <Tabs title={`Ladderboard`} />
-
-      <PitLadder />
+      <div className="flex flex-col justify-between">
+        <Navigation />
+        <PitLadder />
+        <Footer />
+      </div>
     </section>
   );
 }

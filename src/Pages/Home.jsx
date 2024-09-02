@@ -1,8 +1,7 @@
 import { SubmitCard } from "../Components/Submission";
-import Resources from "../Components/Resources";
-import { Avatar } from "@material-tailwind/react";
 import Content from "../Components/Heroes";
 import CountdownTimer from "../Components/Countdown";
+import Navigation from "../Button/NavHead";
 
 export function Footer() {
   return (
@@ -28,36 +27,30 @@ export default function Home() {
           alt="cover-bg"
           className="fixed h-lvh w-full object-cover -z-10 object-center"
         />
-        <div className="text-[24px] text-center py-4 text-[white] font-customDiablo bg-black flex justify-center items-center gap-2">
-          <Avatar src="/diablo4_icon.png" size="sm" />
-          <div>Diablo 4 Pit</div>
-        </div>
 
-        <CountdownTimer />
+        <section className="h-full flex flex-col justify-between">
+          <Navigation />
 
-        <section className="text-center mt-5 px-2">
-          <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
-            Divided by Class, United by Purpose
+          <CountdownTimer />
+
+          <section className="text-center mt-5 px-2">
+            <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
+              Divided by Class, United by Purpose
+            </div>
+          </section>
+          <div className="flex w-full justify-center px-4">
+            <SubmitCard />
           </div>
-        </section>
-        <div className="flex w-full justify-center px-4">
-          <SubmitCard />
-        </div>
 
-        <section className="text-center my-14 px-2">
-          <div className="text-white font-customDiablo text-[22px] md:text-[32px]">
-            Ladderboard & More
-          </div>
-          <Content />
-        </section>
+          <section className="text-center my-14 px-2">
+            <div className="text-white font-customDiablo text-[22px] md:text-[32px]">
+              Ladderboard & More
+            </div>
+            <Content />
+          </section>
 
-        <section className="text-center my-14 px-2">
-          <div className="text-white font-customDiablo text-[22px] md:text-[32px]">
-            Resources & Tools
-          </div>
-          <Resources />
+          <Footer />
         </section>
-        <Footer />
       </section>
     </>
   );

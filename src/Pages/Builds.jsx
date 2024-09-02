@@ -5,6 +5,7 @@ import { ReturnSkillIcon } from "../DataLogic/ProcessFunction";
 import { Typography, Tooltip, Avatar } from "@material-tailwind/react";
 import { Tabs } from "../Components/Breadcrumbs";
 
+import Navigation from "../Button/NavHead";
 export default function Builds() {
   const { posts, loader } = useData();
 
@@ -61,9 +62,8 @@ export default function Builds() {
         className="fixed h-lvh w-full object-cover -z-10 object-center"
       />
 
-      <Tabs title={`Build Stats`} />
-
-      <section>
+      <Navigation />
+      <section className="mt-5">
         <div className="text-[24px] font-customDiablo text-white text-center">
           Selection Stats
         </div>

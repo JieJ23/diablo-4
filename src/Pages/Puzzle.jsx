@@ -5,6 +5,7 @@ import { classColor } from "../Components/Accordion";
 import { Avatar } from "@material-tailwind/react";
 import ClassChart from "../Components/ClassChart";
 import ClassChart2 from "../Components/ClassChart2";
+import Navigation from "../Button/NavHead";
 
 function CreateBox({ c, a, t, p }) {
   return (
@@ -38,7 +39,7 @@ export default function Puzzle() {
         className="fixed h-lvh w-full object-cover -z-10 object-center"
       />
 
-      <Tabs title={`Build Block`} />
+      <Navigation />
 
       {loader ? (
         <DataLoadingLoader />
