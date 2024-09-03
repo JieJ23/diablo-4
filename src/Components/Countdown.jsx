@@ -44,7 +44,7 @@ const CountdownTimer = () => {
           {formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}
         </p>
         <div className="text-[14px] font-customNoto text-blue-gray-100">
-          S5 Time Remain
+          S5 Ladder Time
         </div>
       </div>
     </div>
