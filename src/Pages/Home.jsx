@@ -2,6 +2,7 @@ import { SubmitCard } from "../Components/Submission";
 import Content from "../Components/Heroes";
 import CountdownTimer from "../Components/Countdown";
 import Navigation from "../Button/NavHead";
+import Top10 from "../Components/HomeCarol";
 
 export function Footer() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
           <Navigation />
 
           <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg">
-            <div className="text-[#868fed] font-customSource font-bold text-[36px] mb-2">
+            <div className="text-[#868fed] font-customDiablo font-bold text-[28px] sm:text-[32px] mb-2">
               Welcome to Diablo 4 Pit
             </div>
             <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -60,6 +61,8 @@ export default function Home() {
           <div className="flex w-full justify-center my-5">
             <SubmitCard />
           </div>
+
+          <Top10 />
 
           <section className="text-center my-7 px-2">
             <Content />

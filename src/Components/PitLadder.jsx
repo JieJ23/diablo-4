@@ -62,7 +62,9 @@ export default function PitLadder() {
       convertToSec(a["Time Used"]) > convertToSec(b["Time Used"]) ? 1 : -1
     )
     .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
-  const uniqueData = removeDup(rawData.slice());
+  const uniqueData = removeDup(rawData.slice()).filter(
+    (obj) => convertToSec(obj["Time Used"]) < 900
+  );
   const latest10 = posts.slice(-25).reverse();
   const hardcoreEntries = rawData.filter((obj) => obj.Mode === "HC");
   const speed101 = rawData.filter((obj) => obj.Tier === 101);

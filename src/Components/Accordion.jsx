@@ -174,7 +174,7 @@ export default function AccordionMain({ obj, watch, watch2 }) {
           1.5.2 Build
         </div>
       )}
-      {new Date(obj.Date) > build151 && new Date(obj.Date) < build152 && (
+      {new Date(obj.Date) > build151 && new Date(obj.Date) <= build152 && (
         <div className="absolute top-1 right-1 text-[10px] text-gray-500 text-center select-none">
           1.5.1 Build
         </div>
