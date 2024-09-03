@@ -24,7 +24,7 @@ export default function Navigation() {
         as="li"
         className="p-1 font-customTitle flex space-x-2 items-center hover:scale-110 ease-in duration-300 transition-all hover:text-red-500"
       >
-        <Link to={"/"} className="items-center font-customNoto text-[14px]">
+        <Link to={"/"} className="items-center font-customDiablo text-[18px]">
           Home
         </Link>
       </Typography>
@@ -34,7 +34,7 @@ export default function Navigation() {
       >
         <Link
           to={"/Ladderboard"}
-          className="items-center font-customNoto text-[14px]"
+          className="items-center font-customDiablo text-[18px]"
         >
           Seasonal Pit
         </Link>
@@ -45,9 +45,20 @@ export default function Navigation() {
       >
         <Link
           to={"/Tools"}
-          className="items-center font-customNoto text-[14px]"
+          className="items-center font-customDiablo text-[18px]"
         >
           Resources
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        className="p-1 font-customTitle flex space-x-2 items-center hover:scale-110 ease-in duration-300 transition-all hover:text-red-500"
+      >
+        <Link
+          to={"/Privacy"}
+          className="items-center font-customDiablo text-[18px]"
+        >
+          Privacy
         </Link>
       </Typography>
     </ul>
