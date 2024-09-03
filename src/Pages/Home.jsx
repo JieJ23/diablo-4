@@ -33,7 +33,7 @@ export default function Home() {
 
           <CountdownTimer />
 
-          <section className="text-center mt-5 px-2">
+          <section className="text-center px-2">
             <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
               Divided by Class, United by Purpose
             </div>
@@ -42,10 +42,7 @@ export default function Home() {
             <SubmitCard />
           </div>
 
-          <section className="text-center my-14 px-2">
-            <div className="text-white font-customDiablo text-[22px] md:text-[32px]">
-              Ladderboard & More
-            </div>
+          <section className="text-center my-7 px-2">
             <Content />
           </section>
 

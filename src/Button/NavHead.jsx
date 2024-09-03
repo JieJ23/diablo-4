@@ -24,7 +24,7 @@ export default function Navigation() {
         as="li"
         className="p-1 font-customTitle flex space-x-2 items-center hover:scale-110 ease-in duration-300 transition-all hover:text-red-500"
       >
-        <Link to={"/"} className="items-center font-customDiablo text-[18px]">
+        <Link to={"/"} className="items-center font-customNoto text-[14px]">
           Home
         </Link>
       </Typography>
@@ -34,9 +34,9 @@ export default function Navigation() {
       >
         <Link
           to={"/Ladderboard"}
-          className="items-center font-customDiablo text-[18px]"
+          className="items-center font-customNoto text-[14px]"
         >
-          Seasonal Ladder
+          Seasonal Pit
         </Link>
       </Typography>
       <Typography
@@ -45,9 +45,9 @@ export default function Navigation() {
       >
         <Link
           to={"/Tools"}
-          className="items-center font-customDiablo text-[18px]"
+          className="items-center font-customNoto text-[14px]"
         >
-          Resources & Tools
+          Resources
         </Link>
       </Typography>
     </ul>
@@ -60,7 +60,7 @@ export default function Navigation() {
           <Link to={"/"}>
             <div className="flex items-center">
               <Avatar src="/diablo4_icon.png" size="sm" />
-              <Typography className="font-customDiablo text-[20px]">
+              <Typography className="font-customDiablo text-[24px]">
                 Diablo 4 Pit
               </Typography>
             </div>

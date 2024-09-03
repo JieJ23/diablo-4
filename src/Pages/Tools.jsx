@@ -15,7 +15,7 @@ export default function Tools() {
       <div className="h-full flex flex-col justify-between">
         <Navigation />
 
-        <section className="text-center my-14 px-2">
+        <section className="text-center my-7 px-2">
           <div className="text-white font-customDiablo text-[22px] md:text-[32px]">
             Resources & Tools
           </div>

@@ -141,7 +141,7 @@ export default function PitLadder() {
                     index % 2 === 0 ? `bg-[#0d1c2ecc]` : `bg-[#151515cc]`
                   } mb-1 rounded-lg backdrop-blur-sm relative border-[2px] border-[#131111]`}
                 >
-                  <AccordionMain obj={obj} watch={category} />
+                  <AccordionMain obj={obj} watch={category} watch2={active} />
                 </div>
               ))}
               <CardFooter className="p-3">
