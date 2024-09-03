@@ -15,6 +15,7 @@ import { convertToSec } from "../DataLogic/ProcessFunction";
 import { haveProfile } from "../DataLogic/Profile";
 //
 const build151 = new Date(`08/16/2024`);
+const build152 = new Date(`09/03/2024`);
 //
 export const tierColor = (tier) => {
   if (tier >= 150) {
@@ -162,11 +163,18 @@ export default function AccordionMain({ obj, watch }) {
           {obj.Tier}
         </div>
       </AccordionHeader>
-      {new Date(obj.Date) > build151 && (
+      {/* Patches */}
+      {new Date(obj.Date) > build152 && (
+        <div className="absolute top-1 right-1 text-[10px] text-gray-300 text-center select-none">
+          1.5.2 Build
+        </div>
+      )}
+      {new Date(obj.Date) > build151 && new Date(obj.Date) < build152 && (
         <div className="absolute top-1 right-1 text-[10px] text-gray-500 text-center select-none">
           1.5.1 Build
         </div>
       )}
+      {/* Patches  */}
       <AccordionBody className="flex flex-col justify-evenly">
         <div className="flex justify-center gap-4">
           <div>

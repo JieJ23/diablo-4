@@ -56,7 +56,7 @@ export default function Navigation() {
   return (
     <div>
       <Navbar className="bg-black max-w-full border-0 px-4 py-2 rounded-none">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <Link to={"/"}>
             <div className="flex items-center">
               <Avatar src="/diablo4_icon.png" size="sm" />
