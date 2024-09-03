@@ -14,7 +14,7 @@ export default function Privacy() {
       <div className="h-full flex flex-col justify-between">
         <Navigation />
 
-        <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg backdrop-blur-sm">
+        <section className="text-start px-6 max-w-[1200px] mx-auto my-10">
           <div className="text-[#adb6fd] font-customNoto text-[36px] my-6">
             Privacy Policy
           </div>

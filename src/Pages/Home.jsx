@@ -31,7 +31,7 @@ export default function Home() {
         <section className="h-full flex flex-col justify-between">
           <Navigation />
 
-          <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg backdrop-blur-sm">
+          <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg">
             <div className="text-[#868fed] font-customSource font-bold text-[36px] mb-2">
               Welcome to Diablo 4 Pit
             </div>
@@ -49,7 +49,7 @@ export default function Home() {
             </div>
 
             <div className="flex justify-start gap-x-2 px-0">
-              <div className="text-white font-customNoto text-center my-5 w-full h-[67px] max-w-[170px] sm:max-w-[200px] bg-[#31376fcc] rounded-xl flex justify-center backdrop-blur-sm p-2 items-center text-[16px] whitespace-pre-line">
+              <div className="text-white font-customNoto text-center my-5 w-full h-[67px] max-w-[170px] sm:max-w-[200px] bg-[#31376fcc] rounded-xl flex justify-center p-2 items-center text-[16px] whitespace-pre-line">
                 {`Season Of The
                 Infernal Horde`}
               </div>
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="flex w-full justify-center">
+          <div className="flex w-full justify-center my-5">
             <SubmitCard />
           </div>
 

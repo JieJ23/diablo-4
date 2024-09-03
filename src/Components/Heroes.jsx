@@ -54,7 +54,7 @@ export function CardContent({ image, link, title, summary }) {
 
 export default function Content() {
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-2 md:px-6 gap-6 justify-center mx-auto">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[1200px] px-1 gap-4 justify-center mx-auto">
       {contentObj.map((obj) => (
         <CardContent
           title={obj.title}

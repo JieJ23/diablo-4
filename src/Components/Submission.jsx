@@ -4,11 +4,11 @@ import { Card, Button } from "@material-tailwind/react";
 export function SubmitCard() {
   return (
     <Card
-      className="w-full flex flex-row justify-center h-[300px] max-w-[1200px] gap-1 sm:gap-8 p-2 bg-transparent"
+      className="w-full flex flex-row justify-center h-[320px] max-w-[1200px] gap-1 sm:gap-8 p-2 bg-transparent"
       shadow={false}
     >
       <div
-        className="w-3/5 sm:w-1/2 bg-cover bg-center rounded-2xl"
+        className="w-3/5 sm:w-1/2 bg-cover bg-center rounded-2xl border-[1px] sm:border-[2px] border-black shadow-[0_0_20px_black]"
         style={{ backgroundImage: `url("/bg/s5.png")` }}
       />
       <div className="w-2/5 sm:w-1/2 flex flex-col p-2 justify-center gap-2">
