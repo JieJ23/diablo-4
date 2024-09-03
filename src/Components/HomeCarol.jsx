@@ -107,15 +107,22 @@ export default function Top10() {
 
   //
   const top10Overall = uniqueSecondSort.slice(0, 10);
+  const top10Hardcore = uniqueSecondSort
+    .filter((obj) => obj.Mode === `HC`)
+    .slice(0, 10);
+
+  const top10Category = [top10Overall, top10Hardcore];
 
   return (
-    <section className="w-full bg-transparent max-w-[1200px] mx-auto relative flex gap-2 flex-col lg:flex-row px-2">
+    <section className="w-full bg-transparent max-w-[1200px] mx-auto relative flex gap-2 flex-col md:flex-row px-2">
       {loader ? (
         <DataLoadingLoader2 />
       ) : (
         <>
           <Carousel
             loop={true}
+            autoplay={true}
+            autoplayDelay={5000}
             className="flex-1 w-full mx-auto"
             navigation={({ setActiveIndex, activeIndex, length }) => (
               <div className="absolute bottom-2 left-2/4 z-50 flex -translate-x-2/4 gap-2">
@@ -179,12 +186,14 @@ export default function Top10() {
               </IconButton>
             )}
           >
-            <CreateBoard arr={top10Overall} title={`Overall`} />
+            {top10Category.map((item, index) => (
+              <CreateBoard key={index} arr={item} title={item[0].Mode} />
+            ))}
           </Carousel>
           <Carousel
             loop={true}
             autoplay={true}
-            autoplayDelay={4000}
+            autoplayDelay={5000}
             className="flex-1 w-full mx-auto"
             navigation={({ setActiveIndex, activeIndex, length }) => (
               <div className="absolute bottom-2 left-2/4 z-50 flex -translate-x-2/4 gap-2">
