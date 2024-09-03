@@ -37,15 +37,15 @@ const CountdownTimer = () => {
   const formatTime = (time) => time.toString().padStart(2, "0");
 
   return (
-    <div className="text-white text-center my-5 px-2 max-w-[500px] bg-transparent rounded-xl flex justify-center mx-auto backdrop-blur-sm p-2">
+    <div className="text-white text-center my-5 w-full max-w-[160px] sm:max-w-[200px] bg-[#31376fcc] rounded-xl flex justify-center backdrop-blur-sm p-2">
       <div>
-        <div className="text-[24px] font-customDress text-red-500">
-          Pit Lock Countdown
-        </div>
-        <p className="text-[20px] font-[monospace]">
+        <p className="text-[20px] font-customNoto">
           {formatTime(timeLeft.days * 24 + timeLeft.hours)}:
           {formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}
         </p>
+        <div className="text-[14px] font-customNoto text-blue-gray-100">
+          S5 Time Remain
+        </div>
       </div>
     </div>
   );

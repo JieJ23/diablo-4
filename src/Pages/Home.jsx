@@ -31,14 +31,33 @@ export default function Home() {
         <section className="h-full flex flex-col justify-between">
           <Navigation />
 
-          <CountdownTimer />
-
-          <section className="text-center px-2">
-            <div className="text-white font-customDiablo text-[20px] md:text-[24px]">
-              Divided by Class, United by Purpose
+          <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg backdrop-blur-sm">
+            <div className="text-[#868fed] font-customSource font-bold text-[36px] mb-2">
+              Welcome to Diablo 4 Pit
+            </div>
+            <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+              {`A website dedicated to documenting pit runs for each season. Launched in Season 5, the Season of the Infernal Horde, our platform offers the community a competitive leaderboard, ranking participants based on the fastest completion times and, more significantly, the highest tier completions. The leaderboards may offer new insights into play styles and builds, while also introducing you to other content creators and gamers.`}
             </div>
           </section>
-          <div className="flex w-full justify-center px-4">
+
+          <section className="flex flex-col max-w-[1200px] mx-auto w-full px-4">
+            <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+              Countdown to the conclusion of submissions for the seasonal
+              leaderboard. Following this, we will present the results for the
+              top 10 players in each respective class, along with additional
+              statistics derived from community entries.
+            </div>
+
+            <div className="flex justify-start gap-x-2 px-0">
+              <div className="text-white font-customNoto text-center my-5 w-full h-[67px] max-w-[170px] sm:max-w-[200px] bg-[#31376fcc] rounded-xl flex justify-center backdrop-blur-sm p-2 items-center text-[16px] whitespace-pre-line">
+                {`Season Of The
+                Infernal Horde`}
+              </div>
+              <CountdownTimer />
+            </div>
+          </section>
+
+          <div className="flex w-full justify-center">
             <SubmitCard />
           </div>
 
