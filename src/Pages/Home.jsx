@@ -46,11 +46,13 @@ export default function Home() {
               Countdown to the conclusion of submissions for the seasonal
               leaderboard. Following this, we will present the results for the
               top 10 players in each respective class, along with additional
-              statistics derived from community entries.
+              statistics derived from community entries. Afterward, preparations
+              will begin for the new season and ladder, with everything reset
+              for a fresh start.
             </div>
 
             <div className="flex justify-start gap-x-2 px-0">
-              <div className="text-white font-customNoto text-center my-5 w-full h-[67px] max-w-[170px] sm:max-w-[200px] bg-[#31376fcc] rounded-xl flex justify-center p-2 items-center text-[16px] whitespace-pre-line">
+              <div className="text-white font-customNoto text-center my-5 w-full h-[67px] max-w-[170px] sm:max-w-[200px] bg-[#cc3737cc] rounded-xl flex justify-center p-2 items-center text-[16px] whitespace-pre-line">
                 {`Season Of The
                 Infernal Horde`}
               </div>

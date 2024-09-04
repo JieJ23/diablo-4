@@ -37,7 +37,7 @@ const CountdownTimer = () => {
   const formatTime = (time) => time.toString().padStart(2, "0");
 
   return (
-    <div className="text-white text-center my-5 w-full max-w-[160px] sm:max-w-[200px] bg-[#31376fcc] rounded-xl flex justify-center backdrop-blur-sm p-2">
+    <div className="text-white text-center my-5 w-full max-w-[160px] sm:max-w-[200px] bg-[#cc3737cc] rounded-xl flex justify-center backdrop-blur-sm p-2">
       <div>
         <p className="text-[20px] font-customNoto">
           {formatTime(timeLeft.days * 24 + timeLeft.hours)}:

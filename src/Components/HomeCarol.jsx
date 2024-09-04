@@ -20,7 +20,7 @@ import { DataLoadingLoader2 } from "../Hook/Loader";
 function CreateBoard({ arr, title }) {
   return (
     <Card
-      className="relative h-full pb-2 bg-[#0d1c2ecc] pointer-events-none"
+      className="relative h-full pb-2 bg-[#181a30cc] pointer-events-none"
       shadow={false}
     >
       <List className=" px-5 h-full">
@@ -114,7 +114,7 @@ export default function Top10() {
   const top10Category = [top10Overall, top10Hardcore];
 
   return (
-    <section className="w-full bg-transparent max-w-[1200px] mx-auto relative flex gap-2 flex-col md:flex-row px-2">
+    <section className="my-5 w-full bg-transparent max-w-[1200px] mx-auto relative flex gap-2 flex-col md:flex-row px-2">
       {loader ? (
         <DataLoadingLoader2 />
       ) : (
