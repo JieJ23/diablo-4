@@ -184,15 +184,12 @@ export default function AccordionMain({ obj, watch, watch2 }) {
         <div className="flex justify-center gap-4">
           <div>
             {obj["Build Planner"] === "" ? (
-              <Typography
-                className="font-customSource text-[14px] md:text-[16px]"
-                color="white"
-              >
+              <Typography className="font-customNoto text-[14px]" color="white">
                 Build:
               </Typography>
             ) : (
               <Typography
-                className="font-customSource font-semibold text-[14px] md:text-[16px] hover:scale-[110%] ease-in duration-100 transition-all"
+                className="font-customNoto font-semibold text-[14px] hover:scale-[105%] ease-in duration-100 transition-all"
                 color="blue"
               >
                 <a href={obj["Build Planner"]} target="_blank">
@@ -203,7 +200,7 @@ export default function AccordionMain({ obj, watch, watch2 }) {
           </div>
           <div className="text-center">
             <Typography
-              className="font-customSource font-semibold text-[14px] md:text-[16px] hover:scale-[110%] ease-in duration-100 transition-all uppercase"
+              className="font-customNoto font-semibold text-[14px] hover:scale-[105%] ease-in duration-100 transition-all uppercase"
               color="amber"
             >
               <a href={obj["Run Video"]} target="_blank">
