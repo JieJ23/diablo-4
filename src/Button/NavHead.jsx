@@ -61,6 +61,24 @@ export default function Navigation() {
           Privacy
         </Link>
       </Typography>
+      <Typography
+        as="li"
+        className="p-1 font-customTitle flex space-x-2 items-center hover:scale-110 ease-in duration-300 transition-all hover:text-red-500"
+      >
+        <Link
+          to={"https://ko-fi.com/capricey23"}
+          className="items-center font-customDiablo text-[18px]"
+          target="_blank"
+        >
+          <Avatar
+            src="/donation.png"
+            size="xs"
+            variant="rounded"
+            className="me-1"
+          />
+          Donation
+        </Link>
+      </Typography>
     </ul>
   );
 
