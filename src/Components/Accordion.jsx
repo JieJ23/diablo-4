@@ -249,19 +249,29 @@ export default function AccordionMain({ obj, watch, watch2 }) {
           </div>
         )}
 
-        {obj.BossOnly && (
-          <div className="font-customDress text-[red] text-center my-1">
-            Boss Fight Only
-          </div>
-        )}
-        {convertToSec(obj["Time Used"]) >= 900 && (
-          <div className="font-customDress text-[red] text-center my-1">
-            Time Over: +15 Minutes
+        {(obj.BossOnly || convertToSec(obj["Time Used"]) >= 900) && (
+          <div className="flex flex-wrap justify-center gap-2 select-none my-1">
+            {obj.BossOnly && (
+              <Chip
+                color="red"
+                value={`Boss Fight Only`}
+                className="text-black font-customNoto text-[12px]"
+                variant="filled"
+              />
+            )}
+            {convertToSec(obj["Time Used"]) >= 900 && (
+              <Chip
+                color="red"
+                value={`+15 mins Overtime`}
+                className="text-black font-customNoto text-[12px]"
+                variant="filled"
+              />
+            )}
           </div>
         )}
 
         {obj.Rank && (
-          <div className="flex flex-wrap justify-center gap-4 select-none my-1">
+          <div className="flex flex-wrap justify-center gap-2 select-none my-1">
             {obj.classRank !== undefined && (
               <Chip
                 color="indigo"
