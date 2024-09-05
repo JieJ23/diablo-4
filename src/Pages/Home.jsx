@@ -3,6 +3,7 @@ import Content from "../Components/Heroes";
 import CountdownTimer from "../Components/Countdown";
 import Navigation from "../Button/NavHead";
 import Top10 from "../Components/HomeCarol";
+import SeasonStats from "../Components/SeasonStat";
 
 export function Footer() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
           <Navigation />
 
           <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg">
-            <div className="text-[#868fed] font-customDiablo font-bold text-[28px] sm:text-[32px] mb-2">
+            <div className="text-[#868fed] font-customDress font-bold text-[28px] sm:text-[32px] mb-2">
               Welcome to Diablo 4 Pit
             </div>
             <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -41,7 +42,18 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="flex flex-col max-w-[1200px] mx-auto w-full px-4">
+          <div className="flex w-full justify-center my-5">
+            <SubmitCard />
+          </div>
+
+          <section className="text-center my-5 px-2">
+            <Content />
+          </section>
+
+          <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-4">
+            <div className="text-[#868fed] font-customDress font-bold text-[22px] sm:text-[28px] mb-2">
+              Season Of The Infernal Horde: Pit Ladder
+            </div>
             <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
               Countdown to the conclusion of submissions for the seasonal
               leaderboard. Following this, we will present the results for the
@@ -50,24 +62,14 @@ export default function Home() {
               will begin for the new season and ladder, with everything reset
               for a fresh start.
             </div>
-
-            <div className="flex justify-start gap-x-2 px-0">
-              <div className="text-white font-customNoto text-center my-5 w-full h-[67px] max-w-[170px] sm:max-w-[200px] bg-[#cc3737cc] rounded-xl flex justify-center p-2 items-center text-[16px] whitespace-pre-line">
-                {`Season Of The
-                Infernal Horde`}
-              </div>
+            <div className="grid grid-cols-2 gap-4 max-w-[500px]">
               <CountdownTimer />
+              <SeasonStats />
             </div>
           </section>
 
-          <div className="flex w-full justify-center my-5">
-            <SubmitCard />
-          </div>
-
-          <Top10 />
-
-          <section className="text-center my-7 px-2">
-            <Content />
+          <section className="text-center mb-10">
+            <Top10 />
           </section>
 
           <Footer />

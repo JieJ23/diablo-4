@@ -23,7 +23,7 @@ const contentObj = [
   },
   {
     title: `Class Blocks`,
-    summary: `Block builds: comprising all entries showcasing every class used and their popularity. Visualizing the pit balance environment of the class through pit clears.`,
+    summary: `Comprising all entries showcasing every class used and their popularity. Visualizing the pit balance environment of the class through pit clears.`,
     link: `/Puzzle`,
     image: `stats`,
   },
@@ -32,21 +32,41 @@ const contentObj = [
 export function CardContent({ image, link, title, summary }) {
   return (
     <Card className="bg-gradient-to-b from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
-      <Link to={link}>
-        <div className="text-start p-2">
-          <Typography className="mb-2 font-customDress font-bold text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all">
-            {title}
-          </Typography>
-          <Typography className="text-[12px] font-customSource text-gray-300 group-hover:scale-[98%] ease-in duration-300 transition-all">
-            {summary}
-          </Typography>
-        </div>
-        <div
-          color="black"
-          className="h-56 bg-cover bg-center shadow-[0_0_20px_#131111] rounded-xl group-hover:scale-95 ease-in duration-300 transition-all"
-          floated={false}
-          style={{ backgroundImage: `url("/bg/${image}.png")` }}
-        />
+      <div className="text-start p-2">
+        <Typography className="mb-2 font-customDress font-bold text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all">
+          {title}
+        </Typography>
+        <Typography className="text-[12px] font-customSource text-gray-300 group-hover:scale-[98%] ease-in duration-300 transition-all">
+          {summary}
+        </Typography>
+      </div>
+      <div
+        color="black"
+        className="h-56 bg-cover bg-center shadow-[0_0_20px_#131111] rounded-xl group-hover:scale-95 ease-in duration-300 transition-all"
+        floated={false}
+        style={{ backgroundImage: `url("/bg/${image}.png")` }}
+      />
+      <Link to={link} className="mt-4">
+        <Button
+          variant="filled"
+          className="bg-[#31376fcc] group-hover:scale-95 ease-in duration-200 transition-all flex items-center gap-2 font-customSource text-[12px]"
+        >
+          To {title}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="h-5 w-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </Button>
       </Link>
     </Card>
   );

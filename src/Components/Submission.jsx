@@ -13,7 +13,7 @@ export function SubmitCard() {
       />
       <div className="w-2/5 sm:w-1/2 flex flex-col p-2 justify-center gap-2">
         <div>
-          <div className="text-[#868fed] font-customDiablo text-[14px] lg:text-[24px]">
+          <div className="text-[#868fed] font-customDress text-[18px] lg:text-[24px]">
             Divided by Class, United by Purpose
           </div>
           <div className="text-[12px] sm:text-[14px] font-customNoto text-gray-300">

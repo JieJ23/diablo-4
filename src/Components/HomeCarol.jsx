@@ -53,10 +53,21 @@ function CreateBoard({ arr, title }) {
                 className="shadow-[0_0_20px_black]"
               />
             </div>
-            <div className="flex-1 text-center text-white font-customNoto text-[14px]">
-              <div className="text-[10px] font-customDiablo">Tier</div>
-              {run.Tier}
-            </div>
+            {run.Tier === 101 ? (
+              <div className="flex-1 text-center text-white font-customNoto text-[14px]">
+                <div className="text-[10px] text-[orange] font-customDiablo">
+                  Time
+                </div>
+                {run["Time Used"]}
+              </div>
+            ) : (
+              <div className="flex-1 text-center text-white font-customNoto text-[14px]">
+                <div className="text-[10px] text-[red] font-customDiablo">
+                  Tier
+                </div>
+                {run.Tier}
+              </div>
+            )}
           </ListItem>
         ))}
       </List>
@@ -111,7 +122,19 @@ export default function Top10() {
     .filter((obj) => obj.Mode === `HC`)
     .slice(0, 10);
 
-  const top10Category = [top10Overall, top10Hardcore];
+  //
+  const speed101runs = posts
+    .slice()
+    .filter((obj) => obj.Tier === 101)
+    .sort((a, b) =>
+      convertToSec(a["Time Used"]) > convertToSec(b["Time Used"]) ? 1 : -1
+    );
+
+  const finalizedspeed101 = removeDup(speed101runs).slice(0, 10);
+
+  //
+
+  const top10Category = [top10Overall, top10Hardcore, finalizedspeed101];
 
   return (
     <section className="my-5 w-full bg-transparent max-w-[1200px] mx-auto relative flex gap-2 flex-col md:flex-row px-2">
