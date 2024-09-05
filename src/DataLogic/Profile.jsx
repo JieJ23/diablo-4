@@ -56,4 +56,5 @@ export const haveProfile = [
   `Zaramos666`,
   `Pinkkuma`,
   `voidseer`,
+  `Nayutea`,
 ];
