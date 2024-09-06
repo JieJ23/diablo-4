@@ -33,10 +33,10 @@ export default function Navigation() {
         className="p-1 font-customTitle flex space-x-2 items-center hover:scale-110 ease-in duration-300 transition-all hover:text-red-500"
       >
         <Link
-          to={"/Ladderboard"}
+          to={"/About"}
           className="items-center font-customDiablo text-[18px]"
         >
-          Seasonal Pit
+          About
         </Link>
       </Typography>
       <Typography
@@ -59,6 +59,28 @@ export default function Navigation() {
           className="items-center font-customDiablo text-[18px]"
         >
           Privacy
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        className="p-1 font-customTitle flex space-x-2 items-center hover:scale-110 ease-in duration-300 transition-all hover:text-red-500"
+      >
+        <Link
+          to={"/Cookies"}
+          className="items-center font-customDiablo text-[18px]"
+        >
+          Cookies
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        className="p-1 font-customTitle flex space-x-2 items-center hover:scale-110 ease-in duration-300 transition-all hover:text-red-500"
+      >
+        <Link
+          to={"/TermsAndConditions"}
+          className="items-center font-customDiablo text-[18px]"
+        >
+          Terms & Conditions
         </Link>
       </Typography>
       <Typography
@@ -89,9 +111,6 @@ export default function Navigation() {
           <Link to={"/"}>
             <div className="flex items-center">
               <Avatar src="/diablo4_icon.png" size="sm" />
-              <Typography className="font-customDiablo text-[24px]">
-                Diablo 4 Pit
-              </Typography>
             </div>
           </Link>
 

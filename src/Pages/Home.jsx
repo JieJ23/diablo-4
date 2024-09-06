@@ -4,16 +4,38 @@ import CountdownTimer from "../Components/Countdown";
 import Navigation from "../Button/NavHead";
 import Top10 from "../Components/HomeCarol";
 import SeasonStats from "../Components/SeasonStat";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <div className="mt-15">
-      <div className="text-white font-customDiablo text-center text-[14px] px-2 pt-2">
+    <div className="mt-15 py-5 flex flex-col gap-1">
+      <div className="flex justify-center gap-4">
+        <Link
+          to={`/Privacy`}
+          className="text-white font-customNoto text-[13px]"
+        >
+          Privacy
+        </Link>
+        <Link
+          to={`/Cookies`}
+          className="text-white font-customNoto text-[13px]"
+        >
+          Cookies
+        </Link>
+        <Link
+          to={`/TermsAndConditions`}
+          className="text-white font-customNoto text-[13px]"
+        >
+          Terms & Conditions
+        </Link>
+      </div>
+      <div className="text-gray-400 font-customNoto text-center text-[12px] px-2">
         This website has no affiliation with or endorsement from Activision
         Blizzard, Inc.
       </div>
-      <div className="text-white font-customNoto text-center text-[12px] px-2 pb-2">
-        © 2024 CY ®
+
+      <div className="text-gray-400 font-customNoto text-center text-[12px]">
+        © 2024 CY. All rights reserved.
       </div>
     </div>
   );
@@ -37,12 +59,12 @@ export default function Home() {
             <div className="text-[#868fed] font-customDress font-bold text-[28px] sm:text-[32px] mb-2">
               Welcome to Diablo 4 Pit
             </div>
-            <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
-              {`A website dedicated to documenting pit runs for each season. Launched in Season 5, the Season of the Infernal Horde, our platform offers the community a competitive leaderboard, ranking participants based on the fastest completion times and, more significantly, the highest tier completions. The leaderboards may offer new insights into play styles and builds, while also introducing you to other content creators and gamers.`}
+            <div className="whitespace-pre-line text-gray-400 font-customNoto text-[13px]">
+              {`A website dedicated to documenting pit runs for each season. Launched in Season 5, the Season of the Infernal Horde, our platform offers the community a competitive leaderboard, ranking participants based on the fastest completion times and, more significantly, the highest tier completions. The leaderboards may offer new insights into play styles and builds, while also introducing you to other content creators and gamers. The primary objective of this website is to create a unified platform that brings together both Western and Eastern gaming communities, fostering a sense of connection and collaboration across different cultures. By highlighting and showcasing the talents of players and content creators from all corners of the globe, whether they are well-known or just starting out, the site aims to celebrate and promote diverse contributions to the gaming world, regardless of size or region.`}
             </div>
           </section>
 
-          <div className="flex w-full justify-center my-5">
+          <div className="flex justify-center">
             <SubmitCard />
           </div>
 
@@ -54,13 +76,19 @@ export default function Home() {
             <div className="text-[#868fed] font-customDress font-bold text-[22px] sm:text-[28px] mb-2">
               Season Of The Infernal Horde: Pit Ladder
             </div>
-            <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
-              Countdown to the conclusion of submissions for the seasonal
-              leaderboard. Following this, we will present the results for the
-              top 10 players in each respective class, along with additional
-              statistics derived from community entries. Afterward, preparations
-              will begin for the new season and ladder, with everything reset
-              for a fresh start.
+            <div className="whitespace-pre-line font-customNoto text-[13px] text-gray-400">
+              As we approach the final countdown to the end of the season, the
+              conclusion of submissions for the seasonal leaderboard is drawing
+              near. Below, you'll find an overview of key statistics reflecting
+              the community's participation throughout the season. These stats
+              include the total number of players who have taken part, the
+              overall entries submitted, the combined tiers completed across all
+              submissions, and finally, the cumulative time spent by players in
+              clearing those tiers. This data offers a comprehensive look at the
+              collective efforts and achievements of everyone involved during
+              the season. If you're looking for more detailed insights, feel
+              free to explore the Class Build section, where you can find
+              comprehensive information and overviews for each class
             </div>
             <div className="grid grid-cols-2 gap-4 max-w-[500px]">
               <CountdownTimer />

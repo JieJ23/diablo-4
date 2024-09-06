@@ -4,23 +4,23 @@ import { Card, Button } from "@material-tailwind/react";
 export function SubmitCard() {
   return (
     <Card
-      className="w-full flex flex-row justify-center h-[320px] max-w-[1200px] gap-1 sm:gap-8 p-2 bg-transparent"
+      className="justify-center max-w-[1200px] gap-1 sm:gap-8 p-2 bg-transparent"
       shadow={false}
     >
-      <div
-        className="w-3/5 sm:w-1/2 bg-cover bg-center rounded-2xl border-[1px] sm:border-[2px] border-black shadow-[0_0_20px_black]"
-        style={{ backgroundImage: `url("/bg/s5.png")` }}
-      />
-      <div className="w-2/5 sm:w-1/2 flex flex-col p-2 justify-center gap-2">
+      <div className="flex flex-col p-2 justify-center gap-2">
         <div>
-          <div className="text-[#868fed] font-customDress text-[18px] lg:text-[24px]">
+          <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px]">
             Divided by Class, United by Purpose
           </div>
-          <div className="text-[12px] sm:text-[14px] font-customNoto text-gray-300">
+          <div className="text-[13px] font-customNoto text-gray-400">
             Submit and showcase your gameplay, and become an active part of the
             community as we strive to reach the highest pit this season. Your
             journey is unique and deserves to be celebrated and remembered by
-            all.
+            all. Entries will primarily rely on contributions from players and
+            community submissions, serving as the main source of content.
+            Additionally, the developer will actively participate by submitting
+            entries gathered from a variety of platforms to ensure a broader
+            representation of the gaming experience.
           </div>
         </div>
         <Link

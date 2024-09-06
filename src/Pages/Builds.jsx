@@ -3,7 +3,8 @@ import DataLoadingLoader from "../Hook/Loader";
 
 import { ReturnSkillIcon } from "../DataLogic/ProcessFunction";
 import { Typography, Tooltip, Avatar } from "@material-tailwind/react";
-import { Tabs } from "../Components/Breadcrumbs";
+
+import { Footer } from "./Home";
 
 import Navigation from "../Button/NavHead";
 export default function Builds() {
@@ -18,8 +19,6 @@ export default function Builds() {
     const temp = posts.filter((obj) => obj.Class === t);
     return temp.length;
   }
-
-  console.log(findTotalOfClass("Druid"));
 
   function addClassSetUp(c) {
     const tempBuildCount = [];
@@ -64,10 +63,10 @@ export default function Builds() {
 
       <Navigation />
       <section className="mt-5">
-        <div className="text-[24px] font-customDiablo text-white text-center">
+        <div className="text-[24px] font-customDress text-white text-center">
           Selection Stats
         </div>
-        <div className="text-[12px] font-customNoto text-gray-400 text-center px-8 max-w-[800px] mx-auto">
+        <div className="text-[13px] font-customNoto text-gray-400 text-center px-8 max-w-[800px] mx-auto">
           Showcasing the top skills for each class in higher-tier clears
           involves focusing on those abilities that are most frequently used by
           elite players. These skills are chosen for their effectiveness,
@@ -130,6 +129,7 @@ export default function Builds() {
           ))}
         </div>
       )}
+      <Footer />
     </section>
   );
 }

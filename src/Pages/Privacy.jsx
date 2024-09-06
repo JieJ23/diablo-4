@@ -14,8 +14,8 @@ export default function Privacy() {
       <div className="h-full flex flex-col justify-between">
         <Navigation />
 
-        <section className="text-start px-6 max-w-[1200px] mx-auto my-10">
-          <div className="text-[#adb6fd] font-customNoto text-[36px] my-6">
+        <section className="text-start px-6 max-w-[1200px] mx-auto my-10 bg-[transparent] rounded-lg">
+          <div className="text-orange-400 font-customNoto text-[36px] my-6">
             Privacy Policy
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -26,16 +26,16 @@ export default function Privacy() {
             We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the Privacy Policy Generator.`}
           </div>
 
-          <div className="text-[#adb6fd] font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[28px] my-6">
             Interpretation and Definitions
           </div>
-          <div className="text-cyan-400 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[24px] my-6">
             Interpretation
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
             {`The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.`}
           </div>
-          <div className="text-cyan-400 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[24px] my-6">
             Definitions
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -66,10 +66,10 @@ export default function Privacy() {
                 • You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.`}
           </div>
 
-          <div className="text-[#adb6fd] font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[28px] my-6">
             Collecting and Using Your Personal Data
           </div>
-          <div className="text-cyan-400 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[24px] my-6">
             Types of Data Collected
           </div>
           <div className="text-white font-customNoto text-[20px] my-6">
@@ -138,7 +138,7 @@ For more information about the cookies we use and your choices regarding cookies
                 `}
           </div>
 
-          <div className="text-cyan-400 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[24px] my-6">
             Use of Your Personal Data
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -170,7 +170,7 @@ For business transfers: We may share or transfer Your personal information in co
 • With Your consent: We may disclose Your personal information for any other purpose with Your consent.`}
           </div>
 
-          <div className="text-cyan-400 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[24px] my-6">
             Retention of Your Personal Data
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -180,7 +180,7 @@ The Company will also retain Usage Data for internal analysis purposes. Usage Da
             `}
           </div>
 
-          <div className="text-cyan-400 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[24px] my-6">
             Transfer of Your Personal Data
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -192,7 +192,7 @@ The Company will take all steps reasonably necessary to ensure that Your data is
             `}
           </div>
 
-          <div className="text-cyan-400 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[24px] my-6">
             Delete Your Personal Data
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -206,7 +206,7 @@ Please note, however, that We may need to retain certain information when we hav
             `}
           </div>
 
-          <div className="text-cyan-400 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[24px] my-6">
             Disclosure of Your Personal Data
           </div>
           <div className="text-white font-customNoto text-[20px] my-6">
@@ -246,7 +246,7 @@ Please note, however, that We may need to retain certain information when we hav
             `}
           </div>
 
-          <div className="text-[#adb6fd] font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[28px] my-6">
             Children's Privacy
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -256,7 +256,7 @@ If We need to rely on consent as a legal basis for processing Your information a
             `}
           </div>
 
-          <div className="text-[#adb6fd] font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[28px] my-6">
             Links to Other Websites
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -266,7 +266,7 @@ We have no control over and assume no responsibility for the content, privacy po
             `}
           </div>
 
-          <div className="text-[#adb6fd] font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[28px] my-6">
             Changes to this Privacy Policy
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
@@ -278,7 +278,7 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
             `}
           </div>
 
-          <div className="text-[#adb6fd] font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[28px] my-6">
             Contact Us
           </div>
           <div className="whitespace-pre-line text-white font-customNoto text-[14px]">

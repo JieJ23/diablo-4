@@ -37,20 +37,16 @@ const CountdownTimer = () => {
   const formatTime = (time) => time.toString().padStart(2, "0");
 
   return (
-    <div className="text-white text-center my-5 rounded-xl flex flex-col justify-evenly p-3 gap-2 bg-gradient-to-t from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b]">
-      <div>
-        <div className="text-[14px] font-customNoto p-2 text-orange-200">
-          Season 5 Pit
-        </div>
+    <div className="text-white text-center my-5 rounded-xl flex flex-col justify-between p-3 gap-2 bg-gradient-to-t from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b]">
+      <div className="text-[14px] font-customNoto text-orange-200">
+        Season 5 Pit
       </div>
-      <div className="text-center">
-        <p className="text-[28px] font-customNoto">
-          {formatTime(timeLeft.days * 24 + timeLeft.hours)}:
-          {formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}
-        </p>
-        <div className="text-[12px] font-customNoto text-orange-200">
-          Before S5 Lock-In
-        </div>
+      <p className="text-[24px] font-customNoto">
+        {formatTime(timeLeft.days * 24 + timeLeft.hours)}:
+        {formatTime(timeLeft.minutes)}:{formatTime(timeLeft.seconds)}
+      </p>
+      <div className="text-[12px] font-customNoto text-orange-200">
+        Before S5 Lock-In
       </div>
     </div>
   );

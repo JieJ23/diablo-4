@@ -119,7 +119,7 @@ export default function ClassChart2() {
       <div className="text-[20px] text-white text-center font-customDress mt-2 select-none">
         Balance Trend
       </div>
-      <div className="text-[12x] text-gray-400 text-center font-customSource mt-2 select-none">
+      <div className="text-[13px] text-gray-400 text-center font-customSource mt-2 select-none">
         Highest & Avg (Overall Entries T101 & Above)
       </div>
       <CardBody className="px-2 pb-2 pt-0 select-none pointer-events-none">

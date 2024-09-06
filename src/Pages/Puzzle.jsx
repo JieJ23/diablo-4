@@ -6,6 +6,7 @@ import { Avatar } from "@material-tailwind/react";
 import ClassChart from "../Components/ClassChart";
 import ClassChart2 from "../Components/ClassChart2";
 import Navigation from "../Button/NavHead";
+import { Footer } from "./Home";
 
 function CreateBox({ c, a, t, p }) {
   return (
@@ -38,7 +39,6 @@ export default function Puzzle() {
         alt="cover-bg"
         className="fixed h-lvh w-full object-cover -z-10 object-center"
       />
-
       <Navigation />
 
       {loader ? (
@@ -55,7 +55,7 @@ export default function Puzzle() {
             <div className="font-customDress text-[20px] text-center text-white px-4">
               Building Blocks (P/C Performance)
             </div>
-            <div className="font-customNoto text-[12px] text-center text-gray-400 px-6">
+            <div className="font-customNoto text-[13px] text-center text-gray-400 px-6">
               Below are all the entries, sorted from highest to lowest tier
               completion, providing a visual representation of the current
               leaderboard.
@@ -74,6 +74,7 @@ export default function Puzzle() {
           </div>
         </>
       )}
+      <Footer />
     </section>
   );
 }

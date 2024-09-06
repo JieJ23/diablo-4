@@ -5,7 +5,7 @@ import { Spinner } from "@material-tailwind/react";
 function convertToTime(s) {
   let min = Math.floor(s / 60);
   let seconds = Math.floor(s % 60);
-  return `~ ${min} mins`;
+  return `+${min} m`;
 }
 
 export default function SeasonStats() {
@@ -42,19 +42,19 @@ export default function SeasonStats() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="font-customNoto text-[16px]">
+            <div className="font-customNoto text-[12px] sm:text-[16px]">
               {totalPlayers}
               <div className="text-[12px] text-orange-200">Total Players</div>
             </div>
-            <div className="font-customNoto text-[16px]">
+            <div className="font-customNoto text-[12px] sm:text-[16px]">
               {totalEntries}
               <div className="text-[12px] text-orange-200">Total Entries</div>
             </div>
-            <div className="font-customNoto text-[16px]">
+            <div className="font-customNoto text-[12px] sm:text-[16px]">
               {totalTiers}
-              <div className="text-[12px] text-orange-200">Tiers Cleared</div>
+              <div className="text-[12px] text-orange-200">Total Tiers</div>
             </div>
-            <div className="font-customNoto text-[16px]">
+            <div className="font-customNoto text-[12px] sm:text-[16px]">
               {convertToTime(totalTime)}
               <div className="text-[12px] text-orange-200">Game Time</div>
             </div>

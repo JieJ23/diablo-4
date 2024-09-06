@@ -114,12 +114,6 @@ export default function PitLadder() {
         <DataLoadingLoader />
       ) : (
         <div className="mt-5">
-          <div className="absolute top-1 left-1 text-cyan-200 font-customNoto text-[10px] -z-10">
-            {checkUser.length} / {checkUP.length}
-          </div>
-          <div className="absolute bottom-1 left-1 text-yellow-500 font-customNoto text-[10px] -z-10">
-            {checkSelf.length}
-          </div>
           <AccordWrap>
             <Card
               className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
