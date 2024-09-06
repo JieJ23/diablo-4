@@ -58,4 +58,5 @@ export const haveProfile = [
   `voidseer`,
   `Nayutea`,
   `dior`,
+  `Slott`,
 ];
