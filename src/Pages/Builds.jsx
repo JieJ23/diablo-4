@@ -62,7 +62,7 @@ export default function Builds() {
       />
 
       <Navigation />
-      <section className="mt-5">
+      <section className="mt-5 select-none">
         <div className="text-[24px] font-customDress text-[#868fed] text-center">
           Selection Stats
         </div>
@@ -78,7 +78,7 @@ export default function Builds() {
       {loader ? (
         <DataLoadingLoader />
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto max-w-[1600px] px-4 my-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto max-w-[1600px] px-4 my-5 select-none">
           {allBuildCount.map((compo) => (
             <div>
               <div>

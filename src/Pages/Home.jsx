@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <div className="mt-15 py-5 flex flex-col gap-1">
+    <div className="mt-15 py-5 flex flex-col gap-1 select-none">
       <div className="flex justify-center gap-4">
         <Link
           to={`/Privacy`}

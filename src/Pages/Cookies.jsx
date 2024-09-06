@@ -14,7 +14,7 @@ export default function Cookies() {
       <div className="h-full flex flex-col justify-between">
         <Navigation />
 
-        <section className="text-start px-6 max-w-[1200px] mx-auto my-10 bg-[transparent] rounded-lg">
+        <section className="text-start px-6 max-w-[1200px] mx-auto my-10 bg-[transparent] rounded-lg select-none">
           <div className="text-orange-400 font-customNoto text-[20px] sm:text-[28px] my-6">
             Cookies Policy
           </div>

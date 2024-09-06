@@ -15,7 +15,7 @@ export default function Tools() {
       <div className="h-full flex flex-col justify-between">
         <Navigation />
 
-        <section className="my-10">
+        <section className="my-10 select-none">
           <div className="px-6 max-w-[1000px] mx-auto mb-10 rounded-lg">
             <div className="text-center text-[#868fed] font-customDress font-bold text-[24px] mb-2">
               Resources & Tools
