@@ -52,7 +52,7 @@ export default function Puzzle() {
             <ClassChart />
           </div>
           <div className="my-10">
-            <div className="font-customDress text-[20px] text-center text-white px-4">
+            <div className="font-customDress text-[20px] text-center text-[#868fed] px-4">
               Building Blocks (P/C Performance)
             </div>
             <div className="font-customNoto text-[13px] text-center text-gray-400 px-6">

@@ -15,10 +15,10 @@ export default function Cookies() {
         <Navigation />
 
         <section className="text-start px-6 max-w-[1200px] mx-auto my-10 bg-[transparent] rounded-lg">
-          <div className="text-orange-400 font-customNoto text-[36px] my-6">
+          <div className="text-orange-400 font-customNoto text-[20px] sm:text-[28px] my-6">
             Cookies Policy
           </div>
-          <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+          <div className="whitespace-pre-line text-white font-customNoto text-[13px]">
             {`Last updated: September 06, 2024
 
 This Cookies Policy explains what Cookies are and how We use them. You should read this policy so You can understand what type of cookies We use, or the information We collect using Cookies and how that information is used. This Cookies Policy has been created with the help of the Free Cookies Policy Generator.
@@ -28,19 +28,19 @@ Cookies do not typically contain any information that personally identifies a us
 We do not store sensitive personal information, such as mailing addresses, account passwords, etc. in the Cookies We use.`}
           </div>
 
-          <div className="text-orange-400 font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[20px] sm:text-[24px] my-6">
             Interpretation and Definitions
           </div>
-          <div className="text-orange-100 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[18px] my-6">
             Interpretation
           </div>
-          <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+          <div className="whitespace-pre-line text-white font-customNoto text-[13px]">
             {`The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.`}
           </div>
-          <div className="text-orange-100 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[18px] my-6">
             Definitions
           </div>
-          <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+          <div className="whitespace-pre-line text-white font-customNoto text-[13px]">
             {`For the purposes of this Cookies Policy:
 
                 • Company (referred to as either "the Company", "We", "Us" or "Our" in this Cookies Policy) refers to Diablo 4 Pit.
@@ -52,19 +52,19 @@ We do not store sensitive personal information, such as mailing addresses, accou
                 • You means the individual accessing or using the Website, or a company, or any legal entity on behalf of which such individual is accessing or using the Website, as applicable.`}
           </div>
 
-          <div className="text-orange-400 font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[20px] sm:text-[24px] my-6">
             The use of the Cookies
           </div>
-          <div className="text-orange-100 font-customNoto text-[24px] my-6">
+          <div className="text-orange-100 font-customNoto text-[18px] my-6">
             Type of Cookies We Use
           </div>
-          <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+          <div className="whitespace-pre-line text-white font-customNoto text-[13px]">
             {`Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close your web browser.
             
             We use both session and persistent Cookies for the purposes set out below:`}
           </div>
 
-          <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+          <div className="whitespace-pre-line text-white font-customNoto text-[13px]">
             {`• Necessary / Essential Cookies
 
 Type: Session Cookies
@@ -82,10 +82,10 @@ Administered by: Us
 Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.`}
           </div>
 
-          <div className="text-orange-400 font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[20px] sm:text-[24px] my-6">
             Your Choices Regarding Cookies
           </div>
-          <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+          <div className="whitespace-pre-line text-white font-customNoto text-[13px]">
             {`If You prefer to avoid the use of Cookies on the Website, first You must disable the use of Cookies in your browser and then delete the Cookies saved in your browser associated with this website. You may use this option for preventing the use of Cookies at any time.
 
 If You do not accept Our Cookies, You may experience some inconvenience in your use of the Website and some features may not function properly.
@@ -100,16 +100,16 @@ If You'd like to delete Cookies or instruct your web browser to delete or refuse
 For any other web browser, please visit your web browser's official web pages.`}
           </div>
 
-          <div className="text-orange-400 font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[20px] sm:text-[24px] my-6">
             More Information about Cookies
           </div>
-          <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+          <div className="whitespace-pre-line text-white font-customNoto text-[13px]">
             {`You can learn more about cookies: Cookies: What Do They Do?.`}
           </div>
-          <div className="text-orange-400 font-customNoto text-[28px] my-6">
+          <div className="text-orange-400 font-customNoto text-[20px] sm:text-[24px] my-6">
             Contact Us
           </div>
-          <div className="whitespace-pre-line text-white font-customNoto text-[14px]">
+          <div className="whitespace-pre-line text-white font-customNoto text-[13px]">
             {`If you have any questions about this Cookies Policy, You can contact us:
             
             • By email: ycaprice23@gmail.com`}

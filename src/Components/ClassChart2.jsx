@@ -116,7 +116,7 @@ export default function ClassChart2() {
 
   return (
     <Card className="bg-[#131111] opacity-90" shadow={false}>
-      <div className="text-[20px] text-white text-center font-customDress mt-2 select-none">
+      <div className="text-[20px] text-[#868fed] text-center font-customDress mt-2 select-none">
         Balance Trend
       </div>
       <div className="text-[13px] text-gray-400 text-center font-customSource mt-2 select-none">
