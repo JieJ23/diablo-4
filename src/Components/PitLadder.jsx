@@ -149,6 +149,9 @@ export default function PitLadder() {
                   ))}
                 </div>
               </CardFooter>
+              <div className="text-white text-[12px] text-center my-5 font-customNoto">
+                Animation by Winston Duke @lifelongfiction
+              </div>
             </Card>
           </AccordWrap>
         </div>

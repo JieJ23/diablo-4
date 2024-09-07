@@ -14,8 +14,6 @@ import { useEffect } from "react";
 import { convertToSec } from "../DataLogic/ProcessFunction";
 import { haveProfile } from "../DataLogic/Profile";
 //
-const build151 = new Date(`08/16/2024`);
-const build152 = new Date(`09/03/2024`);
 //
 export const tierColor = (tier) => {
   if (tier >= 150) {
@@ -33,7 +31,7 @@ export const tierColor = (tier) => {
   }
 };
 
-export const classColor = (type) => {
+export const PTRclassColor = (type) => {
   switch (type) {
     case "Barbarian":
       return `#990000`;
@@ -45,6 +43,8 @@ export const classColor = (type) => {
       return `#013220`;
     case "Sorcerer":
       return "#003366";
+    case "Spiritborn":
+      return `#008080`;
   }
 };
 
@@ -69,7 +69,7 @@ function Icon({ id }) {
   );
 }
 
-export default function AccordionMain({ obj, watch, watch2 }) {
+export default function PTRAccordionMain({ obj, watch, watch2 }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -123,7 +123,7 @@ export default function AccordionMain({ obj, watch, watch2 }) {
               draggable={false}
               variant="rounded"
               size="sm"
-              style={{ backgroundColor: classColor(obj.Class) }}
+              style={{ backgroundColor: PTRclassColor(obj.Class) }}
               className="hover:scale-[110%] ease-in duration-100 transition-all shadow-[0_0_20px_black]"
             />
           </Tooltip>
@@ -168,20 +168,8 @@ export default function AccordionMain({ obj, watch, watch2 }) {
           {obj.Tier}
         </div>
       </AccordionHeader>
-      {/* Patches */}
-      {new Date(obj.Date) > build152 && (
-        <div className="absolute top-1 right-1 text-[10px] text-gray-300 text-center select-none">
-          1.5.2 Build
-        </div>
-      )}
-      {new Date(obj.Date) > build151 && new Date(obj.Date) <= build152 && (
-        <div className="absolute top-1 right-1 text-[10px] text-gray-500 text-center select-none">
-          1.5.1 Build
-        </div>
-      )}
-      {/* Patches  */}
       <AccordionBody className="flex flex-col justify-evenly">
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 mb-1 uppercase">
           <div>
             {obj["Build Planner"] === "" ? (
               <Typography className="font-customNoto text-[14px]" color="white">
@@ -210,7 +198,7 @@ export default function AccordionMain({ obj, watch, watch2 }) {
           </div>
         </div>
 
-        <div className="flex gap-2 justify-center">
+        <div className="flex gap-1 justify-center my-1">
           {ReturnSkillIcon(obj["Skills Used"]).map((item) => (
             <Tooltip
               content={
@@ -231,6 +219,30 @@ export default function AccordionMain({ obj, watch, watch2 }) {
                 size="sm"
                 draggable={false}
                 className="hover:scale-[110%] ease-in duration-100 transition-all"
+                loading="lazy"
+              />
+            </Tooltip>
+          ))}
+        </div>
+
+        <div className="flex gap-1 justify-center my-1">
+          {ReturnSkillIcon(obj["Runewords"]).map((item) => (
+            <Tooltip
+              content={
+                <div className="px-2">
+                  <Typography className="font-customDiablo text-[14px] text-[#b373e4]">
+                    Runewords: {item}
+                  </Typography>
+                </div>
+              }
+              className="bg-black select-none p-1 border-[1px]"
+            >
+              <Avatar
+                src={`/Runewords/${item}.png`}
+                variant="rounded"
+                size="sm"
+                draggable={false}
+                className="hover:scale-[110%] ease-in duration-100 transition-all shadow-[0_0_10px_purple]"
                 loading="lazy"
               />
             </Tooltip>
