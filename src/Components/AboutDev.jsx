@@ -4,13 +4,24 @@ import {
   CardBody,
   Typography,
   Avatar,
+  Chip,
 } from "@material-tailwind/react";
+
+import { classColor } from "./Accordion";
+
+const historyObj = [
+  { class: `Necromancer`, build: `Minion/Golem` },
+  { class: `Barbarian`, build: `HOTA Bash` },
+  { class: `Barbarian`, build: `Whirlwind Bleed` },
+  { class: `Sorcerer`, build: `Frozen Orb Lightning Spear` },
+  { class: `Rogue`, build: `Andy Barrage` },
+];
 
 export function AboutDev() {
   return (
     <div className="flex max-w-[1200px] flex-col justify-center text-center gap-y-8 my-10">
       <section className="flex flex-col max-w-[1200px] mx-auto w-full gap-2">
-        <div className="text-[#868fed] font-customDress font-bold text-[22px] sm:text-[28px]">
+        <div className="text-[#868fed] font-customDress font-bold text-[22px] sm:text-[28px] uppercase">
           About
         </div>
         <div className="whitespace-pre-line font-customNoto text-[12px] sm:text-[13px] text-gray-400 sm:w-[80%] mx-auto">
@@ -51,6 +62,22 @@ export function AboutDev() {
           />
         </CardBody>
       </Card>
+
+      <section className="flex flex-col max-w-[1000px] mx-auto w-full gap-2">
+        <div className="text-[#868fed] font-customDress font-bold text-[22px] uppercase">
+          Build Played
+        </div>
+        <div className="flex flex-wrap gap-2 justify-center">
+          {historyObj.map((obj) => (
+            <Chip
+              value={`${obj.class}: ${obj.build}`}
+              className="text-white font-customNoto text-[14px] p-2"
+              variant="filled"
+              style={{ backgroundColor: classColor(obj.class) }}
+            />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

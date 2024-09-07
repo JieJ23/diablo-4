@@ -134,7 +134,7 @@ export default function PTRAccordionMain({ obj, watch, watch2 }) {
             obj.Mode === "HC" ? `text-[red]` : `text-white`
           }`}
         >
-          <div className="flex gap-1 justify-center items-center font-customSource font-light">
+          <div className="flex gap-1 justify-center items-center font-customNoto text-[13px] font-light">
             {haveProfile.includes(obj.Player) && (
               <Avatar
                 src={`/pfp/${obj.Player}.png`}
@@ -148,56 +148,36 @@ export default function PTRAccordionMain({ obj, watch, watch2 }) {
         </div>
 
         <div
-          className={`flex-1 text-center font-customNoto text-[12px] md:text-[14px] ${
+          className={`flex-1 text-center font-customNoto text-[14px] ${
             writeTimeInMS(obj["Time Used"]) <= 180 && `text-orange-300`
           }`}
         >
-          <span className="font-customNoto font-normal text-[16px] text-[orange]">
+          <span className="font-customNoto font-normal text-[14px] text-[orange]">
             {`C `}
           </span>
           {obj["Time Used"]}
         </div>
 
         <div
-          className={`flex-1 text-center font-customNoto font-normal text-[12px] md:text-[14px]`}
+          className={`flex-1 text-center font-customNoto font-normal text-[14px]`}
           style={{ color: tierColor(obj.Tier) }}
         >
-          <span className="font-customNoto font-normal text-[16px] text-[red]">
+          <span className="font-customNoto font-normal text-[14px] text-[red]">
             {`T `}
           </span>
           {obj.Tier}
         </div>
       </AccordionHeader>
-      <AccordionBody className="flex flex-col justify-evenly">
-        <div className="flex justify-center gap-4 mb-1 uppercase">
-          <div>
-            {obj["Build Planner"] === "" ? (
-              <Typography className="font-customNoto text-[14px]" color="white">
-                Build:
-              </Typography>
-            ) : (
-              <Typography
-                className="font-customNoto font-semibold text-[14px] hover:scale-[105%] ease-in duration-100 transition-all"
-                color="blue"
-              >
-                <a href={obj["Build Planner"]} target="_blank">
-                  Build:
-                </a>
-              </Typography>
-            )}
-          </div>
-          <div className="text-center">
-            <Typography
-              className="font-customNoto font-semibold text-[14px] hover:scale-[105%] ease-in duration-100 transition-all uppercase"
-              color="amber"
-            >
-              <a href={obj["Run Video"]} target="_blank">
-                {obj["Build Name"]}
-              </a>
-            </Typography>
-          </div>
+      <div className="flex justify-center uppercase">
+        <div className="text-center">
+          <Typography className="font-customDress font-semibold text-[14px] uppercase text-[#f07d25]">
+            <a href={obj["Run Video"]} target="_blank">
+              {obj["Build Name"]}
+            </a>
+          </Typography>
         </div>
-
+      </div>
+      <AccordionBody className="flex flex-col justify-evenly">
         <div className="flex gap-1 justify-center my-1">
           {ReturnSkillIcon(obj["Skills Used"]).map((item) => (
             <Tooltip

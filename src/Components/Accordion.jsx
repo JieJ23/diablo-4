@@ -134,7 +134,7 @@ export default function AccordionMain({ obj, watch, watch2 }) {
             obj.Mode === "HC" ? `text-[red]` : `text-white`
           }`}
         >
-          <div className="flex gap-1 justify-center items-center font-customSource font-light">
+          <div className="flex gap-1 justify-center items-center font-customNoto text-[13px] font-light">
             {haveProfile.includes(obj.Player) && (
               <Avatar
                 src={`/pfp/${obj.Player}.png`}
@@ -210,7 +210,7 @@ export default function AccordionMain({ obj, watch, watch2 }) {
           </div>
         </div>
 
-        <div className="flex gap-2 justify-center">
+        <div className="flex gap-2 justify-center mt-1">
           {ReturnSkillIcon(obj["Skills Used"]).map((item) => (
             <Tooltip
               content={

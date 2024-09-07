@@ -77,7 +77,7 @@ export function CardContent2({ image, link, title, summary }) {
     <Card className="bg-gradient-to-tr from-[#3f477c] to-black shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
       <Link to={link} target="_blank">
         <div className="text-center p-2">
-          <Typography className="mb-2 font-customDress font-bold text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all">
+          <Typography className="mb-2 font-customDress font-bold text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all uppercase">
             {title}
           </Typography>
           <Typography className="text-[12px] font-customSource text-gray-300 group-hover:scale-[98%] ease-in duration-300 transition-all">

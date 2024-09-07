@@ -21,7 +21,7 @@ export default function PTR_TEST() {
 
       <div className="h-full flex flex-col justify-between">
         <Navigation />
-        <div className="max-w-[1200px] w-full mx-auto px-1">
+        <div className="max-w-[1400px] w-full mx-auto px-1">
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 justify-evenly py-2 px-0 gap-1 select-none">
             {PTR_DATA.map((obj) => (
               <Card
@@ -99,13 +99,13 @@ export default function PTR_TEST() {
               </Card>
             ))}
           </div>
-          <div className="mt-5">
+          <div className="mt-5 w-full max-w-[1200px] mx-auto">
             <AccordWrap>
               <Card className="bg-transparent" shadow={false}>
                 {PTR_DATA.map((obj, index) => (
                   <div
                     className={`${
-                      index % 2 === 0 ? `bg-[#0d1c2ecc]` : `bg-[#151515cc]`
+                      index % 2 === 0 ? `bg-[#0e141bcc]` : `bg-[#13213dcc]`
                     } mb-1 rounded-lg backdrop-blur-sm relative border-[2px] border-[#131111]`}
                   >
                     <PTRAccordionMain obj={obj} />
