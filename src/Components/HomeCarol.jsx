@@ -27,7 +27,7 @@ function CreateBoard({ arr, title }) {
         <ListItem className="text-center">
           <div className="flex-1 text-center">
             <Typography className="font-customDiablo font-semibold uppercase text-[18px] text-blue-gray-200">
-              Current Top 10 {title}
+              Current Top 10 {arr[0].Tier === 101 ? "Speed 101" : title}
             </Typography>
           </div>
         </ListItem>
