@@ -65,7 +65,7 @@ export const PTR_DATA = [
     Tier: "100",
     "Time Used": "2:22",
     Player: "Placeholder",
-    Class: "Spiritborn",
+    Class: "Druid",
     Mode: "SC",
     "Build Name": "Vicious Vortex",
     "Skills Used":

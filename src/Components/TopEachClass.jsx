@@ -29,14 +29,13 @@ export default function TopOfEachClass({ objData }) {
           className="p-2 w-full min-h-[200px] sm:min-h-[150px] relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[black]"
           style={{ backgroundColor: `${classColor(obj.Class)}66` }}
         >
-          {/* <div className="absolute bg-[black] h-full w-full top-0 left-0 object-cover -z-10 rounded-xl" /> */}
-          <img
-            src={`/t${obj.Class}.gif`}
-            alt="cover-bg"
-            className="absolute h-full w-full top-0 left-0 object-cover object-center -z-10 rounded-xl opacity-65"
+          <div className="absolute bg-[#17171766] h-full w-full top-0 left-0 object-cover rounded-xl" />
+          <div
+            className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl opacity-90 bg-top bg-cover"
+            style={{ backgroundImage: `url("/t${obj.Class}.png")` }}
           />
           {/* Divider */}
-          <div className="h-full flex flex-col items-center justify-center">
+          <div className="h-full flex flex-col items-center justify-center z-20">
             <Typography className="text-[#d29d9d] font-customDiablo text-[12px]">
               {obj.Class}
             </Typography>

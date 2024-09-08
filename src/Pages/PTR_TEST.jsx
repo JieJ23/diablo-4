@@ -33,7 +33,12 @@ export default function PTR_TEST() {
                 className="p-3 relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[black]"
                 style={{ backgroundColor: `${PTRclassColor(obj.Class)}66` }}
               >
-                <div className="h-full flex flex-row items-center justify-center">
+                <div className="absolute bg-[#17171766] h-full w-full top-0 left-0 object-cover rounded-xl" />
+                <div
+                  className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl opacity-90 bg-top bg-cover"
+                  style={{ backgroundImage: `url("/t${obj.Class}.png")` }}
+                />
+                <div className="h-full flex flex-row items-center justify-center z-20">
                   <div className="flex flex-col h-full justify-evenly gap-1 items-center flex-1">
                     <Typography className="text-[#d29d9d] font-customDiablo text-[12px]">
                       {obj.Class}
@@ -52,15 +57,15 @@ export default function PTR_TEST() {
                         }
                       />
                     }
-                    <Typography className="text-white font-customDress">
+                    <Typography className="text-white font-customDress text-[13px] sm:text-[16px]">
                       {obj.Player}
                     </Typography>
-                    <Typography className="text-[white] font-customNoto font-bold text-[12px]">
+                    <Typography className="text-[white] font-customNoto font-bold text-[11px] sm:text-[12px]">
                       Tier {obj.Tier}
                     </Typography>
                   </div>
-                  <div className="flex flex-col items-start sm:items-center flex-1">
-                    <div className="flex gap-[4px] sm:gap-[2px] justify-center self-start sm:self-center my-1">
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="flex gap-[4px] sm:gap-[2px] justify-center my-1">
                       {ReturnSkillIcon(obj["Runewords"]).map((item) => (
                         <Tooltip
                           content={
@@ -83,7 +88,7 @@ export default function PTR_TEST() {
                         </Tooltip>
                       ))}
                     </div>
-                    <div className="grid grid-cols-3 gap-[2px] justify-center mb-1 self-start sm:self-center">
+                    <div className="grid grid-cols-3 gap-[2px] justify-center mb-1">
                       {ReturnSkillIcon(obj["Skills Used"]).map((item) => (
                         <Tooltip
                           content={
@@ -109,10 +114,10 @@ export default function PTR_TEST() {
                         </Tooltip>
                       ))}
                     </div>
-                    <Typography className="text-blue-gray-300 font-customNoto font-bold text-[12px]">
+                    <Typography className="text-blue-gray-100 font-customNoto font-bold text-[11px]">
                       {obj["Build Name"]}
                     </Typography>
-                    <Typography className="text-blue-gray-300 font-customNoto font-bold text-[11px]">
+                    <Typography className="text-blue-gray-100 font-customNoto font-bold text-[11px]">
                       Time {obj["Time Used"]}
                     </Typography>
                     <div className="w-full flex justify-center">
