@@ -70,9 +70,12 @@ export default function PlayerSelection({ allPlayers, onPlayerChange, watch }) {
     <ThemeProvider value={customTheme}>
       <div className="min-w-[300px]">
         <Select label="Select Player" value={value} onChange={handleChange}>
-          {displayData.map((obj) => (
+          {displayData.map((obj, index) => (
             <Option value={obj}>
               <div className="flex items-center gap-2">
+                <Typography className="text-[12px] font-customSource text-gray-400">{`${
+                  index + 1
+                }.`}</Typography>
                 <Typography className="text-[13px] font-customNoto text-white">{`${obj}`}</Typography>
                 {haveProfile.includes(obj) && (
                   <Avatar
