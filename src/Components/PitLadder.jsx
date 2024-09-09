@@ -112,11 +112,15 @@ export default function PitLadder() {
   const handleSkillChange = (newValue) => {
     setSelectedSkill(newValue);
     setCategory(9);
+    setPageInfo(0);
+    setActive(1);
   };
 
   const handlePlayerChange = (newValue) => {
     setSelectedPlayer(newValue);
     setCategory(10);
+    setPageInfo(0);
+    setActive(1);
   };
 
   return (
@@ -157,7 +161,13 @@ export default function PitLadder() {
                     index % 2 === 0 ? `bg-[#0d1c2ecc]` : `bg-[#151515cc]`
                   } mb-1 rounded-lg backdrop-blur-sm relative border-[2px] border-[#131111]`}
                 >
-                  <AccordionMain obj={obj} watch={category} watch2={active} />
+                  <AccordionMain
+                    obj={obj}
+                    watch={category}
+                    watch2={active}
+                    watch3={setSelectedSkill}
+                    watch4={setSelectedPlayer}
+                  />
                 </div>
               ))}
               <CardFooter className="p-3">

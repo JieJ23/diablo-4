@@ -71,18 +71,12 @@ function Icon({ id }) {
   );
 }
 
-export default function AccordionMain({ obj, watch, watch2 }) {
+export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    // Reset both states when `watch` changes
     setOpen(false);
-  }, [watch]);
-
-  useEffect(() => {
-    // Reset both states when `watch` changes
-    setOpen(false);
-  }, [watch2]);
+  }, [watch, watch2, watch3, watch4]);
 
   const handleOpen = (value) => setOpen(!value);
 
