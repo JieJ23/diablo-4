@@ -23,24 +23,34 @@ export default function PTR_TEST() {
 
       <div className="h-full flex flex-col justify-between">
         <Navigation />
-        <div className="max-w-[1200px] xl:max-w-[1400px] w-full mx-auto px-1">
-          <div className="text-white font-customDress uppercase text-[24px] text-center">
-            Public Testing Realm
-          </div>
+        <div className="max-w-[1200px] xl:max-w-[1400px] w-full mx-auto px-2">
+          <section className="my-5">
+            <div className="text-white font-customDress uppercase text-[24px] text-center">
+              Public Testing Realm
+            </div>
+            <div className="text-gray-400 font-customNoto text-[13px] max-w-[900px] mx-auto text-center">
+              Brainstorming layout concepts and testing ideas for Season 6,
+              Vessel of Hatred. The following entries are compiled from the
+              current PTR session. Please note that everything below is subject
+              to change or updates as needed and does not reflect any final
+              product, if applicable. Runewords and time are both loosely
+              accounted for in this test.
+            </div>
+          </section>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 py-2 px-0 gap-1 select-none justify-center">
             {PTR_DATA.map((obj) => (
               <Card
                 className="p-3 relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[black]"
                 style={{ backgroundColor: `${PTRclassColor(obj.Class)}66` }}
               >
-                <div className="absolute bg-[#17171766] h-full w-full top-0 left-0 object-cover rounded-xl" />
+                <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
                 <div
                   className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl opacity-90 bg-top bg-cover"
                   style={{ backgroundImage: `url("/t${obj.Class}.png")` }}
                 />
                 <div className="h-full flex flex-row items-center justify-center z-20">
                   <div className="flex flex-col h-full justify-evenly gap-1 items-center flex-1">
-                    <Typography className="text-[#d29d9d] font-customDiablo text-[12px]">
+                    <Typography className="text-gray-400 font-customDiablo text-[13px]">
                       {obj.Class}
                     </Typography>
                     {
@@ -50,10 +60,10 @@ export default function PTR_TEST() {
                             ? `/pfp/${obj.Player}.png`
                             : `/ClassesIcon/${obj.Class}.png`
                         }
-                        variant="rounded"
+                        variant="circular"
                         className={
                           haveProfile.includes(obj.Player) &&
-                          `shadow-[0_0_20px_black]`
+                          `shadow-[0_0_30px_black]`
                         }
                       />
                     }
@@ -64,7 +74,7 @@ export default function PTR_TEST() {
                       Tier {obj.Tier}
                     </Typography>
                   </div>
-                  <div className="flex flex-col items-center flex-1">
+                  <div className="flex flex-col h-full justify-evenly items-center flex-1">
                     <div className="flex gap-[4px] sm:gap-[2px] justify-center my-1">
                       {ReturnSkillIcon(obj["Runewords"]).map((item) => (
                         <Tooltip
@@ -83,7 +93,6 @@ export default function PTR_TEST() {
                             size="xs"
                             draggable={false}
                             className="shadow-[0_0_5px_black] rounded-sm"
-                            loading="lazy"
                           />
                         </Tooltip>
                       ))}
@@ -109,15 +118,14 @@ export default function PTR_TEST() {
                             size="xs"
                             draggable={false}
                             className="shadow-[0_0_5px_black] rounded-sm"
-                            loading="lazy"
                           />
                         </Tooltip>
                       ))}
                     </div>
-                    <Typography className="text-blue-gray-100 font-customNoto font-bold text-[11px]">
+                    <Typography className="text-[#47e87c] font-customNoto font-bold text-[11px] text-center">
                       {obj["Build Name"]}
                     </Typography>
-                    <Typography className="text-blue-gray-100 font-customNoto font-bold text-[11px]">
+                    <Typography className="text-blue-gray-100 font-customNoto font-bold text-[11px] text-center">
                       Time {obj["Time Used"]}
                     </Typography>
                     <div className="w-full flex justify-center">
@@ -134,7 +142,6 @@ export default function PTR_TEST() {
                             variant="rounded"
                             size="xs"
                             className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
-                            loading="lazy"
                           />
                         </a>
                       )}
@@ -145,7 +152,6 @@ export default function PTR_TEST() {
                             variant="rounded"
                             size="xs"
                             className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
-                            loading="lazy"
                           />
                         </a>
                       )}

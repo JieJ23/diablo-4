@@ -18,7 +18,9 @@ const build151 = new Date(`08/16/2024`);
 const build152 = new Date(`09/03/2024`);
 //
 export const tierColor = (tier) => {
-  if (tier >= 150) {
+  if (tier >= 160) {
+    return `#ff0`;
+  } else if (tier >= 150) {
     return `#f000ff`;
   } else if (tier >= 140) {
     return `#ee2400`;

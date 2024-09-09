@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const CountdownTimer = () => {
   // Target date is October 1, 2024
-  const targetDate = new Date("October 1, 2024 00:00:00").getTime();
+  const targetDate = new Date("September 30, 2024 00:00:00").getTime();
 
   // Calculate the difference between the target date and the current date
   const calculateTimeLeft = () => {
