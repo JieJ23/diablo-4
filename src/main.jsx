@@ -9,7 +9,7 @@ import Ladderboard from "./Pages/Ladderboard.jsx";
 
 import About from "./Pages/About.jsx";
 
-import PTR_TEST from "./Pages/PTR_TEST.jsx";
+// import PTR_TEST from "./Pages/PTR_TEST.jsx";
 
 import Builds from "./Pages/Builds.jsx";
 import Puzzle from "./Pages/Puzzle.jsx";
@@ -28,7 +28,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/" element={<App />} />
           <Route path="About" element={<About />} />
           <Route path="/Ladderboard" element={<Ladderboard />} />
-          <Route path="/PTR_TEST" element={<PTR_TEST />} />
+          {/* <Route path="/PTR_TEST" element={<PTR_TEST />} /> */}
           <Route path="/Builds" element={<Builds />} />
           <Route path="/Puzzle" element={<Puzzle />} />
           <Route path="/Tools" element={<Tools />} />
