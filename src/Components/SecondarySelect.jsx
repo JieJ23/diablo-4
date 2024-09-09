@@ -2,12 +2,13 @@ import React from "react";
 import { Select, Option, Avatar, Typography } from "@material-tailwind/react";
 import { ThemeProvider } from "@material-tailwind/react";
 import { useEffect } from "react";
+import { haveProfile } from "../DataLogic/Profile";
 
-export default function SkillsSelection({ allSkills, onSkillChange, watch }) {
+export default function PlayerSelection({ allPlayers, onPlayerChange, watch }) {
   const [value, setValue] = React.useState(null);
 
   useEffect(() => {
-    if (watch === 9) {
+    if (watch === 10) {
       return;
     } else {
       setValue(null);
@@ -47,44 +48,40 @@ export default function SkillsSelection({ allSkills, onSkillChange, watch }) {
     },
   };
 
-  let allUsedSkills;
+  let allPlayerUsers = [];
 
-  function findAllUniqueSkills() {
-    let holderSkillArr = [];
-
-    for (let i = 0; i < allSkills.length; i++) {
-      let targetString = allSkills[i]["Skills Used"];
-      let targetFormattedArr = targetString.split(`,`);
-      let finaliedProcess = targetFormattedArr.map((item) => item.trim());
-      holderSkillArr = [...holderSkillArr, ...finaliedProcess];
-    }
-    allUsedSkills = holderSkillArr;
+  for (let i = 0; i < allPlayers.length; i++) {
+    let targetString = allPlayers[i].Player;
+    allPlayerUsers.push(targetString);
   }
-  findAllUniqueSkills();
 
-  const removeDupAllUsedSkills = [...new Set(allUsedSkills)];
+  const removeDupUserPlayers = [...new Set(allPlayerUsers)];
 
-  const displayData = removeDupAllUsedSkills.sort();
+  const displayData = removeDupUserPlayers.sort((a, b) =>
+    a.toLowerCase().localeCompare(b.toLowerCase())
+  );
 
   const handleChange = (val) => {
     setValue(val);
-    onSkillChange(val);
+    onPlayerChange(val);
   };
 
   return (
     <ThemeProvider value={customTheme}>
       <div className="min-w-[300px]">
-        <Select label="Select Skills" value={value} onChange={handleChange}>
+        <Select label="Select Player" value={value} onChange={handleChange}>
           {displayData.map((obj) => (
             <Option value={obj}>
               <div className="flex items-center gap-2">
-                <Avatar
-                  src={`/Skills/${obj}.png`}
-                  size="xs"
-                  variant="rounded"
-                  className="rounded-sm"
-                />
                 <Typography className="text-[13px] font-customNoto text-white">{`${obj}`}</Typography>
+                {haveProfile.includes(obj) && (
+                  <Avatar
+                    src={`/pfp/${obj}.png`}
+                    size="xs"
+                    variant="rounded"
+                    className="rounded-md"
+                  />
+                )}
               </div>
             </Option>
           ))}

@@ -15,6 +15,7 @@ import {
 import ClassesBtn from "../Button/ClassesBtn";
 
 import SkillsSelection from "./MainSelect";
+import PlayerSelection from "./SecondarySelect";
 
 import TopOfEachClass from "./TopEachClass";
 
@@ -25,6 +26,7 @@ export default function PitLadder() {
   const [active, setActive] = useState(1);
   const [pageInfo, setPageInfo] = useState(0);
   const [selectedSkill, setSelectedSkill] = useState(null);
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
 
   const checkUser = posts.filter((obj) => obj.Compiled === "player");
   const checkSelf = posts.filter((obj) => obj.Compiled === "self");
@@ -81,7 +83,7 @@ export default function PitLadder() {
   // Add Class Ranks
   for (let i = 0; i < allClasses.length; i++) {
     let tempArr = uniqueData.filter((obj) => obj.Class === allClasses[i]);
-    addClassRank(tempArr, "classRank", 25);
+    addClassRank(tempArr, "classRank", 200);
   }
   //
 
@@ -97,6 +99,10 @@ export default function PitLadder() {
     baseData.filter((obj) => obj["Skills Used"].includes(`${selectedSkill}`))
   );
 
+  allData.push(
+    baseData.filter((obj) => obj.Player.includes(`${selectedPlayer}`))
+  );
+
   let dataDisplay = allData[category];
 
   const { eachPages, totalPages } = BreakList(dataDisplay, 25);
@@ -105,7 +111,12 @@ export default function PitLadder() {
 
   const handleSkillChange = (newValue) => {
     setSelectedSkill(newValue);
-    setCategory(allData.length - 1);
+    setCategory(9);
+  };
+
+  const handlePlayerChange = (newValue) => {
+    setSelectedPlayer(newValue);
+    setCategory(10);
   };
 
   return (
@@ -124,12 +135,21 @@ export default function PitLadder() {
                 onButtonClick={handleDataChange}
                 classes={allClasses}
               />
-              <SkillsSelection
-                allSkills={baseData}
-                onSkillChange={handleSkillChange}
-                watch={category}
-                fullcategory={allData}
-              />
+
+              <div className="flex flex-col md:flex-row justify-center gap-2 my-5 max-w-[800px] mx-auto">
+                <SkillsSelection
+                  allSkills={baseData}
+                  onSkillChange={handleSkillChange}
+                  watch={category}
+                  fullcategory={allData}
+                />
+                <PlayerSelection
+                  allPlayers={baseData}
+                  onPlayerChange={handlePlayerChange}
+                  watch={category}
+                  fullcategory={allData}
+                />
+              </div>
 
               {sortDisplay.map((obj, index) => (
                 <div
@@ -149,9 +169,6 @@ export default function PitLadder() {
                   ))}
                 </div>
               </CardFooter>
-              <div className="text-white text-[12px] text-center my-5 font-customNoto">
-                Animation by Winston Duke @lifelongfiction
-              </div>
             </Card>
           </AccordWrap>
         </div>
