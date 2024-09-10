@@ -58,7 +58,7 @@ export default function Home() {
           <Navigation />
 
           <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg">
-            <div className="text-[#868fed] font-customDress font-bold text-[28px] sm:text-[32px] mb-2 uppercase">
+            <div className="text-[#868fed] font-customDress text-[28px] sm:text-[32px] mb-2 uppercase">
               Welcome to Diablo 4 Pit
             </div>
             <div className="whitespace-pre-line text-gray-400 font-customNoto text-[13px]">
@@ -66,9 +66,9 @@ export default function Home() {
             </div>
           </section>
 
-          {/* <div className="flex justify-center">
+          <div className="flex justify-center">
             <PTR />
-          </div> */}
+          </div>
 
           <div className="flex justify-center">
             <SubmitCard />
@@ -79,7 +79,7 @@ export default function Home() {
           </section>
 
           <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-4">
-            <div className="text-[#868fed] font-customDress font-bold text-[22px] sm:text-[28px] mb-2 uppercase">
+            <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px] mb-2">
               Season Of The Infernal Horde: Pit Ladder
             </div>
             <div className="whitespace-pre-line font-customNoto text-[13px] text-gray-400">

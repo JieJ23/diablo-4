@@ -17,7 +17,7 @@ export default function Tools() {
 
         <section className="my-10 select-none">
           <div className="px-6 max-w-[1000px] mx-auto mb-10 rounded-lg">
-            <div className="text-center text-[#868fed] font-customDress font-bold text-[24px] mb-2 uppercase">
+            <div className="text-center text-[#868fed] font-customDress text-[24px] mb-2 uppercase">
               Resources & Tools
             </div>
             <div className="whitespace-pre-line text-gray-400 text-start font-customNoto text-[13px]">

@@ -68,10 +68,10 @@ export default function PTR_TEST() {
                         }
                       />
                     }
-                    <Typography className="text-white font-customDress font-bold text-[13px] sm:text-[16px]">
+                    <Typography className="text-white font-customDress uppercase text-[13px] sm:text-[16px]">
                       {obj.Player}
                     </Typography>
-                    <Typography className="text-[white] font-customNoto font-bold text-[11px] sm:text-[12px]">
+                    <Typography className="text-[white] font-customNoto text-[11px] sm:text-[12px]">
                       Tier {obj.Tier}
                     </Typography>
                   </div>
@@ -138,16 +138,14 @@ export default function PTR_TEST() {
                     {obj.Date.slice(0, 10)}
                   </Typography>
                   <div className="flex justify-center items-center gap-1">
-                    {obj.Comment && (
+                    {obj["Run Comment"] && (
                       <Tooltip
                         content={
-                          <div className="flex justify-center p-1">
-                            <Typography className="font-customNoto text-[11px]">
-                              {obj.Comment}
-                            </Typography>
+                          <div className="flex justify-center p-1 font-customNoto text-[12px]">
+                            {obj["Run Comment"]}
                           </div>
                         }
-                        className="bg-[#131111] select-none border-[2px] border-[black]"
+                        className="bg-[black] select-none"
                       >
                         <Avatar
                           src="/comment.png"

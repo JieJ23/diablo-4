@@ -248,7 +248,7 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
               <Chip
                 color="red"
                 value={`Boss Fight Only`}
-                className="text-black font-customNoto text-[12px]"
+                className="text-black font-customNoto text-[12px] font-normal"
                 variant="filled"
               />
             )}
@@ -256,7 +256,7 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
               <Chip
                 color="red"
                 value={`+15 mins Overtime`}
-                className="text-black font-customNoto text-[12px]"
+                className="text-black font-customNoto text-[12px] font-normal"
                 variant="filled"
               />
             )}
@@ -269,7 +269,7 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
               <Chip
                 color="indigo"
                 value={`#${obj.classRank} ${obj.Class}`}
-                className="text-white font-customNoto text-[12px]"
+                className="text-white font-customNoto text-[12px] font-normal"
                 variant="filled"
               />
             )}
@@ -277,14 +277,14 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
               color="blue-gray"
               value={`#${obj.Rank} Overall`}
               variant="filled"
-              className="text-white font-customNoto text-[12px]"
+              className="text-white font-customNoto text-[12px] font-normal"
             />
             {obj.Mode === `HC` && (
               <Chip
                 color="red"
                 value={`Hardcore`}
                 variant="filled"
-                className="text-black font-customNoto text-[12px]"
+                className="text-black font-customNoto text-[12px] font-normal"
               />
             )}
           </div>

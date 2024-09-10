@@ -63,7 +63,7 @@ export default function Builds() {
 
       <Navigation />
       <section className="mt-5 select-none">
-        <div className="text-[24px] font-customDress text-[#868fed] text-center">
+        <div className="text-[24px] font-customDress text-[#868fed] text-center uppercase">
           Selection Stats
         </div>
         <div className="text-[13px] font-customNoto text-gray-400 text-center px-8 max-w-[800px] mx-auto">

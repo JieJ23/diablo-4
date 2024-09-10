@@ -33,7 +33,7 @@ export function CardContent({ image, link, title, summary }) {
   return (
     <Card className="bg-gradient-to-b from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
       <div className="text-start p-2">
-        <Typography className="mb-2 font-customDress font-bold text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all uppercase">
+        <Typography className="mb-2 font-customDress text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all uppercase">
           {title}
         </Typography>
         <Typography className="text-[12px] font-customSource text-gray-300 group-hover:scale-[98%] ease-in duration-300 transition-all">
