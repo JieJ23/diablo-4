@@ -6,6 +6,8 @@ import Top10 from "../Components/HomeCarol";
 import SeasonStats from "../Components/SeasonStat";
 import { Link } from "react-router-dom";
 
+import { Avatar } from "@material-tailwind/react";
+
 import { PTR } from "../Components/PTR";
 
 export function Footer() {
@@ -31,11 +33,20 @@ export function Footer() {
           Terms & Conditions
         </Link>
       </div>
+      <Link
+        to={`https://discord.gg/HdpcEwAepY`}
+        className="flex items-center justify-center gap-2"
+        target="_blank"
+      >
+        <Avatar src={`/discord.png`} size="xs" />
+        <div className="text-blue-500 font-customNoto text-center text-[12px]">
+          Join Discord Community
+        </div>
+      </Link>
       <div className="text-gray-400 font-customNoto text-center text-[12px] px-2">
         This website has no affiliation with or endorsement from Activision
         Blizzard, Inc.
       </div>
-
       <div className="text-gray-400 font-customNoto text-center text-[12px]">
         © 2024 CY. All rights reserved.
       </div>
