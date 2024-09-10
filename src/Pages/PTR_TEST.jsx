@@ -26,7 +26,7 @@ export default function PTR_TEST() {
         <div className="max-w-[1200px] xl:max-w-[1400px] w-full mx-auto px-2">
           <section className="my-5">
             <div className="text-white font-customDress uppercase text-[24px] text-center">
-              Public Testing Realm
+              Season 6 PTR
             </div>
             <div className="text-gray-400 font-customNoto text-[13px] max-w-[900px] mx-auto text-center">
               Brainstorming layout concepts and testing ideas for Season 6,
@@ -37,19 +37,19 @@ export default function PTR_TEST() {
               accounted for in this test.
             </div>
           </section>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 py-2 px-0 gap-1 select-none justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-2 px-0 gap-1 select-none justify-center">
             {PTR_DATA.map((obj) => (
               <Card
-                className="p-3 relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[black]"
-                style={{ backgroundColor: `${PTRclassColor(obj.Class)}66` }}
+                className="p-2 relative bg-transparent shadow-[inset_0_0_30px_black] border-[2px] border-[black]"
+                style={{ backgroundColor: `${PTRclassColor(obj.Class)}8c` }}
               >
-                <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
+                <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-lg" />
                 <div
-                  className="absolute h-full w-full top-0 left-0 -z-10 rounded-xl opacity-90 bg-top bg-cover"
+                  className="absolute h-full w-full top-0 left-0 -z-10 rounded-lg opacity-90 bg-top bg-cover"
                   style={{ backgroundImage: `url("/t${obj.Class}.png")` }}
                 />
                 <div className="h-full flex flex-row items-center justify-center z-20">
-                  <div className="flex flex-col h-full justify-evenly gap-1 items-center flex-1">
+                  <div className="flex flex-col h-full justify-center gap-2 items-center flex-1">
                     <Typography className="text-gray-400 font-customDiablo text-[13px]">
                       {obj.Class}
                     </Typography>
@@ -61,13 +61,14 @@ export default function PTR_TEST() {
                             : `/ClassesIcon/${obj.Class}.png`
                         }
                         variant="circular"
+                        draggable={false}
                         className={
                           haveProfile.includes(obj.Player) &&
                           `shadow-[0_0_30px_black]`
                         }
                       />
                     }
-                    <Typography className="text-white font-customDress text-[13px] sm:text-[16px]">
+                    <Typography className="text-white font-customDress font-bold text-[13px] sm:text-[16px]">
                       {obj.Player}
                     </Typography>
                     <Typography className="text-[white] font-customNoto font-bold text-[11px] sm:text-[12px]">
@@ -128,37 +129,64 @@ export default function PTR_TEST() {
                     <Typography className="text-blue-gray-100 font-customNoto font-bold text-[11px] text-center">
                       Time {obj["Time Used"]}
                     </Typography>
-                    <div className="w-full flex justify-center">
-                      {obj["Run Video"] && (
-                        <a href={obj["Run Video"]} target="_blank">
-                          <Avatar
-                            src={
-                              obj["Run Video"].includes(`x.com`)
-                                ? `/Skills/X.png`
-                                : obj["Run Video"].includes(`bilibili`)
-                                ? `/bilibili.png`
-                                : `/youtube.png`
-                            }
-                            variant="rounded"
-                            size="xs"
-                            className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
-                          />
-                        </a>
-                      )}
-                      {obj["Build Planner"] !== "" && (
-                        <a href={obj["Build Planner"]} target="_blank">
-                          <Avatar
-                            src={`build.png`}
-                            variant="rounded"
-                            size="xs"
-                            className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
-                          />
-                        </a>
-                      )}
-                    </div>
                   </div>
                 </div>
                 {/* Divider */}
+                <div className="border-t-[1px] border-[gray] my-0.5 w-[75%] mx-auto" />
+                <div className="w-full flex justify-between gap-1 items-center">
+                  <Typography className="text-blue-gray-300 font-customNoto font-bold text-[10px] z-10 text-center">
+                    {obj.Date.slice(0, 10)}
+                  </Typography>
+                  <div className="flex justify-center items-center gap-1">
+                    {obj.Comment && (
+                      <Tooltip
+                        content={
+                          <div className="flex justify-center p-1">
+                            <Typography className="font-customNoto text-[11px]">
+                              {obj.Comment}
+                            </Typography>
+                          </div>
+                        }
+                        className="bg-[#131111] select-none border-[2px] border-[black]"
+                      >
+                        <Avatar
+                          src="/comment.png"
+                          variant="rounded"
+                          className="w-[21px] h-[21px]"
+                          draggable={false}
+                        />
+                      </Tooltip>
+                    )}
+                    {obj["Run Video"] && (
+                      <a href={obj["Run Video"]} target="_blank">
+                        <Avatar
+                          src={
+                            obj["Run Video"].includes(`x.com`)
+                              ? `/Skills/X.png`
+                              : obj["Run Video"].includes(`bilibili`)
+                              ? `/bilibili.png`
+                              : `/youtube.png`
+                          }
+                          variant="rounded"
+                          size="xs"
+                          className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
+                          draggable={false}
+                        />
+                      </a>
+                    )}
+                    {obj["Build Planner"] !== "" && (
+                      <a href={obj["Build Planner"]} target="_blank">
+                        <Avatar
+                          src={`build.png`}
+                          variant="rounded"
+                          size="xs"
+                          className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
+                          draggable={false}
+                        />
+                      </a>
+                    )}
+                  </div>
+                </div>
               </Card>
             ))}
           </div>

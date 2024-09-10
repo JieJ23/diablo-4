@@ -40,7 +40,7 @@ export default function TopOfEachClass({ objData }) {
               {obj.Class}
             </Typography>
             <Avatar src={`/ClassesIcon/${obj.Class}.png`} />
-            <Typography className="text-white font-customDress">
+            <Typography className="text-white font-customDress font-bold uppercase">
               {obj.Player}
             </Typography>
             <Typography className="text-[white] font-customNoto font-bold text-[14px]">
