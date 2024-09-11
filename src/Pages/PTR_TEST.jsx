@@ -6,16 +6,13 @@ import Navigation from "../Button/NavHead";
 // import { addRankProperty } from "../DataLogic/ProcessFunction";
 // import { removeDup } from "../DataLogic/ProcessFunction";
 //
-import AccordWrap from "../Components/CustomWrap/AccordCustom";
-import PTRAccordionMain from "../Components/PTR_Accordion";
 import { Card, Avatar, Typography, Tooltip } from "@material-tailwind/react";
 import { PTR_DATA } from "../DataLogic/TestingData";
 
-import { PTRclassColor } from "../Components/PTR_Accordion";
+import { classColor } from "../Components/Accordion";
 import { ReturnSkillIcon } from "../DataLogic/ProcessFunction";
 
 import { haveProfile } from "../DataLogic/Profile";
-import { classColor } from "../Components/Accordion";
 
 function uppercaseFirstLetter(str) {
   return str.replace(/\b\w/g, (char) => char.toUpperCase());
@@ -70,11 +67,11 @@ export default function PTR_TEST() {
             {PTR_DATA.map((obj, index) => (
               <Card
                 className="p-2 relative bg-transparent shadow-[0_0_30px_black] border-[2px] border-[black]"
-                style={{ backgroundColor: `${PTRclassColor(obj.Class)}8c` }}
+                style={{ backgroundColor: `#000000b3` }}
               >
                 <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-lg" />
                 <div
-                  className="absolute h-full w-full top-0 left-0 -z-10 rounded-lg opacity-90 bg-top bg-cover"
+                  className="absolute h-full w-full top-0 left-0 -z-10 rounded-lg opacity-100 bg-top bg-cover"
                   style={{ backgroundImage: `url("/t${obj.Class}.png")` }}
                 />
                 <div className="h-full flex flex-row items-center justify-center z-20">
