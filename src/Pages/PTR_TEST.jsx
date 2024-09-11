@@ -1,6 +1,11 @@
 import { Footer } from "./Home";
 import Navigation from "../Button/NavHead";
-
+//
+// import { useData } from "../Hook/DataFetch";
+// import { convertToSec } from "../DataLogic/ProcessFunction";
+// import { addRankProperty } from "../DataLogic/ProcessFunction";
+// import { removeDup } from "../DataLogic/ProcessFunction";
+//
 import AccordWrap from "../Components/CustomWrap/AccordCustom";
 import PTRAccordionMain from "../Components/PTR_Accordion";
 import { Card, Avatar, Typography, Tooltip } from "@material-tailwind/react";
@@ -11,7 +16,30 @@ import { ReturnSkillIcon } from "../DataLogic/ProcessFunction";
 
 import { haveProfile } from "../DataLogic/Profile";
 
+function uppercaseFirstLetter(str) {
+  return str.replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
 export default function PTR_TEST() {
+  // Testing
+  // const { posts, loader } = useData();
+
+  // const sortByTier = posts.slice().sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
+  // const sortByTime = sortByTier
+  //   .slice()
+  //   .sort((a, b) =>
+  //     convertToSec(a["Time Used"]) > convertToSec(b["Time Used"]) ? 1 : -1
+  //   )
+  //   .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
+
+  // const uniqueSecondSort = removeDup(sortByTime);
+  // addRankProperty(uniqueSecondSort);
+
+  // const rogueOnly = uniqueSecondSort
+  //   .filter((obj) => obj.Class === `Rogue`)
+  //   .slice(0, 25);
+  //
+
   return (
     <section className="h-lvh overflow-x-hidden">
       <div className="fixed bg-[#131111] h-lvh w-full object-cover -z-20" />
@@ -24,7 +52,7 @@ export default function PTR_TEST() {
       <div className="h-full flex flex-col justify-between">
         <Navigation />
         <div className="max-w-[1200px] xl:max-w-[1400px] w-full mx-auto px-2 my-10">
-          <section className="my-5">
+          <section className="my-5 select-none">
             <div className="text-white font-customDress uppercase text-[24px] text-center">
               Season 6 PTR
             </div>
@@ -68,7 +96,7 @@ export default function PTR_TEST() {
                         }
                       />
                     }
-                    <Typography className="text-white font-customDress uppercase text-[13px] sm:text-[16px]">
+                    <Typography className="text-white font-customDress uppercase text-[13px] sm:text-[15px]">
                       {obj.Player}
                     </Typography>
                     <Typography className="text-[white] font-customNoto text-[11px] sm:text-[12px]">
@@ -124,7 +152,7 @@ export default function PTR_TEST() {
                       ))}
                     </div>
                     <Typography className="text-[#47e87c] font-customNoto font-semibold text-[11px] text-center">
-                      {obj["Build Name"]}
+                      {uppercaseFirstLetter(obj["Build Name"])}
                     </Typography>
                     <Typography className="text-blue-gray-100 font-customNoto font-bold text-[11px] text-center">
                       Time {obj["Time Used"]}
