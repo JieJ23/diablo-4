@@ -77,9 +77,9 @@ export default function Home() {
             </div>
           </section>
 
-          {/* <div className="flex justify-center">
+          <div className="flex justify-center">
             <PTR />
-          </div> */}
+          </div>
 
           <div className="flex justify-center">
             <SubmitCard />

@@ -23,7 +23,7 @@ export default function PTR_TEST() {
 
       <div className="h-full flex flex-col justify-between">
         <Navigation />
-        <div className="max-w-[1200px] xl:max-w-[1400px] w-full mx-auto px-2">
+        <div className="max-w-[1200px] xl:max-w-[1400px] w-full mx-auto px-2 my-10">
           <section className="my-5">
             <div className="text-white font-customDress uppercase text-[24px] text-center">
               Season 6 PTR
@@ -123,7 +123,7 @@ export default function PTR_TEST() {
                         </Tooltip>
                       ))}
                     </div>
-                    <Typography className="text-[#47e87c] font-customNoto font-bold text-[11px] text-center">
+                    <Typography className="text-[#47e87c] font-customNoto font-semibold text-[11px] text-center">
                       {obj["Build Name"]}
                     </Typography>
                     <Typography className="text-blue-gray-100 font-customNoto font-bold text-[11px] text-center">
