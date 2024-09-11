@@ -15,6 +15,7 @@ import { PTRclassColor } from "../Components/PTR_Accordion";
 import { ReturnSkillIcon } from "../DataLogic/ProcessFunction";
 
 import { haveProfile } from "../DataLogic/Profile";
+import { classColor } from "../Components/Accordion";
 
 function uppercaseFirstLetter(str) {
   return str.replace(/\b\w/g, (char) => char.toUpperCase());
@@ -51,7 +52,7 @@ export default function PTR_TEST() {
 
       <div className="h-full flex flex-col justify-between">
         <Navigation />
-        <div className="max-w-[1200px] xl:max-w-[1400px] w-full mx-auto px-2 my-10">
+        <div className="max-w-[1400px] w-full mx-auto px-2 my-10">
           <section className="my-5 select-none">
             <div className="text-white font-customDress uppercase text-[24px] text-center">
               Season 6 PTR
@@ -65,10 +66,10 @@ export default function PTR_TEST() {
               accounted for in this test.
             </div>
           </section>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-2 px-0 gap-1 select-none justify-center">
-            {PTR_DATA.map((obj) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-2 px-0 gap-1 xl:gap-2 select-none justify-center">
+            {PTR_DATA.map((obj, index) => (
               <Card
-                className="p-2 relative bg-transparent shadow-[inset_0_0_30px_black] border-[2px] border-[black]"
+                className="p-2 relative bg-transparent shadow-[0_0_30px_black] border-[2px] border-[black]"
                 style={{ backgroundColor: `${PTRclassColor(obj.Class)}8c` }}
               >
                 <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-lg" />
@@ -160,9 +161,20 @@ export default function PTR_TEST() {
                   </div>
                 </div>
                 {/* Divider */}
-                <div className="border-t-[1px] border-[gray] my-0.5 w-[75%] mx-auto" />
+                <div className="border-t-[1px] border-[transparent] my-1 w-full mx-auto" />
+                <div className="w-full flex flex-wrap gap-1 items-center">
+                  <Typography
+                    className="text-white font-customNoto font-semibold text-[11px] z-10 text-center p-1 rounded-md shadow-[0_0_10px_black]"
+                    style={{ backgroundColor: classColor(obj.Class) }}
+                  >
+                    #{index + 1} {obj.Class}
+                  </Typography>
+                  <Typography className="text-white font-customNoto font-semibold text-[11px] z-10 text-center bg-[#393c88cc] p-1 rounded-md shadow-[0_0_10px_black]">
+                    #{obj.Rank} Overall
+                  </Typography>
+                </div>
                 <div className="w-full flex justify-between gap-1 items-center">
-                  <Typography className="text-blue-gray-300 font-customNoto font-bold text-[10px] z-10 text-center">
+                  <Typography className="text-gray-300 font-customNoto font-bold text-[10px] z-10 text-center">
                     {obj.Date.slice(0, 10)}
                   </Typography>
                   <div className="flex justify-center items-center gap-1">
@@ -212,6 +224,11 @@ export default function PTR_TEST() {
                       </a>
                     )}
                   </div>
+                </div>
+                <div className="flex">
+                  <Typography className="text-gray-400 font-customNoto font-semibold text-[10px] z-10">
+                    Patch 1.6.0
+                  </Typography>
                 </div>
               </Card>
             ))}

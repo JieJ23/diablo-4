@@ -1,6 +1,7 @@
 export const PTR_DATA = [
   {
     Date: "10/1/2024",
+    Rank: `1`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "부마",
@@ -16,6 +17,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `2`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "LordxSaura",
@@ -31,6 +33,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `3`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "J_Macc",
@@ -45,6 +48,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `4`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "Vybzjay",
@@ -60,6 +64,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `5`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "RobetGaming",
@@ -75,6 +80,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `6`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "videogamebutter",
@@ -89,6 +95,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `7`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "枫叶千支",
@@ -104,6 +111,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `8`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "Zir",
@@ -119,6 +127,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `9`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "鳳華",
@@ -134,6 +143,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `10`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "秋葉-Akiha-",
@@ -149,6 +159,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `11`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "SKULM",
@@ -164,6 +175,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `12`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "Andy",
@@ -179,6 +191,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `1`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "Mekuna",
@@ -194,6 +207,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `13`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "Roxy",
@@ -210,6 +224,7 @@ export const PTR_DATA = [
 
   {
     Date: "10/1/2024",
+    Rank: `14`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "da_lin-",
@@ -225,6 +240,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `15`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "Blurosity",
@@ -240,6 +256,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `16`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "風林火山",
@@ -255,6 +272,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `17`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "Lurkin",
@@ -270,6 +288,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `18`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "k2rb69",
@@ -285,6 +304,7 @@ export const PTR_DATA = [
   },
   {
     Date: "10/1/2024",
+    Rank: `19`,
     Tier: "100",
     "Time Used": "10:08",
     Player: "DonPipeloTV",
