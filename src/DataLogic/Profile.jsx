@@ -60,4 +60,9 @@ export const haveProfile = [
   `dior`,
   `Slott`,
   `cyb3rgam3r420`,
+  `CraftyXII`,
+  `Zeiss`,
+  `Forestbog`,
+  `kaeshin`,
+  `Kiox`,
 ];
