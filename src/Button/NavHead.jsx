@@ -156,8 +156,20 @@ export default function Navigation() {
             </IconButton>
           </div>
         </div>
-
         <Collapse open={openNav}>{navList}</Collapse>
+        <div className="flex justify-center items-center gap-1 mt-2 text-[12px]">
+          <div className="flex relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-400" />
+          </div>
+
+          <div className="text-white font-customNoto flex gap-1">
+            <div>This website will transfer to:</div>
+            <a href="https://diablo4pit.pages.dev/" className="text-blue-400">
+              diablo4pit.pages.dev
+            </a>
+          </div>
+        </div>
       </Navbar>
     </div>
   );
