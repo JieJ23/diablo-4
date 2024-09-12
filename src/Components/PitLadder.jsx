@@ -111,14 +111,14 @@ export default function PitLadder() {
 
   const handleSkillChange = (newValue) => {
     setSelectedSkill(newValue);
-    setCategory(9);
+    setCategory(allData.length - 2);
     setPageInfo(0);
     setActive(1);
   };
 
   const handlePlayerChange = (newValue) => {
     setSelectedPlayer(newValue);
-    setCategory(10);
+    setCategory(allData.length - 1);
     setPageInfo(0);
     setActive(1);
   };
@@ -145,13 +145,13 @@ export default function PitLadder() {
                   allSkills={baseData}
                   onSkillChange={handleSkillChange}
                   watch={category}
-                  fullcategory={allData}
+                  fulldata={allData}
                 />
                 <PlayerSelection
                   allPlayers={baseData}
                   onPlayerChange={handlePlayerChange}
                   watch={category}
-                  fullcategory={allData}
+                  fulldata={allData}
                 />
               </div>
 

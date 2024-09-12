@@ -2,18 +2,17 @@ import React from "react";
 import { Select, Option, Avatar, Typography } from "@material-tailwind/react";
 import { ThemeProvider } from "@material-tailwind/react";
 import { useEffect } from "react";
-import { haveProfile } from "../DataLogic/Profile";
 
-export default function PlayerSelection({
-  allPlayers,
-  onPlayerChange,
+export default function RunesSelection({
+  allRunes,
+  onRuneChange,
   watch,
   fulldata,
 }) {
   const [value, setValue] = React.useState(null);
 
   useEffect(() => {
-    if (watch === fulldata.length - 1) {
+    if (watch === fulldata.length - 3) {
       return;
     } else {
       setValue(null);
@@ -53,43 +52,44 @@ export default function PlayerSelection({
     },
   };
 
-  let allPlayerUsers = [];
+  let allUsedRunes;
 
-  for (let i = 0; i < allPlayers.length; i++) {
-    let targetString = allPlayers[i].Player;
-    allPlayerUsers.push(targetString);
+  function findAllRunes() {
+    let holderRuneArr = [];
+
+    for (let i = 0; i < allRunes.length; i++) {
+      let targetString = allRunes[i]["Runewords"];
+      let targetFormattedArr = targetString.split(`,`);
+      let finaliedProcess = targetFormattedArr.map((item) => item.trim());
+      holderRuneArr = [...holderRuneArr, ...finaliedProcess];
+    }
+    allUsedRunes = holderRuneArr;
   }
+  findAllRunes();
 
-  const removeDupUserPlayers = [...new Set(allPlayerUsers)];
+  const removeDupAllUsedRunes = [...new Set(allUsedRunes)];
 
-  const displayData = removeDupUserPlayers.sort((a, b) =>
-    a.toLowerCase().localeCompare(b.toLowerCase())
-  );
+  const displayData = removeDupAllUsedRunes.sort();
 
   const handleChange = (val) => {
     setValue(val);
-    onPlayerChange(val);
+    onRuneChange(val);
   };
 
   return (
     <ThemeProvider value={customTheme}>
       <div className="min-w-[300px]">
-        <Select label="Select Player" value={value} onChange={handleChange}>
-          {displayData.map((obj, index) => (
+        <Select label="Select Runewords" value={value} onChange={handleChange}>
+          {displayData.map((obj) => (
             <Option value={obj}>
               <div className="flex items-center gap-2">
-                <Typography className="text-[12px] font-customSource text-gray-400">{`${
-                  index + 1
-                }.`}</Typography>
+                <Avatar
+                  src={`/Runewords/${obj}.png`}
+                  size="xs"
+                  variant="rounded"
+                  className="rounded-sm"
+                />
                 <Typography className="text-[13px] font-customNoto text-white">{`${obj}`}</Typography>
-                {haveProfile.includes(obj) && (
-                  <Avatar
-                    src={`/pfp/${obj}.png`}
-                    size="xs"
-                    variant="rounded"
-                    className="rounded-md"
-                  />
-                )}
               </div>
             </Option>
           ))}

@@ -3,11 +3,16 @@ import { Select, Option, Avatar, Typography } from "@material-tailwind/react";
 import { ThemeProvider } from "@material-tailwind/react";
 import { useEffect } from "react";
 
-export default function SkillsSelection({ allSkills, onSkillChange, watch }) {
+export default function SkillsSelection({
+  allSkills,
+  onSkillChange,
+  watch,
+  fulldata,
+}) {
   const [value, setValue] = React.useState(null);
 
   useEffect(() => {
-    if (watch === 9) {
+    if (watch === fulldata.length - 2) {
       return;
     } else {
       setValue(null);

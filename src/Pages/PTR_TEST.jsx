@@ -23,6 +23,9 @@ import {
 
 import { haveProfile } from "../DataLogic/Profile";
 import S6CategoryBtns from "../Components/Season6/Categories";
+import SkillsSelection from "../Components/MainSelect";
+import PlayerSelection from "../Components/SecondarySelect";
+import RunesSelection from "../Components/Season6/ThirdSelect";
 
 function uppercaseFirstLetter(str) {
   return str.replace(/\b\w/g, (char) => char.toUpperCase());
@@ -35,6 +38,9 @@ export default function PTR_TEST() {
   const [category, setCategory] = useState(0);
   const [active, setActive] = useState(1);
   const [pageInfo, setPageInfo] = useState(0);
+  const [selectedSkill, setSelectedSkill] = useState(null);
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
+  const [selectedRune, setSelectedRune] = useState(null);
 
   // Functions
   const handleDataChange = (num) => ({
@@ -56,6 +62,27 @@ export default function PTR_TEST() {
       handleChangePage(index - 1);
     },
   });
+
+  const handleRuneChange = (newValue) => {
+    setSelectedRune(newValue);
+    setCategory(s6AllData.length - 3);
+    setPageInfo(0);
+    setActive(1);
+  };
+  const handleSkillChange = (newValue) => {
+    setSelectedSkill(newValue);
+    setCategory(s6AllData.length - 2);
+    setPageInfo(0);
+    setActive(1);
+  };
+
+  const handlePlayerChange = (newValue) => {
+    setSelectedPlayer(newValue);
+    setCategory(s6AllData.length - 1);
+    setPageInfo(0);
+    setActive(1);
+  };
+
   // All Classes
   const s6AllClasses = [...new Set(PTR_DATA.map((obj) => obj.Class))];
   // Sort Data
@@ -95,6 +122,20 @@ export default function PTR_TEST() {
     s6AllData.push(finalized);
   }
 
+  s6AllData.push(
+    sortBaseData.filter((obj) => obj["Runewords"].includes(`${selectedRune}`))
+  );
+
+  s6AllData.push(
+    sortBaseData.filter((obj) =>
+      obj["Skills Used"].includes(`${selectedSkill}`)
+    )
+  );
+
+  s6AllData.push(
+    sortBaseData.filter((obj) => obj.Player.includes(`${selectedPlayer}`))
+  );
+
   let dataDisplay = s6AllData[category];
 
   const { eachPages, totalPages } = BreakList(dataDisplay, 20);
@@ -130,6 +171,26 @@ export default function PTR_TEST() {
             classes={s6AllClasses}
             onButtonClick={handleDataChange}
           />
+          <div className="flex flex-col lg:flex-row justify-center gap-2 my-5 mx-auto max-w-[400px] lg:w-full">
+            <RunesSelection
+              allRunes={sortBaseData}
+              onRuneChange={handleRuneChange}
+              watch={category}
+              fulldata={s6AllData}
+            />
+            <SkillsSelection
+              allSkills={sortBaseData}
+              onSkillChange={handleSkillChange}
+              watch={category}
+              fulldata={s6AllData}
+            />
+            <PlayerSelection
+              allPlayers={sortBaseData}
+              onPlayerChange={handlePlayerChange}
+              watch={category}
+              fulldata={s6AllData}
+            />
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-2 px-0 gap-1 xl:gap-2 select-none justify-center">
             {sortDisplay.map((obj, index) => (
               <Card
