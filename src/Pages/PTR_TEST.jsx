@@ -4,7 +4,7 @@ import Navigation from "../Button/NavHead";
 import {
   Card,
   Avatar,
-  Typography,
+  div,
   Tooltip,
   CardFooter,
   IconButton,
@@ -143,9 +143,9 @@ export default function PTR_TEST() {
                 />
                 <div className="h-full flex flex-row items-center justify-center z-20">
                   <div className="flex flex-col h-full justify-center gap-2 items-center flex-1">
-                    <Typography className="text-gray-400 font-customDiablo text-[13px]">
+                    <div className="text-gray-400 font-customDiablo text-[13px]">
                       {obj.Class}
-                    </Typography>
+                    </div>
                     {
                       <Avatar
                         src={
@@ -161,16 +161,16 @@ export default function PTR_TEST() {
                         }
                       />
                     }
-                    <Typography className="text-white font-customDress uppercase text-[13px] sm:text-[15px]">
+                    <div className="text-white font-customDress uppercase text-[13px] sm:text-[15px]">
                       {obj.Player}
-                    </Typography>
-                    <Typography
+                    </div>
+                    <div
                       className={`font-customNoto text-[11px] sm:text-[12px] ${
                         obj.Tier > 99 ? `text-[#47e87c]` : `text-white`
                       }`}
                     >
                       Tier {obj.Tier}
-                    </Typography>
+                    </div>
                   </div>
                   <div className="flex flex-col h-full justify-evenly items-center flex-1">
                     {obj.Runewords !== "" ? (
@@ -179,9 +179,9 @@ export default function PTR_TEST() {
                           <Tooltip
                             content={
                               <div className="px-2">
-                                <Typography className="font-customDiablo text-[14px] text-[#b373e4]">
+                                <div className="font-customDiablo text-[14px] text-[#b373e4]">
                                   Runewords: {item}
-                                </Typography>
+                                </div>
                               </div>
                             }
                             className="bg-black select-none border-[1px]"
@@ -201,9 +201,9 @@ export default function PTR_TEST() {
                         <Tooltip
                           content={
                             <div className="px-2">
-                              <Typography className="font-customDiablo text-[14px] text-[#b373e4]">
+                              <div className="font-customDiablo text-[14px] text-[#b373e4]">
                                 No Runewords
-                              </Typography>
+                              </div>
                             </div>
                           }
                           className="bg-black select-none border-[1px]"
@@ -219,9 +219,9 @@ export default function PTR_TEST() {
                         <Tooltip
                           content={
                             <div className="px-2">
-                              <Typography className="font-customDiablo text-[14px] text-[#b373e4]">
+                              <div className="font-customDiablo text-[14px] text-[#b373e4]">
                                 No Runewords
-                              </Typography>
+                              </div>
                             </div>
                           }
                           className="bg-black select-none border-[1px]"
@@ -241,12 +241,12 @@ export default function PTR_TEST() {
                         <Tooltip
                           content={
                             <div className="px-2">
-                              <Typography
+                              <div
                                 className="font-customDiablo text-[14px]"
                                 color="white"
                               >
                                 {item}
-                              </Typography>
+                              </div>
                             </div>
                           }
                           className="bg-black select-none border-[1px]"
@@ -261,39 +261,39 @@ export default function PTR_TEST() {
                         </Tooltip>
                       ))}
                     </div>
-                    <Typography className="text-[#47e87c] font-customNoto font-normal text-[11px] text-center">
+                    <div className="text-[#47e87c] font-customNoto font-normal text-[11px] text-center">
                       {uppercaseFirstLetter(obj["Build Name"])}
-                    </Typography>
-                    <Typography className="text-blue-gray-100 font-customNoto font-normal text-[11px] text-center">
+                    </div>
+                    <div className="text-gray-400 font-customNoto font-normal text-[11px] text-center">
                       Time {obj["Time Used"]}
-                    </Typography>
+                    </div>
                   </div>
                 </div>
                 {/* Divider */}
                 <div className="border-t-[1px] border-[transparent] my-1 w-full mx-auto" />
                 <div className="w-full flex flex-wrap gap-1 items-center">
-                  <Typography
+                  <div
                     className="text-white font-customNoto font-normal text-[11px] z-10 text-center p-1 rounded-md shadow-[0_0_10px_black]"
                     style={{ backgroundColor: classColor(obj.Class) }}
                   >
                     #{obj.classRank} {obj.Class}
-                  </Typography>
-                  <Typography className="text-white font-customNoto font-normal text-[11px] z-10 text-center bg-[#393c88cc] p-1 rounded-md shadow-[0_0_10px_black]">
+                  </div>
+                  <div className="text-white font-customNoto font-normal text-[11px] z-10 text-center bg-[#393c88cc] p-1 rounded-md shadow-[0_0_10px_black]">
                     #{obj.Rank} Overall
-                  </Typography>
+                  </div>
                   {obj.Mode === `HC` && (
-                    <Typography className="text-black font-customNoto font-normal text-[11px] z-10 text-center bg-[#f44545cc] p-1 rounded-md shadow-[0_0_10px_black]">
+                    <div className="text-black font-customNoto font-normal text-[11px] z-10 text-center bg-[#f44545cc] p-1 rounded-md shadow-[0_0_10px_black]">
                       Hardcore
-                    </Typography>
+                    </div>
                   )}
-                  <Typography className="text-white font-customNoto font-normal text-[11px] z-10 text-center bg-[#3f3e3e] p-1 rounded-md shadow-[0_0_10px_black]">
+                  <div className="text-white font-customNoto font-normal text-[11px] z-10 text-center bg-[#3f3e3e] p-1 rounded-md shadow-[0_0_10px_black]">
                     PTR
-                  </Typography>
+                  </div>
                 </div>
                 <div className="w-full flex justify-between gap-1 items-center">
-                  <Typography className="text-gray-100 font-customNoto font-normal text-[10px] z-10 text-center">
+                  <div className="text-gray-400 font-customNoto font-normal text-[11px] z-10 text-center">
                     {obj.Date.slice(0, 10)}
-                  </Typography>
+                  </div>
                   <div className="flex justify-center items-center gap-1">
                     {obj["Run Comment"] && (
                       <Tooltip
@@ -302,7 +302,7 @@ export default function PTR_TEST() {
                             {obj["Run Comment"]}
                           </div>
                         }
-                        className="bg-[black] select-none"
+                        className="bg-[#131111] select-none px-4 max-w-[500px] shadow-[inset_0_0_10px_black]"
                       >
                         <Avatar
                           src="/comment.png"
