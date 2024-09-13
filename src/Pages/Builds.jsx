@@ -42,7 +42,7 @@ export default function Builds() {
       tempBuildCount.push(pairValue);
     }
     const finalized = tempBuildCount
-      .slice(0, 10)
+      .slice()
       .sort((a, b) => (a.played > b.played ? -1 : 1));
 
     allBuildCount.push(finalized);
@@ -87,6 +87,9 @@ export default function Builds() {
                 </div>
                 <div className="text-white text-center font-customNoto text-[12px]">
                   {findTotalOfClass(compo[0].class)} Count
+                </div>
+                <div className="text-white text-center font-customNoto text-[12px]">
+                  {compo.length} Variants
                 </div>
               </div>
               {compo.map((obj) => (
