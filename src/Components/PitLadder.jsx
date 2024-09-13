@@ -96,11 +96,11 @@ export default function PitLadder() {
   }
 
   allData.push(
-    baseData.filter((obj) => obj["Skills Used"].includes(`${selectedSkill}`))
+    rawData.filter((obj) => obj["Skills Used"].includes(`${selectedSkill}`))
   );
 
   allData.push(
-    baseData.filter((obj) => obj.Player.includes(`${selectedPlayer}`))
+    rawData.filter((obj) => obj.Player.includes(`${selectedPlayer}`))
   );
 
   let dataDisplay = allData[category];

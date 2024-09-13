@@ -65,4 +65,6 @@ export const haveProfile = [
   `Forestbog`,
   `kaeshin`,
   `Kiox`,
+  `Astraea`,
+  `AdonisAncestors`,
 ];
