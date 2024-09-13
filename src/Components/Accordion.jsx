@@ -86,6 +86,9 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
         onClick={() => handleOpen(open)}
         className="flex justify-between"
       >
+        {obj["Build Planner"] !== "" && (
+          <div className="absolute bottom-1 right-1 h-2 w-2 bg-[#ef2020] rounded-full select-none" />
+        )}
         {obj.Rank !== undefined ? (
           <div className=" ms-2">
             <Typography className="text-[12px] italic font-bold font-customSource">
