@@ -363,7 +363,7 @@ export default function PTR_TEST() {
                             {obj["Run Comment"]}
                           </div>
                         }
-                        className="bg-[#131111] select-none px-4 max-w-[500px] shadow-[inset_0_0_10px_black]"
+                        className="bg-[#bdb7b7] text-black select-none px-4 max-w-[500px] shadow-[inset_0_0_10px_black]"
                       >
                         <Avatar
                           src="/comment.png"
