@@ -67,4 +67,6 @@ export const haveProfile = [
   `Kiox`,
   `Astraea`,
   `AdonisAncestors`,
+  `Skydro`,
+  `RHYME`,
 ];
