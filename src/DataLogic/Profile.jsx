@@ -69,4 +69,5 @@ export const haveProfile = [
   `AdonisAncestors`,
   `Skydro`,
   `RHYME`,
+  `Dinosaurd123`,
 ];
