@@ -1,4 +1,34 @@
 export const PTR_DATA = [
+  // {
+  //   Date: "",
+  //   Tier: "",
+  //   "Time Used": "",
+  //   Player: "",
+  //   Class: "",
+  //   Mode: "SC",
+  //   "Build Name": "",
+  //   "Skills Used": "",
+  //   "Run Video": "",
+  //   "Run Comment":
+  //     "",
+  //   "Build Planner": "",
+  //   Runewords: "",
+  // },
+  {
+    Date: "9/14/2024",
+    Tier: "100",
+    "Time Used": "1:39",
+    Player: "<DC>호남향우회",
+    Class: "Sorcerer",
+    Mode: "SC",
+    "Build Name": "LS",
+    "Skills Used":
+      "Charged_Bolts, Ice_Armor, Teleport, Ice_Blades, Lightning_Spear, Unstable_Currents",
+    "Run Video": "https://youtu.be/50qXwNBbB14",
+    "Run Comment": "THE FASTEST T100 RUN",
+    "Build Planner": "",
+    Runewords: "Challenging_Shout, Petrify",
+  },
   {
     Date: "10/1/2024",
     Tier: "100",
