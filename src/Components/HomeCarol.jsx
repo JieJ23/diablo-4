@@ -118,9 +118,9 @@ export default function Top10() {
 
   //
   const top10Overall = uniqueSecondSort.slice(0, 10);
-  const top10Hardcore = uniqueSecondSort
-    .filter((obj) => obj.Mode === `HC`)
-    .slice(0, 10);
+  // This will produce a list of High to Low T of only HC entries.
+  const initialHC = baseData.filter((obj) => obj.Mode === `HC`);
+  const top10Hardcore = removeDup(initialHC).slice(0, 10);
 
   //
   const speed101runs = posts

@@ -266,7 +266,7 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
           </div>
         )}
 
-        {obj.Rank && (
+        {(obj.Rank || obj.Mode === `HC`) && (
           <div className="flex flex-wrap justify-center gap-2 select-none my-1">
             {obj.classRank !== undefined && (
               <Chip
@@ -276,12 +276,14 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
                 variant="filled"
               />
             )}
-            <Chip
-              color="blue-gray"
-              value={`#${obj.Rank} Overall`}
-              variant="filled"
-              className="text-white font-customNoto text-[12px] font-normal"
-            />
+            {obj.Rank !== undefined && (
+              <Chip
+                color="blue-gray"
+                value={`#${obj.Rank} Overall`}
+                variant="filled"
+                className="text-white font-customNoto text-[12px] font-normal"
+              />
+            )}
             {obj.Mode === `HC` && (
               <Chip
                 color="red"
