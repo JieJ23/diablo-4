@@ -252,7 +252,7 @@ export default function PTR_TEST() {
                               variant="rounded"
                               size="xs"
                               draggable={false}
-                              className="shadow-[0_0_5px_black] rounded-sm"
+                              className="shadow-[0_0_5px_black] rounded-sm hover:scale-[110%] ease-in duration-100 transition-all"
                             />
                           </Tooltip>
                         ))}
@@ -317,7 +317,7 @@ export default function PTR_TEST() {
                             variant="rounded"
                             size="xs"
                             draggable={false}
-                            className="shadow-[0_0_5px_black] rounded-sm"
+                            className="shadow-[0_0_5px_black] rounded-sm hover:scale-[110%] ease-in duration-100 transition-all"
                           />
                         </Tooltip>
                       ))}
