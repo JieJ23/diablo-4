@@ -157,7 +157,7 @@ export default function Navigation() {
           </div>
         </div>
         <Collapse open={openNav}>{navList}</Collapse>
-        <div className="flex justify-center items-center gap-1 mt-2 text-[12px]">
+        {/* <div className="flex justify-center items-center gap-1 mt-2 text-[12px]">
           <div className="flex relative">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
             <span class="relative inline-flex rounded-full h-3 w-3 bg-red-400" />
@@ -169,7 +169,7 @@ export default function Navigation() {
               diablo4pit.pages.dev
             </a>
           </div>
-        </div>
+        </div> */}
       </Navbar>
     </div>
   );

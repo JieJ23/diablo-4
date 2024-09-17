@@ -1,4 +1,5 @@
 import PitLadder from "../Components/PitLadder";
+import { HomeDraw } from "./HomeDraw";
 
 import Navigation from "../Button/NavHead";
 import { Footer } from "./Home";
@@ -13,6 +14,8 @@ export default function Ladderboard() {
       />
       <div className="h-full flex flex-col justify-between">
         <Navigation />
+        <HomeDraw />
+
         <PitLadder />
         <Footer />
       </div>

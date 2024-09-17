@@ -24,7 +24,7 @@ export function SubmitCard() {
           </div>
         </div>
         <Link
-          to={`https://docs.google.com/spreadsheets/d/10WX_1NchCrfJuLMzU7PBB2iOWI98TmmPwtd_WCglpyo/pubhtml?gid=1154546550&single=true`}
+          to={`https://docs.google.com/forms/d/e/1FAIpQLSce0ljItcpQb7BJ3KMuSMFQI7-IVUJEy8qwDLz00tzUJlgBpw/viewform`}
           target="_blank"
         >
           <Button className="flex items-center gap-2 font-customSource text-[12px] text-white bg-[#31376fcc]">

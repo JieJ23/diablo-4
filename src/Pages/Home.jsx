@@ -6,6 +6,8 @@ import Top10 from "../Components/HomeCarol";
 import SeasonStats from "../Components/SeasonStat";
 import { Link } from "react-router-dom";
 
+import { HomeDraw } from "./HomeDraw";
+
 import { Avatar } from "@material-tailwind/react";
 
 import { PTR } from "../Components/PTR";
@@ -67,6 +69,8 @@ export default function Home() {
 
         <section className="h-full flex flex-col justify-between">
           <Navigation />
+
+          <HomeDraw />
 
           <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg">
             <div className="text-[#868fed] font-customDress text-[28px] sm:text-[32px] mb-2 uppercase">
