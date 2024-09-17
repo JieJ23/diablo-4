@@ -114,7 +114,7 @@ export function HomeDraw() {
               <Button
                 size="sm"
                 variant="filled"
-                className="w-full text-white text-start font-customSource text-[13px] flex gap-2 items-center bg-[#2f2f5f]"
+                className="w-full text-white justify-center font-customSource text-[13px] flex gap-2 items-center bg-[#2f2f5f] hover:scale-105 transition-all duration-100 ease-in"
               >
                 {obj.title}
                 <svg
@@ -150,7 +150,7 @@ export function HomeDraw() {
               <Button
                 size="sm"
                 variant="filled"
-                className="w-full text-white text-center font-customNoto text-[12px] bg-[#2f2f5f] hover:scale-105 transition-all duration-200 ease-in"
+                className="w-full text-white text-center font-customNoto text-[12px] bg-[#2f2f5f] hover:scale-105 transition-all duration-100 ease-in"
               >
                 {obj.title}
               </Button>
