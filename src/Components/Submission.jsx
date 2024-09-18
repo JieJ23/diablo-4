@@ -7,10 +7,10 @@ export function SubmitCard() {
       to={`https://docs.google.com/forms/d/e/1FAIpQLSce0ljItcpQb7BJ3KMuSMFQI7-IVUJEy8qwDLz00tzUJlgBpw/viewform`}
       target="_blank"
     >
-      <Button className="text-[12px] text-white bg-[#2e9067cc] flex items-center justify-center gap-2">
+      <Button className="text-[12px] text-white bg-gradient-to-tl from-[#622577] to-[#030a8f] flex items-center justify-center gap-2">
         <div className="flex relative">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75" />
-          <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500" />
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1ccfe7] opacity-75" />
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-[#1ccfe7]" />
         </div>
         Submit Your Run
         <svg

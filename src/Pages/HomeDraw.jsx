@@ -5,15 +5,15 @@ import { useState } from "react";
 
 const redirectLink = [
   {
-    title: `S6 Pit Ladder`,
+    title: `Pit Ladder`,
     link: `/Ladderboard`,
   },
   {
-    title: `S6 Skills Stats`,
+    title: `Skills Stats`,
     link: `/Builds`,
   },
   {
-    title: `S6 Class Stats`,
+    title: `Class Stats`,
     link: `/Puzzle`,
   },
 ];
@@ -43,12 +43,12 @@ export function HomeDraw() {
     <>
       <div className="flex items-center justify-center">
         <Button
-          className="text-[12px] text-white bg-[#374bcecc] flex items-center justify-center gap-2"
+          className="text-[12px] text-white bg-gradient-to-tr from-[#622577] to-[#030a8f] flex items-center justify-center gap-2"
           onClick={openDrawer}
         >
           <div className="flex relative">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75" />
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500" />
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1ccfe7] opacity-75" />
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-[#1ccfe7] " />
           </div>
           Main Menu
           <svg
@@ -71,10 +71,10 @@ export function HomeDraw() {
       <Drawer
         open={open}
         onClose={closeDrawer}
-        className="p-4 bg-gradient-to-br from-[#36363b] to-[#020202]"
+        className="p-4 bg-gradient-to-br from-[#2b2b4d] to-[#000000]"
         size={300}
       >
-        <div className="mb-6 flex items-center justify-between">
+        <div className="mb-2 flex items-center justify-between">
           <div className="font-customDress text-white uppercase text-[18px]">
             Main Menu
           </div>
@@ -96,7 +96,9 @@ export function HomeDraw() {
           </IconButton>
         </div>
 
-        <div className="my-5">
+        <div className="border-t-[1px] border-[#6b6b6b]" />
+
+        <div className="my-2">
           <div className="font-customNoto text-[12px] text-red-400 text-start">
             Please ensure to update and bookmark the latest link. Our platform
             has been relocated to:
@@ -108,19 +110,21 @@ export function HomeDraw() {
           </Link>
         </div>
 
-        <div className="mt-10 mb-5">
-          <div className="font-customNoto text-[12px] text-blue-400 text-start">
-            The current season leaderboard and other available content.
+        <div className="mt-10 mb-2">
+          <div className="font-customDress text-center text-white uppercase text-[18px]">
+            Current Season
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 my-5">
+        <div className="border-t-[1px] border-[#6b6b6b]" />
+
+        <div className="flex flex-col gap-1 mt-2">
           {redirectLink.map((obj) => (
             <Link to={obj.link}>
               <Button
                 size="sm"
                 variant="filled"
-                className="w-full justify-start font-customNoto text-[14px] flex gap-2 items-center bg-transparent hover:scale-105 transition-all duration-100 ease-in"
+                className="w-full justify-start font-customNoto text-[12px] flex gap-2 items-center bg-transparent hover:scale-105 transition-all duration-100 ease-in"
               >
                 {obj.title}
                 <svg
@@ -142,20 +146,21 @@ export function HomeDraw() {
           ))}
         </div>
 
-        <div className="mt-10 mb-5">
-          <div className="font-customNoto text-[12px] text-blue-400 text-start">
-            Join our Discord channel to stay updated with the latest news about
-            the website.
+        <div className="mt-10 mb-2">
+          <div className="font-customDress text-center text-white uppercase text-[18px]">
+            Links
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 my-5">
+        <div className="border-t-[1px] border-[#6b6b6b]" />
+
+        <div className="flex flex-col gap-1 mt-2">
           {extraRedirect.map((obj) => (
             <Link to={obj.link} target="_blank">
               <Button
                 size="sm"
                 variant="filled"
-                className="w-full justify-start font-customNoto text-[14px] flex gap-2 items-center bg-transparent hover:scale-105 transition-all duration-100 ease-in"
+                className="w-full justify-start font-customNoto text-[12px] flex gap-2 items-center bg-transparent hover:scale-105 transition-all duration-100 ease-in"
               >
                 {obj.title}
                 <svg
