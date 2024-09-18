@@ -70,7 +70,9 @@ export default function Home() {
         <section className="h-full flex flex-col justify-between">
           <Navigation />
 
-          <HomeDraw />
+          <div className="w-full max-w-[1200px] flex justify-between mx-auto px-6 mt-5">
+            <HomeDraw />
+          </div>
 
           <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg">
             <div className="text-[#868fed] font-customDress text-[28px] sm:text-[32px] mb-2 uppercase">

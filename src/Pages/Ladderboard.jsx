@@ -14,7 +14,9 @@ export default function Ladderboard() {
       />
       <div className="h-full flex flex-col justify-between">
         <Navigation />
-        <HomeDraw />
+        <div className="w-full max-w-[1200px] flex justify-between mx-auto px-6 mt-5">
+          <HomeDraw />
+        </div>
 
         <PitLadder />
         <Footer />

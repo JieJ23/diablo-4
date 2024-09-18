@@ -31,7 +31,7 @@ const contentObj = [
 
 export function CardContent({ image, link, title, summary }) {
   return (
-    <Card className="bg-gradient-to-b from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
+    <Card className="bg-gradient-to-b from-[#2a3058] to-blue-gray-900 shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
       <div className="text-start p-2">
         <Typography className="mb-2 font-customDress text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all uppercase">
           {title}
@@ -49,7 +49,7 @@ export function CardContent({ image, link, title, summary }) {
       <Link to={link} className="mt-4">
         <Button
           variant="filled"
-          className="bg-[#31376fcc] group-hover:scale-95 ease-in duration-200 transition-all flex items-center gap-2 font-customSource text-[12px]"
+          className="bg-[#2f3471cc] group-hover:scale-95 ease-in duration-200 transition-all flex items-center gap-2 font-customSource text-[12px]"
         >
           To {title}
           <svg
