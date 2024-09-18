@@ -70,12 +70,12 @@ export default function Home() {
         <section className="h-full flex flex-col justify-between">
           <Navigation />
 
-          <div className="w-full max-w-[1200px] flex flex-wrap gap-2 mx-auto px-2 mt-5">
+          <div className="w-full max-w-[1200px] flex justify-center gap-2 mx-auto px-2 my-5">
             <HomeDraw />
             <SubmitCard />
           </div>
 
-          <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg">
+          <section className="text-start px-6 max-w-[1200px] mx-auto mb-10 rounded-lg">
             <div className="text-[#868fed] font-customDress text-[28px] sm:text-[32px] mb-2 uppercase">
               Welcome to Diablo 4 Pit
             </div>
@@ -88,7 +88,7 @@ export default function Home() {
             <PTR />
           </div>
 
-          <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-2">
+          <section className="flex flex-col max-w-[1200px] my-10 mx-auto w-full px-2">
             <div className="flex flex-col p-2 justify-center gap-2 mb-2">
               <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px] uppercase">
                 Divided by Class, United by Purpose

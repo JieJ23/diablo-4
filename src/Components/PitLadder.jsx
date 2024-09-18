@@ -36,7 +36,7 @@ export default function PitLadder() {
 
   // Functions
   const handleDataChange = (num) => ({
-    variant: category === num ? "text" : "filled",
+    variant: category === num ? "gradient" : "text",
     onClick: () => {
       setCategory(num);
       setPageInfo(0);
@@ -128,7 +128,7 @@ export default function PitLadder() {
       {loader ? (
         <DataLoadingLoader />
       ) : (
-        <div className="mt-5">
+        <div>
           <AccordWrap>
             <Card
               className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"

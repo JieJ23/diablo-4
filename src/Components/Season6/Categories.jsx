@@ -1,4 +1,4 @@
-import { Button, Avatar } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
 
 export default function S6CategoryBtns({ onButtonClick, classes }) {
   const allClasses = ["Latest", "Hardcore", "Global", ...classes];
@@ -25,11 +25,9 @@ export default function S6CategoryBtns({ onButtonClick, classes }) {
             variant={onButtonClick(index + 3).variant}
             onClick={onButtonClick(index + 3).onClick}
             color="teal"
-            className="p-2 font-customNoto uppercase text-[12px] hover:scale-105 duration-200 ease-in transition-all border-[2px] border-[black]"
+            className="p-2 font-customNoto uppercase text-[12px] hover:scale-105 duration-200 ease-in transition-all border-[2px] border-[black] text-white"
           >
-            <div className="flex flex-col justify-center items-center group-hover:text-[red] ease-in duration-200 transition-colors text-white">
-              {num}
-            </div>
+            {num}
           </Button>
         ))}
       </div>
