@@ -70,8 +70,9 @@ export default function Home() {
         <section className="h-full flex flex-col justify-between">
           <Navigation />
 
-          <div className="w-full max-w-[1200px] flex justify-between mx-auto px-6 mt-5">
+          <div className="w-full max-w-[1200px] flex flex-wrap gap-2 mx-auto px-6 mt-5">
             <HomeDraw />
+            <SubmitCard />
           </div>
 
           <section className="text-start px-6 max-w-[1200px] mx-auto my-10 rounded-lg">
@@ -87,11 +88,23 @@ export default function Home() {
             <PTR />
           </div>
 
-          <div className="flex justify-center">
-            <SubmitCard />
-          </div>
-
-          <section className="text-center my-5 px-2">
+          <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-2">
+            <div className="flex flex-col p-2 justify-center gap-2 mb-2">
+              <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px] uppercase">
+                Divided by Class, United by Purpose
+              </div>
+              <div className="text-[13px] font-customNoto text-gray-400">
+                Submit and showcase your gameplay, and become an active part of
+                the community as we strive to reach the highest pit this season.
+                Your journey is unique and deserves to be celebrated and
+                remembered by all. Entries will primarily rely on contributions
+                from players and community submissions, serving as the main
+                source of content. Additionally, the developer will actively
+                participate by submitting entries gathered from a variety of
+                platforms to ensure a broader representation of the gaming
+                experience.
+              </div>
+            </div>
             <Content />
           </section>
 
