@@ -15,7 +15,7 @@ export default function Ladderboard() {
       />
       <div className="h-full flex flex-col justify-between">
         <Navigation />
-        <div className="w-full max-w-[1200px] flex flex-wrap gap-2 mx-auto px-6 mt-5">
+        <div className="w-full max-w-[1200px] flex flex-wrap gap-2 mx-auto px-2 mt-5">
           <HomeDraw />
           <SubmitCard />
         </div>
