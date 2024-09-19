@@ -191,17 +191,20 @@ export default function PTR_TEST() {
               fulldata={s6AllData}
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-2 px-0 gap-1 xl:gap-2 select-none justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 py-2 px-0 gap-1 xl:gap-2 select-none justify-center">
             {sortDisplay.map((obj, index) => (
               <Card
-                className="p-2 relative bg-transparent shadow-[0_0_30px_black] border-[2px] border-[#0f2d51]"
+                className="p-2 relative bg-transparent border-[2px] border-[#3f6b7c]"
                 style={{ backgroundColor: `#000000b3` }}
               >
-                <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-lg" />
+                <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
                 <div
                   className="absolute h-full w-full top-0 left-0 -z-10 rounded-lg bg-top bg-cover"
                   style={{ backgroundImage: `url("/t${obj.Class}.png")` }}
                 />
+                <div className="absolute bottom-1 left-2 text-gray-400 font-customNoto font-normal text-[10px] z-10 text-center">
+                  PTR
+                </div>
                 <div className="h-full flex flex-row items-center justify-center z-20">
                   <div className="flex flex-col h-full justify-center gap-2 items-center flex-1">
                     <div className="text-gray-400 font-customDiablo text-[13px]">
@@ -322,11 +325,11 @@ export default function PTR_TEST() {
                         </Tooltip>
                       ))}
                     </div>
-                    <div className="text-[#47e87c] font-customNoto font-normal text-[11px] text-center">
-                      {uppercaseFirstLetter(obj["Build Name"])}
-                    </div>
                     <div className="text-gray-400 font-customNoto font-normal text-[11px] text-center">
                       Time {obj["Time Used"]}
+                    </div>
+                    <div className="text-[#47e87c] font-customNoto font-normal text-[11px] text-center">
+                      {uppercaseFirstLetter(obj["Build Name"])}
                     </div>
                   </div>
                 </div>
@@ -347,12 +350,9 @@ export default function PTR_TEST() {
                       Hardcore
                     </div>
                   )}
-                  <div className="text-white font-customNoto font-normal text-[11px] z-10 text-center bg-[#3f3e3e] p-1 rounded-md shadow-[0_0_10px_black]">
-                    PTR
-                  </div>
                 </div>
-                <div className="w-full flex justify-between gap-1 items-center">
-                  <div className="text-gray-400 font-customNoto font-normal text-[11px] z-10 text-center">
+                <div className="w-full flex justify-between gap-1 items-center my-0.5">
+                  <div className="text-gray-400 font-customNoto font-normal text-[10px] z-10 text-center">
                     {obj.Date.slice(0, 10)}
                   </div>
                   <div className="flex justify-center items-center gap-1">
