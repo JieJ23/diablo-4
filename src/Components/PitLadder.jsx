@@ -18,6 +18,8 @@ import SkillsSelection from "./MainSelect";
 import PlayerSelection from "./SecondarySelect";
 
 import TopOfEachClass from "./TopEachClass";
+import { HomeDraw } from "../Pages/HomeDraw";
+import { SubmitCard } from "./Submission";
 
 export default function PitLadder() {
   const { posts, loader } = useData();
@@ -134,6 +136,10 @@ export default function PitLadder() {
               className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
               shadow={false}
             >
+              <div className="w-full max-w-[1200px] flex justify-center items-center gap-2 mx-auto px-2 my-5">
+                <HomeDraw />
+                <SubmitCard />
+              </div>
               <TopOfEachClass objData={baseData} />
               <ClassesBtn
                 onButtonClick={handleDataChange}
