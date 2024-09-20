@@ -2,8 +2,6 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 // Create a context to hold the fetched data
 const DataContext = createContext();
-import { firstpart, secondpart } from "./pass";
-import { thirdpart } from "./Loader";
 // Create a custom hook to consume the context
 export const useData = () => useContext(DataContext);
 
@@ -12,10 +10,12 @@ export const DataProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
   const [loader, setLoader] = useState(true);
 
+  const url = import.meta.env.VITE_DOMAIN;
+
   useEffect(() => {
     async function load() {
       try {
-        const response = await fetch(`${firstpart}${secondpart}${thirdpart}`);
+        const response = await fetch(`${url}`);
         const data = await response.json();
         const posts = await data.filter((obj) => obj.Validate === "y");
         // const posts = await response.json();
