@@ -4,7 +4,7 @@ import { s5Data } from "../DataLogic/S5Data";
 function CreateClassCard({ data }) {
   return (
     <div
-      className="text-white text-center rounded-xl flex flex-col justify-center py-3 px-2 gap-2 border-[1px] border-[#131111] shadow-[0_0_10px_black] w-[200px]"
+      className="text-white text-center rounded-xl flex flex-col justify-center py-3 px-2 gap-2 border-[1px] border-[#131111] shadow-[0_0_10px_black] w-[180px]"
       style={{ backgroundColor: `${classColor(data.class)}99` }}
     >
       <div>
@@ -63,7 +63,7 @@ export default function SeasonSecondaryStat() {
   console.log(displayData);
 
   return (
-    <section className="flex flex-wrap justify-start gap-2 px-1 max-w-[1200px] mx-auto">
+    <section className="flex flex-wrap justify-start gap-2 px-2 max-w-[1200px] mx-auto">
       {displayData.map((obj) => (
         <CreateClassCard data={obj} />
       ))}
