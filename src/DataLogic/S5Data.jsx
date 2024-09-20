@@ -10206,4 +10206,22 @@ export const s5Data = [
     Compiled: "player",
     BossOnly: "",
   },
+  {
+    Timestamp: "9/20/2024 12:39:58",
+    Date: "9/19/2024",
+    Tier: "143",
+    "Time Used": "12:48",
+    Player: "fr0d0b0ls0n",
+    Class: "Druid",
+    Mode: "SC",
+    "Build Name": "Stormslide",
+    "Skills Used":
+      "Landslide, Blood_Howl, Cyclone_Armor, Earthen_Bulwark, Wolves, Petrify",
+    "Run Video": "https://youtu.be/9Oj8eaqi9PA?si=wx-NDinDxk9Ll2eY",
+    "Run Comment": "",
+    "Build Planner": "",
+    Validate: "y",
+    Compiled: "player",
+    BossOnly: "",
+  },
 ];
