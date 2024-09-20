@@ -63,7 +63,7 @@ export default function SeasonSecondaryStat() {
   console.log(displayData);
 
   return (
-    <section className="flex flex-wrap justify-start gap-4 px-4 max-w-[1200px] mx-auto">
+    <section className="flex flex-wrap justify-start gap-2 px-1 max-w-[1200px] mx-auto">
       {displayData.map((obj) => (
         <CreateClassCard data={obj} />
       ))}
