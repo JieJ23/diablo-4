@@ -1,3 +1,5 @@
+import { classColor } from "../Accordion";
+import { tierColor } from "../Accordion";
 import {
   Avatar,
   Accordion,
@@ -8,47 +10,13 @@ import {
   Chip,
 } from "@material-tailwind/react";
 
-import { useState } from "react";
-import { ReturnSkillIcon, writeTimeInMS } from "../DataLogic/ProcessFunction";
-import { useEffect } from "react";
-import { convertToSec } from "../DataLogic/ProcessFunction";
-import { haveProfile } from "../DataLogic/Profile";
-//
-const build151 = new Date(`08/16/2024`);
-const build152 = new Date(`09/03/2024`);
-//
-export const tierColor = (tier) => {
-  if (tier >= 160) {
-    return `#ff0`;
-  } else if (tier >= 150) {
-    return `#f000ff`;
-  } else if (tier >= 140) {
-    return `#ee2400`;
-  } else if (tier >= 130) {
-    return `#ff7e00`;
-  } else if (tier >= 120) {
-    return `#ffbd00`;
-  } else if (tier >= 110) {
-    return `#cccc62`;
-  } else {
-    return `white`;
-  }
-};
-
-export const classColor = (type) => {
-  switch (type) {
-    case "Barbarian":
-      return `#990000`;
-    case "Druid":
-      return `#5C4033`;
-    case "Rogue":
-      return `#301934`;
-    case "Necromancer":
-      return `#013220`;
-    case "Sorcerer":
-      return "#003366";
-  }
-};
+import { useState, useEffect } from "react";
+import {
+  ReturnSkillIcon,
+  writeTimeInMS,
+} from "../../DataLogic/ProcessFunction";
+import { convertToSec } from "../../DataLogic/ProcessFunction";
+import { haveProfile } from "../../DataLogic/Profile";
 
 function Icon({ id }) {
   return (
@@ -71,7 +39,7 @@ function Icon({ id }) {
   );
 }
 
-export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
+export default function AccordTemplate({ obj, watch, watch2, watch3, watch4 }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -168,7 +136,7 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
         </div>
       </AccordionHeader>
       {/* Patches */}
-      {new Date(obj.Date) > build152 && (
+      {/* {new Date(obj.Date) > build152 && (
         <div className="absolute top-1 right-1 text-[10px] text-gray-300 text-center select-none">
           1.5.2 Build
         </div>
@@ -177,7 +145,7 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
         <div className="absolute top-1 right-1 text-[10px] text-gray-500 text-center select-none">
           1.5.1 Build
         </div>
-      )}
+      )} */}
       {/* Patches  */}
       <AccordionBody className="flex flex-col justify-evenly">
         <div className="flex justify-center gap-4">
@@ -226,6 +194,32 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
             >
               <Avatar
                 src={`/Skills/${item}.png`}
+                variant="rounded"
+                size="sm"
+                draggable={false}
+                className="hover:scale-[110%] ease-in duration-100 transition-all"
+                loading="lazy"
+              />
+            </Tooltip>
+          ))}
+        </div>
+        <div className="flex gap-1 justify-center mt-1">
+          {ReturnSkillIcon(obj["Runewords"]).map((item) => (
+            <Tooltip
+              content={
+                <div className="px-2">
+                  <Typography
+                    className="font-customDiablo text-[14px]"
+                    color="white"
+                  >
+                    {item}
+                  </Typography>
+                </div>
+              }
+              className="bg-black select-none p-1 border-[1px]"
+            >
+              <Avatar
+                src={`/Runewords/${item}.png`}
                 variant="rounded"
                 size="sm"
                 draggable={false}

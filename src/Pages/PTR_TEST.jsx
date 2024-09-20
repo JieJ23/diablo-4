@@ -4,7 +4,7 @@ import Navigation from "../Button/NavHead";
 import {
   Card,
   Avatar,
-  div,
+  Button,
   Tooltip,
   CardFooter,
   IconButton,
@@ -26,6 +26,9 @@ import S6CategoryBtns from "../Components/Season6/Categories";
 import SkillsSelection from "../Components/MainSelect";
 import PlayerSelection from "../Components/SecondarySelect";
 import RunesSelection from "../Components/Season6/ThirdSelect";
+// import AccordionMain from "../Components/Accordion";
+import AccordTemplate from "../Components/Season6/AccordTemplate";
+import AccordWrap from "../Components/CustomWrap/AccordCustom";
 
 function uppercaseFirstLetter(str) {
   return str.replace(/\b\w/g, (char) => char.toUpperCase());
@@ -41,6 +44,8 @@ export default function PTR_TEST() {
   const [selectedSkill, setSelectedSkill] = useState(null);
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const [selectedRune, setSelectedRune] = useState(null);
+
+  const [compact, setCompact] = useState(false);
 
   // Functions
   const handleDataChange = (num) => ({
@@ -81,6 +86,11 @@ export default function PTR_TEST() {
     setCategory(s6AllData.length - 1);
     setPageInfo(0);
     setActive(1);
+  };
+
+  const handleLayout = () => {
+    setCompact(!compact);
+    console.log(compact);
   };
 
   // All Classes
@@ -171,7 +181,7 @@ export default function PTR_TEST() {
             classes={s6AllClasses}
             onButtonClick={handleDataChange}
           />
-          <div className="flex flex-col lg:flex-row justify-center gap-2 my-5 mx-auto max-w-[400px] lg:w-full">
+          <div className="flex flex-col lg:flex-row justify-center gap-2 mt-5 mb-2 mx-auto max-w-[400px] lg:w-full">
             <RunesSelection
               allRunes={sortBaseData}
               onRuneChange={handleRuneChange}
@@ -191,67 +201,158 @@ export default function PTR_TEST() {
               fulldata={s6AllData}
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 py-2 px-0 gap-1 xl:gap-2 select-none justify-center">
-            {sortDisplay.map((obj, index) => (
-              <Card
-                className="p-2 relative bg-transparent border-[2px] border-[#3f6b7c]"
-                style={{ backgroundColor: `#000000b3` }}
+          <div className="w-full max-w-[1200px] mx-auto px-4 flex justify-end my-3">
+            <Button
+              variant="gradient"
+              color="teal"
+              onClick={handleLayout}
+              className="flex items-center gap-2"
+            >
+              Layout View
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="h-5 w-5"
               >
-                <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
-                <div
-                  className="absolute h-full w-full top-0 left-0 -z-10 rounded-lg bg-top bg-cover"
-                  style={{ backgroundImage: `url("/t${obj.Class}.png")` }}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
                 />
-                <div className="absolute bottom-1 left-2 text-gray-400 font-customNoto font-normal text-[10px] z-10 text-center">
-                  PTR
-                </div>
-                <div className="h-full flex flex-row items-center justify-center z-20">
-                  <div className="flex flex-col h-full justify-center gap-2 items-center flex-1">
-                    <div className="text-gray-400 font-customDiablo text-[13px]">
-                      {obj.Class}
-                    </div>
-                    {
-                      <Avatar
-                        src={
-                          haveProfile.includes(obj.Player)
-                            ? `/pfp/${obj.Player}.png`
-                            : `/ClassesIcon/${obj.Class}.png`
-                        }
-                        variant="circular"
-                        draggable={false}
-                        className={
-                          haveProfile.includes(obj.Player) &&
-                          `shadow-[0_0_30px_black]`
-                        }
-                      />
-                    }
-                    <div className="text-white font-customDress uppercase text-[13px] sm:text-[15px]">
-                      {obj.Player}
-                    </div>
-                    <div
-                      className={`font-customNoto text-[11px] sm:text-[12px] ${
-                        obj.Tier > 99 ? `text-[#47e87c]` : `text-white`
-                      }`}
-                    >
-                      Tier {obj.Tier}
-                    </div>
+              </svg>
+            </Button>
+          </div>
+
+          {compact ? (
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 py-2 px-0 gap-1 xl:gap-2 select-none justify-center mb-5 mt-2">
+              {sortDisplay.map((obj, index) => (
+                <Card
+                  className="p-2 relative bg-transparent border-[2px] border-[#3f6b7c]"
+                  style={{ backgroundColor: `#000000b3` }}
+                >
+                  <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
+                  <div
+                    className="absolute h-full w-full top-0 left-0 -z-10 rounded-lg bg-top bg-cover"
+                    style={{ backgroundImage: `url("/t${obj.Class}.png")` }}
+                  />
+                  <div className="absolute bottom-1 left-2 text-gray-400 font-customNoto font-normal text-[10px] z-10 text-center">
+                    PTR
                   </div>
-                  <div className="flex flex-col h-full justify-evenly items-center flex-1">
-                    {obj.Runewords !== "" ? (
-                      <div className="flex gap-[4px] sm:gap-[2px] justify-center my-1">
-                        {ReturnSkillIcon(obj["Runewords"]).map((item) => (
+                  <div className="h-full flex flex-row items-center justify-center z-20">
+                    <div className="flex flex-col h-full justify-center gap-2 items-center flex-1">
+                      <div className="text-gray-400 font-customDiablo text-[13px]">
+                        {obj.Class}
+                      </div>
+                      {
+                        <Avatar
+                          src={
+                            haveProfile.includes(obj.Player)
+                              ? `/pfp/${obj.Player}.png`
+                              : `/ClassesIcon/${obj.Class}.png`
+                          }
+                          variant="circular"
+                          draggable={false}
+                          className={
+                            haveProfile.includes(obj.Player) &&
+                            `shadow-[0_0_30px_black]`
+                          }
+                        />
+                      }
+                      <div className="text-white font-customDress uppercase text-[13px] sm:text-[15px]">
+                        {obj.Player}
+                      </div>
+                      <div
+                        className={`font-customNoto text-[11px] sm:text-[12px] ${
+                          obj.Tier > 99 ? `text-[#47e87c]` : `text-white`
+                        }`}
+                      >
+                        Tier {obj.Tier}
+                      </div>
+                    </div>
+                    <div className="flex flex-col h-full justify-evenly items-center flex-1">
+                      {obj.Runewords !== "" ? (
+                        <div className="flex gap-[4px] sm:gap-[2px] justify-center my-1">
+                          {ReturnSkillIcon(obj["Runewords"]).map((item) => (
+                            <Tooltip
+                              content={
+                                <div className="px-2">
+                                  <div className="font-customDiablo text-[14px] text-[#b373e4]">
+                                    Runewords: {item}
+                                  </div>
+                                </div>
+                              }
+                              className="bg-black select-none border-[1px]"
+                            >
+                              <Avatar
+                                src={`/Runewords/${item}.png`}
+                                variant="rounded"
+                                size="xs"
+                                draggable={false}
+                                className="shadow-[0_0_5px_black] rounded-sm hover:scale-[110%] ease-in duration-100 transition-all"
+                              />
+                            </Tooltip>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="flex gap-[4px] sm:gap-[2px] justify-center my-1">
                           <Tooltip
                             content={
                               <div className="px-2">
                                 <div className="font-customDiablo text-[14px] text-[#b373e4]">
-                                  Runewords: {item}
+                                  No Runewords
                                 </div>
                               </div>
                             }
                             className="bg-black select-none border-[1px]"
                           >
                             <Avatar
-                              src={`/Runewords/${item}.png`}
+                              src={`/runesT.png`}
+                              variant="rounded"
+                              size="xs"
+                              draggable={false}
+                              className="rounded-sm"
+                            />
+                          </Tooltip>
+                          <Tooltip
+                            content={
+                              <div className="px-2">
+                                <div className="font-customDiablo text-[14px] text-[#b373e4]">
+                                  No Runewords
+                                </div>
+                              </div>
+                            }
+                            className="bg-black select-none border-[1px]"
+                          >
+                            <Avatar
+                              src={`/runesB.png`}
+                              variant="rounded"
+                              size="xs"
+                              draggable={false}
+                              className="rounded-sm"
+                            />
+                          </Tooltip>
+                        </div>
+                      )}
+                      <div className="grid grid-cols-3 gap-[2px] justify-center mb-1">
+                        {ReturnSkillIcon(obj["Skills Used"]).map((item) => (
+                          <Tooltip
+                            content={
+                              <div className="px-2">
+                                <div
+                                  className="font-customDiablo text-[14px]"
+                                  color="white"
+                                >
+                                  {item}
+                                </div>
+                              </div>
+                            }
+                            className="bg-black select-none border-[1px]"
+                          >
+                            <Avatar
+                              src={`/Skills/${item}.png`}
                               variant="rounded"
                               size="xs"
                               draggable={false}
@@ -260,152 +361,113 @@ export default function PTR_TEST() {
                           </Tooltip>
                         ))}
                       </div>
-                    ) : (
-                      <div className="flex gap-[4px] sm:gap-[2px] justify-center my-1">
-                        <Tooltip
-                          content={
-                            <div className="px-2">
-                              <div className="font-customDiablo text-[14px] text-[#b373e4]">
-                                No Runewords
-                              </div>
-                            </div>
-                          }
-                          className="bg-black select-none border-[1px]"
-                        >
-                          <Avatar
-                            src={`/runesT.png`}
-                            variant="rounded"
-                            size="xs"
-                            draggable={false}
-                            className="rounded-sm"
-                          />
-                        </Tooltip>
-                        <Tooltip
-                          content={
-                            <div className="px-2">
-                              <div className="font-customDiablo text-[14px] text-[#b373e4]">
-                                No Runewords
-                              </div>
-                            </div>
-                          }
-                          className="bg-black select-none border-[1px]"
-                        >
-                          <Avatar
-                            src={`/runesB.png`}
-                            variant="rounded"
-                            size="xs"
-                            draggable={false}
-                            className="rounded-sm"
-                          />
-                        </Tooltip>
+                      <div className="text-gray-400 font-customNoto font-normal text-[11px] text-center">
+                        Time {obj["Time Used"]}
+                      </div>
+                      <div className="text-[#47e87c] font-customNoto font-normal text-[11px] text-center">
+                        {uppercaseFirstLetter(obj["Build Name"])}
+                      </div>
+                    </div>
+                  </div>
+                  {/* Divider */}
+                  <div className="border-t-[1px] border-[transparent] my-1 w-full mx-auto" />
+                  <div className="w-full flex flex-wrap gap-1 items-center">
+                    <div
+                      className="text-white font-customNoto font-normal text-[11px] z-10 text-center p-1 rounded-md shadow-[0_0_10px_black]"
+                      style={{ backgroundColor: classColor(obj.Class) }}
+                    >
+                      #{obj.classRank} {obj.Class}
+                    </div>
+                    <div className="text-white font-customNoto font-normal text-[11px] z-10 text-center bg-[#393c88cc] p-1 rounded-md shadow-[0_0_10px_black]">
+                      #{obj.Rank} Overall
+                    </div>
+                    {obj.Mode === `HC` && (
+                      <div className="text-black font-customNoto font-normal text-[11px] z-10 text-center bg-[#f44545cc] p-1 rounded-md shadow-[0_0_10px_black]">
+                        Hardcore
                       </div>
                     )}
-                    <div className="grid grid-cols-3 gap-[2px] justify-center mb-1">
-                      {ReturnSkillIcon(obj["Skills Used"]).map((item) => (
+                  </div>
+                  <div className="w-full flex justify-between gap-1 items-center my-0.5">
+                    <div className="text-gray-400 font-customNoto font-normal text-[10px] z-10 text-center">
+                      {obj.Date.slice(0, 10)}
+                    </div>
+                    <div className="flex justify-center items-center gap-1">
+                      {obj["Run Comment"] && (
                         <Tooltip
                           content={
-                            <div className="px-2">
-                              <div
-                                className="font-customDiablo text-[14px]"
-                                color="white"
-                              >
-                                {item}
-                              </div>
+                            <div className="flex justify-center p-1 font-customNoto text-[12px]">
+                              {obj["Run Comment"]}
                             </div>
                           }
-                          className="bg-black select-none border-[1px]"
+                          className="bg-[#bdb7b7] text-black select-none px-4 max-w-[500px] shadow-[inset_0_0_10px_black]"
                         >
                           <Avatar
-                            src={`/Skills/${item}.png`}
+                            src="/comment.png"
                             variant="rounded"
-                            size="xs"
+                            className="w-[21px] h-[21px]"
                             draggable={false}
-                            className="shadow-[0_0_5px_black] rounded-sm hover:scale-[110%] ease-in duration-100 transition-all"
                           />
                         </Tooltip>
-                      ))}
+                      )}
+                      {obj["Run Video"] && (
+                        <a href={obj["Run Video"]} target="_blank">
+                          <Avatar
+                            src={
+                              obj["Run Video"].includes(`x.com`)
+                                ? `/Skills/X.png`
+                                : obj["Run Video"].includes(`bilibili`)
+                                ? `/bilibili.png`
+                                : `/youtube.png`
+                            }
+                            variant="rounded"
+                            size="xs"
+                            className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
+                            draggable={false}
+                          />
+                        </a>
+                      )}
+                      {obj["Build Planner"] !== "" && (
+                        <a href={obj["Build Planner"]} target="_blank">
+                          <Avatar
+                            src={`build.png`}
+                            variant="rounded"
+                            size="xs"
+                            className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
+                            draggable={false}
+                          />
+                        </a>
+                      )}
                     </div>
-                    <div className="text-gray-400 font-customNoto font-normal text-[11px] text-center">
-                      Time {obj["Time Used"]}
+                  </div>
+                </Card>
+              ))}
+            </div>
+          ) : (
+            <AccordWrap>
+              <Card
+                className="w-full mx-auto max-w-[1200px] bg-transparent"
+                shadow={false}
+              >
+                <div className="w-full max-w-[1400px] flex flex-col justify-center items-center mx-auto mb-5 mt-2">
+                  {sortDisplay.map((obj, index) => (
+                    <div
+                      className={`${
+                        index % 2 === 0 ? `bg-[#0d1c2ecc]` : `bg-[#151515cc]`
+                      } mb-1 rounded-lg backdrop-blur-sm relative border-[2px] border-[#131111] w-full`}
+                    >
+                      <AccordTemplate
+                        obj={obj}
+                        watch={category}
+                        watch2={active}
+                        watch3={setSelectedSkill}
+                        watch4={setSelectedPlayer}
+                      />
                     </div>
-                    <div className="text-[#47e87c] font-customNoto font-normal text-[11px] text-center">
-                      {uppercaseFirstLetter(obj["Build Name"])}
-                    </div>
-                  </div>
-                </div>
-                {/* Divider */}
-                <div className="border-t-[1px] border-[transparent] my-1 w-full mx-auto" />
-                <div className="w-full flex flex-wrap gap-1 items-center">
-                  <div
-                    className="text-white font-customNoto font-normal text-[11px] z-10 text-center p-1 rounded-md shadow-[0_0_10px_black]"
-                    style={{ backgroundColor: classColor(obj.Class) }}
-                  >
-                    #{obj.classRank} {obj.Class}
-                  </div>
-                  <div className="text-white font-customNoto font-normal text-[11px] z-10 text-center bg-[#393c88cc] p-1 rounded-md shadow-[0_0_10px_black]">
-                    #{obj.Rank} Overall
-                  </div>
-                  {obj.Mode === `HC` && (
-                    <div className="text-black font-customNoto font-normal text-[11px] z-10 text-center bg-[#f44545cc] p-1 rounded-md shadow-[0_0_10px_black]">
-                      Hardcore
-                    </div>
-                  )}
-                </div>
-                <div className="w-full flex justify-between gap-1 items-center my-0.5">
-                  <div className="text-gray-400 font-customNoto font-normal text-[10px] z-10 text-center">
-                    {obj.Date.slice(0, 10)}
-                  </div>
-                  <div className="flex justify-center items-center gap-1">
-                    {obj["Run Comment"] && (
-                      <Tooltip
-                        content={
-                          <div className="flex justify-center p-1 font-customNoto text-[12px]">
-                            {obj["Run Comment"]}
-                          </div>
-                        }
-                        className="bg-[#bdb7b7] text-black select-none px-4 max-w-[500px] shadow-[inset_0_0_10px_black]"
-                      >
-                        <Avatar
-                          src="/comment.png"
-                          variant="rounded"
-                          className="w-[21px] h-[21px]"
-                          draggable={false}
-                        />
-                      </Tooltip>
-                    )}
-                    {obj["Run Video"] && (
-                      <a href={obj["Run Video"]} target="_blank">
-                        <Avatar
-                          src={
-                            obj["Run Video"].includes(`x.com`)
-                              ? `/Skills/X.png`
-                              : obj["Run Video"].includes(`bilibili`)
-                              ? `/bilibili.png`
-                              : `/youtube.png`
-                          }
-                          variant="rounded"
-                          size="xs"
-                          className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
-                          draggable={false}
-                        />
-                      </a>
-                    )}
-                    {obj["Build Planner"] !== "" && (
-                      <a href={obj["Build Planner"]} target="_blank">
-                        <Avatar
-                          src={`build.png`}
-                          variant="rounded"
-                          size="xs"
-                          className="hover:scale-110 ease-in duration-200 transition-all p-0.5"
-                          draggable={false}
-                        />
-                      </a>
-                    )}
-                  </div>
+                  ))}
                 </div>
               </Card>
-            ))}
-          </div>
+            </AccordWrap>
+          )}
           <CardFooter className="p-3">
             <div className="flex gap-2">
               {totalPages.map((page, index) => (
