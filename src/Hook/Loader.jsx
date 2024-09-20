@@ -1,5 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 
+export const fetchdomain = `https://script.google.com/`;
+
 export default function DataLoadingLoader() {
   return (
     <>
