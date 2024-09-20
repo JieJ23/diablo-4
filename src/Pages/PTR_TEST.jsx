@@ -45,7 +45,7 @@ export default function PTR_TEST() {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const [selectedRune, setSelectedRune] = useState(null);
 
-  const [compact, setCompact] = useState(false);
+  const [compact, setCompact] = useState(true);
 
   // Functions
   const handleDataChange = (num) => ({
@@ -90,7 +90,6 @@ export default function PTR_TEST() {
 
   const handleLayout = () => {
     setCompact(!compact);
-    console.log(compact);
   };
 
   // All Classes
@@ -452,7 +451,7 @@ export default function PTR_TEST() {
                   {sortDisplay.map((obj, index) => (
                     <div
                       className={`${
-                        index % 2 === 0 ? `bg-[#0d1c2ecc]` : `bg-[#151515cc]`
+                        index % 2 === 0 ? `bg-[#0e2a31cc]` : `bg-[#141415cc]`
                       } mb-1 rounded-lg backdrop-blur-sm relative border-[2px] border-[#131111] w-full`}
                     >
                       <AccordTemplate

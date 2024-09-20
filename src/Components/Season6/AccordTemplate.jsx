@@ -129,50 +129,22 @@ export default function AccordTemplate({ obj, watch, watch2, watch3, watch4 }) {
           className={`flex-1 text-center font-customNoto font-normal text-[12px] md:text-[14px]`}
           style={{ color: tierColor(obj.Tier) }}
         >
-          <span className="font-customNoto font-normal text-[16px] text-[red]">
+          <span className="font-customNoto font-normal text-[16px] text-[#47e87c]">
             {`T `}
           </span>
           {obj.Tier}
         </div>
       </AccordionHeader>
       {/* Patches */}
-      {/* {new Date(obj.Date) > build152 && (
-        <div className="absolute top-1 right-1 text-[10px] text-gray-300 text-center select-none">
-          1.5.2 Build
-        </div>
-      )}
-      {new Date(obj.Date) > build151 && new Date(obj.Date) <= build152 && (
-        <div className="absolute top-1 right-1 text-[10px] text-gray-500 text-center select-none">
-          1.5.1 Build
-        </div>
-      )} */}
+      <div className="absolute top-1 right-1 text-[10px] text-gray-400 text-center select-none">
+        PTR
+      </div>
       {/* Patches  */}
       <AccordionBody className="flex flex-col justify-evenly">
         <div className="flex justify-center gap-4">
-          <div>
-            {obj["Build Planner"] === "" ? (
-              <Typography className="font-customNoto text-[14px]" color="white">
-                Build:
-              </Typography>
-            ) : (
-              <Typography
-                className="font-customNoto font-semibold text-[14px] hover:scale-[105%] ease-in duration-100 transition-all"
-                color="blue"
-              >
-                <a href={obj["Build Planner"]} target="_blank">
-                  Build:
-                </a>
-              </Typography>
-            )}
-          </div>
           <div className="text-center">
-            <Typography
-              className="font-customNoto font-semibold text-[14px] hover:scale-[105%] ease-in duration-100 transition-all uppercase"
-              color="amber"
-            >
-              <a href={obj["Run Video"]} target="_blank">
-                {obj["Build Name"]}
-              </a>
+            <Typography className="font-customNoto font-semibold text-[14px] uppercase text-[#47e87c]">
+              {obj["Build Name"]}
             </Typography>
           </div>
         </div>
