@@ -3404,8 +3404,9 @@ export const s5Data = [
     Player: "MrZeeQ",
     Class: "Sorcerer",
     Mode: "SC",
-    "Build Name": "",
-    "Skills Used": 'Lighting Spear"',
+    "Build Name": "Lighting Spear",
+    "Skills Used":
+      "Frozen_Orb, Flame_Shield, Ice_Armor, Teleport, Lightning_Spear, Unstable_Currents",
     "Run Video":
       "Frozen_Orb, Flame_Shield, Ice_Armor, Teleport, Lightning_Spear, Unstable_Currents",
     "Run Comment": "https://youtu.be/7MH_RQrI9qw",
