@@ -37,7 +37,7 @@ const CountdownTimer = () => {
   const formatTime = (time) => time.toString().padStart(2, "0");
 
   return (
-    <div className="text-white text-center my-5 rounded-xl flex flex-col justify-between p-3 gap-2 bg-gradient-to-t from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b]">
+    <div className="text-white text-center rounded-xl flex flex-col justify-between p-3 gap-2 bg-gradient-to-t from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b] w-[200px]">
       <div className="text-[14px] font-customNoto text-orange-200">
         Season 5 Pit
       </div>

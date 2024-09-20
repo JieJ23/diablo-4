@@ -28,7 +28,7 @@ export default function SeasonStats() {
 
   return (
     <>
-      <div className="text-white text-center my-5 rounded-xl flex flex-col justify-center p-3 gap-2 bg-gradient-to-t from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b]">
+      <div className="text-white text-center rounded-xl flex flex-col justify-center p-3 gap-2 bg-gradient-to-t from-[#3b426c] to-blue-gray-900 shadow-[0_0_30px_#28282b] w-[200px]">
         <div>
           <div className="text-[14px] font-customNoto text-orange-200">
             Pit Stats
@@ -37,15 +37,15 @@ export default function SeasonStats() {
         <div className="grid grid-cols-2 gap-4">
           <div className="font-customNoto text-[12px] sm:text-[16px]">
             {totalPlayers}
-            <div className="text-[12px] text-orange-200">Total Players</div>
+            <div className="text-[12px] text-orange-200">Players</div>
           </div>
           <div className="font-customNoto text-[12px] sm:text-[16px]">
             {totalEntries}
-            <div className="text-[12px] text-orange-200">Total Entries</div>
+            <div className="text-[12px] text-orange-200">Entries</div>
           </div>
           <div className="font-customNoto text-[12px] sm:text-[16px]">
             {totalTiers}
-            <div className="text-[12px] text-orange-200">Total Tiers</div>
+            <div className="text-[12px] text-orange-200">Tiers</div>
           </div>
           <div className="font-customNoto text-[12px] sm:text-[16px]">
             {convertToTime(totalTime)}

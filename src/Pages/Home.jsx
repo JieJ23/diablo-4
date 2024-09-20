@@ -4,6 +4,7 @@ import CountdownTimer from "../Components/Countdown";
 import Navigation from "../Button/NavHead";
 import Top10 from "../Components/HomeCarol";
 import SeasonStats from "../Components/SeasonStat";
+import SeasonSecondaryStat from "../Components/SeasonSecStat";
 import { Link } from "react-router-dom";
 
 import { HomeDraw } from "./HomeDraw";
@@ -126,11 +127,15 @@ export default function Home() {
               free to explore the Class Build section, where you can find
               comprehensive information and overviews for each class
             </div>
-            <div className="grid grid-cols-2 gap-4 max-w-[500px]">
+            <div className="flex flex-wrap gap-4 justify-start my-5">
               <CountdownTimer />
               <SeasonStats />
             </div>
           </section>
+
+          <div>
+            <SeasonSecondaryStat />
+          </div>
 
           <section className="text-center mb-10">
             <Top10 />
