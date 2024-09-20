@@ -13,7 +13,7 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     async function load() {
       try {
-        const response = await fetch(`${import.meta.env.VITE_DOMAIN}`);
+        const response = await fetch(import.meta.env.VITE_DOMAIN);
         const data = await response.json();
         const posts = await data.filter((obj) => obj.Validate === "y");
         // const posts = await response.json();
