@@ -10,12 +10,10 @@ export const DataProvider = ({ children }) => {
   const [posts, setPosts] = useState([]);
   const [loader, setLoader] = useState(true);
 
-  const url = import.meta.env.VITE_DOMAIN;
-
   useEffect(() => {
     async function load() {
       try {
-        const response = await fetch(`${url}`);
+        const response = await fetch(`${import.meta.env.VITE_DOMAIN}`);
         const data = await response.json();
         const posts = await data.filter((obj) => obj.Validate === "y");
         // const posts = await response.json();
