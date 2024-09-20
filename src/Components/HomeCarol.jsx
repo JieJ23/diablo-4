@@ -20,7 +20,7 @@ import { s5Data } from "../DataLogic/S5Data";
 function CreateBoard({ arr, title }) {
   return (
     <Card
-      className="relative h-full pb-2 bg-[#181a30cc] pointer-events-none"
+      className="relative h-full pb-2 bg-gradient-to-t from-[#1c2034] to-[#0a1337] pointer-events-none"
       shadow={false}
     >
       <List className=" px-5 h-full">

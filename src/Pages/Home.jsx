@@ -109,15 +109,13 @@ export default function Home() {
             <Content />
           </section>
 
-          <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-4">
+          <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-4 text-center">
             <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px] mb-2">
-              Season Of The Infernal Horde: Pit Ladder
+              Season Of The Infernal Horde
             </div>
-            <div className="whitespace-pre-line font-customNoto text-[13px] text-gray-400">
-              As we approach the final countdown to the end of the season, the
-              conclusion of submissions for the seasonal leaderboard is drawing
-              near. Below, you'll find an overview of key statistics reflecting
-              the community's participation throughout the season. These stats
+            <div className="font-customNoto text-[13px] text-gray-400">
+              Below, you'll find an overview of key statistics reflecting the
+              community's participation throughout the season. These stats
               include the total number of players who have taken part, the
               overall entries submitted, the combined tiers completed across all
               submissions, and finally, the cumulative time spent by players in
@@ -127,7 +125,7 @@ export default function Home() {
               free to explore the Class Build section, where you can find
               comprehensive information and overviews for each class
             </div>
-            <div className="flex flex-wrap gap-4 justify-start my-5">
+            <div className="flex gap-2 justify-center my-5">
               <CountdownTimer />
               <SeasonStats />
             </div>

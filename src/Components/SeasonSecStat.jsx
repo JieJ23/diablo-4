@@ -20,7 +20,7 @@ function CreateClassCard({ data }) {
         <div className="font-customNoto text-[11px] sm:text-[13px]">
           {data.highest}
 
-          <div className="text-[11px] text-gray-400">Highest Tier</div>
+          <div className="text-[11px] text-gray-400">Highest</div>
         </div>
         <div className="font-customNoto text-[11px] sm:text-[13px]">
           {data.played}
@@ -60,10 +60,8 @@ export default function SeasonSecondaryStat() {
     displayData.push(obj);
   }
 
-  console.log(displayData);
-
   return (
-    <section className="flex flex-wrap justify-start gap-2 px-2 max-w-[1200px] mx-auto">
+    <section className="flex flex-wrap justify-center gap-2 px-2 max-w-[1200px] mx-auto">
       {displayData.map((obj) => (
         <CreateClassCard data={obj} />
       ))}

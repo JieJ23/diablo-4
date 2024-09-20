@@ -31,9 +31,9 @@ const contentObj = [
 
 export function CardContent({ image, link, title, summary }) {
   return (
-    <Card className="bg-gradient-to-b from-[#2a3058] to-blue-gray-900 shadow-[0_0_30px_#28282b] group flex flex-col justify-between p-4 group">
+    <Card className="bg-gradient-to-tr from-[#1c2034] to-[#0a1337] shadow-[0_0_10px_black] group flex flex-col justify-between py-2 px-4 group">
       <div className="text-start p-2">
-        <Typography className="mb-2 font-customDress text-[20px] text-white group-hover:text-[#7f81b7] ease-in duration-300 transition-all uppercase">
+        <Typography className="mb-2 font-customDress text-[20px] text-white uppercase">
           {title}
         </Typography>
         <Typography className="text-[12px] font-customSource text-gray-300 group-hover:scale-[98%] ease-in duration-300 transition-all">
@@ -45,10 +45,10 @@ export function CardContent({ image, link, title, summary }) {
         className="h-56 bg-cover bg-center shadow-[0_0_20px_#131111] rounded-xl group-hover:scale-95 ease-in duration-300 transition-all"
         style={{ backgroundImage: `url("/bg/${image}.png")` }}
       />
-      <Link to={link} className="mt-4">
+      <Link to={link} className="mt-2 flex justify-center">
         <Button
           variant="filled"
-          className="bg-[#2f3471cc] group-hover:scale-95 ease-in duration-200 transition-all flex items-center gap-2 font-customSource text-[12px]"
+          className="bg-[transparent] group-hover:text-[#72b0e0] group-hover:scale-110 ease-in duration-200 transition-all flex items-center gap-2 font-customNoto text-[10px]"
         >
           To {title}
           <svg
