@@ -1,31 +1,29 @@
 import { Card, CardBody } from "@material-tailwind/react";
 import Chart from "react-apexcharts";
-import { useData } from "../Hook/DataFetch";
+import { s5Data } from "../DataLogic/S5Data";
 
 export default function ClassChart2() {
-  const { posts, loader } = useData();
-
-  const target = [...new Set(posts.map((o) => o.Class))];
+  const target = [...new Set(s5Data.map((o) => o.Class))];
   const allValues = [];
   const avgValues = [];
 
   for (let z = 0; z < target.length; z++) {
-    let temp = posts.filter((o) => o.Class === target[z]);
-    let sortedTemp = temp.sort((a, b) => b.Tier - a.Tier);
-    let highest = sortedTemp[0].Tier;
+    let temp = s5Data.filter((o) => o.Class === target[z]);
+    let sortedTemp = temp.sort((a, b) => +b.Tier - +a.Tier);
+    let highest = +sortedTemp[0].Tier;
     allValues.push(highest);
   }
 
   for (let y = 0; y < target.length; y++) {
-    let temp = posts
+    let temp = s5Data
       .filter((o) => o.Class === target[y])
-      .filter((p) => p.Tier > 101);
+      .filter((p) => +p.Tier > 101);
     // let uniqueV = [...new Set(temp.map((o) => o.Tier))].sort().reverse();
 
     let allV = [];
 
     for (let a = 0; a < temp.length; a++) {
-      let tempV = temp[a].Tier;
+      let tempV = +temp[a].Tier;
       allV.push(tempV);
     }
 

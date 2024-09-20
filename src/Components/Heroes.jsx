@@ -43,7 +43,6 @@ export function CardContent({ image, link, title, summary }) {
       <div
         color="black"
         className="h-56 bg-cover bg-center shadow-[0_0_20px_#131111] rounded-xl group-hover:scale-95 ease-in duration-300 transition-all"
-        floated={false}
         style={{ backgroundImage: `url("/bg/${image}.png")` }}
       />
       <Link to={link} className="mt-4">

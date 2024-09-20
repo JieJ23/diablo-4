@@ -1,19 +1,18 @@
 import React from "react";
 import Chart from "react-apexcharts";
 import { Card, CardBody } from "@material-tailwind/react";
-import { useData } from "../Hook/DataFetch";
+
+import { s5Data } from "../DataLogic/S5Data";
 
 export default function ClassChart() {
-  const { posts, loader } = useData();
-
-  const allClass = [...new Set(posts.map((obj) => obj.Class))].map((ite) =>
+  const allClass = [...new Set(s5Data.map((obj) => obj.Class))].map((ite) =>
     ite.slice(0, 4)
   );
 
   const classNums = [];
 
   for (let i = 0; i < allClass.length; i++) {
-    let temp = posts.filter((obj) => obj.Class.slice(0, 4) === allClass[i]);
+    let temp = s5Data.filter((obj) => obj.Class.slice(0, 4) === allClass[i]);
     let totalCount = temp.length;
     classNums.push(totalCount);
   }

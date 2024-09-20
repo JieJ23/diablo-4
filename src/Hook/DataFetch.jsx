@@ -1,40 +1,38 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
-import { fetchdomain } from "./Loader";
-import { fetchurl, secondURL } from "./Fetch";
+// import React, { createContext, useContext, useState, useEffect } from "react";
+// import { fetchdomain } from "./Loader";
+// import { fetchurl, secondURL } from "./Fetch";
 
-// Create a context to hold the fetched data
-const DataContext = createContext();
-// Create a custom hook to consume the context
-export const useData = () => useContext(DataContext);
+// const DataContext = createContext();
 
-// Create a provider component to wrap your application and provide the data
-export const DataProvider = ({ children }) => {
-  const [posts, setPosts] = useState([]);
-  const [loader, setLoader] = useState(true);
+// export const useData = () => useContext(DataContext);
 
-  const baseURL = fetchdomain;
+// export const DataProvider = ({ children }) => {
+//   const [posts, setPosts] = useState([]);
+//   const [loader, setLoader] = useState(true);
 
-  useEffect(() => {
-    async function load() {
-      try {
-        const response = await fetch(`${baseURL}${fetchurl}${secondURL}`);
-        const data = await response.json();
-        const posts = await data.filter((obj) => obj.Validate === "y");
-        // const posts = await response.json();
-        setPosts(posts);
-        setLoader(false);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        setLoader(false);
-      }
-    }
+//   const baseURL = fetchdomain;
 
-    load();
-  }, []);
+//   useEffect(() => {
+//     async function load() {
+//       try {
+//         const response = await fetch(`${baseURL}${fetchurl}${secondURL}`);
+//         const data = await response.json();
+//         const posts = await data.filter((obj) => obj.Validate === "y");
 
-  return (
-    <DataContext.Provider value={{ posts, loader }}>
-      {children}
-    </DataContext.Provider>
-  );
-};
+//         setPosts(posts);
+//         setLoader(false);
+//       } catch (error) {
+//         console.error("Error fetching data:", error);
+//         setLoader(false);
+//       }
+//     }
+
+//     load();
+//   }, []);
+
+//   return (
+//     <DataContext.Provider value={{ posts, loader }}>
+//       {children}
+//     </DataContext.Provider>
+//   );
+// };

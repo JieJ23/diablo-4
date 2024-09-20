@@ -47,8 +47,8 @@ export function HomeDraw() {
           onClick={openDrawer}
         >
           <div className="flex relative">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1ccfe7] opacity-75" />
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-[#1ccfe7] " />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1ccfe7] opacity-75" />
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-[#1ccfe7] " />
           </div>
           Main Menu
           <svg

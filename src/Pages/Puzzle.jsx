@@ -1,6 +1,4 @@
-import { useData } from "../Hook/DataFetch";
-import DataLoadingLoader from "../Hook/Loader";
-import { Tabs } from "../Components/Breadcrumbs";
+import { s5Data } from "../DataLogic/S5Data";
 import { classColor } from "../Components/Accordion";
 import { Avatar } from "@material-tailwind/react";
 import ClassChart from "../Components/ClassChart";
@@ -27,9 +25,7 @@ function CreateBox({ c, a, t, p }) {
 }
 
 export default function Puzzle() {
-  const { posts, loader } = useData();
-
-  const data = posts.slice().sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
+  const data = s5Data.slice().sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
 
   return (
     <section className="h-lvh overflow-x-hidden">
@@ -41,39 +37,35 @@ export default function Puzzle() {
       />
       <Navigation />
 
-      {loader ? (
-        <DataLoadingLoader />
-      ) : (
-        <>
-          <div className="max-w-[1200px] mx-auto px-2 my-5">
-            <ClassChart2 />
+      <>
+        <div className="max-w-[1200px] mx-auto px-2 my-5">
+          <ClassChart2 />
+        </div>
+        <div className="max-w-[1200px] mx-auto px-2 my-5">
+          <ClassChart />
+        </div>
+        <div className="my-10 select-none">
+          <div className="font-customDress text-[20px] text-center text-[#868fed] px-4">
+            Building Blocks (P/C Performance)
           </div>
-          <div className="max-w-[1200px] mx-auto px-2 my-5">
-            <ClassChart />
+          <div className="font-customNoto text-[13px] text-center text-gray-400 px-6">
+            Below are all the entries, sorted from highest to lowest tier
+            completion, providing a visual representation of the current
+            leaderboard.
           </div>
-          <div className="my-10 select-none">
-            <div className="font-customDress text-[20px] text-center text-[#868fed] px-4">
-              Building Blocks (P/C Performance)
-            </div>
-            <div className="font-customNoto text-[13px] text-center text-gray-400 px-6">
-              Below are all the entries, sorted from highest to lowest tier
-              completion, providing a visual representation of the current
-              leaderboard.
-            </div>
 
-            <section className="flex flex-wrap gap-2 my-5 max-w-[1000px] px-4 justify-center md:justify-start mx-auto backdrop-blur-sm">
-              {data.map((item) => (
-                <CreateBox
-                  p={item.Player}
-                  c={classColor(item.Class)}
-                  a={item.Class}
-                  t={item.Tier}
-                />
-              ))}
-            </section>
-          </div>
-        </>
-      )}
+          <section className="flex flex-wrap gap-2 my-5 max-w-[1000px] px-4 justify-center md:justify-start mx-auto backdrop-blur-sm">
+            {data.map((item) => (
+              <CreateBox
+                p={item.Player}
+                c={classColor(item.Class)}
+                a={item.Class}
+                t={item.Tier}
+              />
+            ))}
+          </section>
+        </div>
+      </>
       <Footer />
     </section>
   );
