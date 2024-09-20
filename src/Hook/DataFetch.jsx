@@ -2,7 +2,8 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 // Create a context to hold the fetched data
 const DataContext = createContext();
-
+import { firstpart, secondpart } from "./pass";
+import { thirdpart } from "./Loader";
 // Create a custom hook to consume the context
 export const useData = () => useContext(DataContext);
 
@@ -14,9 +15,7 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     async function load() {
       try {
-        const response = await fetch(
-          `https://script.google.com/macros/s/AKfycbwsMaRDQCCSBiLrm1ZOnyXtGORUjPc4uiboS0DMe_NwjFEB4AfEol1D4H8eT92gWQd-/exec`
-        );
+        const response = await fetch(`${firstpart}${secondpart}${thirdpart}`);
         const data = await response.json();
         const posts = await data.filter((obj) => obj.Validate === "y");
         // const posts = await response.json();

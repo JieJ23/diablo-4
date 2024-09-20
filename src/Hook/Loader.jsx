@@ -1,5 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 
+export const thirdpart = `NwjFEB4AfEol1D4H8eT92gWQd-/exec`;
+
 export default function DataLoadingLoader() {
   return (
     <>
