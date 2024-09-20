@@ -70,4 +70,7 @@ export const haveProfile = [
   `Skydro`,
   `RHYME`,
   `Dinosaurd123`,
+  `Sorcerella`,
+  `Winzik`,
+  `Edicius`,
 ];
