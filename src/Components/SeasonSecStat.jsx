@@ -4,15 +4,20 @@ import { s5Data } from "../DataLogic/S5Data";
 function CreateClassCard({ data }) {
   return (
     <div
-      className="text-white text-center rounded-xl flex flex-col justify-center py-3 px-2 gap-2 border-[1px] border-[#131111] shadow-[0_0_10px_black] w-[180px]"
-      style={{ backgroundColor: `${classColor(data.class)}99` }}
+      className="relative text-white text-center rounded-xl flex flex-col justify-center py-3 px-2 gap-2 border-[1px] border-[#131111] shadow-[0_0_10px_black] w-[180px]"
+      style={{ backgroundColor: `${classColor(data.class)}66` }}
     >
-      <div>
+      <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
+      <div
+        className="absolute h-full w-full top-0 left-0 rounded-xl -z-10 opacity-90 bg-top bg-cover"
+        style={{ backgroundImage: `url("/t${data.class}.png")` }}
+      />
+      <div className="z-20">
         <div className="text-[16px] font-customDiablo text-gray-400">
           {data.class}
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-2 gap-2 z-20">
         <div className="font-customNoto text-[11px] sm:text-[13px]">
           {data.players}
           <div className="text-[11px] text-gray-400">Players</div>
