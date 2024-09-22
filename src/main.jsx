@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 
 import React from "react";
-import { DataProvider } from "./Hook/DataFetch.jsx";
+// import { DataProvider } from "./Hook/DataFetch.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import App from "./App.jsx";
@@ -24,22 +24,22 @@ import "./index.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <DataProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="About" element={<About />} />
-          <Route path="/Ladderboard" element={<Ladderboard />} />
-          <Route path="/PTR_TEST" element={<PTR_TEST />} />
-          <Route path="/Builds" element={<Builds />} />
-          <Route path="/Puzzle" element={<Puzzle />} />
-          <Route path="/Tools" element={<Tools />} />
-          <Route path="/Privacy" element={<Privacy />} />
-          <Route path="/Cookies" element={<Cookies />} />
-          <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
-          <Route path="/TestAssets" element={<TestAssets />} />
-        </Routes>
-      </Router>
-    </DataProvider>
+    {/* <DataProvider> */}
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="About" element={<About />} />
+        <Route path="/Ladderboard" element={<Ladderboard />} />
+        <Route path="/PTR_TEST" element={<PTR_TEST />} />
+        <Route path="/Builds" element={<Builds />} />
+        <Route path="/Puzzle" element={<Puzzle />} />
+        <Route path="/Tools" element={<Tools />} />
+        <Route path="/Privacy" element={<Privacy />} />
+        <Route path="/Cookies" element={<Cookies />} />
+        <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
+        <Route path="/TestAssets" element={<TestAssets />} />
+      </Routes>
+    </Router>
+    {/* </DataProvider> */}
   </React.StrictMode>
 );

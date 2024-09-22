@@ -1,6 +1,6 @@
 import { Avatar, Tooltip, Typography } from "@material-tailwind/react";
 import { barb, druid, necro, rogue, sorc } from "../DataLogic/AllSkills";
-import { useData } from "../Hook/DataFetch";
+// import { useData } from "../Hook/DataFetch";
 import Navigation from "../Button/NavHead";
 import { Footer } from "./Home";
 
@@ -35,9 +35,9 @@ function ReturnAssets({ arr }) {
 }
 
 export default function TestAssets() {
-  const { posts, loader } = useData();
+  // const { posts, loader } = useData();
 
-  const testingSelection = posts.slice();
+  // const testingSelection = posts.slice();
 
   return (
     <section className="h-lvh overflow-x-hidden">
@@ -50,11 +50,11 @@ export default function TestAssets() {
       <div className="h-full flex flex-col justify-between">
         <Navigation />
 
-        <div className="text-center">
+        {/* <div className="text-center">
           {testingSelection.map((obj) => (
             <div className="text-white">{obj.Player}</div>
           ))}
-        </div>
+        </div> */}
         {/* <ReturnAssets arr={barb} />
       <ReturnAssets arr={druid} />
       <ReturnAssets arr={necro} />

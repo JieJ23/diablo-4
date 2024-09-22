@@ -1,8 +1,6 @@
 import { Footer } from "./Home";
 import Navigation from "../Button/NavHead";
 
-import { useData } from "../Hook/DataFetch";
-
 import {
   Card,
   Avatar,
@@ -40,7 +38,6 @@ import { useState } from "react";
 import { PTR } from "../Components/PTR";
 
 export default function PTR_TEST() {
-  const { posts, loader } = useData();
   const [category, setCategory] = useState(0);
   const [active, setActive] = useState(1);
   const [pageInfo, setPageInfo] = useState(0);
@@ -49,8 +46,6 @@ export default function PTR_TEST() {
   const [selectedRune, setSelectedRune] = useState(null);
 
   const [compact, setCompact] = useState(true);
-
-  const testing = posts.slice();
 
   // Functions
   const handleDataChange = (num) => ({
@@ -232,7 +227,7 @@ export default function PTR_TEST() {
 
           {compact ? (
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 py-2 px-0 gap-1 xl:gap-2 select-none justify-center mb-5 mt-2">
-              {testing.map((obj, index) => (
+              {sortDisplay.map((obj, index) => (
                 <Card
                   className="p-2 relative bg-transparent border-[2px] border-[#28282b] shadow-[0_0_10px_black]"
                   style={{ backgroundColor: `#00000066` }}
@@ -453,7 +448,7 @@ export default function PTR_TEST() {
                 shadow={false}
               >
                 <div className="w-full max-w-[1400px] flex flex-col justify-center items-center mx-auto mb-5 mt-2">
-                  {testing.map((obj, index) => (
+                  {sortDisplay.map((obj, index) => (
                     <div
                       className={`${
                         index % 2 === 0 ? `bg-[#0e2a31cc]` : `bg-[#141415cc]`
