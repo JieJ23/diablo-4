@@ -12,10 +12,6 @@ addEventListener('fetch', event => {
 	event.respondWith(handleRequest(event.request));
 });
 
-addEventListener('fetch', event => {
-	event.respondWith(handleRequest(event.request));
-});
-
 async function handleRequest(request) {
 	const origin = request.headers.get('Origin');
 
