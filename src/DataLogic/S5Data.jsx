@@ -10562,7 +10562,8 @@ export const s5Data = [
     Class: "Sorcerer",
     Mode: "SC",
     "Build Name": "Lightning spear",
-    "Skills Used": "Lightning_Spear",
+    "Skills Used":
+      "Frozen_Orb, Flame_Shield, Ice_Armor, Teleport, Lightning_Spear, Unstable_Currents",
     "Run Video": "https://youtu.be/nQw_X0wA26Y?si=bxYfIMKjEBJNMcXD",
     "Run Comment": "Pit 146 cleared after a week of trying",
     "Build Planner": "",
