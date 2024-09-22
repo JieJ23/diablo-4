@@ -8,6 +8,11 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
+const allowedOrigins = [
+	'https://diablo4pit.pages.dev',
+	'http://localhost:5173',
+];
+
 addEventListener('fetch', event => {
 	event.respondWith(handleRequest(event.request));
 });
@@ -16,16 +21,17 @@ async function handleRequest(request) {
 	const origin = request.headers.get('Origin');
 
 	// Check if the request origin is allowed
-	if (origin !== 'https://diablo4pit.pages.dev' && origin !== 'http://localhost:5173') {
+	if (!allowedOrigins.includes(origin)) {
 		return new Response('Unauthorized', { status: 403 });
 	}
+
 
 	if (request.method === 'OPTIONS') {
 		// Handle preflight request
 		return new Response(null, {
 			headers: {
 				'Access-Control-Allow-Origin': origin, // Allow the specific origin
-				'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+				'Access-Control-Allow-Methods': 'GET, OPTIONS',
 				'Access-Control-Allow-Headers': 'Content-Type',
 				'Access-Control-Max-Age': `21600`,
 			},
