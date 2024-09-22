@@ -393,7 +393,7 @@ export default function PTR_TEST() {
                   </div>
                   <div className="w-full flex justify-between gap-1 items-center my-0.5">
                     <div className="text-gray-400 font-customNoto font-normal text-[10px] z-10 text-center">
-                      {obj.Timestamp.slice(0, 10)}
+                      {obj["Date"].slice(0, 10)}
                     </div>
                     <div className="flex justify-center items-center gap-1">
                       {obj["Run Comment"] && (
