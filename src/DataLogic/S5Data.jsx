@@ -3637,7 +3637,7 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Date: "9/21/2024",
+    Date: "8/21/2024",
     Tier: "152",
     "Time Used": "13:25",
     Player: "Haki",
