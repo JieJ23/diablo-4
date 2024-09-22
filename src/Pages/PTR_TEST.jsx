@@ -1,6 +1,8 @@
 import { Footer } from "./Home";
 import Navigation from "../Button/NavHead";
 
+import { useData } from "../Hook/DataFetch";
+
 import {
   Card,
   Avatar,
@@ -38,6 +40,7 @@ import { useState } from "react";
 import { PTR } from "../Components/PTR";
 
 export default function PTR_TEST() {
+  const { posts, loader } = useData();
   const [category, setCategory] = useState(0);
   const [active, setActive] = useState(1);
   const [pageInfo, setPageInfo] = useState(0);
@@ -46,6 +49,8 @@ export default function PTR_TEST() {
   const [selectedRune, setSelectedRune] = useState(null);
 
   const [compact, setCompact] = useState(true);
+
+  const testing = posts.slice();
 
   // Functions
   const handleDataChange = (num) => ({
@@ -227,14 +232,14 @@ export default function PTR_TEST() {
 
           {compact ? (
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 py-2 px-0 gap-1 xl:gap-2 select-none justify-center mb-5 mt-2">
-              {sortDisplay.map((obj, index) => (
+              {testing.map((obj, index) => (
                 <Card
-                  className="p-2 relative bg-transparent border-[2px] border-[#3f6b7c]"
-                  style={{ backgroundColor: `#000000b3` }}
+                  className="p-2 relative bg-transparent border-[2px] border-[#28282b] shadow-[0_0_10px_black]"
+                  style={{ backgroundColor: `#00000066` }}
                 >
                   <div className="absolute bg-[#17171799] h-full w-full top-0 left-0 object-cover rounded-xl" />
                   <div
-                    className="absolute h-full w-full top-0 left-0 -z-10 rounded-lg bg-top bg-cover"
+                    className="absolute h-full w-full top-0 left-0 -z-10 rounded-lg opacity-50 bg-top bg-cover"
                     style={{ backgroundImage: `url("/t${obj.Class}.png")` }}
                   />
                   <div className="absolute bottom-1 left-2 text-gray-400 font-customNoto font-normal text-[10px] z-10 text-center">
@@ -274,7 +279,7 @@ export default function PTR_TEST() {
                     <div className="flex flex-col h-full justify-evenly items-center flex-1">
                       {obj.Runewords !== "" ? (
                         <div className="flex gap-[4px] sm:gap-[2px] justify-center my-1">
-                          {ReturnSkillIcon(obj["Runewords"]).map((item) => (
+                          {ReturnSkillIcon(obj.Runewords).map((item) => (
                             <Tooltip
                               content={
                                 <div className="px-2">
@@ -388,7 +393,7 @@ export default function PTR_TEST() {
                   </div>
                   <div className="w-full flex justify-between gap-1 items-center my-0.5">
                     <div className="text-gray-400 font-customNoto font-normal text-[10px] z-10 text-center">
-                      {obj.Date.slice(0, 10)}
+                      {obj.Timestamp.slice(0, 10)}
                     </div>
                     <div className="flex justify-center items-center gap-1">
                       {obj["Run Comment"] && (
@@ -448,7 +453,7 @@ export default function PTR_TEST() {
                 shadow={false}
               >
                 <div className="w-full max-w-[1400px] flex flex-col justify-center items-center mx-auto mb-5 mt-2">
-                  {sortDisplay.map((obj, index) => (
+                  {testing.map((obj, index) => (
                     <div
                       className={`${
                         index % 2 === 0 ? `bg-[#0e2a31cc]` : `bg-[#141415cc]`

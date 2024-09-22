@@ -10,7 +10,9 @@ export function PTR() {
       <div className="flex flex-col p-2 justify-center gap-2">
         <div>
           <div className="text-[#fbe85c] font-customDress text-[22px] sm:text-[28px] uppercase">
-            Seaon 6 PTR Ladderboard (BETA)
+            <Link className="cursor-default" to={`/TestAssets`}>
+              Seaon 6 PTR Ladderboard (BETA)
+            </Link>
           </div>
           <div className="text-[13px] font-customNoto text-gray-400">
             Creating and testing a new leaderboard for the upcoming Season 6,
