@@ -27,6 +27,7 @@ async function handleRequest(request) {
 				'Access-Control-Allow-Origin': origin, // Allow the specific origin
 				'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
 				'Access-Control-Allow-Headers': 'Content-Type',
+				'Access-Control-Max-Age': `21600`,
 			},
 		});
 	}
