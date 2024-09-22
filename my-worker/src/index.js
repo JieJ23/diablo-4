@@ -36,7 +36,7 @@ async function handleRequest(request) {
 	}
 
 	try {
-		const apiUrl = 'https://script.google.com/macros/s/AKfycbxjh85uyBb2kL_39vkXy9djHhS7W-h102DqTRpO23AcRjjrIcCnNgIANRibNCPtKFsX/exec';
+		const apiUrl = 'https://script.google.com/macros/s/AKfycbzACNO1X5UCjLTikzE_XAl9KCtHBzNj1PufhcZ5v4A-alQCP6n0IRIe8XG7PxjeGB3t/exec';
 		const response = await fetch(apiUrl);
 		const data = await response.json();
 
