@@ -109,11 +109,11 @@ export default function Home() {
             <Content />
           </section>
 
-          <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-4 text-center">
-            <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px] mb-2">
+          <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-2 text-start">
+            <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px] mb-2 px-4">
               Season Of The Infernal Horde
             </div>
-            <div className="font-customNoto text-[13px] text-gray-400">
+            <div className="font-customNoto text-[13px] text-gray-400 px-4">
               Below, you'll find an overview of key statistics reflecting the
               community's participation throughout the season. These stats
               include the total number of players who have taken part, the
@@ -125,7 +125,7 @@ export default function Home() {
               free to explore the Class Build section, where you can find
               comprehensive information and overviews for each class
             </div>
-            <div className="flex gap-2 justify-center my-5">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-center place-items mt-5 mb-2">
               <CountdownTimer />
               <SeasonStats />
             </div>

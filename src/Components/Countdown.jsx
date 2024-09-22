@@ -37,7 +37,7 @@ const CountdownTimer = () => {
   const formatTime = (time) => time.toString().padStart(2, "0");
 
   return (
-    <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 px-2 gap-2 bg-gradient-to-tl from-[#1c2034] to-[#0a1337] shadow-[0_0_10px_black] border-[1px] border-[#131111] w-[180px]">
+    <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 px-2 gap-2 bg-gradient-to-tl from-[#1c2034] to-[#0a1337] shadow-[0_0_10px_black] border-[1px] border-[#131111]">
       <div className="text-[16px] font-customDiablo text-gray-400">
         Seasonal Pit
       </div>

@@ -27,7 +27,7 @@ export default function SeasonStats() {
   }
 
   return (
-    <div className="text-white text-center rounded-xl flex flex-col justify-center py-3 px-2 gap-2 bg-gradient-to-tr from-[#1c2034] to-[#0a1337] shadow-[0_0_10px_black] border-[1px] border-[#131111] w-[180px]">
+    <div className="text-white text-center rounded-xl flex flex-col justify-center py-3 px-2 gap-2 bg-gradient-to-tr from-[#1c2034] to-[#0a1337] shadow-[0_0_10px_black] border-[1px] border-[#131111]">
       <div>
         <div className="text-[16px] font-customDiablo text-gray-400">
           Overall
