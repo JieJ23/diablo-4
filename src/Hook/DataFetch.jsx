@@ -36,3 +36,42 @@
 //     </DataContext.Provider>
 //   );
 // };
+
+import React, { useEffect, useState } from "react";
+
+const TestingFetch = () => {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://my-worker.frankyjieyang.workers.dev/api/data"
+        ); // Use your Worker preview URL
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        setError(error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (error) {
+    return <div className="text-white">Error: {error}</div>;
+  }
+
+  return (
+    <div className="text-white">
+      <h1>Data from Cloudflare Worker</h1>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+    </div>
+  );
+};
+
+export default TestingFetch;

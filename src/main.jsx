@@ -18,6 +18,8 @@ import Privacy from "./Pages/Privacy.jsx";
 import Cookies from "./Pages/Cookies.jsx";
 import TermsAndConditions from "./Pages/TermsAndConditions.jsx";
 
+import TestAssets from "./Pages/TestAssets.jsx";
+
 import "./index.css";
 
 createRoot(document.getElementById("root")).render(
@@ -34,6 +36,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="/Cookies" element={<Cookies />} />
         <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
+
+        <Route path="/TestAssets" element={<TestAssets />} />
       </Routes>
     </Router>
   </React.StrictMode>

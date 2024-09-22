@@ -1,5 +1,6 @@
 import { Avatar, Tooltip, Typography } from "@material-tailwind/react";
 import { barb, druid, necro, rogue, sorc } from "../DataLogic/AllSkills";
+import TestingFetch from "../Hook/DataFetch";
 
 function ReturnAssets({ arr }) {
   return (
@@ -41,11 +42,12 @@ export default function TestAssets() {
         className="fixed h-lvh w-full object-cover -z-10 object-center"
       />
 
-      <ReturnAssets arr={barb} />
+      <TestingFetch />
+      {/* <ReturnAssets arr={barb} />
       <ReturnAssets arr={druid} />
       <ReturnAssets arr={necro} />
       <ReturnAssets arr={rogue} />
-      <ReturnAssets arr={sorc} />
+      <ReturnAssets arr={sorc} /> */}
     </section>
   );
 }
