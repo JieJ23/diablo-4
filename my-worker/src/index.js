@@ -33,7 +33,7 @@ async function handleRequest(request) {
 	}
 
 	try {
-		const apiUrl = 'https://script.google.com/macros/s/AKfycbxCX4DUqrtstJ24ydCtPAXDS_8a3xZISRZORq7DdwmYdjmNLr-0A-mnL8dJb-_eIHKB/exec';
+		const apiUrl = 'https://script.google.com/macros/s/AKfycbxjh85uyBb2kL_39vkXy9djHhS7W-h102DqTRpO23AcRjjrIcCnNgIANRibNCPtKFsX/exec';
 		const response = await fetch(apiUrl);
 		const data = await response.json();
 
