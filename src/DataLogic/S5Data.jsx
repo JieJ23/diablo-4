@@ -1,6 +1,5 @@
 export const s5Data = [
   {
-    Timestamp: "8/10/2024",
     Date: "8/9/2024",
     Tier: "120",
     "Time Used": "2:30",
@@ -19,7 +18,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/10/2024",
     Date: "8/8/2024",
     Tier: "101",
     "Time Used": "2:15",
@@ -37,7 +35,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/10/2024",
     Date: "8/8/2024",
     Tier: "125",
     "Time Used": "13:15",
@@ -57,7 +54,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/10/2024",
     Date: "8/8/2024",
     Tier: "101",
     "Time Used": "1:35",
@@ -75,7 +71,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/10/2024",
     Date: "8/8/2024",
     Tier: "101",
     "Time Used": "2:30",
@@ -94,7 +89,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/10/2024",
     Date: "8/8/2024",
     Tier: "101",
     "Time Used": "12:17",
@@ -114,7 +108,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/10/2024",
     Date: "8/7/2024",
     Tier: "101",
     "Time Used": "4:00",
@@ -134,7 +127,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 12:19:35",
     Date: "8/11/2024",
     Tier: "130",
     "Time Used": "12:02",
@@ -152,7 +144,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 12:24:36",
     Date: "8/11/2024",
     Tier: "101",
     "Time Used": "2:24",
@@ -169,7 +160,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 12:28:58",
     Date: "8/11/2024",
     Tier: "101",
     "Time Used": "4:43",
@@ -188,7 +178,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 12:31:59",
     Date: "8/11/2024",
     Tier: "135",
     "Time Used": "13:50",
@@ -207,7 +196,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 12:42:00",
     Date: "8/10/2024",
     Tier: "130",
     "Time Used": "9:44",
@@ -227,7 +215,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 12:47:47",
     Date: "8/10/2024",
     Tier: "123",
     "Time Used": "6:09",
@@ -246,7 +233,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 12:49:48",
     Date: "8/10/2024",
     Tier: "120",
     "Time Used": "1:42",
@@ -264,7 +250,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 12:53:05",
     Date: "8/10/2024",
     Tier: "110",
     "Time Used": "6:51",
@@ -283,7 +268,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 12:55:35",
     Date: "8/10/2024",
     Tier: "101",
     "Time Used": "3:15",
@@ -302,7 +286,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 13:10:13",
     Date: "8/11/2024",
     Tier: "120",
     "Time Used": "8:28",
@@ -320,7 +303,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 13:17:41",
     Date: "8/10/2024",
     Tier: "140",
     "Time Used": "13:58",
@@ -339,7 +321,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 13:23:11",
     Date: "8/10/2024",
     Tier: "101",
     "Time Used": "2:20",
@@ -356,7 +337,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 13:26:39",
     Date: "8/10/2024",
     Tier: "101",
     "Time Used": "9:12",
@@ -374,7 +354,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 16:47:03",
     Date: "8/10/2024",
     Tier: "130",
     "Time Used": "5:25",
@@ -392,7 +371,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 16:51:56",
     Date: "8/10/2024",
     Tier: "110",
     "Time Used": "3:45",
@@ -410,7 +388,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 16:54:53",
     Date: "8/10/2024",
     Tier: "101",
     "Time Used": "15:00",
@@ -428,7 +405,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 16:58:21",
     Date: "8/10/2024",
     Tier: "101",
     "Time Used": "1:07",
@@ -446,7 +422,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 18:40:02",
     Date: "8/9/2024",
     Tier: "101",
     "Time Used": "1:24",
@@ -464,7 +439,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 18:46:27",
     Date: "8/11/2024",
     Tier: "140",
     "Time Used": "13:29",
@@ -483,7 +457,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 18:54:02",
     Date: "8/10/2024",
     Tier: "101",
     "Time Used": "1:28",
@@ -502,7 +475,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 19:00:17",
     Date: "8/11/2024",
     Tier: "101",
     "Time Used": "2:44",
@@ -521,7 +493,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/11/2024 22:52:53",
     Date: "8/11/2024",
     Tier: "126",
     "Time Used": "9:40",
@@ -539,7 +510,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 10:33:26",
     Date: "8/12/2024",
     Tier: "110",
     "Time Used": "4:15",
@@ -559,7 +529,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 10:39:05",
     Date: "8/12/2024",
     Tier: "120",
     "Time Used": "8:30",
@@ -577,7 +546,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 10:42:21",
     Date: "8/12/2024",
     Tier: "120",
     "Time Used": "3:58",
@@ -597,7 +565,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 10:44:42",
     Date: "8/11/2024",
     Tier: "134",
     "Time Used": "10:27",
@@ -615,7 +582,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 10:47:16",
     Date: "8/11/2024",
     Tier: "123",
     "Time Used": "3:38",
@@ -634,7 +600,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 10:53:59",
     Date: "8/12/2024",
     Tier: "101",
     "Time Used": "1:14",
@@ -652,7 +617,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 11:00:01",
     Date: "8/11/2024",
     Tier: "101",
     "Time Used": "6:10",
@@ -670,7 +634,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 11:02:58",
     Date: "8/11/2024",
     Tier: "134",
     "Time Used": "13:22",
@@ -689,7 +652,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 17:24:27",
     Date: "8/12/2024",
     Tier: "103",
     "Time Used": "2:23",
@@ -708,7 +670,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 17:26:39",
     Date: "8/12/2024",
     Tier: "141",
     "Time Used": "13:48",
@@ -726,7 +687,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 17:29:03",
     Date: "8/12/2024",
     Tier: "101",
     "Time Used": "2:43",
@@ -744,7 +704,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 17:38:12",
     Date: "8/12/2024",
     Tier: "141",
     "Time Used": "13:25",
@@ -763,7 +722,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 17:41:21",
     Date: "8/12/2024",
     Tier: "111",
     "Time Used": "1:40",
@@ -781,7 +739,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/12/2024 17:45:43",
     Date: "8/12/2024",
     Tier: "111",
     "Time Used": "1:36",
@@ -800,7 +757,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 1:30:19",
     Date: "8/11/2024",
     Tier: "124",
     "Time Used": "9:14",
@@ -818,7 +774,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 4:15:39",
     Date: "8/13/2024",
     Tier: "130",
     "Time Used": "10:15",
@@ -837,7 +792,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:03:16",
     Date: "8/13/2024",
     Tier: "120",
     "Time Used": "8:02",
@@ -855,7 +809,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:05:33",
     Date: "8/13/2024",
     Tier: "130",
     "Time Used": "11:36",
@@ -873,7 +826,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:07:33",
     Date: "8/13/2024",
     Tier: "101",
     "Time Used": "4:34",
@@ -890,7 +842,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:09:17",
     Date: "8/13/2024",
     Tier: "130",
     "Time Used": "11:29",
@@ -909,7 +860,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:10:36",
     Date: "8/13/2024",
     Tier: "101",
     "Time Used": "4:55",
@@ -926,7 +876,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:13:22",
     Date: "8/12/2024",
     Tier: "120",
     "Time Used": "7:26",
@@ -946,7 +895,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:16:04",
     Date: "8/12/2024",
     Tier: "135",
     "Time Used": "13:36",
@@ -964,7 +912,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:18:28",
     Date: "8/12/2024",
     Tier: "120",
     "Time Used": "1:47",
@@ -982,7 +929,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:35:42",
     Date: "8/13/2024",
     Tier: "145",
     "Time Used": "14:17",
@@ -1001,7 +947,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:38:00",
     Date: "8/13/2024",
     Tier: "130",
     "Time Used": "9:57",
@@ -1020,7 +965,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:40:33",
     Date: "8/13/2024",
     Tier: "140",
     "Time Used": "10:47",
@@ -1038,7 +982,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 13:59:50",
     Date: "8/13/2024",
     Tier: "150",
     "Time Used": "11:03",
@@ -1058,7 +1001,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/13/2024 14:10:09",
     Date: "8/13/2024",
     Tier: "141",
     "Time Used": "14:35",
@@ -1077,7 +1019,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 4:49:58",
     Date: "8/14/2024",
     Tier: "143",
     "Time Used": "12:00",
@@ -1095,7 +1036,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 5:54:52",
     Date: "8/14/2024",
     Tier: "136",
     "Time Used": "13:25",
@@ -1113,7 +1053,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 7:41:21",
     Date: "8/14/2024",
     Tier: "132",
     "Time Used": "9:58",
@@ -1132,7 +1071,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 10:26:32",
     Date: "8/14/2024",
     Tier: "130",
     "Time Used": "13:46",
@@ -1151,7 +1089,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 10:29:39",
     Date: "8/14/2024",
     Tier: "120",
     "Time Used": "4:34",
@@ -1169,7 +1106,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 10:31:42",
     Date: "8/13/2024",
     Tier: "130",
     "Time Used": "14:44",
@@ -1187,7 +1123,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 10:43:37",
     Date: "8/13/2024",
     Tier: "145",
     "Time Used": "8:09",
@@ -1206,7 +1141,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 10:44:33",
     Date: "8/14/2024",
     Tier: "147",
     "Time Used": "14:26",
@@ -1225,7 +1159,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 10:48:02",
     Date: "8/14/2024",
     Tier: "130",
     "Time Used": "14:17",
@@ -1243,7 +1176,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 10:53:12",
     Date: "8/13/2024",
     Tier: "127",
     "Time Used": "11:06",
@@ -1261,7 +1193,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 10:57:34",
     Date: "8/14/2024",
     Tier: "101",
     "Time Used": "3:15",
@@ -1279,7 +1210,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 11:40:54",
     Date: "8/14/2024",
     Tier: "140",
     "Time Used": "12:00",
@@ -1298,7 +1228,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 11:45:03",
     Date: "8/13/2024",
     Tier: "101",
     "Time Used": "4:37",
@@ -1316,7 +1245,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 11:47:25",
     Date: "8/13/2024",
     Tier: "110",
     "Time Used": "1:44",
@@ -1334,7 +1262,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 11:49:58",
     Date: "8/12/2024",
     Tier: "101",
     "Time Used": "1:42",
@@ -1352,7 +1279,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 11:52:37",
     Date: "8/11/2024",
     Tier: "125",
     "Time Used": "4:17",
@@ -1371,7 +1297,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 11:56:44",
     Date: "8/11/2024",
     Tier: "101",
     "Time Used": "2:41",
@@ -1390,7 +1315,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 12:01:36",
     Date: "8/11/2024",
     Tier: "101",
     "Time Used": "2:32",
@@ -1408,7 +1332,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 12:27:22",
     Date: "8/12/2024",
     Tier: "140",
     "Time Used": "11:47",
@@ -1427,7 +1350,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 12:53:35",
     Date: "8/14/2024",
     Tier: "141",
     "Time Used": "10:20",
@@ -1445,7 +1367,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 13:02:33",
     Date: "8/14/2024",
     Tier: "150",
     "Time Used": "12:43",
@@ -1464,7 +1385,6 @@ export const s5Data = [
     BossOnly: "yes",
   },
   {
-    Timestamp: "8/14/2024 14:06:15",
     Date: "8/14/2024",
     Tier: "135",
     "Time Used": "11:03",
@@ -1483,7 +1403,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 14:08:13",
     Date: "8/14/2024",
     Tier: "120",
     "Time Used": "4:54",
@@ -1502,7 +1421,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 14:12:00",
     Date: "8/14/2024",
     Tier: "130",
     "Time Used": "12:17",
@@ -1520,7 +1438,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 14:14:41",
     Date: "8/14/2024",
     Tier: "128",
     "Time Used": "12:03",
@@ -1538,7 +1455,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 14:17:28",
     Date: "8/14/2024",
     Tier: "140",
     "Time Used": "13:11",
@@ -1557,7 +1473,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 14:20:23",
     Date: "8/14/2024",
     Tier: "128",
     "Time Used": "10:39",
@@ -1575,7 +1490,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 14:21:45",
     Date: "8/13/2024",
     Tier: "119",
     "Time Used": "4:40",
@@ -1593,7 +1507,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 14:23:31",
     Date: "8/13/2024",
     Tier: "126",
     "Time Used": "10:18",
@@ -1611,7 +1524,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 14:26:01",
     Date: "8/13/2024",
     Tier: "136",
     "Time Used": "14:03",
@@ -1629,7 +1541,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:22:24",
     Date: "8/14/2024",
     Tier: "119",
     "Time Used": "4:11",
@@ -1648,7 +1559,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:30:51",
     Date: "8/14/2024",
     Tier: "140",
     "Time Used": "13:43",
@@ -1665,7 +1575,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:33:36",
     Date: "8/13/2024",
     Tier: "110",
     "Time Used": "7:05",
@@ -1683,7 +1592,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:36:11",
     Date: "8/13/2024",
     Tier: "134",
     "Time Used": "12:18",
@@ -1701,7 +1609,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:40:40",
     Date: "8/12/2024",
     Tier: "129",
     "Time Used": "6:49",
@@ -1719,7 +1626,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:44:37",
     Date: "8/11/2024",
     Tier: "110",
     "Time Used": "4:28",
@@ -1737,7 +1643,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:48:54",
     Date: "8/13/2024",
     Tier: "101",
     "Time Used": "3:01",
@@ -1755,7 +1660,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:53:38",
     Date: "8/11/2024",
     Tier: "101",
     "Time Used": "2:13",
@@ -1773,7 +1677,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:58:06",
     Date: "8/9/2024",
     Tier: "101",
     "Time Used": "1:21",
@@ -1791,7 +1694,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 17:59:41",
     Date: "8/9/2024",
     Tier: "101",
     "Time Used": "1:27",
@@ -1809,7 +1711,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 18:03:42",
     Date: "8/7/2024",
     Tier: "101",
     "Time Used": "3:14",
@@ -1828,7 +1729,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/14/2024 21:50:05",
     Date: "8/14/2024",
     Tier: "130",
     "Time Used": "14:35",
@@ -1846,7 +1746,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 4:05:25",
     Date: "8/15/2024",
     Tier: "145",
     "Time Used": "14:46",
@@ -1864,7 +1763,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 9:57:38",
     Date: "8/15/2024",
     Tier: "101",
     "Time Used": "1:05",
@@ -1882,7 +1780,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 10:00:38",
     Date: "8/15/2024",
     Tier: "129",
     "Time Used": "7:50",
@@ -1901,7 +1798,6 @@ export const s5Data = [
     BossOnly: "yes",
   },
   {
-    Timestamp: "8/15/2024 10:03:20",
     Date: "8/15/2024",
     Tier: "130",
     "Time Used": "9:41",
@@ -1919,7 +1815,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 10:06:22",
     Date: "8/15/2024",
     Tier: "142",
     "Time Used": "13:59",
@@ -1938,7 +1833,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 10:09:34",
     Date: "8/15/2024",
     Tier: "124",
     "Time Used": "14:27",
@@ -1958,7 +1852,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 10:15:42",
     Date: "8/15/2024",
     Tier: "129",
     "Time Used": "6:02",
@@ -1977,7 +1870,6 @@ export const s5Data = [
     BossOnly: "yes",
   },
   {
-    Timestamp: "8/15/2024 10:18:03",
     Date: "8/14/2024",
     Tier: "148",
     "Time Used": "14:58",
@@ -1995,7 +1887,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 10:21:51",
     Date: "8/14/2024",
     Tier: "145",
     "Time Used": "15:00",
@@ -2014,7 +1905,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 10:32:08",
     Date: "8/14/2024",
     Tier: "130",
     "Time Used": "12:26",
@@ -2033,7 +1923,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 14:54:11",
     Date: "8/15/2024",
     Tier: "157",
     "Time Used": "13:56",
@@ -2052,7 +1941,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 15:31:55",
     Date: "8/15/2024",
     Tier: "101",
     "Time Used": "0:51",
@@ -2070,7 +1958,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 15:45:52",
     Date: "8/15/2024",
     Tier: "135",
     "Time Used": "4:47",
@@ -2089,7 +1976,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/15/2024 16:48:28",
     Date: "8/15/2024",
     Tier: "136",
     "Time Used": "12:41",
@@ -2108,7 +1994,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/16/2024 0:06:43",
     Date: "8/16/2024",
     Tier: "130",
     "Time Used": "5:19",
@@ -2126,7 +2011,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/16/2024 0:08:01",
     Date: "8/16/2024",
     Tier: "101",
     "Time Used": "1:36",
@@ -2144,7 +2028,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/16/2024 0:10:19",
     Date: "8/16/2024",
     Tier: "130",
     "Time Used": "14:08",
@@ -2163,7 +2046,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/16/2024 11:12:36",
     Date: "8/15/2024",
     Tier: "145",
     "Time Used": "13:31",
@@ -2182,7 +2064,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/16/2024 11:15:30",
     Date: "8/15/2024",
     Tier: "153",
     "Time Used": "10:51",
@@ -2201,7 +2082,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/16/2024 12:02:55",
     Date: "8/16/2024",
     Tier: "140",
     "Time Used": "10:46",
@@ -2219,7 +2099,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/16/2024 17:33:31",
     Date: "8/16/2024",
     Tier: "152",
     "Time Used": "14:00",
@@ -2237,7 +2116,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/16/2024 18:51:53",
     Date: "4/10/2002",
     Tier: "120",
     "Time Used": "4:50",
@@ -2255,7 +2133,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 2:38:29",
     Date: "8/17/2024",
     Tier: "101",
     "Time Used": "1:14",
@@ -2273,7 +2150,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 6:00:57",
     Date: "8/17/2024",
     Tier: "101",
     "Time Used": "1:22",
@@ -2292,7 +2168,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 7:04:08",
     Date: "8/17/2024",
     Tier: "135",
     "Time Used": "14:09",
@@ -2310,7 +2185,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 8:52:47",
     Date: "8/17/2024",
     Tier: "152",
     "Time Used": "13:19",
@@ -2328,7 +2202,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 9:45:31",
     Date: "8/17/2024",
     Tier: "139",
     "Time Used": "14:42",
@@ -2347,7 +2220,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 11:46:36",
     Date: "8/17/2024",
     Tier: "144",
     "Time Used": "13:49",
@@ -2365,7 +2237,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 11:49:21",
     Date: "8/17/2024",
     Tier: "144",
     "Time Used": "13:49",
@@ -2384,7 +2255,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 11:52:17",
     Date: "8/17/2024",
     Tier: "132",
     "Time Used": "8:06",
@@ -2402,7 +2272,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 12:00:24",
     Date: "8/17/2024",
     Tier: "143",
     "Time Used": "14:41",
@@ -2421,7 +2290,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 12:06:47",
     Date: "8/17/2024",
     Tier: "131",
     "Time Used": "13:48",
@@ -2439,7 +2307,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 12:17:56",
     Date: "8/17/2024",
     Tier: "146",
     "Time Used": "13:34",
@@ -2457,7 +2324,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 12:22:36",
     Date: "8/17/2024",
     Tier: "145",
     "Time Used": "8:44",
@@ -2476,7 +2342,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 12:27:36",
     Date: "8/17/2024",
     Tier: "140",
     "Time Used": "11:59",
@@ -2494,7 +2359,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 13:04:18",
     Date: "8/17/2024",
     Tier: "132",
     "Time Used": "12:13",
@@ -2512,7 +2376,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 13:08:59",
     Date: "8/17/2024",
     Tier: "140",
     "Time Used": "14:00",
@@ -2532,7 +2395,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 13:16:49",
     Date: "8/17/2024",
     Tier: "146",
     "Time Used": "14:47",
@@ -2550,7 +2412,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 13:18:51",
     Date: "8/17/2024",
     Tier: "129",
     "Time Used": "5:41",
@@ -2568,7 +2429,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 13:20:48",
     Date: "8/18/2024",
     Tier: "101",
     "Time Used": "0:43",
@@ -2587,7 +2447,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 14:13:32",
     Date: "8/17/2024",
     Tier: "130",
     "Time Used": "12:43",
@@ -2605,7 +2464,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 16:04:25",
     Date: "8/17/2024",
     Tier: "138",
     "Time Used": "10:15",
@@ -2624,7 +2482,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 17:00:26",
     Date: "8/17/2024",
     Tier: "135",
     "Time Used": "7:29",
@@ -2643,7 +2500,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 18:13:17",
     Date: "8/17/2024",
     Tier: "131",
     "Time Used": "11:00",
@@ -2661,7 +2517,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/17/2024 20:28:46",
     Date: "8/17/2024",
     Tier: "143",
     "Time Used": "13:27",
@@ -2679,7 +2534,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 10:44:48",
     Date: "8/18/2024",
     Tier: "137",
     "Time Used": "7:47",
@@ -2697,7 +2551,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 12:05:37",
     Date: "8/18/2024",
     Tier: "120",
     "Time Used": "10:01",
@@ -2717,7 +2570,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 12:08:13",
     Date: "8/18/2024",
     Tier: "142",
     "Time Used": "13:53",
@@ -2736,7 +2588,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 12:54:10",
     Date: "8/18/2024",
     Tier: "127",
     "Time Used": "10:42",
@@ -2755,7 +2606,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 12:56:47",
     Date: "8/18/2024",
     Tier: "141",
     "Time Used": "9:45",
@@ -2773,7 +2623,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 13:00:46",
     Date: "8/18/2024",
     Tier: "140",
     "Time Used": "14:51",
@@ -2790,7 +2639,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 13:03:02",
     Date: "8/18/2024",
     Tier: "120",
     "Time Used": "4:30",
@@ -2808,7 +2656,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 13:05:15",
     Date: "8/18/2024",
     Tier: "133",
     "Time Used": "10:43",
@@ -2827,7 +2674,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 13:07:08",
     Date: "8/18/2024",
     Tier: "149",
     "Time Used": "13:11",
@@ -2846,7 +2692,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 13:15:44",
     Date: "8/18/2024",
     Tier: "147",
     "Time Used": "13:42",
@@ -2864,7 +2709,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 15:53:56",
     Date: "8/18/2024",
     Tier: "121",
     "Time Used": "5:40",
@@ -2883,7 +2727,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 17:39:06",
     Date: "8/17/2024",
     Tier: "130",
     "Time Used": "9:10",
@@ -2902,7 +2745,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 17:45:01",
     Date: "8/18/2024",
     Tier: "140",
     "Time Used": "14:26",
@@ -2920,7 +2762,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 17:49:04",
     Date: "8/15/2024",
     Tier: "110",
     "Time Used": "7:18",
@@ -2939,7 +2780,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 17:52:01",
     Date: "8/14/2024",
     Tier: "101",
     "Time Used": "3:24",
@@ -2958,7 +2798,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 19:21:41",
     Date: "8/18/2024",
     Tier: "132",
     "Time Used": "9:30",
@@ -2977,7 +2816,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 20:20:41",
     Date: "8/18/2024",
     Tier: "134",
     "Time Used": "13:57",
@@ -2997,7 +2835,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 20:45:33",
     Date: "8/19/2024",
     Tier: "150",
     "Time Used": "13:52",
@@ -3016,7 +2853,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 23:37:16",
     Date: "8/19/2024",
     Tier: "151",
     "Time Used": "11:17",
@@ -3036,7 +2872,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 0:01:02",
     Date: "8/18/2024",
     Tier: "126",
     "Time Used": "13:20",
@@ -3055,7 +2890,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 0:03:53",
     Date: "8/19/2024",
     Tier: "140",
     "Time Used": "12:17",
@@ -3074,7 +2908,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 0:06:07",
     Date: "8/18/2024",
     Tier: "137",
     "Time Used": "6:48",
@@ -3094,7 +2927,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 5:12:00",
     Date: "8/19/2024",
     Tier: "135",
     "Time Used": "10:24",
@@ -3114,7 +2946,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 10:21:13",
     Date: "8/19/2024",
     Tier: "131",
     "Time Used": "11:59",
@@ -3133,7 +2964,6 @@ export const s5Data = [
     BossOnly: "yes",
   },
   {
-    Timestamp: "8/19/2024 10:59:39",
     Date: "8/18/2024",
     Tier: "154",
     "Time Used": "14:23",
@@ -3152,7 +2982,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 11:13:06",
     Date: "8/19/2024",
     Tier: "130",
     "Time Used": "11:37",
@@ -3171,7 +3000,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 11:17:09",
     Date: "8/19/2024",
     Tier: "140",
     "Time Used": "10:55",
@@ -3190,7 +3018,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 11:20:08",
     Date: "8/19/2024",
     Tier: "130",
     "Time Used": "6:20",
@@ -3208,7 +3035,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 11:22:23",
     Date: "8/19/2024",
     Tier: "130",
     "Time Used": "14:12",
@@ -3228,7 +3054,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 11:27:39",
     Date: "8/19/2024",
     Tier: "145",
     "Time Used": "14:37",
@@ -3247,7 +3072,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 14:20:23",
     Date: "8/19/2024",
     Tier: "136",
     "Time Used": "12:25",
@@ -3265,7 +3089,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 14:22:27",
     Date: "8/19/2024",
     Tier: "144",
     "Time Used": "12:45",
@@ -3284,7 +3107,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 14:24:17",
     Date: "8/19/2024",
     Tier: "135",
     "Time Used": "14:37",
@@ -3304,7 +3126,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 14:27:33",
     Date: "8/19/2024",
     Tier: "138",
     "Time Used": "12:20",
@@ -3322,7 +3143,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 14:31:51",
     Date: "8/19/2024",
     Tier: "143",
     "Time Used": "12:39",
@@ -3341,7 +3161,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 14:36:54",
     Date: "8/19/2024",
     Tier: "140",
     "Time Used": "12:57",
@@ -3360,7 +3179,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 18:03:41",
     Date: "8/19/2024",
     Tier: "139",
     "Time Used": "14:46",
@@ -3378,7 +3196,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/19/2024 18:34:52",
     Date: "8/19/2024",
     Tier: "135",
     "Time Used": "14:27",
@@ -3397,7 +3214,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 3:57:04",
     Date: "8/20/2024",
     Tier: "135",
     "Time Used": "11:56",
@@ -3416,7 +3232,6 @@ export const s5Data = [
     BossOnly: "player",
   },
   {
-    Timestamp: "8/20/2024 7:46:06",
     Date: "8/20/2024",
     Tier: "141",
     "Time Used": "9:43",
@@ -3434,7 +3249,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 9:48:30",
     Date: "8/20/2024",
     Tier: "145",
     "Time Used": "12:43",
@@ -3452,7 +3266,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 9:58:27",
     Date: "8/20/2024",
     Tier: "147",
     "Time Used": "14:59",
@@ -3471,7 +3284,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 10:13:26",
     Date: "8/18/2024",
     Tier: "139",
     "Time Used": "11:07",
@@ -3489,7 +3301,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 10:22:08",
     Date: "8/20/2024",
     Tier: "151",
     "Time Used": "11:12",
@@ -3508,7 +3319,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 11:17:50",
     Date: "8/20/2024",
     Tier: "135",
     "Time Used": "14:04",
@@ -3526,7 +3336,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 11:20:02",
     Date: "8/19/2024",
     Tier: "147",
     "Time Used": "14:22",
@@ -3545,7 +3354,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 11:22:23",
     Date: "8/20/2024",
     Tier: "144",
     "Time Used": "14:55",
@@ -3564,7 +3372,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 11:27:11",
     Date: "8/19/2024",
     Tier: "141",
     "Time Used": "14:39",
@@ -3582,7 +3389,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 16:55:55",
     Date: "8/20/2024",
     Tier: "135",
     "Time Used": "13:36",
@@ -3600,7 +3406,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/20/2024 20:11:15",
     Date: "8/19/2024",
     Tier: "146",
     "Time Used": "9:46",
@@ -3619,7 +3424,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 11:49:29",
     Date: "8/21/2024",
     Tier: "143",
     "Time Used": "14:46",
@@ -3637,7 +3441,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 13:05:38",
     Date: "8/20/2024",
     Tier: "131",
     "Time Used": "14:05",
@@ -3655,7 +3458,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 13:11:50",
     Date: "8/20/2024",
     Tier: "152",
     "Time Used": "13:38",
@@ -3674,7 +3476,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 13:32:21",
     Date: "8/20/2024",
     Tier: "149",
     "Time Used": "14:18",
@@ -3694,7 +3495,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 13:33:56",
     Date: "8/21/2024",
     Tier: "145",
     "Time Used": "14:49",
@@ -3713,7 +3513,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 13:36:10",
     Date: "8/20/2024",
     Tier: "150",
     "Time Used": "13:22",
@@ -3733,7 +3532,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 13:42:25",
     Date: "8/21/2024",
     Tier: "156",
     "Time Used": "13:47",
@@ -3752,7 +3550,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 13:51:18",
     Date: "8/21/2024",
     Tier: "152",
     "Time Used": "12:26",
@@ -3772,7 +3569,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 15:50:11",
     Date: "8/21/2024",
     Tier: "127",
     "Time Used": "6:52",
@@ -3790,7 +3586,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 16:01:19",
     Date: "8/20/0224",
     Tier: "142",
     "Time Used": "14:06",
@@ -3808,7 +3603,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 16:13:54",
     Date: "8/21/2024",
     Tier: "135",
     "Time Used": "13:43 ",
@@ -3826,7 +3620,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 18:15:49",
     Date: "8/22/2024",
     Tier: "134",
     "Time Used": "12:02",
@@ -3844,7 +3637,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 19:05:41",
     Date: "9/21/2024",
     Tier: "152",
     "Time Used": "13:25",
@@ -3863,7 +3655,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/21/2024 23:37:57",
     Date: "8/22/2024",
     Tier: "137",
     "Time Used": "13:43",
@@ -3882,7 +3673,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/22/2024 4:48:35",
     Date: "8/21/2024",
     Tier: "133",
     "Time Used": "14:33",
@@ -3900,7 +3690,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/22/2024 10:18:48",
     Date: "8/22/2024",
     Tier: "153",
     "Time Used": "14:11",
@@ -3919,7 +3708,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/22/2024 10:20:51",
     Date: "8/22/2024",
     Tier: "136",
     "Time Used": "10:41",
@@ -3937,7 +3725,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/22/2024 10:27:04",
     Date: "8/22/2024",
     Tier: "130",
     "Time Used": "14:31",
@@ -3956,7 +3743,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/22/2024 10:29:21",
     Date: "8/21/2024",
     Tier: "128",
     "Time Used": "13:49",
@@ -3975,7 +3761,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/22/2024 13:08:03",
     Date: "8/22/2024",
     Tier: "154",
     "Time Used": "14:38",
@@ -3994,7 +3779,6 @@ export const s5Data = [
     BossOnly: "yes",
   },
   {
-    Timestamp: "8/22/2024 18:00:59",
     Date: "8/20/2024",
     Tier: "140",
     "Time Used": "13:21",
@@ -4012,7 +3796,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/22/2024 19:22:50",
     Date: "8/22/2024",
     Tier: "140",
     "Time Used": "13:40",
@@ -4031,7 +3814,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/22/2024 23:15:52",
     Date: "8/22/2024",
     Tier: "144",
     "Time Used": "13:47",
@@ -4049,7 +3831,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/22/2024 23:15:57",
     Date: "8/23/2024",
     Tier: "135",
     "Time Used": "11:45",
@@ -4068,7 +3849,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 5:53:31",
     Date: "8/23/2024",
     Tier: "149",
     "Time Used": "14:32",
@@ -4087,7 +3867,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 9:05:41",
     Date: "8/23/2024",
     Tier: "130",
     "Time Used": "14:11",
@@ -4105,7 +3884,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 11:06:19",
     Date: "8/22/2024",
     Tier: "150",
     "Time Used": "11:59",
@@ -4124,7 +3902,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 11:14:52",
     Date: "8/22/2024",
     Tier: "152",
     "Time Used": "14:44",
@@ -4143,7 +3920,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 11:17:38",
     Date: "8/23/2024",
     Tier: "150",
     "Time Used": "13:01",
@@ -4161,7 +3937,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 11:22:48",
     Date: "8/23/2024",
     Tier: "140",
     "Time Used": "14:00",
@@ -4179,7 +3954,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 13:20:01",
     Date: "8/23/2024",
     Tier: "145",
     "Time Used": "14:38",
@@ -4198,7 +3972,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 13:22:16",
     Date: "8/22/2024",
     Tier: "150",
     "Time Used": "11:47",
@@ -4217,7 +3990,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 14:01:15",
     Date: "8/23/2024",
     Tier: "143",
     "Time Used": "14:15",
@@ -4235,7 +4007,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 15:15:22",
     Date: "8/22/2024",
     Tier: "141",
     "Time Used": "9:11",
@@ -4253,7 +4024,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 15:51:51",
     Date: "8/23/2024",
     Tier: "141",
     "Time Used": "8:38",
@@ -4271,7 +4041,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 17:22:53",
     Date: "8/23/2024",
     Tier: "133",
     "Time Used": "9:54",
@@ -4289,7 +4058,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 22:51:38",
     Date: "8/24/2024",
     Tier: "136",
     "Time Used": "9:42",
@@ -4307,7 +4075,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 23:13:32",
     Date: "8/24/2024",
     Tier: "147",
     "Time Used": "14:55",
@@ -4325,7 +4092,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/23/2024 23:25:35",
     Date: "8/23/2024",
     Tier: "145",
     "Time Used": "14:26",
@@ -4343,7 +4109,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 0:45:10",
     Date: "8/24/2024",
     Tier: "136",
     "Time Used": "12:26",
@@ -4361,7 +4126,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 3:51:39",
     Date: "8/24/2024",
     Tier: "150",
     "Time Used": "12:54",
@@ -4379,7 +4143,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 9:24:38",
     Date: "8/24/2024",
     Tier: "101",
     "Time Used": "0:55",
@@ -4398,7 +4161,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 10:25:15",
     Date: "8/24/2024",
     Tier: "140",
     "Time Used": "12:12",
@@ -4418,7 +4180,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 10:26:55",
     Date: "8/24/2024",
     Tier: "143",
     "Time Used": "9:37",
@@ -4436,7 +4197,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 10:30:45",
     Date: "8/23/2024",
     Tier: "150",
     "Time Used": "12:52",
@@ -4454,7 +4214,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 10:36:25",
     Date: "8/24/2024",
     Tier: "150",
     "Time Used": "10:36",
@@ -4473,7 +4232,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 12:48:22",
     Date: "8/24/2024",
     Tier: "152",
     "Time Used": "14:43",
@@ -4492,7 +4250,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 13:38:59",
     Date: "8/23/2024",
     Tier: "144",
     "Time Used": "11:41",
@@ -4510,7 +4267,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 16:42:09",
     Date: "8/24/2024",
     Tier: "135",
     "Time Used": "14:48",
@@ -4528,7 +4284,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 18:07:24",
     Date: "8/25/2024",
     Tier: "142",
     "Time Used": "14:59",
@@ -4547,7 +4302,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 18:21:33",
     Date: "8/24/2024",
     Tier: "144",
     "Time Used": "12:04",
@@ -4566,7 +4320,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/24/2024 21:10:35",
     Date: "8/24/2024",
     Tier: "101",
     "Time Used": "1:57",
@@ -4584,7 +4337,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 3:58:52",
     Date: "8/25/2024",
     Tier: "140",
     "Time Used": "9:16",
@@ -4602,7 +4354,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 6:24:42",
     Date: "8/25/2024",
     Tier: "145",
     "Time Used": "8:52",
@@ -4620,7 +4371,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 7:00:34",
     Date: "8/24/2024",
     Tier: "145",
     "Time Used": "12:57",
@@ -4638,7 +4388,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 8:20:14",
     Date: "8/25/2024",
     Tier: "101",
     "Time Used": "1:39",
@@ -4656,7 +4405,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 9:50:40",
     Date: "8/24/2024",
     Tier: "153",
     "Time Used": "14:04",
@@ -4674,7 +4422,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 9:54:18",
     Date: "8/24/2024",
     Tier: "153",
     "Time Used": "12:21",
@@ -4693,7 +4440,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 10:54:37",
     Date: "1/10/1986",
     Tier: "145",
     "Time Used": "12:27",
@@ -4711,7 +4457,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 14:25:10",
     Date: "8/25/2024",
     Tier: "143",
     "Time Used": "14:59",
@@ -4730,7 +4475,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 20:00:48",
     Date: "8/25/2024",
     Tier: "145",
     "Time Used": "13:25",
@@ -4749,7 +4493,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/25/2024 22:28:04",
     Date: "8/26/2024",
     Tier: "148",
     "Time Used": "14:20",
@@ -4767,7 +4510,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 0:07:07",
     Date: "8/25/2024",
     Tier: "146",
     "Time Used": "14:29",
@@ -4786,7 +4528,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 4:26:59",
     Date: "8/26/2024",
     Tier: "135",
     "Time Used": "8:24",
@@ -4804,7 +4545,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 7:38:11",
     Date: "8/25/2024",
     Tier: "136",
     "Time Used": "13:21",
@@ -4824,7 +4564,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 10:17:00",
     Date: "8/24/2024",
     Tier: "139",
     "Time Used": "13:28",
@@ -4842,7 +4581,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 12:23:44",
     Date: "8/26/2024",
     Tier: "146",
     "Time Used": "12:26",
@@ -4860,7 +4598,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 12:43:16",
     Date: "8/26/2024",
     Tier: "120",
     "Time Used": "4:11",
@@ -4878,7 +4615,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 15:16:20",
     Date: "8/26/2024",
     Tier: "147",
     "Time Used": "14:47",
@@ -4896,7 +4632,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 22:45:45",
     Date: "8/27/2024",
     Tier: "138",
     "Time Used": "11:20",
@@ -4914,7 +4649,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 23:00:05",
     Date: "8/27/2024",
     Tier: "132",
     "Time Used": "14:49",
@@ -4932,7 +4666,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/26/2024 23:00:19",
     Date: "8/22/2024",
     Tier: "147",
     "Time Used": "9:16",
@@ -4950,7 +4683,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 2:41:39",
     Date: "8/26/2024",
     Tier: "145",
     "Time Used": "11:19",
@@ -4968,7 +4700,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 6:08:36",
     Date: "8/26/2024",
     Tier: "150",
     "Time Used": "12:59",
@@ -4986,7 +4717,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 7:44:12",
     Date: "8/27/2024",
     Tier: "135",
     "Time Used": "13:02",
@@ -5004,7 +4734,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 7:46:25",
     Date: "8/27/2024",
     Tier: "101",
     "Time Used": "1:36",
@@ -5022,7 +4751,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 9:01:53",
     Date: "8/27/2024",
     Tier: "135",
     "Time Used": "12:00",
@@ -5040,7 +4768,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 10:51:00",
     Date: "8/27/2024",
     Tier: "149",
     "Time Used": "14:39",
@@ -5058,7 +4785,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 11:09:59",
     Date: "8/27/2024",
     Tier: "148",
     "Time Used": "11:34",
@@ -5076,7 +4802,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 12:11:00",
     Date: "8/27/2024",
     Tier: "144",
     "Time Used": "14:43",
@@ -5094,7 +4819,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 12:34:48",
     Date: "8/28/2024",
     Tier: "133",
     "Time Used": "14:02",
@@ -5113,7 +4837,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 13:28:59",
     Date: "8/27/2024",
     Tier: "145",
     "Time Used": "14:31",
@@ -5132,7 +4855,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 16:44:21",
     Date: "8/27/2024",
     Tier: "155",
     "Time Used": "14:24",
@@ -5151,7 +4873,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 17:58:18",
     Date: "8/27/2024",
     Tier: "150",
     "Time Used": "12:14",
@@ -5170,7 +4891,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 18:56:28",
     Date: "8/27/2024",
     Tier: "140",
     "Time Used": "14:30",
@@ -5189,7 +4909,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 19:43:39",
     Date: "8/28/2024",
     Tier: "146",
     "Time Used": "13:42",
@@ -5208,7 +4927,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/27/2024 21:30:12",
     Date: "8/27/2024",
     Tier: "101",
     "Time Used": "1:04",
@@ -5226,7 +4944,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 11:15:10",
     Date: "8/28/2024",
     Tier: "157",
     "Time Used": "14:42",
@@ -5245,7 +4962,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 11:32:01",
     Date: "8/28/2024",
     Tier: "153",
     "Time Used": "13:53",
@@ -5263,7 +4979,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 12:01:27",
     Date: "8/28/2024",
     Tier: "142",
     "Time Used": "11:18",
@@ -5281,7 +4996,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 12:41:52",
     Date: "8/26/2024",
     Tier: "137",
     "Time Used": "12:29",
@@ -5299,7 +5013,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 12:47:37",
     Date: "8/28/2024",
     Tier: "151",
     "Time Used": "14:47",
@@ -5317,7 +5030,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 13:15:49",
     Date: "8/28/2024",
     Tier: "138",
     "Time Used": "13:07",
@@ -5335,7 +5047,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 13:27:15",
     Date: "8/27/2024",
     Tier: "151",
     "Time Used": "9:20",
@@ -5355,7 +5066,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 14:20:30",
     Date: "8/27/2024",
     Tier: "135",
     "Time Used": "13:38",
@@ -5374,7 +5084,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 14:22:19",
     Date: "8/28/2024",
     Tier: "149",
     "Time Used": "12:04",
@@ -5392,7 +5101,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 14:49:33",
     Date: "8/28/2024",
     Tier: "150",
     "Time Used": "14:05",
@@ -5410,7 +5118,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 14:56:02",
     Date: "8/27/2024",
     Tier: "138",
     "Time Used": "12:00",
@@ -5428,7 +5135,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 15:24:33",
     Date: "8/28/2024",
     Tier: "144",
     "Time Used": "12:24",
@@ -5447,7 +5153,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 16:46:29",
     Date: "8/27/2024",
     Tier: "151",
     "Time Used": "13:09",
@@ -5465,7 +5170,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 19:13:57",
     Date: "8/29/2024",
     Tier: "145",
     "Time Used": "14:26",
@@ -5484,7 +5188,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 19:20:18",
     Date: "8/28/2024",
     Tier: "157",
     "Time Used": "14:12",
@@ -5503,7 +5206,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 20:28:17",
     Date: "8/28/2024",
     Tier: "145",
     "Time Used": "12:51",
@@ -5521,7 +5223,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/28/2024 23:58:48",
     Date: "8/28/2024",
     Tier: "136",
     "Time Used": "5:51",
@@ -5539,7 +5240,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 0:33:14",
     Date: "8/28/2024",
     Tier: "151",
     "Time Used": "14:43",
@@ -5558,7 +5258,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 5:06:58",
     Date: "8/28/2024",
     Tier: "140",
     "Time Used": "12:40",
@@ -5577,7 +5276,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 9:33:06",
     Date: "8/29/2024",
     Tier: "143",
     "Time Used": "10:10",
@@ -5595,7 +5293,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 10:26:06",
     Date: "8/29/2024",
     Tier: "146",
     "Time Used": "14:17",
@@ -5613,7 +5310,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 10:57:15",
     Date: "8/30/2024",
     Tier: "134",
     "Time Used": "14:27",
@@ -5631,7 +5327,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 11:21:13",
     Date: "8/29/2024",
     Tier: "134",
     "Time Used": "7:46",
@@ -5649,7 +5344,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 11:41:36",
     Date: "8/29/2024",
     Tier: "156",
     "Time Used": "14:35",
@@ -5668,7 +5362,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 11:45:37",
     Date: "8/29/2024",
     Tier: "153",
     "Time Used": "13:54",
@@ -5686,7 +5379,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 13:29:52",
     Date: "8/29/2024",
     Tier: "140",
     "Time Used": "12:38",
@@ -5705,7 +5397,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 13:54:46",
     Date: "8/29/2024",
     Tier: "140",
     "Time Used": "9:10",
@@ -5723,7 +5414,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 14:46:14",
     Date: "8/30/2024",
     Tier: "141",
     "Time Used": "14:16",
@@ -5741,7 +5431,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 15:01:48",
     Date: "8/29/2024",
     Tier: "151",
     "Time Used": "12:26",
@@ -5759,7 +5448,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 15:20:22",
     Date: "8/29/2024",
     Tier: "153",
     "Time Used": "13:18",
@@ -5779,7 +5467,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 16:57:22",
     Date: "8/29/2024",
     Tier: "150",
     "Time Used": "11:09",
@@ -5797,7 +5484,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/29/2024 22:03:54",
     Date: "8/30/2024",
     Tier: "154",
     "Time Used": "14:47",
@@ -5815,7 +5501,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 2:48:56",
     Date: "8/29/2024",
     Tier: "152",
     "Time Used": "13:40",
@@ -5833,7 +5518,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 5:11:45",
     Date: "8/30/2024",
     Tier: "142",
     "Time Used": "8:52",
@@ -5851,7 +5535,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 11:39:06",
     Date: "8/31/2024",
     Tier: "135",
     "Time Used": "14:56",
@@ -5870,7 +5553,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 13:18:36",
     Date: "8/31/2024",
     Tier: "151",
     "Time Used": "12:57",
@@ -5888,7 +5570,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 13:22:57",
     Date: "8/30/2024",
     Tier: "150",
     "Time Used": "11:57",
@@ -5906,7 +5587,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 13:50:44",
     Date: "8/30/2024",
     Tier: "154",
     "Time Used": "13:45",
@@ -5924,7 +5604,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 14:07:31",
     Date: "8/30/2024",
     Tier: "150",
     "Time Used": "14:43",
@@ -5942,7 +5621,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 14:11:15",
     Date: "8/30/2024",
     Tier: "141",
     "Time Used": "13:31",
@@ -5960,7 +5638,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 14:43:51",
     Date: "8/29/2024",
     Tier: "152",
     "Time Used": "14:40",
@@ -5979,7 +5656,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 16:51:42",
     Date: "8/30/2024",
     Tier: "151",
     "Time Used": "12:25",
@@ -5997,7 +5673,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 17:40:45",
     Date: "8/30/2024",
     Tier: "155",
     "Time Used": "14:09",
@@ -6015,7 +5690,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 17:54:36",
     Date: "8/30/2024",
     Tier: "158",
     "Time Used": "14:59",
@@ -6035,7 +5709,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 17:52:26",
     Date: "8/30/2024",
     Tier: "158",
     "Time Used": "14:49",
@@ -6054,7 +5727,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 18:59:45",
     Date: "8/8/2024",
     Tier: "146",
     "Time Used": "10:42",
@@ -6073,7 +5745,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 19:31:51",
     Date: "8/30/2024",
     Tier: "155",
     "Time Used": "11:53",
@@ -6091,7 +5762,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 19:48:26",
     Date: "8/31/2024",
     Tier: "148",
     "Time Used": "12:21",
@@ -6110,7 +5780,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 21:50:32",
     Date: "8/31/2024",
     Tier: "151",
     "Time Used": "12:45",
@@ -6128,7 +5797,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/30/2024 22:07:43",
     Date: "8/31/2024",
     Tier: "152",
     "Time Used": "13:53",
@@ -6146,7 +5814,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 0:15:41",
     Date: "8/31/2024",
     Tier: "101",
     "Time Used": "1:16",
@@ -6164,7 +5831,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 1:50:28",
     Date: "8/31/2024",
     Tier: "151",
     "Time Used": "13:07",
@@ -6182,7 +5848,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 2:59:09",
     Date: "8/31/2024",
     Tier: "142",
     "Time Used": "14:26",
@@ -6201,7 +5866,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 8:26:57",
     Date: "8/25/2024",
     Tier: "139",
     "Time Used": "14:35",
@@ -6220,7 +5884,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 9:22:59",
     Date: "8/31/2024",
     Tier: "145",
     "Time Used": "11:33",
@@ -6238,7 +5901,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 11:27:29",
     Date: "8/31/2024",
     Tier: "145",
     "Time Used": "13:48",
@@ -6257,7 +5919,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 12:08:20",
     Date: "8/31/2024",
     Tier: "151",
     "Time Used": "14:20",
@@ -6275,7 +5936,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 12:15:24",
     Date: "8/31/2024",
     Tier: "145",
     "Time Used": "13:48",
@@ -6294,7 +5954,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 13:38:03",
     Date: "8/30/2024",
     Tier: "140",
     "Time Used": "13:39",
@@ -6313,7 +5972,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 17:05:23",
     Date: "8/31/2024",
     Tier: "154",
     "Time Used": "13:21",
@@ -6332,7 +5990,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/31/2024 21:25:45",
     Date: "9/1/2024",
     Tier: "150",
     "Time Used": "14:29",
@@ -6350,7 +6007,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 0:36:59",
     Date: "8/31/2024",
     Tier: "152",
     "Time Used": "11:37",
@@ -6368,7 +6024,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 5:06:40",
     Date: "9/1/2024",
     Tier: "158",
     "Time Used": "14:50",
@@ -6386,7 +6041,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 8:19:01",
     Date: "9/1/2024",
     Tier: "146",
     "Time Used": "10:57",
@@ -6405,7 +6059,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 9:44:35",
     Date: "9/1/2024",
     Tier: "143",
     "Time Used": "14:53",
@@ -6424,7 +6077,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 11:51:46",
     Date: "9/1/2024",
     Tier: "149",
     "Time Used": "14:50",
@@ -6442,7 +6094,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 13:22:32",
     Date: "9/2/2024",
     Tier: "136",
     "Time Used": "14:52",
@@ -6461,7 +6112,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 17:54:48",
     Date: "9/1/2024",
     Tier: "146",
     "Time Used": "10:03",
@@ -6479,7 +6129,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 18:47:02",
     Date: "9/2/2024",
     Tier: "149",
     "Time Used": "14:53",
@@ -6498,7 +6147,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 20:09:03",
     Date: "9/1/2024",
     Tier: "138",
     "Time Used": "13:14",
@@ -6516,7 +6164,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 21:32:24",
     Date: "9/1/2024",
     Tier: "130",
     "Time Used": "13:47",
@@ -6535,7 +6182,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/1/2024 22:03:55",
     Date: "8/26/2024",
     Tier: "148",
     "Time Used": "14:14",
@@ -6553,7 +6199,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 0:18:31",
     Date: "9/2/2024",
     Tier: "148",
     "Time Used": "14:47",
@@ -6572,7 +6217,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 1:22:54",
     Date: "9/2/2024",
     Tier: "158",
     "Time Used": "13:55",
@@ -6590,7 +6234,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 1:48:10",
     Date: "9/2/2024",
     Tier: "153",
     "Time Used": "12:09",
@@ -6608,7 +6251,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 3:04:54",
     Date: "12/22/1990",
     Tier: "149",
     "Time Used": "13:28",
@@ -6626,7 +6268,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 5:44:45",
     Date: "9/2/2024",
     Tier: "154",
     "Time Used": "14:00",
@@ -6644,7 +6285,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 6:53:49",
     Date: "9/1/2024",
     Tier: "152",
     "Time Used": "13:58",
@@ -6662,7 +6302,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 9:12:27",
     Date: "9/2/2024",
     Tier: "145",
     "Time Used": "14:08",
@@ -6680,7 +6319,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 11:38:56",
     Date: "9/1/2024",
     Tier: "147",
     "Time Used": "8:07",
@@ -6699,7 +6337,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 12:07:29",
     Date: "9/2/2024",
     Tier: "140",
     "Time Used": "14:47",
@@ -6718,7 +6355,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 13:02:02",
     Date: "9/2/2024",
     Tier: "155",
     "Time Used": "14:50",
@@ -6736,7 +6372,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 16:38:50",
     Date: "9/2/2024",
     Tier: "134",
     "Time Used": "14:17",
@@ -6754,7 +6389,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 18:43:50",
     Date: "9/3/2024",
     Tier: "143",
     "Time Used": "11:44",
@@ -6772,7 +6406,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 19:03:59",
     Date: "9/2/2024",
     Tier: "146",
     "Time Used": "10:11",
@@ -6790,7 +6423,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 19:38:24",
     Date: "9/2/2024",
     Tier: "148",
     "Time Used": "10:02",
@@ -6808,7 +6440,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 21:58:18",
     Date: "9/2/2024",
     Tier: "150",
     "Time Used": "14:53",
@@ -6826,7 +6457,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/2/2024 23:01:58",
     Date: "9/3/2024",
     Tier: "146",
     "Time Used": "14:26",
@@ -6845,7 +6475,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 4:05:54",
     Date: "9/3/2024",
     Tier: "152",
     "Time Used": "13:25",
@@ -6863,7 +6492,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 4:38:08",
     Date: "8/30/2024",
     Tier: "125",
     "Time Used": "4:50",
@@ -6881,7 +6509,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 5:08:47",
     Date: "9/3/2024",
     Tier: "153",
     "Time Used": "10:46",
@@ -6900,7 +6527,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 6:21:52",
     Date: "9/3/2024",
     Tier: "148",
     "Time Used": "12:52",
@@ -6918,7 +6544,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 7:13:48",
     Date: "9/3/2024",
     Tier: "151",
     "Time Used": "11:54",
@@ -6936,7 +6561,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 11:03:04",
     Date: "9/3/2024",
     Tier: "149",
     "Time Used": "13:08",
@@ -6954,7 +6578,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 14:12:18",
     Date: "9/3/2024",
     Tier: "130",
     "Time Used": "7:58",
@@ -6972,7 +6595,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 14:13:27",
     Date: "9/3/2024",
     Tier: "133",
     "Time Used": "11:48",
@@ -6990,7 +6612,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 17:18:38",
     Date: "9/3/2024",
     Tier: "144",
     "Time Used": "13:28",
@@ -7008,7 +6629,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 18:40:36",
     Date: "9/4/2024",
     Tier: "154",
     "Time Used": "12:45",
@@ -7026,7 +6646,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 20:24:57",
     Date: "9/3/2024",
     Tier: "155",
     "Time Used": "13:31",
@@ -7044,7 +6663,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 21:01:01",
     Date: "9/4/2024",
     Tier: "122",
     "Time Used": "10:49",
@@ -7063,7 +6681,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 22:44:26",
     Date: "9/4/2024",
     Tier: "156",
     "Time Used": "14:53",
@@ -7081,7 +6698,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/3/2024 22:48:32",
     Date: "9/4/2024",
     Tier: "136",
     "Time Used": "10:37",
@@ -7100,7 +6716,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 2:21:39",
     Date: "9/4/2024",
     Tier: "152",
     "Time Used": "14:11",
@@ -7119,7 +6734,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 5:44:43",
     Date: "9/4/2024",
     Tier: "156",
     "Time Used": "14:44",
@@ -7137,7 +6751,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 9:24:01",
     Date: "9/4/2024",
     Tier: "147",
     "Time Used": "13:23",
@@ -7155,7 +6768,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 10:27:58",
     Date: "9/4/2024",
     Tier: "151",
     "Time Used": "14:03",
@@ -7174,7 +6786,6 @@ export const s5Data = [
     BossOnly: "yes",
   },
   {
-    Timestamp: "9/4/2024 10:53:43",
     Date: "9/4/2024",
     Tier: "150",
     "Time Used": "12:04",
@@ -7192,7 +6803,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 12:08:12",
     Date: "9/5/2024",
     Tier: "137",
     "Time Used": "14:59",
@@ -7211,7 +6821,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 12:25:12",
     Date: "9/4/2024",
     Tier: "135",
     "Time Used": "14:48",
@@ -7230,7 +6839,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 12:55:43",
     Date: "9/1/2024",
     Tier: "138",
     "Time Used": "13:26",
@@ -7248,7 +6856,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 13:33:16",
     Date: "9/5/2024",
     Tier: "136",
     "Time Used": "9:44",
@@ -7266,7 +6873,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 14:15:40",
     Date: "9/4/2024",
     Tier: "150",
     "Time Used": "14:38",
@@ -7284,7 +6890,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 15:33:44",
     Date: "9/3/2024",
     Tier: "156",
     "Time Used": "12:37",
@@ -7302,7 +6907,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 18:06:45",
     Date: "9/5/2024",
     Tier: "138",
     "Time Used": "7:34",
@@ -7321,7 +6925,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 18:29:58",
     Date: "9/4/2024",
     Tier: "150",
     "Time Used": "14:10",
@@ -7339,7 +6942,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 18:33:56",
     Date: "9/3/2024",
     Tier: "150",
     "Time Used": "14:52",
@@ -7358,7 +6960,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 18:37:57",
     Date: "9/3/2024",
     Tier: "133",
     "Time Used": "14:42",
@@ -7375,7 +6976,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 18:50:03",
     Date: "9/5/2024",
     Tier: "126",
     "Time Used": "13:56",
@@ -7393,7 +6993,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 20:05:42",
     Date: "9/5/2024",
     Tier: "141",
     "Time Used": "13:29",
@@ -7411,7 +7010,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 20:12:09",
     Date: "9/5/2024",
     Tier: "101",
     "Time Used": "0:42",
@@ -7429,7 +7027,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/4/2024 21:15:30",
     Date: "9/4/2024",
     Tier: "157",
     "Time Used": "11:42",
@@ -7447,7 +7044,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 0:25:18",
     Date: "9/3/2024",
     Tier: "150",
     "Time Used": "12:43",
@@ -7466,7 +7062,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 2:27:30",
     Date: "9/5/2024",
     Tier: "150",
     "Time Used": "13:40",
@@ -7484,7 +7079,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 5:55:53",
     Date: "9/5/2024",
     Tier: "159",
     "Time Used": "14:59",
@@ -7502,7 +7096,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 9:35:15",
     Date: "9/4/2024",
     Tier: "153",
     "Time Used": "13:54",
@@ -7521,7 +7114,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 12:49:58",
     Date: "9/6/2024",
     Tier: "148",
     "Time Used": "14:31",
@@ -7539,7 +7131,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 12:55:04",
     Date: "9/6/2024",
     Tier: "137",
     "Time Used": "12:19",
@@ -7557,7 +7148,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 13:25:26",
     Date: "9/5/2024",
     Tier: "140",
     "Time Used": "14:17",
@@ -7577,7 +7167,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 16:19:20",
     Date: "9/5/2024",
     Tier: "150",
     "Time Used": "14:30",
@@ -7596,7 +7185,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 19:37:47",
     Date: "9/5/2024",
     Tier: "151",
     "Time Used": "13:52",
@@ -7614,7 +7202,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 20:42:29",
     Date: "9/2/2024",
     Tier: "135",
     "Time Used": "13:07",
@@ -7632,7 +7219,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 21:20:35",
     Date: "9/5/2024",
     Tier: "160",
     "Time Used": "14:50",
@@ -7650,7 +7236,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 21:53:54",
     Date: "9/6/2024",
     Tier: "141",
     "Time Used": "11:03",
@@ -7669,7 +7254,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 22:39:13",
     Date: "9/5/2024",
     Tier: "150",
     "Time Used": "14:59",
@@ -7687,7 +7271,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/5/2024 22:40:13",
     Date: "9/6/2024",
     Tier: "142",
     "Time Used": "7:58",
@@ -7705,7 +7288,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/6/2024 8:19:09",
     Date: "9/6/2024",
     Tier: "154",
     "Time Used": "14:07",
@@ -7725,7 +7307,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/6/2024 15:36:29",
     Date: "9/6/2024",
     Tier: "149",
     "Time Used": "14:07",
@@ -7743,7 +7324,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/6/2024 16:47:00",
     Date: "9/7/2024",
     Tier: "101",
     "Time Used": "0:34",
@@ -7761,7 +7341,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/6/2024 18:46:13",
     Date: "9/6/2024",
     Tier: "150",
     "Time Used": "9:34",
@@ -7779,7 +7358,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/6/2024 20:12:04",
     Date: "9/7/2024",
     Tier: "150",
     "Time Used": "14:14",
@@ -7798,7 +7376,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/7/2024 9:10:10",
     Date: "9/7/2024",
     Tier: "131",
     "Time Used": "12:25",
@@ -7816,7 +7393,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/7/2024 10:17:56",
     Date: "9/7/2024",
     Tier: "154",
     "Time Used": "14:23",
@@ -7834,7 +7410,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/7/2024 10:34:26",
     Date: "9/7/2024",
     Tier: "151",
     "Time Used": "13:51",
@@ -7852,7 +7427,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/7/2024 16:10:33",
     Date: "9/7/2024",
     Tier: "143",
     "Time Used": "11:53",
@@ -7870,7 +7444,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/7/2024 18:10:45",
     Date: "9/7/2024",
     Tier: "156",
     "Time Used": "14:59",
@@ -7888,7 +7461,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/7/2024 18:30:26",
     Date: "9/7/2024",
     Tier: "161",
     "Time Used": "14:06",
@@ -7906,7 +7478,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/7/2024 21:03:03",
     Date: "9/7/2024",
     Tier: "150",
     "Time Used": "13:26",
@@ -7924,7 +7495,6 @@ export const s5Data = [
     BossOnly: "yes",
   },
   {
-    Timestamp: "9/7/2024 23:49:44",
     Date: "9/7/2024",
     Tier: "153",
     "Time Used": "11:10",
@@ -7942,7 +7512,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 0:29:13",
     Date: "9/7/2024",
     Tier: "153",
     "Time Used": "14:32",
@@ -7961,7 +7530,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 0:37:01",
     Date: "9/8/2024",
     Tier: "147",
     "Time Used": "14:21",
@@ -7979,7 +7547,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 8:46:34",
     Date: "9/7/2024",
     Tier: "140",
     "Time Used": "11:29",
@@ -7997,7 +7564,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 9:23:54",
     Date: "9/8/2024",
     Tier: "154",
     "Time Used": "13:49",
@@ -8015,7 +7581,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 10:19:56",
     Date: "9/1/2024",
     Tier: "153",
     "Time Used": "14:37",
@@ -8034,7 +7599,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 10:21:57",
     Date: "9/8/2024",
     Tier: "154",
     "Time Used": "14:55",
@@ -8052,7 +7616,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 11:00:58",
     Date: "9/7/2024",
     Tier: "152",
     "Time Used": "11:02",
@@ -8071,7 +7634,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 18:38:26",
     Date: "9/8/2024",
     Tier: "150",
     "Time Used": "13:51",
@@ -8090,7 +7652,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 21:50:59",
     Date: "9/8/2024",
     Tier: "162",
     "Time Used": "14:13",
@@ -8108,7 +7669,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/8/2024 23:41:33",
     Date: "9/8/2024",
     Tier: "150",
     "Time Used": "10:30",
@@ -8128,7 +7688,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/9/2024 5:40:13",
     Date: "9/9/2024",
     Tier: "153",
     "Time Used": "12:38",
@@ -8146,7 +7705,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/9/2024 8:01:47",
     Date: "9/9/2024",
     Tier: "151",
     "Time Used": "10:20",
@@ -8164,7 +7722,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/9/2024 9:16:47",
     Date: "9/9/2024",
     Tier: "145",
     "Time Used": "14:58",
@@ -8183,7 +7740,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/9/2024 15:21:11",
     Date: "9/8/2024",
     Tier: "126",
     "Time Used": "9:30",
@@ -8201,7 +7757,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/9/2024 19:00:48",
     Date: "9/6/2024",
     Tier: "149",
     "Time Used": "14:59",
@@ -8219,7 +7774,6 @@ export const s5Data = [
     BossOnly: "yes",
   },
   {
-    Timestamp: "9/10/2024 6:01:29",
     Date: "9/10/2024",
     Tier: "146",
     "Time Used": "14:57",
@@ -8238,7 +7792,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 6:30:16",
     Date: "9/10/2024",
     Tier: "147",
     "Time Used": "13:59",
@@ -8256,7 +7809,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 8:33:03",
     Date: "9/10/2024",
     Tier: "156",
     "Time Used": "11:43",
@@ -8274,7 +7826,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 10:35:04",
     Date: "9/9/2024",
     Tier: "150",
     "Time Used": "13:46",
@@ -8293,7 +7844,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 10:46:02",
     Date: "9/10/2024",
     Tier: "140",
     "Time Used": "11:14",
@@ -8312,7 +7862,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 12:18:14",
     Date: "9/10/2024",
     Tier: "138",
     "Time Used": "10:00",
@@ -8330,7 +7879,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 13:45:12",
     Date: "9/10/2024",
     Tier: "157",
     "Time Used": "14:59",
@@ -8348,7 +7896,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 13:58:57",
     Date: "9/10/2024",
     Tier: "150",
     "Time Used": "10:06",
@@ -8366,7 +7913,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 16:58:41",
     Date: "9/10/2024",
     Tier: "152",
     "Time Used": "12:46",
@@ -8384,7 +7930,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 17:30:55",
     Date: "9/11/2024",
     Tier: "151",
     "Time Used": "14:58",
@@ -8403,7 +7948,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 17:38:34",
     Date: "9/10/2024",
     Tier: "149",
     "Time Used": "12:04",
@@ -8422,7 +7966,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 19:32:04",
     Date: "9/10/2024",
     Tier: "163",
     "Time Used": "13:48",
@@ -8441,7 +7984,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/10/2024 21:47:15",
     Date: "9/8/2024",
     Tier: "154",
     "Time Used": "14:28",
@@ -8459,7 +8001,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/11/2024 14:06:58",
     Date: "9/12/2024",
     Tier: "150",
     "Time Used": "14:38",
@@ -8477,7 +8018,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/11/2024 16:44:53",
     Date: "9/11/2024",
     Tier: "155",
     "Time Used": "14:11",
@@ -8495,7 +8035,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/11/2024 19:58:43",
     Date: "9/12/2024",
     Tier: "147",
     "Time Used": "14:46",
@@ -8513,7 +8052,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/11/2024 22:24:17",
     Date: "9/10/2024",
     Tier: "150",
     "Time Used": "14:34",
@@ -8531,7 +8069,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/11/2024 22:28:57",
     Date: "9/9/2024",
     Tier: "151",
     "Time Used": "13:30",
@@ -8549,7 +8086,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/11/2024 22:31:41",
     Date: "9/9/2024",
     Tier: "130",
     "Time Used": "14:04",
@@ -8568,7 +8104,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/11/2024 22:35:33",
     Date: "9/10/2024",
     Tier: "150",
     "Time Used": "15:00",
@@ -8587,7 +8122,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/11/2024 22:42:45",
     Date: "9/12/2024",
     Tier: "122",
     "Time Used": "13:23",
@@ -8605,7 +8139,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/11/2024 22:44:30",
     Date: "9/8/2024",
     Tier: "152",
     "Time Used": "14:01",
@@ -8623,7 +8156,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/12/2024 10:55:14",
     Date: "9/12/2024",
     Tier: "150",
     "Time Used": "11:37",
@@ -8641,7 +8173,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/12/2024 12:27:29",
     Date: "9/11/2024",
     Tier: "152",
     "Time Used": "14:42",
@@ -8659,7 +8190,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/12/2024 12:30:18",
     Date: "9/12/2024",
     Tier: "149",
     "Time Used": "13:01",
@@ -8677,7 +8207,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/12/2024 12:31:08",
     Date: "9/12/2024",
     Tier: "148",
     "Time Used": "14:48",
@@ -8695,7 +8224,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/12/2024 12:50:26",
     Date: "9/13/2024",
     Tier: "144",
     "Time Used": "14:07",
@@ -8714,7 +8242,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/12/2024 20:40:51",
     Date: "9/13/2024",
     Tier: "154",
     "Time Used": "14:31",
@@ -8732,7 +8259,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/12/2024 21:15:28",
     Date: "9/12/2024",
     Tier: "141",
     "Time Used": "12:59",
@@ -8750,7 +8276,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/12/2024 21:21:06",
     Date: "9/11/2024",
     Tier: "141",
     "Time Used": "12:02",
@@ -8769,7 +8294,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 2:31:20",
     Date: "9/12/2024",
     Tier: "150",
     "Time Used": "13:08",
@@ -8787,7 +8311,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 8:45:52",
     Date: "9/13/2024",
     Tier: "164",
     "Time Used": "14:10",
@@ -8805,7 +8328,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 9:29:10",
     Date: "9/13/2024",
     Tier: "153",
     "Time Used": "14:08",
@@ -8823,7 +8345,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 10:43:14",
     Date: "9/12/2024",
     Tier: "140",
     "Time Used": "14:46",
@@ -8843,7 +8364,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 10:47:19",
     Date: "9/13/2024",
     Tier: "150",
     "Time Used": "14:08",
@@ -8862,7 +8382,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 10:51:10",
     Date: "9/13/2024",
     Tier: "150",
     "Time Used": "12:47",
@@ -8880,7 +8399,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 10:57:30",
     Date: "9/12/2024",
     Tier: "150",
     "Time Used": "11:20",
@@ -8898,7 +8416,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 11:03:02",
     Date: "9/12/2024",
     Tier: "151",
     "Time Used": "14:37",
@@ -8916,7 +8433,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 11:06:56",
     Date: "9/12/2024",
     Tier: "153",
     "Time Used": "11:39",
@@ -8934,7 +8450,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 13:28:26",
     Date: "9/13/2024",
     Tier: "155",
     "Time Used": "13:34",
@@ -8954,7 +8469,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 13:38:24",
     Date: "9/13/0024",
     Tier: "155",
     "Time Used": "13:12",
@@ -8972,7 +8486,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 21:18:07",
     Date: "9/13/0024",
     Tier: "142",
     "Time Used": "14:26",
@@ -8991,7 +8504,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/13/2024 23:48:15",
     Date: "9/14/2024",
     Tier: "154",
     "Time Used": "14:39",
@@ -9009,7 +8521,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 0:30:42",
     Date: "9/14/2024",
     Tier: "154",
     "Time Used": "13:49",
@@ -9027,7 +8538,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 1:10:50",
     Date: "9/13/2024",
     Tier: "165",
     "Time Used": "13:33",
@@ -9045,7 +8555,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 3:33:05",
     Date: "9/14/0024",
     Tier: "156",
     "Time Used": "14:57",
@@ -9063,7 +8572,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 4:15:53",
     Date: "9/14/2024",
     Tier: "153",
     "Time Used": "13:23",
@@ -9081,7 +8589,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 5:27:21",
     Date: "9/14/2024",
     Tier: "152",
     "Time Used": "14:42",
@@ -9100,7 +8607,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 6:30:02",
     Date: "9/13/2024",
     Tier: "150",
     "Time Used": "14:40",
@@ -9119,7 +8625,6 @@ export const s5Data = [
     BossOnly: "yes",
   },
   {
-    Timestamp: "9/14/2024 9:41:02",
     Date: "9/14/2024",
     Tier: "140",
     "Time Used": "12:42",
@@ -9137,7 +8642,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 10:42:19",
     Date: "9/14/2024",
     Tier: "148",
     "Time Used": "13:22",
@@ -9156,7 +8660,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 10:52:28",
     Date: "9/14/2024",
     Tier: "150",
     "Time Used": "14:11",
@@ -9174,7 +8677,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 13:22:11",
     Date: "9/14/2024",
     Tier: "145",
     "Time Used": "12:36",
@@ -9193,7 +8695,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/14/2024 14:04:48",
     Date: "9/14/2024",
     Tier: "156",
     "Time Used": "14:49",
@@ -9213,7 +8714,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "8/18/2024 23:58:56",
     Date: "8/18/2024",
     Tier: "101",
     "Time Used": "0:35",
@@ -9231,7 +8731,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/15/2024 2:32:14",
     Date: "9/14/2024",
     Tier: "101",
     "Time Used": "0:52",
@@ -9249,7 +8748,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/15/2024 3:37:29",
     Date: "9/15/2024",
     Tier: "144",
     "Time Used": "9:16",
@@ -9267,7 +8765,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/15/2024 5:27:55",
     Date: "9/15/2024",
     Tier: "153",
     "Time Used": "14:17",
@@ -9286,7 +8783,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/15/2024 5:29:38",
     Date: "9/15/2024",
     Tier: "146",
     "Time Used": "13:18",
@@ -9304,7 +8800,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/15/2024 6:24:19",
     Date: "9/15/2024",
     Tier: "101",
     "Time Used": "1:07",
@@ -9322,7 +8817,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/15/2024 12:11:21",
     Date: "9/15/2024",
     Tier: "130",
     "Time Used": "11:19",
@@ -9340,7 +8834,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/15/2024 13:44:20",
     Date: "9/16/2024",
     Tier: "155",
     "Time Used": "13:34",
@@ -9359,7 +8852,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/15/2024 20:53:30",
     Date: "9/15/2024",
     Tier: "149",
     "Time Used": "12:56",
@@ -9377,7 +8869,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/15/2024 23:00:24",
     Date: "9/14/2023",
     Tier: "156",
     "Time Used": "14:57",
@@ -9395,7 +8886,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 2:18:09",
     Date: "9/16/2024",
     Tier: "154",
     "Time Used": "14:59",
@@ -9413,7 +8903,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 6:38:38",
     Date: "9/16/2024",
     Tier: "151",
     "Time Used": "14:24",
@@ -9432,7 +8921,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 7:50:33",
     Date: "9/16/2024",
     Tier: "158",
     "Time Used": "14:02",
@@ -9451,7 +8939,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 10:42:51",
     Date: "9/16/2024",
     Tier: "146",
     "Time Used": "15:00",
@@ -9469,7 +8956,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 11:01:29",
     Date: "9/16/2024",
     Tier: "136",
     "Time Used": "12:28",
@@ -9489,7 +8975,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 19:57:33",
     Date: "9/16/2024",
     Tier: "150",
     "Time Used": "12:31",
@@ -9507,7 +8992,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 20:02:21",
     Date: "9/16/2024",
     Tier: "164",
     "Time Used": "14:03",
@@ -9525,7 +9009,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 20:10:16",
     Date: "9/16/2024",
     Tier: "150",
     "Time Used": "14:59",
@@ -9544,7 +9027,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 20:11:42",
     Date: "9/16/2024",
     Tier: "150",
     "Time Used": "13:01",
@@ -9562,7 +9044,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/16/2024 20:23:32",
     Date: "9/16/2024",
     Tier: "155",
     "Time Used": "11:42",
@@ -9581,7 +9062,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 0:39:40",
     Date: "9/17/2024",
     Tier: "140",
     "Time Used": "13:00",
@@ -9599,7 +9079,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 6:13:33",
     Date: "1/17/1997",
     Tier: "140",
     "Time Used": "14:33",
@@ -9617,7 +9096,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 7:32:30",
     Date: "9/17/2024",
     Tier: "140",
     "Time Used": "11:54",
@@ -9635,7 +9113,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 7:54:55",
     Date: "9/17/2024",
     Tier: "153",
     "Time Used": "14:47",
@@ -9653,7 +9130,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 11:12:46",
     Date: "9/17/2024",
     Tier: "150",
     "Time Used": "14:47",
@@ -9671,7 +9147,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 11:16:24",
     Date: "9/16/2024",
     Tier: "154",
     "Time Used": "13:53",
@@ -9689,7 +9164,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 13:55:24",
     Date: "9/17/2024",
     Tier: "150",
     "Time Used": "14:14",
@@ -9707,7 +9181,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 14:00:13",
     Date: "9/10/2024",
     Tier: "148",
     "Time Used": "14:35",
@@ -9725,7 +9198,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 16:11:34",
     Date: "9/17/2024",
     Tier: "151",
     "Time Used": "14:50",
@@ -9743,7 +9215,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 18:04:12",
     Date: "9/18/2024",
     Tier: "142",
     "Time Used": "14:49",
@@ -9763,7 +9234,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 20:02:11",
     Date: "9/17/2024",
     Tier: "148",
     "Time Used": "13:52",
@@ -9781,7 +9251,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/17/2024 21:11:03",
     Date: "9/17/2024",
     Tier: "157",
     "Time Used": "14:18",
@@ -9800,7 +9269,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/18/2024 0:56:00",
     Date: "9/17/2024",
     Tier: "152",
     "Time Used": "14:46",
@@ -9819,7 +9287,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/18/2024 4:58:16",
     Date: "9/18/2024",
     Tier: "101",
     "Time Used": "0:49",
@@ -9837,7 +9304,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/18/2024 9:19:49",
     Date: "9/18/2024",
     Tier: "101",
     "Time Used": "0:47",
@@ -9855,7 +9321,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/18/2024 12:02:48",
     Date: "9/18/2024",
     Tier: "101",
     "Time Used": "0:42",
@@ -9873,7 +9338,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/18/2024 12:19:43",
     Date: "9/18/2024",
     Tier: "138",
     "Time Used": "14:23",
@@ -9892,7 +9356,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/18/2024 14:43:26",
     Date: "9/18/2024",
     Tier: "124",
     "Time Used": "12:29",
@@ -9912,7 +9375,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/18/2024 15:31:52",
     Date: "9/1/2024",
     Tier: "149",
     "Time Used": "14:13",
@@ -9931,7 +9393,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/18/2024 23:47:20",
     Date: "9/18/2024",
     Tier: "134",
     "Time Used": "6:40",
@@ -9949,7 +9410,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 2:50:19",
     Date: "9/16/2024",
     Tier: "150",
     "Time Used": "14:57",
@@ -9967,7 +9427,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 10:05:59",
     Date: "9/19/2024",
     Tier: "166",
     "Time Used": "12:55",
@@ -9986,7 +9445,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 10:08:34",
     Date: "9/19/2024",
     Tier: "167",
     "Time Used": "14:56",
@@ -10005,7 +9463,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 10:12:38",
     Date: "9/18/2024",
     Tier: "154",
     "Time Used": "14:06",
@@ -10023,7 +9480,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 10:15:41",
     Date: "9/19/2024",
     Tier: "125",
     "Time Used": "4:59",
@@ -10041,7 +9497,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 10:18:46",
     Date: "9/18/2024",
     Tier: "153",
     "Time Used": "13:51",
@@ -10060,7 +9515,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 10:26:27",
     Date: "9/19/2024",
     Tier: "148",
     "Time Used": "14:30",
@@ -10078,7 +9532,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 13:51:53",
     Date: "9/19/2024",
     Tier: "150",
     "Time Used": "14:59",
@@ -10096,7 +9549,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 14:15:29",
     Date: "9/17/2024",
     Tier: "149",
     "Time Used": "10:13",
@@ -10114,7 +9566,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 17:53:41",
     Date: "9/19/2024",
     Tier: "157",
     "Time Used": "13:59",
@@ -10132,7 +9583,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 18:05:23",
     Date: "9/19/2024",
     Tier: "154",
     "Time Used": "14:52",
@@ -10151,7 +9601,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 21:56:13",
     Date: "9/19/2024",
     Tier: "137",
     "Time Used": "9:22",
@@ -10170,7 +9619,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/19/2024 22:44:49",
     Date: "9/17/2024",
     Tier: "154",
     "Time Used": "14:11",
@@ -10188,7 +9636,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/20/2024 7:27:22",
     Date: "9/20/2024",
     Tier: "153",
     "Time Used": "14:52",
@@ -10207,7 +9654,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/20/2024 12:39:58",
     Date: "9/19/2024",
     Tier: "143",
     "Time Used": "12:48",
@@ -10225,7 +9671,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/20/2024 17:23:31",
     Date: "9/20/2024",
     Tier: "154",
     "Time Used": "14:23",
@@ -10244,7 +9689,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/20/2024 17:26:36",
     Date: "9/20/2024",
     Tier: "153",
     "Time Used": "12:55",
@@ -10262,7 +9706,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/20/2024 17:32:18",
     Date: "9/20/2024",
     Tier: "147",
     "Time Used": "13:36",
@@ -10280,7 +9723,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/20/2024 23:39:06",
     Date: "9/21/2024",
     Tier: "155",
     "Time Used": "14:58",
@@ -10298,7 +9740,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 4:52:17",
     Date: "9/21/2024",
     Tier: "155",
     "Time Used": "13:53",
@@ -10316,7 +9757,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 6:07:42",
     Date: "9/21/2024",
     Tier: "149",
     "Time Used": "14:53",
@@ -10334,7 +9774,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 6:24:52",
     Date: "9/20/2024",
     Tier: "147",
     "Time Used": "12:30",
@@ -10352,7 +9791,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 10:29:16",
     Date: "9/14/2024",
     Tier: "150",
     "Time Used": "11:39",
@@ -10371,7 +9809,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 10:40:38",
     Date: "9/21/2024",
     Tier: "148",
     "Time Used": "14:32",
@@ -10389,7 +9826,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 10:49:33",
     Date: "9/20/2024",
     Tier: "145",
     "Time Used": "12:26",
@@ -10408,7 +9844,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 10:51:18",
     Date: "9/21/2024",
     Tier: "150",
     "Time Used": "13:29",
@@ -10426,7 +9861,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 19:51:42",
     Date: "9/19/2024",
     Tier: "120",
     "Time Used": "5:48",
@@ -10444,7 +9878,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 19:56:59",
     Date: "9/18/2024",
     Tier: "101",
     "Time Used": "1:28",
@@ -10462,7 +9895,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 22:05:50",
     Date: "9/22/2024",
     Tier: "101",
     "Time Used": "1:02",
@@ -10480,7 +9912,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 23:28:31",
     Date: "9/22/2024",
     Tier: "158",
     "Time Used": "14:43",
@@ -10498,7 +9929,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/21/2024 23:50:06",
     Date: "9/22/2024",
     Tier: "151",
     "Time Used": "11:23",
@@ -10517,7 +9947,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/22/2024 6:06:07",
     Date: "9/22/2024",
     Tier: "129",
     "Time Used": "14:59",
@@ -10536,7 +9965,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/22/2024 7:26:48",
     Date: "9/22/2024",
     Tier: "141",
     "Time Used": "13:04",
@@ -10554,7 +9982,6 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Timestamp: "9/22/2024 12:25:24",
     Date: "9/23/2024",
     Tier: "146",
     "Time Used": "12:20",
@@ -10569,6 +9996,58 @@ export const s5Data = [
     "Build Planner": "",
     Validate: "y",
     Compiled: "player",
+    BossOnly: "",
+  },
+  {
+    Date: "10/23/2024",
+    Tier: "147",
+    "Time Used": "13:04",
+    Player: "Zzzz",
+    Class: "Sorcerer",
+    Mode: "SC",
+    "Build Name": "Lightning spear",
+    "Skills Used":
+      "Frozen_Orb, Flame_Shield, Ice_Armor, Teleport, Lightning_Spear, Unstable_Currents",
+    "Run Video": "https://youtu.be/2afxg9axGpk?si=SSQwPGxPLDv3uxCW",
+    "Run Comment": "",
+    "Build Planner": "",
+    Validate: "y",
+    Compiled: "self",
+    BossOnly: "",
+  },
+  {
+    Date: "9/22/2024",
+    Tier: "160",
+    "Time Used": "14:08",
+    Player: "ゴマぽん酢",
+    Class: "Sorcerer",
+    Mode: "SC",
+    "Build Name": "Fireball",
+    "Skills Used":
+      "Fire_Bolt, Fireball, Flame_Shield, Ice_Armor, Ice_Blades, Firewall",
+    "Run Video": "https://www.youtube.com/watch?v=GKYo25k9s1o",
+    "Run Comment":
+      "どうもーゴマポン酢です！今回はファイアボルトビルドによる奈落プッシュ動画になります是非ご覧ください！",
+    "Build Planner": "https://maxroll.gg/d4/planner/5kqzo08s",
+    Validate: "y",
+    Compiled: "self",
+    BossOnly: "",
+  },
+  {
+    Date: "9/22/2024",
+    Tier: "154",
+    "Time Used": "14:11",
+    Player: "SKULM",
+    Class: "Necromancer",
+    Mode: "SC",
+    "Build Name": "Bone Spirit",
+    "Skills Used":
+      "Blood_Mist, Bone_Prison, Bone_Spirit, Decrepify, Corpse_Tendrils, Bone_Storm",
+    "Run Video": "https://www.youtube.com/watch?v=2GhUYbhVMCc",
+    "Run Comment": "",
+    "Build Planner": "",
+    Validate: "y",
+    Compiled: "self",
     BossOnly: "",
   },
 ];

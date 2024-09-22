@@ -206,6 +206,7 @@ export default function PTR_TEST() {
               color="teal"
               onClick={handleLayout}
               className="flex items-center gap-2"
+              size="sm"
             >
               Layout View
               <svg
