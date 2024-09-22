@@ -80,16 +80,12 @@ export default function Top10() {
   const internalData = s5Data;
   // Add Ranks To Entries
 
-  const baseData = internalData
-    .slice()
-    .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
+  const baseData = internalData.slice().sort((a, b) => b.Tier - a.Tier);
 
   const rawData = baseData
     .slice()
-    .sort((a, b) =>
-      convertToSec(a["Time Used"]) > convertToSec(b["Time Used"]) ? 1 : -1
-    )
-    .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
+    .sort((a, b) => convertToSec(a["Time Used"]) - convertToSec(b["Time Used"]))
+    .sort((a, b) => b.Tier - a.Tier);
 
   const uniqueData = removeDup(rawData.slice()).filter(
     (obj) => convertToSec(obj["Time Used"]) < 900

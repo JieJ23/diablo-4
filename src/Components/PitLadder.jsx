@@ -54,14 +54,12 @@ export default function PitLadder() {
   });
   //
 
-  const baseData = s5Data.slice().sort((a, b) => (+a.Tier > +b.Tier ? -1 : 1));
+  const baseData = s5Data.slice();
 
   const rawData = baseData
     .slice()
-    .sort((a, b) =>
-      convertToSec(a["Time Used"]) > convertToSec(b["Time Used"]) ? 1 : -1
-    )
-    .sort((a, b) => (+a.Tier > +b.Tier ? -1 : 1));
+    .sort((a, b) => convertToSec(a["Time Used"]) - convertToSec(b["Time Used"]))
+    .sort((a, b) => +b.Tier - +a.Tier);
   const uniqueData = removeDup(rawData.slice()).filter(
     (obj) => convertToSec(obj["Time Used"]) < 900
   );
@@ -133,18 +131,18 @@ export default function PitLadder() {
               <HomeDraw />
               <SubmitCard />
             </div>
-            <TopOfEachClass objData={baseData} />
+            <TopOfEachClass objData={rawData} />
             <ClassesBtn onButtonClick={handleDataChange} classes={allClasses} />
 
             <div className="flex flex-col md:flex-row justify-center gap-2 my-5 max-w-[800px] mx-auto">
               <SkillsSelection
-                allSkills={baseData}
+                allSkills={rawData}
                 onSkillChange={handleSkillChange}
                 watch={category}
                 fulldata={allData}
               />
               <PlayerSelection
-                allPlayers={baseData}
+                allPlayers={rawData}
                 onPlayerChange={handlePlayerChange}
                 watch={category}
                 fulldata={allData}

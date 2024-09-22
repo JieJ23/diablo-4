@@ -6,10 +6,8 @@ import { classColor } from "./Accordion";
 export default function TopOfEachClass({ objData }) {
   const sortedData = objData
     .slice()
-    .sort((a, b) =>
-      convertToSec(a["Time Used"]) > convertToSec(b["Time Used"]) ? 1 : -1
-    )
-    .sort((a, b) => (a.Tier > b.Tier ? -1 : 1));
+    .sort((a, b) => convertToSec(a["Time Used"]) - convertToSec(b["Time Used"]))
+    .sort((a, b) => b.Tier - a.Tier);
 
   const allClasses = [...new Set(sortedData.map((obj) => obj.Class))];
   const filterRankOnlyRuns = sortedData.filter((obj) => obj.Rank > 0);
