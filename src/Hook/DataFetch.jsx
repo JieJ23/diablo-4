@@ -46,9 +46,7 @@ const TestingFetch = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://my-worker.diablo4pit.workers.dev/api/data"
-        ); // Use your Worker preview URL
+        const response = await fetch("/api/data"); // Use your Worker preview URL
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
