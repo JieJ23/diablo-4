@@ -13,6 +13,14 @@ addEventListener('fetch', event => {
 });
 
 async function handleRequest(request) {
+
+	const origin = request.headers.get('Origin');
+
+	// Check if the request origin is allowed
+	if (origin !== 'https://diablo4pit.pages.dev') {
+		return new Response('Unauthorized', { status: 403 });
+	}
+
 	if (request.method === 'OPTIONS') {
 		// Handle preflight request
 		return new Response(null, {
