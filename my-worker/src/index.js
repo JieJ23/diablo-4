@@ -8,12 +8,16 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
+addEventListener('fetch', event => {
+	event.respondWith(handleRequest(event.request));
+});
+
 async function handleRequest(request) {
 	if (request.method === 'OPTIONS') {
 		// Handle preflight request
 		return new Response(null, {
 			headers: {
-				'Access-Control-Allow-Origin': 'https://diablo4pit.pages.dev',
+				'Access-Control-Allow-Origin': 'https://diablo4pit.pages.dev', // Your live site
 				'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
 				'Access-Control-Allow-Headers': 'Content-Type',
 			},
@@ -28,7 +32,7 @@ async function handleRequest(request) {
 		return new Response(JSON.stringify(data), {
 			headers: {
 				'Content-Type': 'application/json',
-				'Access-Control-Allow-Origin': 'https://diablo4pit.pages.dev',
+				'Access-Control-Allow-Origin': 'https://diablo4pit.pages.dev', // Your live site
 			},
 		});
 	} catch (error) {

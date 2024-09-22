@@ -1,8 +1,12 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "my-worker"
+type = "javascript"
 main = "src/index.js"
 compatibility_date = "2024-09-19"
 compatibility_flags = ["nodejs_compat"]
+account_id = "e7f9fe5c86f4f4b76046a5b2bf61fa58"
+workers_dev = true
+
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
