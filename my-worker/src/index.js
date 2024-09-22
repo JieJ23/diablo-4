@@ -12,12 +12,15 @@ addEventListener('fetch', event => {
 	event.respondWith(handleRequest(event.request));
 });
 
-async function handleRequest(request) {
+addEventListener('fetch', event => {
+	event.respondWith(handleRequest(event.request));
+});
 
+async function handleRequest(request) {
 	const origin = request.headers.get('Origin');
 
 	// Check if the request origin is allowed
-	if (origin !== 'https://diablo4pit.pages.dev') {
+	if (origin !== 'https://diablo4pit.pages.dev' && origin !== 'http://localhost:5173') {
 		return new Response('Unauthorized', { status: 403 });
 	}
 
@@ -25,7 +28,7 @@ async function handleRequest(request) {
 		// Handle preflight request
 		return new Response(null, {
 			headers: {
-				'Access-Control-Allow-Origin': 'https://diablo4pit.pages.dev', // Your live site
+				'Access-Control-Allow-Origin': origin, // Allow the specific origin
 				'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
 				'Access-Control-Allow-Headers': 'Content-Type',
 			},
@@ -40,7 +43,7 @@ async function handleRequest(request) {
 		return new Response(JSON.stringify(data), {
 			headers: {
 				'Content-Type': 'application/json',
-				'Access-Control-Allow-Origin': 'https://diablo4pit.pages.dev', // Your live site
+				'Access-Control-Allow-Origin': origin, // Allow the specific origin
 			},
 		});
 	} catch (error) {
