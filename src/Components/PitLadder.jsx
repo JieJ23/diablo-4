@@ -1,4 +1,4 @@
-import { Card, CardFooter, IconButton } from "@material-tailwind/react";
+import { Card, CardFooter, IconButton, Alert } from "@material-tailwind/react";
 import { useState } from "react";
 import AccordWrap from "./CustomWrap/AccordCustom";
 import AccordionMain from "./Accordion";
@@ -18,6 +18,25 @@ import TopOfEachClass from "./TopEachClass";
 import { HomeDraw } from "../Pages/HomeDraw";
 import { SubmitCard } from "./Submission";
 import { s5Data } from "../DataLogic/S5Data";
+
+function Icon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+      />
+    </svg>
+  );
+}
 
 export default function PitLadder() {
   const [category, setCategory] = useState(2);
@@ -127,10 +146,16 @@ export default function PitLadder() {
             className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
             shadow={false}
           >
+            <div className="mt-2 font-customSource">
+              <Alert icon={<Icon />} color="teal" className="text-[14px]">
+                {`Due to the emergence of a copycat website using our submitted entries and former domain (diablo4pit.netlify.app), we have   temporarily disabled the "Latest" category. Our website, diablo4pit.pages.dev, was the first original unofficial pit leaderboard for the community. Please note that we are not affiliated with any other "diablo4pit" website. Thank you for your support.`}
+              </Alert>
+            </div>
             <div className="w-full max-w-[1200px] flex justify-center items-center gap-2 mx-auto px-2 my-5">
               <HomeDraw />
               <SubmitCard />
             </div>
+
             <TopOfEachClass objData={rawData} />
             <ClassesBtn onButtonClick={handleDataChange} classes={allClasses} />
 
