@@ -10069,4 +10069,23 @@ export const s5Data = [
     Compiled: "player",
     BossOnly: "yes",
   },
+  {
+    Timestamp: "9/22/2024 21:04:40",
+    Date: "9/22/2024",
+    Tier: "141",
+    "Time Used": "13:09",
+    Player: "Roxy",
+    Class: "Sorcerer",
+    Mode: "SC",
+    "Build Name": "Chain Lightning",
+    "Skills Used":
+      "Chain_Lightning, Flame_Shield, Ice_Armor, Teleport, Ice_Blades, Unstable_Currents",
+    "Run Video": "https://youtu.be/3rnKXYS9A4s",
+    "Run Comment": "",
+    "Build Planner":
+      "https://mobalytics.gg/diablo-4/profile/38b701c3-2f34-41b8-b76a-419245ad2031/builds/cbef8ae3-5fee-4b80-9ee1-0d05bdfeb6d8?coreTab=assigned-skills&equipmentTab=aspects-and-uniques&variantTab=2",
+    Validate: "",
+    Compiled: "",
+    BossOnly: "",
+  },
 ];
