@@ -73,4 +73,5 @@ export const haveProfile = [
   `Sorcerella`,
   `Winzik`,
   `Edicius`,
+  `LIANG本人`,
 ];

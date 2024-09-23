@@ -9663,4 +9663,22 @@ export const s5Data = [
     Compiled: "self",
     BossOnly: "",
   },
+  {
+    Timestamp: "9/23/2024 11:51:48",
+    Date: "9/23/2024",
+    Tier: "154",
+    "Time Used": "14:47",
+    Player: "LIANG本人",
+    Class: "Necromancer",
+    Mode: "SC",
+    "Build Name": "Bone Spirit",
+    "Skills Used":
+      "Blood_Mist, Bone_Prison, Bone_Spirit, Decrepify, Corpse_Tendrils, Bone_Storm",
+    "Run Video": "https://www.bilibili.com/video/BV1easDenEEe/",
+    "Run Comment": "打的有点勉强和生硬",
+    "Build Planner": "",
+    Validate: "y",
+    Compiled: "self",
+    BossOnly: "",
+  },
 ];
