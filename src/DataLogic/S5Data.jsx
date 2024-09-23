@@ -10050,4 +10050,23 @@ export const s5Data = [
     Compiled: "self",
     BossOnly: "",
   },
+  {
+    Timestamp: "9/22/2024 19:25:46",
+    Date: "9/22/2004",
+    Tier: "155",
+    "Time Used": "12:55",
+    Player: "Austin Sims",
+    Class: "Rogue",
+    Mode: "SC",
+    "Build Name": "Rapid fire ",
+    "Skills Used":
+      "Heartseeker, Rapid_Fire, Dark_Shroud, Smoke_Grenade, Caltrops, Dash",
+    "Run Video": "https://youtu.be/XqozanKNN50?si=UoD3GaRm4xDpopwq",
+    "Run Comment": "2 min left",
+    "Build Planner":
+      "https://mobalytics.gg/diablo-4/profile/8a457cb7-379e-4f35-8f80-f78d28adff6c/builds/590d901d-eacc-4b1b-ad23-3c1b2fd3d9a7?coreTab=assigned-skills&equipmentTab=aspects-and-uniques&variantTab=1",
+    Validate: "y",
+    Compiled: "player",
+    BossOnly: "yes",
+  },
 ];
