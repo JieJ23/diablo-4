@@ -8559,7 +8559,7 @@ export const s5Data = [
     BossOnly: "",
   },
   {
-    Date: "1/17/1997",
+    Date: "9/17/2024",
     Tier: "140",
     "Time Used": "14:33",
     Player: "DDC",
