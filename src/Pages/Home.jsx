@@ -9,9 +9,28 @@ import { Link } from "react-router-dom";
 
 import { HomeDraw } from "./HomeDraw";
 
-import { Avatar } from "@material-tailwind/react";
+import { Avatar, Alert } from "@material-tailwind/react";
 
 import { PTR } from "../Components/PTR";
+
+function Icon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+      />
+    </svg>
+  );
+}
 
 export function Footer() {
   return (
@@ -71,6 +90,11 @@ export default function Home() {
         <section className="h-full flex flex-col justify-between">
           <Navigation />
 
+          <div className="mt-2 font-customSource max-w-[1200px] px-2 mx-auto">
+            <Alert icon={<Icon />} color="indigo" className="text-[14px]">
+              {`Important: A copycat website is now using our former domain (diablo4pit.netlify.app) and is redirecting it to their site. Please be aware that our official website is diablo4pit.pages.dev, and we are not affiliated with any other website using the 'diablo4pit' name. Thank you for your continued support.`}
+            </Alert>
+          </div>
           <div className="w-full max-w-[1200px] flex justify-center gap-2 mx-auto px-2 my-5">
             <HomeDraw />
             <SubmitCard />
