@@ -9,6 +9,7 @@ export default function ClassesBtn({ onButtonClick, classes }) {
         {allClasses.slice(0, 4).map((num, index) => (
           <Button
             key={index}
+            disabled={num === `Latest` ? true : false}
             variant={onButtonClick(index).variant}
             onClick={onButtonClick(index).onClick}
             color="teal"

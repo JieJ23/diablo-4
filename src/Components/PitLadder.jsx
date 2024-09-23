@@ -20,7 +20,7 @@ import { SubmitCard } from "./Submission";
 import { s5Data } from "../DataLogic/S5Data";
 
 export default function PitLadder() {
-  const [category, setCategory] = useState(0);
+  const [category, setCategory] = useState(2);
   const [active, setActive] = useState(1);
   const [pageInfo, setPageInfo] = useState(0);
   const [selectedSkill, setSelectedSkill] = useState(null);
