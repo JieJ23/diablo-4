@@ -21,7 +21,7 @@ export default function TopOfEachClass({ objData }) {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-evenly p-2 gap-1 select-none">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-evenly gap-1 select-none">
       {top1EachClass.map((obj, index) => (
         <Card
           className="p-2 w-full min-h-[200px] sm:min-h-[150px] relative bg-transparent shadow-[0_0_15px_black] border-[2px] border-[black]"

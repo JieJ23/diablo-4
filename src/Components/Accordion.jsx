@@ -90,14 +90,14 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
           <div className="absolute bottom-1 right-1 h-2 w-2 bg-[#ef2020] rounded-full select-none" />
         )}
         {obj.Rank !== undefined ? (
-          <div className=" ms-2">
-            <Typography className="text-[12px] italic font-bold font-customSource">
+          <div className="absolute top-1 left-1">
+            <Typography className="text-[11px] italic font-bold font-customSource">
               {`${obj.Rank}.`}
             </Typography>
           </div>
         ) : (
-          <div className=" ms-2">
-            <Typography className="text-[12px] italic font-bold font-customSource">
+          <div className="absolute top-1 left-1">
+            <Typography className="text-[11px] italic font-bold font-customSource">
               {`----`}
             </Typography>
           </div>
