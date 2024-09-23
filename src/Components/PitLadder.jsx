@@ -147,8 +147,8 @@ export default function PitLadder() {
             shadow={false}
           >
             <div className="mt-2 font-customSource">
-              <Alert icon={<Icon />} color="teal" className="text-[14px]">
-                {`Due to the emergence of a copycat website using our submitted entries and former domain (diablo4pit.netlify.app), we have   temporarily disabled the "Latest" category. Our website, diablo4pit.pages.dev, was the first original unofficial pit leaderboard for the community. Please note that we are not affiliated with any other "diablo4pit" website. Thank you for your support.`}
+              <Alert icon={<Icon />} color="indigo" className="text-[14px]">
+                {`Important: A copycat website is now using our former domain (diablo4pit.netlify.app) and is redirecting it to their site. Please be aware that our official website is diablo4pit.pages.dev, and we are not affiliated with any other website using the 'diablo4pit' name. Thank you for your continued support.`}
               </Alert>
             </div>
             <div className="w-full max-w-[1200px] flex justify-center items-center gap-2 mx-auto px-2 my-5">
