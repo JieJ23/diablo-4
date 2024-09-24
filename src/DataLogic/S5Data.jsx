@@ -9190,7 +9190,7 @@ export const s5Data = [
     Mode: "SC",
     "Build Name": "ゴッドフィンガー",
     "Skills Used":
-      "Heartseeker, Rapid_Fire, Smoke_Grenade, Caltrops, Shadow_Step, Cold_Imbuement",
+      "Heartseeker, Rapid_Fire, Smoke_Grenade, Caltrops, Dash, Cold_Imbuement",
     "Run Video": "https://youtu.be/M96DSUJTswE?si=X8U-CLT3DLdMpI4E",
     "Run Comment": "",
     "Build Planner": "",
@@ -9850,7 +9850,7 @@ export const s5Data = [
     Mode: "SC",
     "Build Name": "高速ピストン",
     "Skills Used":
-      "Heartseeker, Rapid_Fire, Smoke_Grenade, Caltrops, Shadow_Step, Cold_Imbuement",
+      "Heartseeker, Rapid_Fire, Smoke_Grenade, Caltrops, Dash, Cold_Imbuement",
     "Run Video": "https://youtu.be/YWq3KAKU6tM?si=l-irSyXQzpKy-sn1",
     "Run Comment": "",
     "Build Planner": "",
