@@ -9910,4 +9910,21 @@ export const s5Data = [
     Compiled: "player",
     BossOnly: "",
   },
+  {
+    Date: "9/24/2024",
+    Tier: "156",
+    "Time Used": "13:42",
+    Player: "ProPain",
+    Class: "Sorcerer",
+    Mode: "SC",
+    "Build Name": "Lightning Spear",
+    "Skills Used":
+      "Frozen_Orb, Flame_Shield, Ice_Armor, Teleport, Lightning_Spear, Unstable_Currents",
+    "Run Video": "https://www.youtube.com/watch?v=cpF8G3--by4",
+    "Run Comment": "Using Mekuna pit push variant",
+    "Build Planner": "",
+    Validate: "y",
+    Compiled: "self",
+    BossOnly: "",
+  },
 ];

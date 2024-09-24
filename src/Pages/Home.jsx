@@ -100,7 +100,7 @@ export default function Home() {
             <SubmitCard />
           </div>
 
-          <section className="text-start px-6 max-w-[1200px] mx-auto mb-10 rounded-lg">
+          <section className="text-start px-6 max-w-[1200px] mx-auto my-5 rounded-lg">
             <div className="text-[#868fed] font-customDress text-[28px] sm:text-[32px] mb-2 uppercase">
               Welcome to Diablo 4 Pit
             </div>
@@ -109,11 +109,11 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <PTR />
-          </div>
+          </div> */}
 
-          <section className="flex flex-col max-w-[1200px] my-10 mx-auto w-full px-2">
+          <section className="flex flex-col max-w-[1200px] my-5 mx-auto w-full px-2">
             <div className="flex flex-col p-2 justify-center gap-2 mb-2">
               <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px] uppercase">
                 Divided by Class, United by Purpose
