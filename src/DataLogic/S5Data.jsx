@@ -9841,4 +9841,21 @@ export const s5Data = [
     Compiled: "player",
     BossOnly: "",
   },
+  {
+    Date: "9/24/2024",
+    Tier: "156",
+    "Time Used": "14:14",
+    Player: "快感の向こう側",
+    Class: "Rogue",
+    Mode: "SC",
+    "Build Name": "高速ピストン",
+    "Skills Used":
+      "Heartseeker, Rapid_Fire, Smoke_Grenade, Caltrops, Shadow_Step, Cold_Imbuement",
+    "Run Video": "https://youtu.be/YWq3KAKU6tM?si=l-irSyXQzpKy-sn1",
+    "Run Comment": "",
+    "Build Planner": "",
+    Validate: "y",
+    Compiled: "player",
+    BossOnly: "",
+  },
 ];
