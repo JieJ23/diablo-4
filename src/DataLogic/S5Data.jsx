@@ -9823,4 +9823,22 @@ export const s5Data = [
     Compiled: "self",
     BossOnly: "",
   },
+  {
+    Date: "9/23/2024",
+    Tier: "152",
+    "Time Used": "13:19",
+    Player: "Sagittarian",
+    Class: "Rogue",
+    Mode: "SC",
+    "Build Name": "SubZero Rapid Fire",
+    "Skills Used":
+      "Heartseeker, Rapid_Fire, Smoke_Grenade, Dance_Of_Knives, Shadow_Step, Cold_Imbuement",
+    "Run Video": "https://youtu.be/4-Mi-di6zVs?si=fZEbGgzTyWX4ijAd",
+    "Run Comment": "153 I'm Comming !",
+    "Build Planner":
+      "https://d4builds.gg/builds/67413c33-18eb-4eb2-94ea-15880d6ec08d/?var=2",
+    Validate: "y",
+    Compiled: "player",
+    BossOnly: "",
+  },
 ];
