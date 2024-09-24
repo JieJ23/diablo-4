@@ -190,7 +190,7 @@ export default function PitLadder() {
               </div>
             ))}
             <CardFooter className="p-3">
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-1">
                 {totalPages.map((page, index) => (
                   <IconButton {...getList(page)} key={index}>
                     {page}
