@@ -284,14 +284,20 @@ export default function AccordionMain({ obj, watch, watch2, watch3, watch4 }) {
                 className="text-white font-customNoto text-[12px] font-normal"
               />
             )}
-            {obj.Mode === `HC` && (
-              <Chip
-                color="red"
-                value={`Hardcore`}
-                variant="filled"
-                className="text-black font-customNoto text-[12px] font-normal"
-              />
-            )}
+            {obj.Mode === `HC` &&
+              (obj.hcRank ? (
+                <Chip
+                  value={`#${obj.hcRank} Hardcore`}
+                  variant="filled"
+                  className="text-white font-customNoto text-[12px] font-normal bg-[#8b0303]"
+                />
+              ) : (
+                <Chip
+                  value={`Hardcore`}
+                  variant="filled"
+                  className="text-white font-customNoto text-[12px] font-normal bg-[#8b0303]"
+                />
+              ))}
           </div>
         )}
 

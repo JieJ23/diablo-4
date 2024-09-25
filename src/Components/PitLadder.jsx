@@ -92,6 +92,11 @@ export default function PitLadder() {
     .slice()
     .filter((obj) => convertToSec(obj["Time Used"]) < 900);
   const uniqueSecondSort = removeDup(uniqueInitialSort);
+
+  //
+  const hardcoreRank = uniqueSecondSort.filter((obj) => obj.Mode === `HC`);
+  addClassRank(hardcoreRank, `hcRank`, 100);
+  //
   addRankProperty(uniqueSecondSort);
   //
 
