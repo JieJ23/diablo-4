@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 import { HomeDraw } from "./HomeDraw";
 
-import { Avatar, Alert } from "@material-tailwind/react";
+import { Avatar } from "@material-tailwind/react";
 
 import { PTR } from "../Components/PTR";
 
@@ -56,7 +56,7 @@ export function Footer() {
         </Link>
       </div>
       <Link
-        to={`https://discord.gg/HdpcEwAepY`}
+        to={`https://discord.gg/XKaq4Rhzs6`}
         className="flex items-center justify-center gap-2"
         target="_blank"
       >
@@ -90,11 +90,6 @@ export default function Home() {
         <section className="h-full flex flex-col justify-between">
           <Navigation />
 
-          <div className="mt-2 font-customSource max-w-[1200px] px-2 mx-auto">
-            <Alert icon={<Icon />} color="indigo" className="text-[14px]">
-              {`Important: A copycat website is now using our former domain (diablo4pit.netlify.app) and is redirecting it to their site. Please be aware that our official website is diablo4pit.pages.dev, and we are not affiliated with any other website using the 'diablo4pit' name. Thank you for your continued support.`}
-            </Alert>
-          </div>
           <div className="w-full max-w-[1200px] flex justify-center gap-2 mx-auto px-2 my-5">
             <HomeDraw />
             <SubmitCard />

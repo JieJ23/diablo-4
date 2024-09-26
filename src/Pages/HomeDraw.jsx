@@ -25,7 +25,7 @@ const extraRedirect = [
   },
   {
     title: `Discord`,
-    link: `https://discord.gg/HdpcEwAepY`,
+    link: `https://discord.gg/XKaq4Rhzs6`,
   },
   {
     title: `Donation`,

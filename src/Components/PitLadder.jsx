@@ -1,4 +1,4 @@
-import { Card, CardFooter, IconButton, Alert } from "@material-tailwind/react";
+import { Card, CardFooter, IconButton } from "@material-tailwind/react";
 import { useState } from "react";
 import AccordWrap from "./CustomWrap/AccordCustom";
 import AccordionMain from "./Accordion";
@@ -151,11 +151,6 @@ export default function PitLadder() {
             className="w-full mx-auto max-w-[1200px] px-1 bg-transparent"
             shadow={false}
           >
-            <div className="mt-2 font-customSource">
-              <Alert icon={<Icon />} color="indigo" className="text-[14px]">
-                {`Important: A copycat website is now using our former domain (diablo4pit.netlify.app) and is redirecting it to their site. Please be aware that our official website is diablo4pit.pages.dev, and we are not affiliated with any other website using the 'diablo4pit' name. Thank you for your continued support.`}
-              </Alert>
-            </div>
             <div className="w-full max-w-[1200px] flex justify-center items-center gap-2 mx-auto px-2 my-5">
               <HomeDraw />
               <SubmitCard />
