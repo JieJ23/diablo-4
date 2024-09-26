@@ -20,28 +20,28 @@ import { s5Data } from "../DataLogic/S5Data";
 function CreateBoard({ arr, title }) {
   return (
     <Card
-      className="relative h-full pb-2 bg-gradient-to-t from-[#1c2034] to-[#0a1337] pointer-events-none"
+      className="relative h-full pb-2 bg-gradient-to-t to-[#090808] from-[#18191f] pointer-events-none"
       shadow={false}
     >
       <List className=" px-5 h-full">
         <ListItem className="text-center">
           <div className="flex-1 text-center">
-            <Typography className="font-customDiablo font-semibold uppercase text-[18px] text-blue-gray-200">
+            <Typography className="font-customDiablo font-semibold uppercase text-[18px] text-gray-300">
               Current Top 10 {+arr[0].Tier === 101 ? "Speed 101" : title}
             </Typography>
           </div>
         </ListItem>
         {arr.map((run, index) => (
           <ListItem className="text-center" key={index}>
-            <div className="flex-1 flex items-center gap-1 text-center text-white font-customNoto text-[14px]">
-              {haveProfile.includes(run.Player) && (
+            <div className="flex-1 flex items-center gap-1 text-center text-white font-customNoto text-[12px]">
+              {/* {haveProfile.includes(run.Player) && (
                 <Avatar
                   src={`/pfp/${run.Player}.png`}
                   size="xs"
                   variant="rounded"
                   className="shadow-[0_0_10px_black]"
                 />
-              )}
+              )} */}
               {run.Player}
             </div>
             <div className="flex-1 text-center text-white font-customNoto text-[14px]">
@@ -68,6 +68,12 @@ function CreateBoard({ arr, title }) {
                 {run.Tier}
               </div>
             )}
+            <div className="flex-1 text-center text-white font-customNoto text-[14px] hidden sm:block">
+              <div className="text-[10px] text-[orange] font-customDiablo">
+                Time
+              </div>
+              {run["Time Used"]}
+            </div>
           </ListItem>
         ))}
       </List>
@@ -133,7 +139,7 @@ export default function Top10() {
 
   const top10Category = [top10Overall, top10Hardcore, finalizedspeed101];
   return (
-    <section className="my-5 w-full bg-transparent max-w-[1200px] mx-auto relative flex gap-2 flex-col md:flex-row px-2">
+    <section className="my-5 w-full bg-transparent max-w-[1200px] mx-auto relative flex gap-2 flex-col lg:flex-row px-2">
       <>
         <Carousel
           loop={true}

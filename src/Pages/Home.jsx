@@ -35,7 +35,7 @@ function Icon() {
 export function Footer() {
   return (
     <div className="mt-15 py-5 flex flex-col gap-1 select-none">
-      <div className="flex justify-center gap-4">
+      {/* <div className="flex justify-center gap-4">
         <Link
           to={`/Privacy`}
           className="text-white font-customNoto text-[13px]"
@@ -54,7 +54,7 @@ export function Footer() {
         >
           Terms & Conditions
         </Link>
-      </div>
+      </div> */}
       <Link
         to={`https://discord.gg/XKaq4Rhzs6`}
         className="flex items-center justify-center gap-2"
@@ -91,12 +91,12 @@ export default function Home() {
           <Navigation />
 
           <div className="w-full max-w-[1200px] flex justify-center gap-2 mx-auto px-2 my-5">
-            <HomeDraw />
+            {/* <HomeDraw /> */}
             <SubmitCard />
           </div>
 
-          <section className="text-start px-6 max-w-[1200px] mx-auto my-5 rounded-lg">
-            <div className="text-[#868fed] font-customDress text-[28px] sm:text-[32px] mb-2 uppercase">
+          <section className="text-center px-6 max-w-[1200px] mx-auto my-5 rounded-lg">
+            <div className="text-gray-400 font-customDiablo text-[28px] mb-2 uppercase">
               Welcome to Diablo 4 Pit
             </div>
             <div className="whitespace-pre-line text-gray-400 font-customNoto text-[13px]">
@@ -109,43 +109,20 @@ export default function Home() {
           </div> */}
 
           <section className="flex flex-col max-w-[1200px] my-5 mx-auto w-full px-2">
-            <div className="flex flex-col p-2 justify-center gap-2 mb-2">
-              <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px] uppercase">
-                Divided by Class, United by Purpose
-              </div>
-              <div className="text-[13px] font-customNoto text-gray-400">
-                Submit and showcase your gameplay, and become an active part of
-                the community as we strive to reach the highest pit this season.
-                Your journey is unique and deserves to be celebrated and
-                remembered by all. Entries will primarily rely on contributions
-                from players and community submissions, serving as the main
-                source of content. Additionally, the developer will actively
-                participate by submitting entries gathered from a variety of
-                platforms to ensure a broader representation of the gaming
-                experience.
+            <div className="flex flex-col p-2 justify-center text-center gap-2">
+              <div className="text-gray-400 font-customDiablo font-extrabold text-[22px] sm:text-[32px] px-4">
+                Season Menu
               </div>
             </div>
             <Content />
           </section>
 
-          <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-2 text-start">
-            <div className="text-[#868fed] font-customDress text-[22px] sm:text-[28px] mb-2 px-4">
-              Season Of The Infernal Horde
+          <section className="flex flex-col max-w-[1200px] mt-10 mx-auto w-full px-2 text-center">
+            <div className="text-gray-400 font-customDiablo font-extrabold text-[22px] sm:text-[32px] px-4">
+              Community Season 5 Pit Stats
             </div>
-            <div className="font-customNoto text-[13px] text-gray-400 px-4">
-              Below, you'll find an overview of key statistics reflecting the
-              community's participation throughout the season. These stats
-              include the total number of players who have taken part, the
-              overall entries submitted, the combined tiers completed across all
-              submissions, and finally, the cumulative time spent by players in
-              clearing those tiers. This data offers a comprehensive look at the
-              collective efforts and achievements of everyone involved during
-              the season. If you're looking for more detailed insights, feel
-              free to explore the Class Build section, where you can find
-              comprehensive information and overviews for each class
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-center place-items mt-5 mb-2">
-              <CountdownTimer />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 justify-center place-items my-2">
+              {/* <CountdownTimer /> */}
               <SeasonStats />
             </div>
           </section>

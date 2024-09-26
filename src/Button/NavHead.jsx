@@ -28,7 +28,7 @@ export default function Navigation() {
           Home
         </Link>
       </Typography>
-      <Typography
+      {/* <Typography
         as="li"
         className="p-1 font-customTitle flex space-x-2 items-center hover:scale-110 ease-in duration-300 transition-all hover:text-red-500"
       >
@@ -100,7 +100,7 @@ export default function Navigation() {
           />
           Donation
         </Link>
-      </Typography>
+      </Typography> */}
     </ul>
   );
 

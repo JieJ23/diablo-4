@@ -152,7 +152,7 @@ export default function PitLadder() {
             shadow={false}
           >
             <div className="w-full max-w-[1200px] flex justify-center items-center gap-2 mx-auto px-2 my-5">
-              <HomeDraw />
+              {/* <HomeDraw /> */}
               <SubmitCard />
             </div>
 

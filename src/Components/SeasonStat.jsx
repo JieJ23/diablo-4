@@ -5,7 +5,7 @@ import { s5Data } from "../DataLogic/S5Data";
 function convertToTime(s) {
   let min = Math.floor(s / 60);
   let seconds = Math.floor(s % 60);
-  return `+${min} m`;
+  return `+${min}`;
 }
 
 export default function SeasonStats() {
@@ -27,30 +27,51 @@ export default function SeasonStats() {
   }
 
   return (
-    <div className="text-white text-center rounded-xl flex flex-col justify-center py-3 px-2 gap-2 bg-gradient-to-tr from-[#1c2034] to-[#0a1337] shadow-[0_0_10px_black] border-[1px] border-[#131111]">
-      <div>
-        <div className="text-[16px] font-customDiablo text-gray-400">
-          Overall
+    <>
+      <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 bg-gradient-to-t to-[#090808] from-[#18191f] shadow-[0_0_10px_black] ">
+        <div className="text-[16px] font-customDiablo text-center text-gray-400">
+          Total Players
+        </div>
+        <div className="flex justify-center gap-2 text-[36px] font-semibold">
+          <div className="text-[#2adfa6]">{totalPlayers}</div>
+        </div>
+        <div className="text-[11px] font-customNoto text-center text-gray-400">
+          Unique Player Count
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4">
-        <div className="font-customNoto text-[12px] sm:text-[13px]">
-          {totalPlayers}
-          <div className="text-[11px] text-gray-400">Players</div>
+      <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 bg-gradient-to-t to-[#090808] from-[#18191f] shadow-[0_0_10px_black] ">
+        <div className="text-[16px] font-customDiablo text-center text-gray-400">
+          Total Entries
         </div>
-        <div className="font-customNoto text-[11px] sm:text-[13px]">
-          {totalEntries}
-          <div className="text-[11px] text-gray-400">Entries</div>
+        <div className="flex justify-center gap-2 text-[36px] font-semibold">
+          <div className="text-[#f346ab]">{totalEntries}</div>
         </div>
-        <div className="font-customNoto text-[11px] sm:text-[13px]">
-          {totalTiers}
-          <div className="text-[11px] text-gray-400">Tiers</div>
-        </div>
-        <div className="font-customNoto text-[11px] sm:text-[13px]">
-          {convertToTime(totalTime)}
-          <div className="text-[11px] text-gray-400">Time</div>
+        <div className="text-[11px] font-customNoto text-center text-gray-400">
+          Available Gameplay
         </div>
       </div>
-    </div>
+      <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 bg-gradient-to-t to-[#090808] from-[#18191f] shadow-[0_0_10px_black] ">
+        <div className="text-[16px] font-customDiablo text-center text-gray-400">
+          Total Time
+        </div>
+        <div className="flex justify-center gap-2 text-[36px] font-semibold">
+          <div className="text-[#ea8c28]">{convertToTime(totalTime)}</div>
+        </div>
+        <div className="text-[11px] font-customNoto text-center text-gray-400">
+          Minutes Accumulated
+        </div>
+      </div>
+      <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 bg-gradient-to-t to-[#090808] from-[#18191f] shadow-[0_0_10px_black] ">
+        <div className="text-[16px] font-customDiablo text-center text-gray-400">
+          Total Tiers
+        </div>
+        <div className="flex justify-center gap-2 text-[36px] font-semibold">
+          <div className="text-[#2a58e0]">{totalTiers}</div>
+        </div>
+        <div className="text-[11px] font-customNoto text-center text-gray-400">
+          Levels Conquered
+        </div>
+      </div>
+    </>
   );
 }
