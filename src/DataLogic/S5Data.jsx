@@ -10187,4 +10187,21 @@ export const s5Data = [
     Compiled: "self",
     BossOnly: "",
   },
+  {
+    Date: "9/28/2024",
+    Tier: "150",
+    "Time Used": "13:21",
+    Player: "Zzzz",
+    Class: "Sorcerer",
+    Mode: "SC",
+    "Build Name": "Mekuna's lightning spear",
+    "Skills Used":
+      "Frozen_Orb, Flame_Shield, Ice_Armor, Teleport, Lightning_Spear, Unstable_Currents",
+    "Run Video": "https://youtu.be/RS_cmKaruks?si=Z3Dbi5Igsy8ZeluL",
+    "Run Comment": "",
+    "Build Planner": "",
+    Validate: "y",
+    Compiled: "player",
+    BossOnly: "",
+  },
 ];
