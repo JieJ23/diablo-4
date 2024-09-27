@@ -9,7 +9,7 @@
  */
 
 const allowedOrigins = [
-	'https://cydiablo.pages.dev/',
+	'https://cydiablo.pages.dev',
 	'http://localhost:5173',
 ];
 
@@ -33,7 +33,6 @@ async function handleRequest(request) {
 				'Access-Control-Allow-Origin': origin, // Allow the specific origin
 				'Access-Control-Allow-Methods': 'GET, OPTIONS',
 				'Access-Control-Allow-Headers': 'Content-Type',
-				'Access-Control-Max-Age': `21600`,
 			},
 		});
 	}
