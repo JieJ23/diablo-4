@@ -9,7 +9,7 @@
  */
 
 const allowedOrigins = [
-	'https://diablo4pit.pages.dev',
+	'https://cydiablo.pages.dev/',
 	'http://localhost:5173',
 ];
 
