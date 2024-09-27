@@ -10170,4 +10170,21 @@ export const s5Data = [
     Compiled: "self",
     BossOnly: "",
   },
+  {
+    Date: "9/25/2024",
+    Tier: "155",
+    "Time Used": "13:05",
+    Player: "CraftyXII",
+    Class: "Rogue",
+    Mode: "SC",
+    "Build Name": "PI RF",
+    "Skills Used":
+      "Heartseeker, Rapid_Fire, Smoke_Grenade, Caltrops, Dash, Poison_Imbuement",
+    "Run Video": "https://www.youtube.com/watch?v=n8eROqovx-8",
+    "Run Comment": "",
+    "Build Planner": "https://maxroll.gg/d4/planner/az4kh0sv",
+    Validate: "y",
+    Compiled: "self",
+    BossOnly: "",
+  },
 ];
