@@ -31,18 +31,18 @@ const contentObj = [
 
 export function CardContent({ image, link, title, summary }) {
   return (
-    <Card className="bg-gradient-to-t to-[#090808] from-[#18191f] shadow-[0_0_10px_black] group flex flex-col justify-between py-2 px-4 group">
-      <div className="text-start p-2">
+    <Card className="bg-transparent group flex flex-col justify-between py-2 px-4 group">
+      <div className="text-center p-2">
         <Typography className="mb-2 font-customDiablo text-[16px] text-[white] uppercase">
           {title}
         </Typography>
-        <Typography className="text-[12px] font-customSource text-gray-300 group-hover:scale-[98%] ease-in duration-300 transition-all">
+        <Typography className="text-[12px] font-customSource text-gray-400 group-hover:scale-[98%] ease-in duration-300 transition-all">
           {summary}
         </Typography>
       </div>
       <div
         color="black"
-        className="h-56 bg-cover bg-center shadow-[0_0_20px_#131111] rounded-xl group-hover:scale-95 ease-in duration-300 transition-all"
+        className="h-56 bg-cover bg-center shadow-[0_0_20px_black] rounded-xl group-hover:scale-95 ease-in duration-300 transition-all"
         style={{ backgroundImage: `url("/bg/${image}.png")` }}
       />
       <Link to={link} className="mt-2 flex justify-center">

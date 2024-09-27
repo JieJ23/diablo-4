@@ -29,46 +29,46 @@ export default function SeasonStats() {
   return (
     <>
       <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 bg-gradient-to-t to-[#090808] from-[#18191f] shadow-[0_0_10px_black] ">
-        <div className="text-[16px] font-customDiablo text-center text-gray-400">
+        <div className="text-[16px] font-customDiablo text-center text-[#2adfa6]">
           Total Players
         </div>
-        <div className="flex justify-center gap-2 text-[36px] font-semibold">
+        <div className="flex justify-center gap-2 text-[32px] font-[Roberto] font-semibold">
           <div className="text-[#2adfa6]">{totalPlayers}</div>
         </div>
-        <div className="text-[11px] font-customNoto text-center text-gray-400">
+        <div className="text-[11px] font-customNoto text-center text-[#2adfa6]">
           Unique Player Count
         </div>
       </div>
       <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 bg-gradient-to-t to-[#090808] from-[#18191f] shadow-[0_0_10px_black] ">
-        <div className="text-[16px] font-customDiablo text-center text-gray-400">
+        <div className="text-[16px] font-customDiablo text-center text-[#f346ab]">
           Total Entries
         </div>
-        <div className="flex justify-center gap-2 text-[36px] font-semibold">
+        <div className="flex justify-center gap-2 text-[32px] font-[Roberto] font-semibold">
           <div className="text-[#f346ab]">{totalEntries}</div>
         </div>
-        <div className="text-[11px] font-customNoto text-center text-gray-400">
+        <div className="text-[11px] font-customNoto text-center text-[#f346ab]">
           Available Gameplay
         </div>
       </div>
       <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 bg-gradient-to-t to-[#090808] from-[#18191f] shadow-[0_0_10px_black] ">
-        <div className="text-[16px] font-customDiablo text-center text-gray-400">
+        <div className="text-[16px] font-customDiablo text-center text-[#ea8c28]">
           Total Time
         </div>
-        <div className="flex justify-center gap-2 text-[36px] font-semibold">
+        <div className="flex justify-center gap-2 text-[32px] font-[Roberto] font-semibold">
           <div className="text-[#ea8c28]">{convertToTime(totalTime)}</div>
         </div>
-        <div className="text-[11px] font-customNoto text-center text-gray-400">
+        <div className="text-[11px] font-customNoto text-center text-[#ea8c28]">
           Minutes Accumulated
         </div>
       </div>
       <div className="text-white text-center rounded-xl flex flex-col justify-between py-3 bg-gradient-to-t to-[#090808] from-[#18191f] shadow-[0_0_10px_black] ">
-        <div className="text-[16px] font-customDiablo text-center text-gray-400">
+        <div className="text-[16px] font-customDiablo text-center text-[#5b7cdc]">
           Total Tiers
         </div>
-        <div className="flex justify-center gap-2 text-[36px] font-semibold">
-          <div className="text-[#2a58e0]">{totalTiers}</div>
+        <div className="flex justify-center gap-2 text-[32px] font-[Roberto] font-semibold">
+          <div className="text-[#5b7cdc]">{totalTiers}</div>
         </div>
-        <div className="text-[11px] font-customNoto text-center text-gray-400">
+        <div className="text-[11px] font-customNoto text-center text-[#5b7cdc]">
           Levels Conquered
         </div>
       </div>
